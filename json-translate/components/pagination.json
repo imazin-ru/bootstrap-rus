@@ -1,0 +1,104 @@
+{
+	"h": [
+		{
+			"rus": "Нумерация страниц",
+			"eng": "Pagination"
+		},{
+			"rus": "Постраничное разделение по умолчанию",
+			"eng": "Default pagination"
+		},{
+			"rus": "Pager",
+			"eng": "Pager"
+		},{
+			"rus": "Заблокированы и активные состояния",
+			"eng": "Disabled and active states"
+		},{
+			"rus": "Изменение размера",
+			"eng": "Sizing"
+		},{
+			"rus": "Основной пример",
+			"eng": "Default example"
+		},{
+			"rus": "Выравнивание ссылок",
+			"eng": "Aligned links"
+		},{
+			"rus": "Заблокирован состояние",
+			"eng": "Optional disabled state"
+		}
+	],
+	"p": [
+		{
+			"rus": "Добавьте ссылки постраничного разделения для вашего сайта с многостраничным компонентом, или простой <a href=\"#pagination-pager\">альтернатива листания<\/a>.",
+			"eng": "Provide pagination links for your site or app with the multi-page pagination component, or the simpler <a href=\"#pagination-pager\">pager alternative<\/a>."
+		},{
+			"rus": "Простая нумерация inspired by Rdio, отлично подходит для приложений и результатов поиска. Большой блок трудно не заметить, легко масштабируется, предоставляет большие кнопки.",
+			"eng": "Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas."
+		},{
+			"rus": "Ссылки могут настраиваться для различных нужд. Используйте <code>.disabled<\/code> для блокировки ссылок и <code>.active<\/code> для обозначения текущей страницы.",
+			"eng": "Links are customizable for different circumstances. Use <code>.disabled<\/code> for unclickable links and <code>.active<\/code> to indicate the current page."
+		},{
+			"rus": "You can optionally swap out active or disabled anchors for <code>&lt;span&gt;<\/code>, or omit the anchor in the case of the previous\/next arrows, to remove click functionality while retaining intended styles.",
+			"eng": "You can optionally swap out active or disabled anchors for <code>&lt;span&gt;<\/code>, or omit the anchor in the case of the previous\/next arrows, to remove click functionality while retaining intended styles."
+		},{
+			"rus": "Есть потребность увеличить или уменьшить блок постраничного вывода? Добавьте <code>.pagination-lg<\/code> или <code>.pagination-sm<\/code> для изменения размеров.",
+			"eng": "Fancy larger or smaller pagination? Add <code>.pagination-lg<\/code> or <code>.pagination-sm<\/code> for additional sizes."
+		},{
+			"rus": "Быстрое создание ссылок для просмотра предыдущей и следующей страницы, для простого постраничного разделения с легкой разметкой и стилями. Это хорошо подходит для простых сайтов, таких как блоги и журналы.",
+			"eng": "Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines."
+		},{
+			"rus": "По умолчанию, листание имеет ссылки, выровненные по-центру.",
+			"eng": "By default, the pager centers links."
+		},{
+			"rus": "В качестве альтернативы, вы можете выравнивать каждую ссылку:",
+			"eng": "Alternatively, you can align each link to the sides:"
+		},{
+			"rus": "Листание ссылок также использует базовый вспомогательный класс <code>.disabled<\/code>.",
+			"eng": "Pager links also use the general <code>.disabled<\/code> utility class from the pagination."
+		}
+	],
+	"li": [
+		{
+			"rus": "\n          <a href=\"#\" aria-label=\"Previous\">\n            <span aria-hidden=\"true\">&laquo;<\/span>\n          <\/a>\n        ",
+			"eng": "\n          <a href=\"#\" aria-label=\"Previous\">\n            <span aria-hidden=\"true\">&laquo;<\/span>\n          <\/a>\n        "
+		},{
+			"rus": "<a href=\"#\">1<\/a>",
+			"eng": "<a href=\"#\">1<\/a>"
+		},{
+			"rus": "<a href=\"#\">2<\/a>",
+			"eng": "<a href=\"#\">2<\/a>"
+		},{
+			"rus": "<a href=\"#\">3<\/a>",
+			"eng": "<a href=\"#\">3<\/a>"
+		},{
+			"rus": "<a href=\"#\">4<\/a>",
+			"eng": "<a href=\"#\">4<\/a>"
+		},{
+			"rus": "<a href=\"#\">5<\/a>",
+			"eng": "<a href=\"#\">5<\/a>"
+		},{
+			"rus": "\n          <a href=\"#\" aria-label=\"Next\">\n            <span aria-hidden=\"true\">&raquo;<\/span>\n          <\/a>\n        ",
+			"eng": "\n          <a href=\"#\" aria-label=\"Next\">\n            <span aria-hidden=\"true\">&raquo;<\/span>\n          <\/a>\n        "
+		},{
+			"rus": "<a href=\"#\">1 <span class=\"sr-only\">(current)<\/span><\/a>",
+			"eng": "<a href=\"#\">1 <span class=\"sr-only\">(current)<\/span><\/a>"
+		},{
+			"rus": "\n      <span>\n        <span aria-hidden=\"true\">&laquo;<\/span>\n      <\/span>\n    ",
+			"eng": "\n      <span>\n        <span aria-hidden=\"true\">&laquo;<\/span>\n      <\/span>\n    "
+		},{
+			"rus": "<span>1 <span class=\"sr-only\">(current)<\/span><\/span>",
+			"eng": "\n      <span>1 <span class=\"sr-only\">(current)<\/span><\/span>\n    "
+		},{
+			"rus": "<a href=\"#\">Предыдущая<\/a>",
+			"eng": "<a href=\"#\">Previous<\/a>"
+		},{
+			"rus": "<a href=\"#\">Следующая<\/a>",
+			"eng": "<a href=\"#\">Next<\/a>"
+		},{
+			"rus": "<a href=\"#\"><span aria-hidden=\"true\">&larr;<\/span> Older<\/a>",
+			"eng": "<a href=\"#\"><span aria-hidden=\"true\">&larr;<\/span> Older<\/a>"
+		},{
+			"rus": "<a href=\"#\">Newer <span aria-hidden=\"true\">&rarr;<\/span><\/a>",
+			"eng": "<a href=\"#\">Newer <span aria-hidden=\"true\">&rarr;<\/span><\/a>"
+		}
+	]
+}

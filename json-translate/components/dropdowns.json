@@ -1,0 +1,98 @@
+{
+	"h": [
+		{
+			"rus": "Выпадающее меню",
+			"eng": "Dropdowns"
+		},{
+			"rus": "Пример",
+			"eng": "Example"
+		},{
+			"rus": "Выравнивание",
+			"eng": "Alignment"
+		},{
+			"rus": "Заголовки",
+			"eng": "Headers"
+		},{
+			"rus": "Делитель",
+			"eng": "Divider"
+		},{
+			"rus": "Заблокированы части меню",
+			"eng": "Disabled menu items"
+		},{
+			"rus": "Может потребоваться дополнительное позиционирование",
+			"eng": "May require additional positioning"
+		},{
+			"rus": "<code>.pull-right<\/code> устаревшее выравнивание",
+			"eng": "Deprecated <code>.pull-right<\/code> alignment"
+		}
+	],
+	"p": [
+		{
+			"rus": "Переключаемое, контекстное меню для отображения списка ссылок. Их интерактивность обеспечивается <a href=\"..\/javascript-doc\/#dropdowns\">JavaScript плагином для dropdown меню<\/a>.",
+			"eng": "Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href=\"..\/javascript\/#dropdowns\">dropdown JavaScript plugin<\/a>."
+		},{
+			"rus": "Оберните кнопку выпадающего меню и список с помощью класса <code>.dropdown<\/code>или другого элемента, который объявляет <code>position: relative;<\/code>.",
+			"eng": "Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown<\/code>, or another element that declares <code>position: relative;<\/code>. Then add the menu's HTML."
+		},{
+			"rus": "По умолчанию, выпадающее меню автоматически устанавливается 100% от верхнего и вдоль левого края его родителя. Добавьте <code>.dropdown-menu-right<\/code> к <code>.dropdown-menu<\/code> для выравнивание выпадающего меню справа.",
+			"eng": "By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>.dropdown-menu-right<\/code> to a <code>.dropdown-menu<\/code> to right align the dropdown menu."
+		},{
+			"rus": "Dropdowns автоматически позиционируется с помощью CSS в пределах нормального потока документа. Это означает, что выпадающее меню может быть обрезано родителями с определенными свойствами <code>overflow<\/code> или появляются за пределми области просмотра. Адресуйте эти вопросы по своему усмотрению, когда они возникают.",
+			"eng": "Dropdowns are automatically positioned via CSS within the normal flow of the document. This means dropdowns may be cropped by parents with certain <code>overflow<\/code> properties or appear out of bounds of the viewport. Address these issues on your own as they arise."
+		},{
+			"rus": "В версии 3.1, мы определили устаревшим выравнивание <code>.pull-right<\/code> для выпадающего меню. Для выравнивания меню справа, используйте <code>.dropdown-menu-right<\/code>. Компоненты, выровненные справа в навигационной панели используют реализован версию класса right-aligned, для автоматического выравнивания меню. Для переопределения их, используйте <code>.dropdown-menu-left<\/code>.",
+			"eng": "As of v3.1.0, we've deprecated <code>.pull-right<\/code> on dropdown menus. To right-align a menu, use <code>.dropdown-menu-right<\/code>. Right-aligned nav components in the navbar use a mixin version of this class to automatically align the menu. To override it, use <code>.dropdown-menu-left<\/code>."
+		},{
+			"rus": "Добавьте заголовок чтобы маркировать участки в любом выпадающего меню.",
+			"eng": "Add a header to label sections of actions in any dropdown menu."
+		},{
+			"rus": "Добавить разделитель для разделения ряда ссылок в выпадающем меню.",
+			"eng": "Add a divider to separate series of links in a dropdown menu."
+		},{
+			"rus": "Добавьте <code>.disabled<\/code> к <code>&lt;li&gt;<\/code> в выпадающем списке, чтобы отключить ссылку.",
+			"eng": "Add <code>.disabled<\/code> to a <code>&lt;li&gt;<\/code> in the dropdown to disable the link."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Действие<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Другое действие<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Что-то еще<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Separated link<\/a>"
+		},{
+			"rus": "Название меню",
+			"eng": "Dropdown header"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Обычная ссылка<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Regular link<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Заблокированая ссылка<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Disabled link<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Другая ссылка<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"#\">Another link<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "\n        Выпадающее\n        <span class=\"caret\"><\/span>\n      ",
+			"eng": "\n        Dropdown\n        <span class=\"caret\"><\/span>\n      "
+		},{
+			"rus": "\n        Выпадающее\n        <span class=\"caret\"><\/span>\n      ",
+			"eng": "\n        Выпадающее\n        <span class=\"caret\"><\/span>\n      "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		}
+	]
+}

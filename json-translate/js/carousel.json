@@ -1,0 +1,239 @@
+{
+	"h": [
+		{
+			"rus": "Карусель <small>carousel.js<\/small>",
+			"eng": "Carousel <small>carousel.js<\/small>"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Дополнительная подпись",
+			"eng": "Optional captions"
+		},{
+			"rus": "Ярлык первого слайда",
+			"eng": "First slide label"
+		},{
+			"rus": "Ярлык второго слайда",
+			"eng": "Second slide label"
+		},{
+			"rus": "Ярлык третьего слайда",
+			"eng": "Third slide label"
+		},{
+			"rus": "Несколько каруселей",
+			"eng": "Multiple carousels"
+		},{
+			"rus": "Через атрибуты данных",
+			"eng": "Via data attributes"
+		},{
+			"rus": "Через JavaScript",
+			"eng": "Via JavaScript"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "Проблема доступности",
+			"eng": "Accessibility issue"
+		},{
+			"rus": "Анимация переходов не поддерживается в Internet Explorer 8 и 9",
+			"eng": "Transition animations not supported in Internet Explorer 8 &amp; 9"
+		},{
+			"rus": "Initial active element required",
+			"eng": "Initial active element required"
+		},{
+			"rus": ".carousel(параметры)",
+			"eng": ".carousel(options)"
+		},{
+			"rus": ".carousel('cycle')",
+			"eng": ".carousel('cycle')"
+		},{
+			"rus": ".carousel('pause')",
+			"eng": ".carousel('pause')"
+		},{
+			"rus": ".carousel(число)",
+			"eng": ".carousel(number)"
+		},{
+			"rus": ".carousel('prev')",
+			"eng": ".carousel('prev')"
+		},{
+			"rus": ".carousel('next')",
+			"eng": ".carousel('next')"
+		}
+	],
+	"p": [
+		{
+			"rus": "A slideshow component for cycling through elements, like a carousel. <strong>Nested carousels are not supported.<\/strong>",
+			"eng": "A slideshow component for cycling through elements, like a carousel. <strong>Nested carousels are not supported.<\/strong>"
+		},{
+			"rus": "Компонент карусели в основном не совместим со стандартами доступности. Если вам нужна совместимость, рассмотрите пожалуйста другие параметры для презентации вашего содержания.",
+			"eng": "The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content."
+		},{
+			"rus": "Bootstrap для этой анимации использует исключительно CSS3, но Internet Explorer 8 и 9 не поддерживают необходимых свойств CSS. Таким образом, в этих браузерах нет плавных переходов и анимации. Мы сознательно решили не включать основанных на jQuery fallbacks для переходов.",
+			"eng": "Bootstrap exclusively uses CSS3 for its animations, but Internet Explorer 8 &amp; 9 don't support the necessary CSS properties. Thus, there are no slide transition animations when using these browsers. We have intentionally decided not to include jQuery-based fallbacks for the transitions."
+		},{
+			"rus": "The <code>.active<\/code> class needs to be added to one of the slides. Otherwise, the carousel will not be visible.",
+			"eng": "The <code>.active<\/code> class needs to be added to one of the slides. Otherwise, the carousel will not be visible."
+		},{
+			"rus": "Добавлять подпись в ваших слайдов становится легким делом благодаря элементу <code>.carousel-caption<\/code> внутри любых <code>.item<\/code>. Это место почти для любого дополнительного HTML, причем содержимое будет автоматически выровнен и форматовано.",
+			"eng": "Add captions to your slides easily with the <code>.carousel-caption<\/code> element within any <code>.item<\/code>. Place just about any optional HTML within there and it will be automatically aligned and formatted."
+		},{
+			"rus": "Здесь произвольный текст. Nulla vitae elit libero, a pharetra augue mollis interdum.",
+			"eng": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+		},{
+			"rus": "Здесь произвольный текст. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			"eng": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},{
+			"rus": "Здесь произвольный текст. Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+			"eng": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+		},{
+			"rus": "Карусели требуют использования <code>id<\/code> на самой внешнем контейнере, <code>.carousel<\/code>, для ее управления, и функционости. При добавлении нескольких каруселей, или при изменении карусели <code>id<\/code>, не забудьте обновить соответствующие элементы управления.",
+			"eng": "Carousels require the use of an <code>id<\/code> on the outermost container (the <code>.carousel<\/code>) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's <code>id<\/code>, be sure to update the relevant controls."
+		},{
+			"rus": "Используйте атрибуты данных, чтобы легко контролировать позиционирование карусели. <code>data-slide<\/code> принимает ключевые слова <code>prev<\/code> или <code>next<\/code>, которые меняют позицию слайда относительно его текущей позиции. Также вы можете использовать <code>data-slide-to<\/code> для передачи исходного индекса слайда для карусели <code>data-slide-to=\"2\"<\/code>, который смещает позицию слайда до определенного индекса начиная от <code>0<\/code>.",
+			"eng": "Use data attributes to easily control the position of the carousel. <code>data-slide<\/code> accepts the keywords <code>prev<\/code> or <code>next<\/code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to<\/code> to pass a raw slide index to the carousel <code>data-slide-to=\"2\"<\/code>, which shifts the slide position to a particular index beginning with <code>0<\/code>."
+		},{
+			"rus": "The <code>data-ride=\"carousel\"<\/code> attribute is used to mark a carousel as animating starting at page load. <strong class=\"text-danger\">It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.<\/strong>",
+			"eng": "The <code>data-ride=\"carousel\"<\/code> attribute is used to mark a carousel as animating starting at page load. <strong class=\"text-danger\">It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.<\/strong>"
+		},{
+			"rus": "Вызывайте карусель вручную с:",
+			"eng": "Call carousel manually with:"
+		},{
+			"rus": "параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку с названием параметра <code>data<\/code>, как в примере: <code>data-interval=\"\"<\/code>.",
+			"eng": "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-<\/code>, as in <code>data-interval=\"\"<\/code>."
+		},{
+			"rus": "Инициализирует карусель с необязательным параметром типа <code>объект<\/code>, и начинает цикл прокруток элементов.",
+			"eng": "Initializes the carousel with an optional options <code>object<\/code> and starts cycling through items."
+		},{
+			"rus": "Прокрутки элементов карусели слева на право.",
+			"eng": "Cycles through the carousel items from left to right."
+		},{
+			"rus": "Прекращения прокрутки элементов карусели.",
+			"eng": "Stops the carousel from cycling through items."
+		},{
+			"rus": "Прокрутки карусели до определенного кадра (начиная с 0, подобно массиву).",
+			"eng": "Cycles the carousel to a particular frame (0 based, similar to an array)."
+		},{
+			"rus": "Перейти к предыдущему элементу.",
+			"eng": "Cycles to the previous item."
+		},{
+			"rus": "Перейти к следующему элементу.",
+			"eng": "Cycles to the next item."
+		},{
+			"rus": "Предоставленный Bootstrap класс карусели представляет два события для включения функциональности карусели.",
+			"eng": "Bootstrap's carousel class exposes two events for hooking into carousel functionality."
+		},{
+			"rus": "Оба события имеют следующие дополнительные свойства:",
+			"eng": "Both events have the following additional properties:"
+		}
+	],
+	"li": [
+		{
+			"rus": "<code>direction<\/code>: Направление, в котором движится карусель (или <code>\"left\"<\/code> или <code>\"right\"<\/code>).",
+			"eng": "<code>direction<\/code>: The direction in which the carousel is sliding (either <code>\"left\"<\/code> or <code>\"right\"<\/code>)."
+		},{
+			"rus": "<code>relatedTarget<\/code>: Элемент DOM, что в настоящее время встал на место в качестве активного элемента.",
+			"eng": "<code>relatedTarget<\/code>: The DOM element that is being slid into place as the active item."
+		}
+	],
+	"th": [
+		{
+			"rus": "Название",
+			"eng": "Name"
+		},{
+			"rus": "Тип",
+			"eng": "type"
+		},{
+			"rus": "По умолчанию",
+			"eng": "default"
+		},{
+			"rus": "Описание",
+			"eng": "description"
+		},{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "interval",
+			"eng": "interval"
+		},{
+			"rus": "числовой",
+			"eng": "number"
+		},{
+			"rus": "Количество миллисекунд для задержки между автоматическим зацикливанием элементов. Если в качестве параметра передается false, карусель не будет автоматически зацикливаться.",
+			"eng": "The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle."
+		},{
+			"rus": "pause",
+			"eng": "pause"
+		},{
+			"rus": "строковый",
+			"eng": "string"
+		},{
+			"rus": "\"hover\"",
+			"eng": "\"hover\""
+		},{
+			"rus": "Пауза в прокрутке карусели при наведении курсора (mouseenter) и продолжения прокрутки, когда курсор мыши забирают (mouseleave) с карусели.",
+			"eng": "Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave."
+		},{
+			"rus": "wrap",
+			"eng": "wrap"
+		},{
+			"rus": "логический",
+			"eng": "boolean"
+		},{
+			"rus": "true",
+			"eng": "true"
+		},{
+			"rus": "Должна карусель зациклено прокручиваться, должна жестко остановиться.",
+			"eng": "Whether the carousel should cycle continuously or have hard stops."
+		},{
+			"rus": "keyboard",
+			"eng": "keyboard"
+		},{
+			"rus": "Whether the carousel should react to keyboard events.",
+			"eng": "Whether the carousel should react to keyboard events."
+		},{
+			"rus": "slide.bs.carousel",
+			"eng": "slide.bs.carousel"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>slide<\/code>.",
+			"eng": "This event fires immediately when the <code>slide<\/code> instance method is invoked."
+		},{
+			"rus": "slid.bs.carousel",
+			"eng": "slid.bs.carousel"
+		},{
+			"rus": "Это событие срабатывает, когда карусель завершит переход к слайду.",
+			"eng": "This event is fired when the carousel has completed its slide transition."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- Показатели -->",
+			"eng": "<!-- Indicators -->"
+		},{
+			"rus": "<!-- Обертка для слайдов -->",
+			"eng": "<!-- Wrapper for slides -->"
+		},{
+			"rus": "<!-- Элементы управления -->",
+			"eng": "<!-- Controls -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

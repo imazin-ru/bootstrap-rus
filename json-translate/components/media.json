@@ -1,0 +1,77 @@
+{
+	"h": [
+		{
+			"rus": "Медиа объект",
+			"eng": "Media object"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default media"
+		},{
+			"rus": "Media alignment",
+			"eng": "Media alignment"
+		},{
+			"rus": "Список медиа",
+			"eng": "Media list"
+		},{
+			"rus": "Заголовок медиа",
+			"eng": "Media heading"
+		},{
+			"rus": "Вложенный заголовок медиа",
+			"eng": "Nested media heading"
+		},{
+			"rus": "Top aligned media",
+			"eng": "Top aligned media"
+		},{
+			"rus": "Middle aligned media",
+			"eng": "Middle aligned media"
+		},{
+			"rus": "Bottom aligned media",
+			"eng": "Bottom aligned media"
+		}
+	],
+	"p": [
+		{
+			"rus": "Стилизация абстрактного объекта, для создания различных типов компонентов (таких как комментарии для блога, твиттера, и т.д.), которые со своим изображением выровнены по левому или по правому краю рядом с текстовым содержанием.",
+			"eng": "Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content."
+		},{
+			"rus": "По умолчанию, медиа-объекты (изображения, видео, аудио) можно выравнивать по левому или по правому краю блока контента.",
+			"eng": "The default media displays a media object (images, video, audio) to the left or right of a content block."
+		},{
+			"rus": "The classes <code>.pull-left<\/code> and <code>.pull-right<\/code> also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to <code>.media-left<\/code> and <code>.media-right<\/code>, except that <code>.media-right<\/code> should be placed after the <code>.media-body<\/code> in the html.",
+			"eng": "The classes <code>.pull-left<\/code> and <code>.pull-right<\/code> also exist and were previously used as part of the media component, but are deprecated for that use as of v3.3.0. They are approximately equivalent to <code>.media-left<\/code> and <code>.media-right<\/code>, except that <code>.media-right<\/code> should be placed after the <code>.media-body<\/code> in the html."
+		},{
+			"rus": "The images or other media can be aligned top, middle, or bottom. The default is top aligned.",
+			"eng": "The images or other media can be aligned top, middle, or bottom. The default is top aligned."
+		},{
+			"rus": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.",
+			"eng": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+		},{
+			"rus": "Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+			"eng": "Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+		},{
+			"rus": "Добавив немного разметки, вы можете использовать медиа в середине списков (полезно для ряда комментариев или списка статей).",
+			"eng": "With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists)."
+		},{
+			"rus": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.",
+			"eng": "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis."
+		}
+	],
+	"li": [
+		{
+			"rus": "\n        <div class=\"media-left\">\n          <a href=\"#\">\n            <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n          <\/a>\n        <\/div>\n        <div class=\"media-body\">\n          <h4 class=\"media-heading\">Заголовок медиа<\/h4>\n          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.<\/p>\n          <!-- Nested media object -->\n          <div class=\"media\">\n            <div class=\"media-left\">\n              <a href=\"#\">\n                <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n              <\/a>\n            <\/div>\n            <div class=\"media-body\">\n              <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n              <!-- Nested media object -->\n              <div class=\"media\">\n                <div class=\"media-left\">\n                  <a href=\"#\">\n                    <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n                  <\/a>\n                <\/div>\n                <div class=\"media-body\">\n                  <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n                <\/div>\n              <\/div>\n            <\/div>\n          <\/div>\n          <!-- Nested media object -->\n          <div class=\"media\">\n            <div class=\"media-left\">\n              <a href=\"#\">\n                <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n              <\/a>\n            <\/div>\n            <div class=\"media-body\">\n              <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n            <\/div>\n          <\/div>\n        <\/div>\n      ",
+			"eng": "\n        <div class=\"media-left\">\n          <a href=\"#\">\n            <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n          <\/a>\n        <\/div>\n        <div class=\"media-body\">\n          <h4 class=\"media-heading\">Заголовок медиа<\/h4>\n          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.<\/p>\n          <!-- Nested media object -->\n          <div class=\"media\">\n            <div class=\"media-left\">\n              <a href=\"#\">\n                <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n              <\/a>\n            <\/div>\n            <div class=\"media-body\">\n              <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n              <!-- Nested media object -->\n              <div class=\"media\">\n                <div class=\"media-left\">\n                  <a href=\"#\">\n                    <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n                  <\/a>\n                <\/div>\n                <div class=\"media-body\">\n                  <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n                <\/div>\n              <\/div>\n            <\/div>\n          <\/div>\n          <!-- Nested media object -->\n          <div class=\"media\">\n            <div class=\"media-left\">\n              <a href=\"#\">\n                <img class=\"media-object\" data-src=\"holder.js\/64x64\" alt=\"Generic placeholder image\">\n              <\/a>\n            <\/div>\n            <div class=\"media-body\">\n              <h4 class=\"media-heading\">Вложенный заголовок медиа<\/h4>\n              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.\n            <\/div>\n          <\/div>\n        <\/div>\n      "
+		},{
+			"rus": "\n    <div class=\"media-left\">\n      <a href=\"#\">\n        <img class=\"media-object\" src=\"...\" alt=\"...\">\n      <\/a>\n    <\/div>\n    <div class=\"media-body\">\n      <h4 class=\"media-heading\">Заголовок медиа<\/h4>\n      ...\n    <\/div>\n  ",
+			"eng": "\n    <div class=\"media-left\">\n      <a href=\"#\">\n        <img class=\"media-object\" src=\"...\" alt=\"...\">\n      <\/a>\n    <\/div>\n    <div class=\"media-body\">\n      <h4 class=\"media-heading\">Заголовок медиа<\/h4>\n      ...\n    <\/div>\n  "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/.bs-example -->",
+			"eng": "<!-- \/.bs-example -->"
+		},{
+			"rus": "<!-- Вложенный медиа объект -->",
+			"eng": "<!-- Nested media object -->"
+		}
+	]
+}

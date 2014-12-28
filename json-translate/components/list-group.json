@@ -1,0 +1,86 @@
+{
+	"h": [
+		{
+			"rus": "Список групп",
+			"eng": "List group"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Значки",
+			"eng": "Badges"
+		},{
+			"rus": "Связанные элементы",
+			"eng": "Linked items"
+		},{
+			"rus": "Неактивные пункты",
+			"eng": "Disabled items"
+		},{
+			"rus": "Контекстные классы",
+			"eng": "Contextual classes"
+		},{
+			"rus": "Настраиваемое содержимое",
+			"eng": "Custom content"
+		},{
+			"rus": "Заголовок пункта списка группы",
+			"eng": "List group item heading"
+		}
+	],
+	"p": [
+		{
+			"rus": "Список групп является гибким и мощным компонентом для отображения не только простых пунктов списка, но и для чего-то более сложного, что касается пользовательского содержимого.",
+			"eng": "List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content."
+		},{
+			"rus": "Самым базовым является простой список группы с ненумерованими пунктами, и собственными классами. Добавляйте к нему опции, как показано ниже, или при необходимости добавляйте собственные стили CSS.",
+			"eng": "The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed."
+		},{
+			"rus": "Добавьте компоненты значков до любого пункта списка групп, и они автоматически будут позиционированы по правому краю.",
+			"eng": "Add the badges component to any list group item and it will automatically be positioned on the right."
+		},{
+			"rus": "Ссылочные пункты списков групп создаются с помощью тегов <code>&lt;a&gt;<\/code> вместо пунктов списка (здесь также используется в качестве родительского элемента <code>&lt;div&gt;<\/code> вместо <code>&lt;ul&gt;<\/code>). Не нужно дополнительно обертывать каждый пункт родительским элементом.",
+			"eng": "Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;<\/code> instead of an <code>&lt;ul&gt;<\/code>). No need for individual parents around each element."
+		},{
+			"rus": "Добавьте <code>.disabled<\/code> к <code>.list-group-item<\/code> для серого оттенка сделав неактивным.",
+			"eng": "Add <code>.disabled<\/code> to a <code>.list-group-item<\/code> to gray it out to appear disabled."
+		},{
+			"rus": "Используйте контекстные классы для стилизации элементов списка, по умолчанию или связанно. Также включают в себя состояние <code>.active<\/code>.",
+			"eng": "Use contextual classes to style list items, default or linked. Also includes <code>.active<\/code> state."
+		},{
+			"rus": "Добавляйте практически любой HTML, даже для связанного списка групп, как показано ниже.",
+			"eng": "Add nearly any HTML within, even for linked list groups like the one below."
+		},{
+			"rus": "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.",
+			"eng": "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit."
+		}
+	],
+	"li": [
+		{
+			"rus": "Cras justo odio",
+			"eng": "Cras justo odio"
+		},{
+			"rus": "Dapibus ac facilisis in",
+			"eng": "Dapibus ac facilisis in"
+		},{
+			"rus": "Morbi leo risus",
+			"eng": "Morbi leo risus"
+		},{
+			"rus": "Porta ac consectetur ac",
+			"eng": "Porta ac consectetur ac"
+		},{
+			"rus": "Vestibulum at eros",
+			"eng": "Vestibulum at eros"
+		},{
+			"rus": "\n        <span class=\"badge\">14<\/span>\n        Cras justo odio\n      ",
+			"eng": "\n        <span class=\"badge\">14<\/span>\n        Cras justo odio\n      "
+		},{
+			"rus": "\n        <span class=\"badge\">2<\/span>\n        Dapibus ac facilisis in\n      ",
+			"eng": "\n        <span class=\"badge\">2<\/span>\n        Dapibus ac facilisis in\n      "
+		},{
+			"rus": "\n        <span class=\"badge\">1<\/span>\n        Morbi leo risus\n      ",
+			"eng": "\n        <span class=\"badge\">1<\/span>\n        Morbi leo risus\n      "
+		},{
+			"rus": "Cras sit amet nibh libero",
+			"eng": "Cras sit amet nibh libero"
+		}
+	]
+}

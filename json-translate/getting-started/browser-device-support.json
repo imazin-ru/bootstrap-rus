@@ -1,0 +1,260 @@
+{
+	"h": [
+		{
+			"rus": "Браузер и поддержка устройств",
+			"eng": "Browser and device support"
+		},{
+			"rus": "Поддержка браузерами",
+			"eng": "Supported browsers"
+		},{
+			"rus": "Internet Explorer 8 и 9",
+			"eng": "Internet Explorer 8 and 9"
+		},{
+			"rus": "Internet Explorer 8 и Respond.js",
+			"eng": "Internet Explorer 8 and Respond.js"
+		},{
+			"rus": "Internet Explorer 8 и box-sizing",
+			"eng": "Internet Explorer 8 and box-sizing"
+		},{
+			"rus": "Internet Explorer 8 и @font-face",
+			"eng": "Internet Explorer 8 and @font-face"
+		},{
+			"rus": "Режим совместимости с IE",
+			"eng": "IE Compatibility modes"
+		},{
+			"rus": "Internet Explorer 10 на Windows 8 и Windows Phone 8",
+			"eng": "Internet Explorer 10 in Windows 8 and Windows Phone 8"
+		},{
+			"rus": "Процентное округления в Safari",
+			"eng": "Safari percent rounding"
+		},{
+			"rus": "Модули, navbars, и виртуальные клавиатуры",
+			"eng": "Modals, navbars, and virtual keyboards"
+		},{
+			"rus": "Браузерное масштабирование",
+			"eng": "Browser zooming"
+		},{
+			"rus": "Печать",
+			"eng": "Printing"
+		},{
+			"rus": "Android stock браузер",
+			"eng": "Android stock browser"
+		},{
+			"rus": "Валидаторы",
+			"eng": "Validators"
+		},{
+			"rus": "Respond.js и кросс-доменный CSS",
+			"eng": "Respond.js and cross-domain CSS"
+		},{
+			"rus": "Respond.js и <code>file:\/\/<\/code>",
+			"eng": "Respond.js and <code>file:\/\/<\/code>"
+		},{
+			"rus": "Respond.js и <code>@import<\/code>",
+			"eng": "Respond.js and <code>@import<\/code>"
+		},{
+			"rus": "Переполнение и прокрутка",
+			"eng": "Overflow and scrolling"
+		},{
+			"rus": "Виртуальная клавиатура",
+			"eng": "Virtual keyboards"
+		},{
+			"rus": "Navbar Dropdowns",
+			"eng": "Navbar Dropdowns"
+		},{
+			"rus": "Select меню",
+			"eng": "Select menus"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap спроектирован для лучшей работы в новых браузерах, то есть старые браузеры не всегда могут правильно отображать стили, хотя полностью функциональны в визуализации определенных компонентов",
+			"eng": "Bootstrap is built to work best in the latest desktop and mobile browsers, meaning older browsers might display differently styled, though fully functional, renderings of certain components."
+		},{
+			"rus": "В частности, мы поддерживаем <strong>последние версии<\/strong> из следующих браузеров и платформ. На Windows, <strong>мы поддерживаем Internet Explorer 8-11<\/strong>. Более конкретная информация поддержки предоставлена ниже.",
+			"eng": "Specifically, we support the <strong>latest versions<\/strong> of the following browsers and platforms. On Windows, <strong>we support Internet Explorer 8-11<\/strong>. More specific support information is provided below."
+		},{
+			"rus": "Bootstrap должен достаточно хорошо выглядеть и вести себя в Chromium и Chrome для Linux, Firefox для Linux, и Internet Explorer 7, хотя они официально не поддерживаются.",
+			"eng": "Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 7, though they are not officially supported."
+		},{
+			"rus": "Список некоторых ошибок в брузере, с чем Bootstrap может столкнуться, смотрите наш <a href=\"..\/browser-bugs\/\">Баги в браузере<\/a>.",
+			"eng": "For a list of some of the browser bugs that Bootstrap has to grapple with, see our <a href=\"..\/browser-bugs\/\">Wall of browser bugs<\/a>."
+		},{
+			"rus": "Internet Explorer 8 и 9 также поддерживается, однако помните, что некоторые свойства CSS3 и элементы HTML5 не в полной мере поддерживаются данным браузерами. Кроме того, <strong>Internet Explorer 8 требует использования <a href=\"https:\/\/github.com\/scottjehl\/Main\" target=\"_blank\">Respond.js<\/a>, чтобы разрешить поддержку медиа запросов.<\/strong>",
+			"eng": "Internet Explorer 8 and 9 are also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported by these browsers. In addition, <strong>Internet Explorer 8 requires the use of <a href=\"https:\/\/github.com\/scottjehl\/Respond\">Respond.js<\/a> to enable media query support.<\/strong>"
+		},{
+			"rus": "Посетите <a href=\"http:\/\/caniuse.com\/\" target=\"_blank\">Can I use...<\/a> для более детального ознакомления, какие свойства CSS3 и HTML5 поддерживаются различными браузерами.",
+			"eng": "Visit <a href=\"http:\/\/caniuse.com\/\">Can I use...<\/a> for details on browser support of CSS3 and HTML5 features."
+		},{
+			"rus": "Примите во внимание следующие оговорки, при использовании Respond.js в вашей среде разработки, в рабочей среде Internet Explorer 8.",
+			"eng": "Beware of the following caveats when using Respond.js in your development and production environments for Internet Explorer 8."
+		},{
+			"rus": "Если вы храните Respond.js и CSS на разных (суб)доменах (например, на CDN) - это требует некоторых дополнительных установок. <a href=\"https:\/\/github.com\/scottjehl\/Respond#cdnx-domain-setup\" target=\"_blank\">Ознакомьтесь с документацией Respond.js<\/a> для уточнений.",
+			"eng": "Using Respond.js with CSS hosted on a different (sub)domain (for example, on a CDN) requires some additional setup. <a href=\"https:\/\/github.com\/scottjehl\/Respond\/blob\/master\/README.md#cdnx-domain-setup\">See the Respond.js docs<\/a> for details."
+		},{
+			"rus": "Через правила безопасности браузера, Respond.js не работает при просмотре через протокол <code>file:\/\/<\/code> (например, когда вы открываете HTML файл локально). Чтобы протестировать настройки чувствительности в IE8, просматривайте ваши страницы через HTTP(S). <a href=\"https:\/\/github.com\/scottjehl\/Respond#support--caveats\" target=\"_blank\">Ознакомьтесь с документацией Respond.js<\/a> для уточнений.",
+			"eng": "Due to browser security rules, Respond.js doesn't work with pages viewed via the <code>file:\/\/<\/code> protocol (like when opening a local HTML file). To test responsive features in IE8, view your pages over HTTP(S). <a href=\"https:\/\/github.com\/scottjehl\/Respond\/blob\/master\/README.md#support--caveats\">See the Respond.js docs<\/a> for details."
+		},{
+			"rus": "Respond.js не работает с CSS, на которые ссылаются как <code>@import<\/code>. В частности, некоторые конфигурации Drupal, как известно, используют <code>@import<\/code>. <a href=\"https:\/\/github.com\/scottjehl\/Respond#support--caveats\" target=\"_blank\">Ознакомьтесь с документацией Respond.js<\/a> для уточнений.",
+			"eng": "Respond.js doesn't work with CSS that's referenced via <code>@import<\/code>. In particular, some Drupal configurations are known to use <code>@import<\/code>. <a href=\"https:\/\/github.com\/scottjehl\/Respond\/blob\/master\/README.md#support--caveats\">See the Respond.js docs<\/a> for details."
+		},{
+			"rus": "IE8 не в полной мере поддерживает <code>box-sizing: border-box;<\/code> при комбинировании с <code>min-width<\/code>, <code>max-width<\/code>, <code>min-height<\/code>или <code>max-height<\/code>. По этой причине, начиная с v3.0.1, мы больше не поддерживаем <code>max-width<\/code>, <code>.container<\/code>.",
+			"eng": "IE8 does not fully support <code>box-sizing: border-box;<\/code> when combined with <code>min-width<\/code>, <code>max-width<\/code>, <code>min-height<\/code>, or <code>max-height<\/code>. For that reason, as of v3.0.1, we no longer use <code>max-width<\/code> on <code>.container<\/code>s."
+		},{
+			"rus": "IE8 имеет некоторые проблемы с <code>@font-face<\/code> в сочетании с <code>:before<\/code>. Bootstrap использует эту комбинацию с его символичной иконкой. Если страница кэшируется, и загружается без мыши по окну (т.е. нажать кнопку обновления или загрузки в встроенном кадре), то страница вынесена до загрузки шрифтов. При наведении курсора на страницу (тело) покажет некоторые значки и зависший над остальными иконами покажет также. <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/13863\">Смотреть выпуск #13863<\/a> для деталей.",
+			"eng": "IE8 has some issues with <code>@font-face<\/code> when combined with <code>:before<\/code>. Bootstrap uses that combination with its Glyphicons. If a page is cached, and loaded without the mouse over the window (i.e. hit the refresh button or load something in an iframe) then the page gets rendered before the font loads. Hovering over the page (body) will show some of the icons and hovering over the remaining icons will show those as well. <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/13863\">See issue #13863<\/a> for details."
+		},{
+			"rus": "Bootstrap не поддерживает режим совместимости в старых версиях Internet Explorer. Чтобы быть уверенным, что вы используете последнюю версию такого режима для IE, просмотрите включен соответствующий тег <code>&lt;meta&gt;<\/code> на вашей странице:",
+			"eng": "Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you're using the latest rendering mode for IE, consider including the appropriate <code>&lt;meta&gt;<\/code> tag in your pages:"
+		},{
+			"rus": "Подтвердите режим документа, открыв средства отладки: нажмите <kbd>F12<\/kbd> и проверьте \"Document Mode\".",
+			"eng": "Confirm the document mode by opening the debugging tools: press <kbd>F12<\/kbd> and check the \"Document Mode\"."
+		},{
+			"rus": "Этот тег входит в состав всех Bootstrap документациий и примеров для обеспечения лучшей визуализации возможных в каждой поддерживаемой версии Internet Explorer.",
+			"eng": "This tag is included in all of Bootstrap's documentation and examples to ensure the best rendering possible in each supported version of Internet Explorer."
+		},{
+			"rus": "Просмотрите <a href=\"http:\/\/stackoverflow.com\/questions\/6771258\/whats the difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge\" target=\"_blank\">эти вопросы на StackOverflow<\/a> для уточнений.",
+			"eng": "See <a href=\"http:\/\/stackoverflow.com\/questions\/6771258\/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge\">this StackOverflow question<\/a> for more information."
+		},{
+			"rus": "Internet Explorer 10 не отличает <strong>ширину устройства<\/strong> <strong>ширины окна просмотра<\/strong>, и таким образом не правильно применяет мед\u0456азапити в Bootstrap CSS. Как правило, это можно быстро починить добавив следующий код CSS:",
+			"eng": "Internet Explorer 10 doesn't differentiate <strong>device width<\/strong> from <strong>viewport width<\/strong>, and thus doesn't properly apply the media queries in Bootstrap's CSS. Normally you'd just add a quick snippet of CSS to fix this:"
+		},{
+			"rus": "Однако, это не работает для устройств, работающих под управлением Windows Phone 8 версий старше, чем <a href=\"http:\/\/blogs.windows.com\/windows_phone\/b\/wpdev\/archive\/2013\/10\/14\/introducing-windows-phone-preview-for-developers.aspx\">Update 3 (a.k.a. GDR3)<\/a>, поскольку это вызывает такие устройства, чтобы главным образом показать основной рабочий стол вместо узкого \"phone\" view. Для решения этой проблемы вам необходимо <strong> включать следующие CSS и JavaScript, чтобы обойти ошибку<\/strong>.",
+			"eng": "However, this doesn't work for devices running Windows Phone 8 versions older than <a href=\"http:\/\/blogs.windows.com\/windows_phone\/b\/wpdev\/archive\/2013\/10\/14\/introducing-windows-phone-preview-for-developers.aspx\">Update 3 (a.k.a. GDR3)<\/a>, as it causes such devices to show a mostly desktop view instead of narrow \"phone\" view. To address this, you'll need to <strong>include the following CSS and JavaScript to work around the bug<\/strong>."
+		},{
+			"rus": "Для получения дополнительной информации и руководства по использованию, просмотрите <a href=\"http:\/\/timkadlec.com\/2013\/01\/windows phone-8-and-device-width\/\" target=\"_blank\">Windows Phone 8 и Device-Width<\/a>.",
+			"eng": "For more information and usage guidelines, read <a href=\"http:\/\/timkadlec.com\/2013\/01\/windows-phone-8-and-device-width\/\">Windows Phone 8 and Device-Width<\/a>."
+		},{
+			"rus": "Один за одним, мы включаем это в документацию и примеры Bootstrap в качестве демонстрации.",
+			"eng": "As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration."
+		},{
+			"rus": "The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our <code>.col-*-1<\/code> grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari\/iOS, you have some options for workarounds:",
+			"eng": "The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our <code>.col-*-1<\/code> grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari\/iOS, you have some options for workarounds:"
+		},{
+			"rus": "Поддержка <code>overflow: hidden<\/code> для элемента <code>&lt;body&gt;<\/code> достаточно ограничена в iOS и Android. В браузере этих устройств, при прокрутк\u0456 за пределы верхней или нижней модальной части, начинает прокручиваться содержание в <code>&lt;body&gt;<\/code>.",
+			"eng": "Support for <code>overflow: hidden<\/code> on the <code>&lt;body&gt;<\/code> element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the <code>&lt;body&gt;<\/code> content will begin to scroll."
+		},{
+			"rus": "Обратите внимание - если вы используете форму ввода в модальном окне или навигации, iOS имеет ошибку отображения, через которую не обновляется позиция фиксированных элементов при вызова виртуальной клавиатуры. Существуют некоторые обходные пути для этого, в том числе - трансформирующие элементы <code>position: absolute<\/code>, или при выявлении фокуса на элементе вызывают таймер и пробуют исправить это вручную. Bootstrap не обрабатывает такие ошибки, так что вам нужно самим это решить.",
+			"eng": "Also, note that if you're using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to <code>position: absolute<\/code> or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application."
+		},{
+			"rus": "Элемент <code>.dropdown-backdrop<\/code> не используется на iOS в навигации из-за сложности с z-index. Таким образом, чтобы закрыть выпадающие меню, необходимо просто нажать элемент выпадающего (или <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/Events\/click#Safari_Mobile\">любой другой элемент, который будет генерировать событие нажатия в iOS<\/a>).",
+			"eng": "The <code>.dropdown-backdrop<\/code> element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/Events\/click#Safari_Mobile\">any other element which will fire a click event in iOS<\/a>)."
+		},{
+			"rus": "При изменении размера страницы, неизбежно оказывается некорректное отображение некоторых элементов: это касается и Bootstrap, и остальных веб-документа. В зависимости от конкретного случая, мы можем исправить это (при необходимости вы можете открыть соответствующий запрос, но сначала необходимо поискать или нет аналогичных запросов). Тем не менее, но как правило мы игнорируем их, поскольку они часто не имеют прямого решения, кроме создания обходных путей в виде хаков (hacky).",
+			"eng": "Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds."
+		},{
+			"rus": "Even in some modern browsers, printing can be quirky.",
+			"eng": "Even in some modern browsers, printing can be quirky."
+		},{
+			"rus": "In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/12078\">See #12078 for some details.<\/a> Suggested workarounds:",
+			"eng": "In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/12078\">See #12078 for some details.<\/a> Suggested workarounds:"
+		},{
+			"rus": "Also, as of Safari v8.0, fixed-width <code>.container<\/code>s can cause Safari to use an unusually small font size when printing. See <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/14868\">#14868<\/a> for more details. One potential workaround for this is adding the following CSS:",
+			"eng": "Also, as of Safari v8.0, fixed-width <code>.container<\/code>s can cause Safari to use an unusually small font size when printing. See <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/14868\">#14868<\/a> for more details. One potential workaround for this is adding the following CSS:"
+		},{
+			"rus": "Из коробки, Android 4.1 (и даже некоторые новые релизы по-видимому) ставит с браузера приложение, как в веб-браузере по умолчанию(в отличие от Chrome). К сожалению, браузер приложение имеет множество ошибок и несоответствий с CSS в целом.",
+			"eng": "Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general."
+		},{
+			"rus": "На <code>&lt;select&gt;<\/code> элементе, в Android браузере не будет отображаться элементы управления если есть <code>border-radius<\/code> и\/or <code>border<\/code>. (Смотри <a href=\"http:\/\/stackoverflow.com\/questions\/14744437\/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with\">этот вопрос по StackOverflow<\/a> более детально.) Используйте фрагмент кода ниже, чтобы удалить этот CSS и сделать <code>&lt;select&gt;<\/code> элемент без стиля на Android браузере. Агент пользователя фырканье предотвращает помехи с Chrome, Safari, and Mozilla браузерами.",
+			"eng": "On <code>&lt;select&gt;<\/code> elements, the Android stock browser will not display the side controls if there is a <code>border-radius<\/code> and\/or <code>border<\/code> applied. (See <a href=\"http:\/\/stackoverflow.com\/questions\/14744437\/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with\">this StackOverflow question<\/a> for details.) Use the snippet of code below to remove the offending CSS and render the <code>&lt;select&gt;<\/code> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers."
+		},{
+			"rus": "Хотите увидеть пример? <a href=\"http:\/\/jsbin.com\/kuvoz\/1\">Проверьте это JS Bin demo.<\/a>",
+			"eng": "Want to see an example? <a href=\"http:\/\/jsbin.com\/kuvoz\/1\">Check out this JS Bin demo.<\/a>"
+		},{
+			"rus": "In order to provide the best possible experience to old and buggy browsers, Bootstrap uses <a href=\"http:\/\/browserhacks.com\">CSS browser hacks<\/a> in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.",
+			"eng": "In order to provide the best possible experience to old and buggy browsers, Bootstrap uses <a href=\"http:\/\/browserhacks.com\">CSS browser hacks<\/a> in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement."
+		},{
+			"rus": "These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.",
+			"eng": "These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings."
+		},{
+			"rus": "Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=654072\">a certain Firefox bug<\/a>.",
+			"eng": "Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=654072\">a certain Firefox bug<\/a>."
+		}
+	],
+	"li": [
+		{
+			"rus": "Добавить <code>.pull-right<\/code> в вашей последней колонки в разметке, чтобы получить жесткое выравнивание по правому краю.",
+			"eng": "Add <code>.pull-right<\/code> to your last grid column to get the hard-right alignment"
+		},{
+			"rus": "Изменить проценты вручную, чтобы получить идеальное округления для Safari (более сложно, чем в первом варианте)",
+			"eng": "Tweak your percentages manually to get the perfect rounding for Safari (more difficult than the first option)"
+		},{
+			"rus": "Примените extra-small разметку и убедитесь, что ваша страница выглядит приемлемо.",
+			"eng": "Embrace the extra-small grid and make sure your page looks acceptable under it."
+		},{
+			"rus": "Настройка значения <code>@screen-*<\/code> Less переменных, чтобы ваш бумага для принтера рассматривалась больше, чем extra-small.",
+			"eng": "Customize the values of the <code>@screen-*<\/code> Less variables so that your printer paper is considered larger than extra-small."
+		},{
+			"rus": "Добавте пользовательские запросы, чтобы изменить размер разметки точек останова только для печатных СМИ.",
+			"eng": "Add custom media queries to change the grid size breakpoints for print media only."
+		}
+	],
+	"th": [
+		{
+			"rus": "Chrome",
+			"eng": "Chrome"
+		},{
+			"rus": "Firefox",
+			"eng": "Firefox"
+		},{
+			"rus": "Internet Explorer",
+			"eng": "Internet Explorer"
+		},{
+			"rus": "Opera",
+			"eng": "Opera"
+		},{
+			"rus": "Safari",
+			"eng": "Safari"
+		},{
+			"rus": "Android",
+			"eng": "Android"
+		},{
+			"rus": "iOS",
+			"eng": "iOS"
+		},{
+			"rus": "Mac OS X",
+			"eng": "Mac OS X"
+		},{
+			"rus": "Windows",
+			"eng": "Windows"
+		},{
+			"rus": "Свойство",
+			"eng": "Feature"
+		},{
+			"rus": "Internet Explorer 8",
+			"eng": "Internet Explorer 8"
+		},{
+			"rus": "Internet Explorer 9",
+			"eng": "Internet Explorer 9"
+		},{
+			"rus": "<code>border-radius<\/code>",
+			"eng": "<code>border-radius<\/code>"
+		},{
+			"rus": "<code>box-shadow<\/code>",
+			"eng": "<code>box-shadow<\/code>"
+		},{
+			"rus": "<code>transform<\/code>",
+			"eng": "<code>transform<\/code>"
+		},{
+			"rus": "<code>transition<\/code>",
+			"eng": "<code>transition<\/code>"
+		},{
+			"rus": "<code>placeholder<\/code>",
+			"eng": "<code>placeholder<\/code>"
+		}
+	],
+	"td": [
+		{
+			"rus": "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"><\/span> Поддерживается",
+			"eng": "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"><\/span> Supported"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span> Не поддерживается",
+			"eng": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span> Not Supported"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-remove\"aria-hidden=\"true\"><\/span> Не поддерживается",
+			"eng": "<span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"><\/span> Not supported"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-ок\" aria-hidden=\"true\"><\/span> Поддерживается с префиксом <code>-ms<\/code>",
+			"eng": "<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"><\/span> Supported, with <code>-ms<\/code> prefix"
+		}
+	]
+}

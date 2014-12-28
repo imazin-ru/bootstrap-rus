@@ -1,0 +1,239 @@
+{
+	"h": [
+		{
+			"rus": "Адаптивные вспомогатели",
+			"eng": "Responsive utilities"
+		},{
+			"rus": "Доступные классы",
+			"eng": "Available classes"
+		},{
+			"rus": "Классы печати",
+			"eng": "Print classes"
+		},{
+			"rus": "Тестовые сценарии",
+			"eng": "Test cases"
+		},{
+			"rus": "Видимый на...",
+			"eng": "Visible on..."
+		},{
+			"rus": "Скрытый на...",
+			"eng": "Hidden on..."
+		}
+	],
+	"p": [
+		{
+			"rus": "Для быстрого мобильного развития, используйте эти вспомогательные классы для отображения и скрытия сообщения от устройства через запрос медиа. Кроме того, включены вспомогательные классы для переключения содержания при печати.",
+			"eng": "For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed."
+		},{
+			"rus": "Попробуйте использовать их на ограниченной основе и не создавать совершенно разные версии одного и того же сайта. Вместо этого используйте их, чтобы дополнить презентацию каждого устройства.",
+			"eng": "Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation."
+		},{
+			"rus": "Используйте единичный или комбинацию доступных классов для переключения контента через контрольные точки просмотра.",
+			"eng": "Use a single or combination of the available classes for toggling content across viewport breakpoints."
+		},{
+			"rus": "Как в v3.2.0,  <code>.visible-*-*<\/code> классы для каждой точки в трех вариациях, по одному для каждой CSS <code>display<\/code> Значение свойства перечислены ниже.",
+			"eng": "As of v3.2.0, the <code>.visible-*-*<\/code> classes for each breakpoint come in three variations, one for each CSS <code>display<\/code> property value listed below."
+		},{
+			"rus": "Так, для дополнительной маленькой(<code>xs<\/code>) экранов, например, доступны <code>.visible-*-*<\/code> классы: <code>.visible-xs-block<\/code>, <code>.visible-xs-inline<\/code>, и <code>.visible-*-block<\/code>.",
+			"eng": "So, for extra small (<code>xs<\/code>) screens for example, the available <code>.visible-*-*<\/code> classes are: <code>.visible-xs-block<\/code>, <code>.visible-xs-inline<\/code>, and <code>.visible-xs-inline-block<\/code>."
+		},{
+			"rus": "Классы <code>.visible-xs<\/code>, <code>.visible-sm<\/code>, <code>.visible-md<\/code>, и <code>.visible-lg<\/code> также существуют, но <strong>deprecated нежелателен к v3.2.0<\/strong>.Они примерно эквивалентно <code>.visible-*-block<\/code>, за исключением дополнительных особых случаях для переключения  <code>&lt;table&gt;<\/code>- связанных элементов.",
+			"eng": "The classes <code>.visible-xs<\/code>, <code>.visible-sm<\/code>, <code>.visible-md<\/code>, and <code>.visible-lg<\/code> also exist, but are <strong>deprecated as of v3.2.0<\/strong>. They are approximately equivalent to <code>.visible-*-block<\/code>, except with additional special cases for toggling <code>&lt;table&gt;<\/code>-related elements."
+		},{
+			"rus": "Как и обычные адаптивные классы, используйте их для переключения содержания для печати.",
+			"eng": "Similar to the regular responsive classes, use these for toggling content for print."
+		},{
+			"rus": "Класс <code>.visible-print<\/code> также существует, но <strong>устаревшим<\/strong> по состоянию на v3.2.0.  Это примерно эквивалентно <code>.visible-print-block<\/code>, за исключением дополнительных особых случаях для <code>&lt;table&gt;<\/code>-связанных элементов.",
+			"eng": "The class <code>.visible-print<\/code> also exists but is <strong>deprecated<\/strong> as of v3.2.0. It is approximately equivalent to <code>.visible-print-block<\/code>, except with additional special cases for <code>&lt;table&gt;<\/code>-related elements."
+		},{
+			"rus": "Измените размер вашего браузера или загрузки на различные устройствах для проверки реагирования служебных классов.",
+			"eng": "Resize your browser or load on different devices to test the responsive utility classes."
+		},{
+			"rus": "Зеленые галочки указывают, что элемент <strong> видимый <\/strong> в вашем текущем экране.",
+			"eng": "Green checkmarks indicate the element <strong>is visible<\/strong> in your current viewport."
+		},{
+			"rus": "Здесь, зеленые галочки указывают, что элемент<strong> скрыт <\/strong> в вашем текущем экране.",
+			"eng": "Here, green checkmarks also indicate the element <strong>is hidden<\/strong> in your current viewport."
+		}
+	],
+	"th": [
+		{
+			"rus": "\n            Очень маленькие устройство <small>Телефоны  (&lt;768px)<\/small>         ",
+			"eng": "\n            Extra small devices\n            <small>Phones (&lt;768px)<\/small>\n          "
+		},{
+			"rus": "\n            Малые устройства\n         <small>Планшеты (&ge;768px)<\/small>\n          ",
+			"eng": "\n            Small devices\n            <small>Tablets (&ge;768px)<\/small>\n          "
+		},{
+			"rus": "\n            Средние устройства\n        <small>Настольные (&ge;992px)<\/small>\n          ",
+			"eng": "\n            Medium devices\n            <small>Desktops (&ge;992px)<\/small>\n          "
+		},{
+			"rus": "\n            Большие устройства\n       <small>Настольные (&ge;1200px)<\/small>\n          ",
+			"eng": "\n            Large devices\n            <small>Desktops (&ge;1200px)<\/small>\n          "
+		},{
+			"rus": "<code>.visible-xs-*<\/code>",
+			"eng": "<code>.visible-xs-*<\/code>"
+		},{
+			"rus": "<code>.visible-sm-*<\/code>",
+			"eng": "<code>.visible-sm-*<\/code>"
+		},{
+			"rus": "<code>.visible-md-*<\/code>",
+			"eng": "<code>.visible-md-*<\/code>"
+		},{
+			"rus": "<code>.visible-lg-*<\/code>",
+			"eng": "<code>.visible-lg-*<\/code>"
+		},{
+			"rus": "<code>.hidden-xs<\/code>",
+			"eng": "<code>.hidden-xs<\/code>"
+		},{
+			"rus": "<code>.hidden-sm<\/code>",
+			"eng": "<code>.hidden-sm<\/code>"
+		},{
+			"rus": "<code>.hidden-md<\/code>",
+			"eng": "<code>.hidden-md<\/code>"
+		},{
+			"rus": "<code>.hidden-lg<\/code>",
+			"eng": "<code>.hidden-lg<\/code>"
+		},{
+			"rus": "Группа классов",
+			"eng": "Group of classes"
+		},{
+			"rus": "CSS <code>display<\/code>",
+			"eng": "CSS <code>display<\/code>"
+		},{
+			"rus": "<code>.visible-*-block<\/code>",
+			"eng": "<code>.visible-*-block<\/code>"
+		},{
+			"rus": "<code>.visible-*-inline<\/code>",
+			"eng": "<code>.visible-*-inline<\/code>"
+		},{
+			"rus": "<code>.visible-*-inline-block<\/code>",
+			"eng": "<code>.visible-*-inline-block<\/code>"
+		},{
+			"rus": "Классы",
+			"eng": "Classes"
+		},{
+			"rus": "Браузер",
+			"eng": "Browser"
+		},{
+			"rus": "Печать",
+			"eng": "Print"
+		},{
+			"rus": "\n            <code>.visible-print-block<\/code><br>\n            <code>.visible-print-inline<\/code><br>\n            <code>.visible-print-inline-block<\/code>\n          ",
+			"eng": "\n            <code>.visible-print-block<\/code><br>\n            <code>.visible-print-inline<\/code><br>\n            <code>.visible-print-inline-block<\/code>\n          "
+		},{
+			"rus": "<code>.hidden-print<\/code>",
+			"eng": "<code>.hidden-print<\/code>"
+		}
+	],
+	"td": [
+		{
+			"rus": "Видимый",
+			"eng": "Visible"
+		},{
+			"rus": "Скрытый",
+			"eng": "Hidden"
+		},{
+			"rus": "<code>display: block;<\/code>",
+			"eng": "<code>display: block;<\/code>"
+		},{
+			"rus": "<code>display: inline;<\/code>",
+			"eng": "<code>display: inline;<\/code>"
+		},{
+			"rus": "<code>display: inline-block;<\/code>",
+			"eng": "<code>display: inline-block;<\/code>"
+		}
+	],
+	"spanresp": [
+		{
+			"rus": "Очень маленькие",
+			"eng": "Extra small"
+		},{
+			"rus": "&#10004; Видимый на x-small",
+			"eng": "&#10004; Visible on x-small"
+		},{
+			"rus": "Маленькие",
+			"eng": "Small"
+		},{
+			"rus": "&#10004; Видимый на small",
+			"eng": "&#10004; Visible on small"
+		},{
+			"rus": "Средние",
+			"eng": "Medium"
+		},{
+			"rus": "&#10004; Видимый на medium",
+			"eng": "&#10004; Visible on medium"
+		},{
+			"rus": "Большие",
+			"eng": "Large"
+		},{
+			"rus": "&#10004; Видимый на large",
+			"eng": "&#10004; Visible on large"
+		},{
+			"rus": "Очень малые и малые",
+			"eng": "Extra small and small"
+		},{
+			"rus": "&#10004; Видимый на x-small и small",
+			"eng": "&#10004; Visible on x-small and small"
+		},{
+			"rus": "Средние и большие",
+			"eng": "Medium and large"
+		},{
+			"rus": "&#10004; Видимый на medium и large",
+			"eng": "&#10004; Visible on medium and large"
+		},{
+			"rus": "Очень малые и средние",
+			"eng": "Extra small and medium"
+		},{
+			"rus": "&#10004; Видимый на x-small и medium",
+			"eng": "&#10004; Visible on x-small and medium"
+		},{
+			"rus": "Малые и большие",
+			"eng": "Small and large"
+		},{
+			"rus": "&#10004; Видимый на small и large",
+			"eng": "&#10004; Visible on small and large"
+		},{
+			"rus": "Очень малые и большие",
+			"eng": "Extra small and large"
+		},{
+			"rus": "&#10004; Видимый на x-small и large",
+			"eng": "&#10004; Visible on x-small and large"
+		},{
+			"rus": "Малые и средние",
+			"eng": "Small and medium"
+		},{
+			"rus": "&#10004; Видимый на small и medium",
+			"eng": "&#10004; Visible on small and medium"
+		},{
+			"rus": "&#10004; Скрытый на x-small",
+			"eng": "&#10004; Hidden on x-small"
+		},{
+			"rus": "&#10004; Скрытый на small",
+			"eng": "&#10004; Hidden on small"
+		},{
+			"rus": "&#10004; Скрытый на medium",
+			"eng": "&#10004; Hidden on medium"
+		},{
+			"rus": "&#10004; Скрытый на large",
+			"eng": "&#10004; Hidden on large"
+		},{
+			"rus": "&#10004; Скрытый на x-small и small",
+			"eng": "&#10004; Hidden on x-small and small"
+		},{
+			"rus": "&#10004; Скрытый на medium и large",
+			"eng": "&#10004; Hidden on medium and large"
+		},{
+			"rus": "&#10004; Скрытый на x-small и medium",
+			"eng": "&#10004; Hidden on x-small and medium"
+		},{
+			"rus": "&#10004; Скрытый на small и large",
+			"eng": "&#10004; Hidden on small and large"
+		},{
+			"rus": "&#10004; Скрытый на x-small и large",
+			"eng": "&#10004; Hidden on x-small and large"
+		},{
+			"rus": "&#10004; Скрытый на small и medium",
+			"eng": "&#10004; Hidden on small and medium"
+		}
+	]
+}

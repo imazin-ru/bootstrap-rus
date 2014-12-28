@@ -1,0 +1,23 @@
+{
+	"h": [
+		{
+			"rus": "Переходы <small>transition.js<\/small>",
+			"eng": "Transitions <small>transition.js<\/small>"
+		},{
+			"rus": "О переходах",
+			"eng": "About transitions"
+		},{
+			"rus": "Что внутри",
+			"eng": "What's inside"
+		}
+	],
+	"p": [
+		{
+			"rus": "Для простых эффектов перехода, включите <code>transition.js<\/code> рядом с другими файлами JS. Но если вы используете общую сборку <code>bootstrap.js<\/code> (или ее минимизированный вариант), этот файл нет необходимости подключать&mdash;код уже включен.",
+			"eng": "For simple transition effects, include <code>transition.js<\/code> once alongside the other JS files. If you're using the compiled (or minified) <code>bootstrap.js<\/code>, there is no need to include this&mdash;it's already there."
+		},{
+			"rus": "Transition.js является базовым помощником для событий <code>transitionEnd<\/code>, и для эмулятора переходов CSS. Он используется другими плагинами для проверки поддержки переходов CSS и для восстановления  висячих переходов.",
+			"eng": "Transition.js is a basic helper for <code>transitionEnd<\/code> events as well as a CSS transition emulator. It's used by the other plugins to check for CSS transition support and to catch hanging transitions."
+		}
+	]
+}

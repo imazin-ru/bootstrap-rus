@@ -1,0 +1,98 @@
+{
+	"h": [
+		{
+			"rus": "Значки символов",
+			"eng": "Glyphicons"
+		},{
+			"rus": "Доступные символы",
+			"eng": "Available glyphs"
+		},{
+			"rus": "Как использовать",
+			"eng": "How to use"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Не смешивайте с другими компонентами",
+			"eng": "Don't mix with other components"
+		},{
+			"rus": "Только для пустых элементов",
+			"eng": "Only for use on empty elements"
+		},{
+			"rus": "Изменение местоположения значка шрифта",
+			"eng": "Changing the icon font location"
+		},{
+			"rus": "Accessible icons",
+			"eng": "Accessible icons"
+		}
+	],
+	"p": [
+		{
+			"rus": "Включено 200 символов в формате шрифта из набора Glyphicon Halflings. Обычно <a href=\"http:\/\/glyphicons.com\/\" target=\"_blank\">Glyphicons<\/a> Halflings недоступны бесплатно, но автор сделал их бесплатными специально для Bootstrap. Как благодарность, мы бы просили вас оставлять ссылку на <a href=\"http:\/\/glyphicons.com\/\" target=\"_blank\">Glyphicons<\/a>, где есть такая возможность.",
+			"eng": "Includes 200 glyphs in font format from the Glyphicon Halflings set. <a href=\"http:\/\/glyphicons.com\/\">Glyphicons<\/a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href=\"http:\/\/glyphicons.com\/\">Glyphicons<\/a> whenever possible."
+		},{
+			"rus": "Для лучшей производительности, все значки нуждаются базовом классе и индивидуальном классе значков. Разместите следующий код в любом месте. Не забудьте поставить пробел между значком и текстом для правильного отступ (padding).",
+			"eng": "For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding."
+		},{
+			"rus": "Классы значков не могут сочетаться с другими элементами. Они спроектированы, чтобы быть отдельными элементами. Вместо этого добавте <code>&lt;span&gt;<\/code> и применить значок классов <code>&lt;span&gt;<\/code>",
+			"eng": "Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;<\/code> and apply the icon classes to the <code>&lt;span&gt;<\/code>."
+		},{
+			"rus": "Классы Иконок следует использовать только на элементах, которые не содержат текстовое содержимое и не имеют дочерние элементы.",
+			"eng": "Icon classes should only be used on elements that contain no text content and have no child elements."
+		},{
+			"rus": "Bootstrap предполагает значок файлов шрифтов будет располагаться в <code>..\/fonts\/<\/code> каталог, по сравнению с скомпилированных файлов CSS. Перемещение и переименование этих файлов шрифтов означает обновление CSS в одном из трех способов:",
+			"eng": "Bootstrap assumes icon font files will be located in the <code>..\/fonts\/<\/code> directory, relative to the compiled CSS files. Moving or renaming those font files means updating the CSS in one of three ways:"
+		},{
+			"rus": "Используйте все, что вариант лучше всего подходит вашей конкретной установки развития.",
+			"eng": "Use whatever option best suits your specific development setup."
+		},{
+			"rus": "Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden=\"true\"<\/code> attribute.",
+			"eng": "Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden=\"true\"<\/code> attribute."
+		},{
+			"rus": "If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies \u2013 for instance, include additional content, visually hidden with the <code>.sr-only<\/code> class.",
+			"eng": "If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies \u2013 for instance, include additional content, visually hidden with the <code>.sr-only<\/code> class."
+		},{
+			"rus": "If you're creating controls with no other text (such as a <code>&lt;button&gt;<\/code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label<\/code> attribute on the control itself.",
+			"eng": "If you're creating controls with no other text (such as a <code>&lt;button&gt;<\/code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label<\/code> attribute on the control itself."
+		},{
+			"rus": "Используйте их в кнопках, группах кнопок для панели инструментов, панели навигации, или в приставках элементов формы.",
+			"eng": "Use them in buttons, button groups for a toolbar, navigation, or prepended form inputs."
+		},{
+			"rus": "An icon used in an <a href=\"#alerts\">alert<\/a> to convey that it's an error message, with additional <code>.sr-only<\/code> text to convey this hint to users of assistive technologies.",
+			"eng": "An icon used in an <a href=\"#alerts\">alert<\/a> to convey that it's an error message, with additional <code>.sr-only<\/code> text to convey this hint to users of assistive technologies."
+		}
+	],
+	"li": [
+		{
+			"rus": "\n          <span class=\"glyphicon {{ iconClassName }}\" aria-hidden=\"true\"><\/span>\n          <span class=\"glyphicon-class\">glyphicon {{ iconClassName }}<\/span>\n        ",
+			"eng": "\n          <span class=\"glyphicon {{ iconClassName }}\" aria-hidden=\"true\"><\/span>\n          <span class=\"glyphicon-class\">glyphicon {{ iconClassName }}<\/span>\n        "
+		},{
+			"rus": "Изменить <code>@icon-font-path<\/code> and\/или <code>@icon-font-name<\/code> переменные в источнике малых файлов.",
+			"eng": "Change the <code>@icon-font-path<\/code> and\/or <code>@icon-font-name<\/code> variables in the source Less files."
+		},{
+			"rus": "Использование <a href=\"http:\/\/lesscss.org\/usage\/#command-line-usage-relative-urls\"> опции относительно URL-адреса<\/a> тем меньше обеспечивается компилятора.",
+			"eng": "Utilize the <a href=\"http:\/\/lesscss.org\/usage\/#command-line-usage-relative-urls\">relative URLs option<\/a> provided by the Less compiler."
+		},{
+			"rus": "Изменить <code>url()<\/code> пути в составленном CSS.",
+			"eng": "Change the <code>url()<\/code> paths in the compiled CSS."
+		}
+	],
+	"button": [
+		{
+			"rus": "<span class=\"glyphicon glyphicon-align-left\" aria-hidden=\"true\"><\/span>",
+			"eng": "<span class=\"glyphicon glyphicon-align-left\" aria-hidden=\"true\"><\/span>"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-align-center\" aria-hidden=\"true\"><\/span>",
+			"eng": "<span class=\"glyphicon glyphicon-align-center\" aria-hidden=\"true\"><\/span>"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-align-right\" aria-hidden=\"true\"><\/span>",
+			"eng": "<span class=\"glyphicon glyphicon-align-right\" aria-hidden=\"true\"><\/span>"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-align-justify\" aria-hidden=\"true\"><\/span>",
+			"eng": "<span class=\"glyphicon glyphicon-align-justify\" aria-hidden=\"true\"><\/span>"
+		},{
+			"rus": "<span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"><\/span> Star",
+			"eng": "<span class=\"glyphicon glyphicon-star\" aria-hidden=\"true\"><\/span> Star"
+		}
+	]
+}

@@ -1,0 +1,236 @@
+{
+	"a": [
+		{
+			"rus": "Значки символов",
+			"eng": "Glyphicons"
+		},{
+			"rus": "Доступные символы",
+			"eng": "Available glyphs"
+		},{
+			"rus": "Как использовать",
+			"eng": "How to use"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Выпадающее меню",
+			"eng": "Dropdowns"
+		},{
+			"rus": "Пример",
+			"eng": "Example"
+		},{
+			"rus": "Alignment",
+			"eng": "Alignment"
+		},{
+			"rus": "Заголовки",
+			"eng": "Headers"
+		},{
+			"rus": "Делитель",
+			"eng": "Divider"
+		},{
+			"rus": "Заблокированные части меню",
+			"eng": "Disabled menu items"
+		},{
+			"rus": "Группы кнопок",
+			"eng": "Button groups"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Кнопка инструментов",
+			"eng": "Button toolbar"
+		},{
+			"rus": "Установление размеров",
+			"eng": "Sizing"
+		},{
+			"rus": "Вложенность",
+			"eng": "Nesting"
+		},{
+			"rus": "Вертикальные вариации",
+			"eng": "Vertical variation"
+		},{
+			"rus": "Justified button groups",
+			"eng": "Justified button groups"
+		},{
+			"rus": "Кнопка выпадающего меню",
+			"eng": "Button dropdowns"
+		},{
+			"rus": "Одиночное выпадающее меню",
+			"eng": "Single button dropdowns"
+		},{
+			"rus": "Расщепленное выпадающее меню",
+			"eng": "Split button dropdowns"
+		},{
+			"rus": "Поднимающееся меню",
+			"eng": "Dropup variation"
+		},{
+			"rus": "Группы формы ввода",
+			"eng": "Input groups"
+		},{
+			"rus": "Флажки и переключатели",
+			"eng": "Checkbox and radios addons"
+		},{
+			"rus": "Дополнение для кнопок",
+			"eng": "Button addons"
+		},{
+			"rus": "Кнопки с выпадающим меню",
+			"eng": "Buttons with dropdowns"
+		},{
+			"rus": "Сегментированные кнопки",
+			"eng": "Segmented buttons"
+		},{
+			"rus": "Навигация",
+			"eng": "Navs"
+		},{
+			"rus": "Вкладки",
+			"eng": "Tabs"
+		},{
+			"rus": "Навигационные кнопки",
+			"eng": "Pills"
+		},{
+			"rus": "Justified",
+			"eng": "Justified"
+		},{
+			"rus": "Заблокированные ссылки",
+			"eng": "Disabled links"
+		},{
+			"rus": "Выпадающее меню",
+			"eng": "Using dropdowns"
+		},{
+			"rus": "Навигационная панель",
+			"eng": "Navbar"
+		},{
+			"rus": "Дефолтная нав панель",
+			"eng": "Default navbar"
+		},{
+			"rus": "Brand image",
+			"eng": "Brand image"
+		},{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Текст",
+			"eng": "Text"
+		},{
+			"rus": "Неконтекстные ссылки",
+			"eng": "Non-nav links"
+		},{
+			"rus": "Компонент выравнивания",
+			"eng": "Component alignment"
+		},{
+			"rus": "Фиксация вверху",
+			"eng": "Fixed to top"
+		},{
+			"rus": "Фиксация внизу",
+			"eng": "Fixed to bottom"
+		},{
+			"rus": "Статический верх",
+			"eng": "Static top"
+		},{
+			"rus": "Инвертированная панель",
+			"eng": "Inverted navbar"
+		},{
+			"rus": "Навигационный маршрут",
+			"eng": "Breadcrumbs"
+		},{
+			"rus": "Постраничный разделение",
+			"eng": "Pagination"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default pagination"
+		},{
+			"rus": "Пролистування",
+			"eng": "Pager"
+		},{
+			"rus": "Метки",
+			"eng": "Labels"
+		},{
+			"rus": "Значки",
+			"eng": "Badges"
+		},{
+			"rus": "Jumbotron",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Заголовок страницы",
+			"eng": "Page header"
+		},{
+			"rus": "Эскизы",
+			"eng": "Thumbnails"
+		},{
+			"rus": "Пример по умолчанию",
+			"eng": "Default example"
+		},{
+			"rus": "Настраиваемое содержимое",
+			"eng": "Custom content"
+		},{
+			"rus": "Замечания",
+			"eng": "Alerts"
+		},{
+			"rus": "Dismissible alerts",
+			"eng": "Dismissible alerts"
+		},{
+			"rus": "Ссылки в замечаниях",
+			"eng": "Links in alerts"
+		},{
+			"rus": "Индикатор выполнения",
+			"eng": "Progress bars"
+		},{
+			"rus": "С меткой",
+			"eng": "With label"
+		},{
+			"rus": "Контекстные альтернативы",
+			"eng": "Contextual alternatives"
+		},{
+			"rus": "Полосатый индикатор",
+			"eng": "Striped"
+		},{
+			"rus": "Индикатор с анимацией",
+			"eng": "Animated"
+		},{
+			"rus": "Сводный индикатор",
+			"eng": "Stacked"
+		},{
+			"rus": "Медиа объект",
+			"eng": "Media object"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default media"
+		},{
+			"rus": "Список медиа",
+			"eng": "Media list"
+		},{
+			"rus": "Список групп",
+			"eng": "List group"
+		},{
+			"rus": "Связанные элементы",
+			"eng": "Linked items"
+		},{
+			"rus": "Disabled items",
+			"eng": "Disabled items"
+		},{
+			"rus": "Контекстные классы",
+			"eng": "Contextual classes"
+		},{
+			"rus": "Панели",
+			"eng": "Panels"
+		},{
+			"rus": "Панель с заголовком",
+			"eng": "Panel with heading"
+		},{
+			"rus": "С таблицами",
+			"eng": "With tables"
+		},{
+			"rus": "Со списком групп",
+			"eng": "With list groups"
+		},{
+			"rus": "Responsive embed",
+			"eng": "Responsive embed"
+		},{
+			"rus": "Ячейки",
+			"eng": "Wells"
+		}
+	]
+}

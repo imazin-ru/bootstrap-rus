@@ -1,0 +1,134 @@
+{
+	"h": [
+		{
+			"rus": "Панели",
+			"eng": "Panels"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Панель с заголовком",
+			"eng": "Panel with heading"
+		},{
+			"rus": "Название панели",
+			"eng": "Panel title"
+		},{
+			"rus": "Панель с нижним колонтитулом",
+			"eng": "Panel with footer"
+		},{
+			"rus": "Контекстные альтернативы",
+			"eng": "Contextual alternatives"
+		},{
+			"rus": "С таблицами",
+			"eng": "With tables"
+		},{
+			"rus": "Со списком групп",
+			"eng": "With list groups"
+		}
+	],
+	"p": [
+		{
+			"rus": "Хотя не всегда необходимо, но иногда нужно во что-то упаковать DOM. Для таких случаев, попробуйте компонент панели.",
+			"eng": "While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component."
+		},{
+			"rus": "По умолчанию, все <code>.panel<\/code> применяют некоторую базовую рамка (border) и отступы (padding), чтобы вместить содержимое.",
+			"eng": "By default, all the <code>.panel<\/code> does is apply some basic border and padding to contain some content."
+		},{
+			"rus": "Можно легко добавлять заголовки контейнера к панели с <code>.panel-heading<\/code>. Вы можете также включать любой <code>&lt;h1&gt;<\/code>-<code>&lt;h6&gt;<\/code> вместе с классом <code>.panel-title<\/code>, чтобы добавить предвизначен\u0456 заголовки.",
+			"eng": "Easily add a heading container to your panel with <code>.panel-heading<\/code>. You may also include any <code>&lt;h1&gt;<\/code>-<code>&lt;h6&gt;<\/code> with a <code>.panel-title<\/code> class to add a pre-styled heading."
+		},{
+			"rus": "Для правильной линии окраски, не забудьте разместить ссылки в заголовках в <code>.panel-title<\/code>.",
+			"eng": "For proper link coloring, be sure to place links in headings within <code>.panel-title<\/code>."
+		},{
+			"rus": "Оберните кнопки или вторичный текст в <code>.panel-footer<\/code>. Заметьте, что эта панель с нижним колонтитулом <strong>не наследует<\/strong> цвета и рамки (borders), при использовании контекстных вариантов, поскольку они не предназначены, чтобы быть на переднем плане.",
+			"eng": "Wrap buttons or secondary text in <code>.panel-footer<\/code>. Note that panel footers <strong>do not<\/strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground."
+		},{
+			"rus": "Так как и другие компоненты, можно легко сделать панель более выразительной для конкретного контекста, добавив любой контекстный состояние классов.",
+			"eng": "Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes."
+		},{
+			"rus": "Вставьте любую таблицу без рамок с классом <code>.table<\/code> внутрь панели, для создания простого дизайна. Если применяется класс <code>.panel-body<\/code>, мы добавляем еще границы вверху для разграничения.",
+			"eng": "Add any non-bordered <code>.table<\/code> within a panel for a seamless design. If there is a <code>.panel-body<\/code>, we add an extra border to the top of the table for separation."
+		},{
+			"rus": "Здесь произвольный текст. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+			"eng": "Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+		},{
+			"rus": "Если панель не имеет тела, компоненты переносятся из заголовка панели таблицы корректно.",
+			"eng": "If there is no panel body, the component moves from panel header to table without interruption."
+		},{
+			"rus": "Легко включать <a href=\"#list-group\">список групп<\/a> в пределы любой панели.",
+			"eng": "Easily include full-width <a href=\"#list-group\">list groups<\/a> within any panel."
+		}
+	],
+	"li": [
+		{
+			"rus": "Cras justo odio",
+			"eng": "Cras justo odio"
+		},{
+			"rus": "Dapibus ac facilisis in",
+			"eng": "Dapibus ac facilisis in"
+		},{
+			"rus": "Morbi leo risus",
+			"eng": "Morbi leo risus"
+		},{
+			"rus": "Porta ac consectetur ac",
+			"eng": "Porta ac consectetur ac"
+		},{
+			"rus": "Vestibulum at eros",
+			"eng": "Vestibulum at eros"
+		}
+	],
+	"th": [
+		{
+			"rus": "Имя",
+			"eng": "First Name"
+		},{
+			"rus": "Фамилия",
+			"eng": "Last Name"
+		},{
+			"rus": "Имя пользователя",
+			"eng": "Username"
+		}
+	],
+	"td": [
+		{
+			"rus": "Mark",
+			"eng": "Mark"
+		},{
+			"rus": "Otto",
+			"eng": "Otto"
+		},{
+			"rus": "@mdo",
+			"eng": "@mdo"
+		},{
+			"rus": "Jacob",
+			"eng": "Jacob"
+		},{
+			"rus": "Thornton",
+			"eng": "Thornton"
+		},{
+			"rus": "@fat",
+			"eng": "@fat"
+		},{
+			"rus": "Larry",
+			"eng": "Larry"
+		},{
+			"rus": "the Bird",
+			"eng": "the Bird"
+		},{
+			"rus": "@twitter",
+			"eng": "@twitter"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Содержание панели по умолчанию -->",
+			"eng": "<!-- Default panel contents -->"
+		},{
+			"rus": "<!-- Таблица -->",
+			"eng": "<!-- Table -->"
+		},{
+			"rus": "<!-- Список группы -->",
+			"eng": "<!-- List group -->"
+		}
+	]
+}

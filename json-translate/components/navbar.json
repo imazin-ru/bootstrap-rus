@@ -1,0 +1,236 @@
+{
+	"h": [
+		{
+			"rus": "Навигационная панель",
+			"eng": "Navbar"
+		},{
+			"rus": "Навигационная панель по умолчанию",
+			"eng": "Default navbar"
+		},{
+			"rus": "Brand image",
+			"eng": "Brand image"
+		},{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Текст",
+			"eng": "Text"
+		},{
+			"rus": "Не контекстные ссылки",
+			"eng": "Non-nav links"
+		},{
+			"rus": "Компонент выравнивания",
+			"eng": "Component alignment"
+		},{
+			"rus": "Фиксация вверху",
+			"eng": "Fixed to top"
+		},{
+			"rus": "Фиксация внизу",
+			"eng": "Fixed to bottom"
+		},{
+			"rus": "Статический верх",
+			"eng": "Static top"
+		},{
+			"rus": "Инвертированная навигационная панель",
+			"eng": "Inverted navbar"
+		},{
+			"rus": "Переполнение контента",
+			"eng": "Overflowing content"
+		},{
+			"rus": "Requires JavaScript plugin",
+			"eng": "Requires JavaScript plugin"
+		},{
+			"rus": "Изменение сворачивания мобильных navbar",
+			"eng": "Changing the collapsed mobile navbar breakpoint"
+		},{
+			"rus": "Доступность навигационных панелей",
+			"eng": "Make navbars accessible"
+		},{
+			"rus": "Предостережения для мобильных устройств",
+			"eng": "Mobile device caveats"
+		},{
+			"rus": "Всегда добавляйте ярлыки",
+			"eng": "Always add labels"
+		},{
+			"rus": "Специфическая особенность использования",
+			"eng": "Context-specific usage"
+		},{
+			"rus": "Правое выравнивание нескольких компонентов",
+			"eng": "Right aligning multiple components"
+		},{
+			"rus": "Необходимость установления padding для body",
+			"eng": "Body padding required"
+		}
+	],
+	"p": [
+		{
+			"rus": "Навигационные панели являются адаптивными цель-компонентами, которые служат в качестве навигационных заголовков для приложений или сайтов. При просмотре на мобильных устройствах они сворачиваются (и могут переключаться), а при увеличении ширины смотрового окна принимают горизонтальную форму.",
+			"eng": "Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases."
+		},{
+			"rus": "<strong class=\"text-danger\">Justified navbar nav links are currently not supported.<\/strong>",
+			"eng": "<strong class=\"text-danger\">Justified navbar nav links are currently not supported.<\/strong>"
+		},{
+			"rus": "Поскольку Bootstrap не знаете, сколько места содержимого в ваших потребностей NavBar, вы можете столкнуться с проблемами, заключения содержимого во втором ряду. Чтобы решить эту проблему, вы можете:",
+			"eng": "Since Bootstrap doesn't know how much space the content in your navbar needs, you might run into issues with content wrapping into a second row. To resolve this, you can:"
+		},{
+			"rus": "Если JavaScript отключен и ширина окна станет достаточно узкой, для чтобы навигационная панель свернулась, то тогда не будет возможности развернуть навигационную панель и просмотреть ее содержимое с классом <code>.navbar-collapse<\/code>.",
+			"eng": "If JavaScript is disabled and the viewport is narrow enough that the navbar collapses, it will be impossible to expand the navbar and view the content within the <code>.navbar-collapse<\/code>."
+		},{
+			"rus": "Адаптивная навигационная панель в вашей версии Bootstrap требует<a href=\"..\/javascript-doc\/#collapse\"> плагина collapse<\/a>.",
+			"eng": "The responsive navbar requires the <a href=\"..\/javascript\/#collapse\">collapse plugin<\/a> to be included in your version of Bootstrap."
+		},{
+			"rus": "NavBar коллапсирует в вертикальной мобильного зрения если видовой экран уже, чем <code>@grid-float-breakpoint<\/code>,  и расширяется в горизонтальной немобильного зрения если видовой экран, по крайней мере <code>@grid-float-breakpoint<\/code> в ширину. Эта переменная в менее источника контролировать, когда NavBar разрушается \/расширяется. Значение по умолчанию  <code>768px<\/code> (the smallest \"small\" or \"tablet\" screen).",
+			"eng": "The navbar collapses into its vertical mobile view when the viewport is narrower than <code>@grid-float-breakpoint<\/code>, and expands into its horizontal non-mobile view when the viewport is at least <code>@grid-float-breakpoint<\/code> in width. Adjust this variable in the Less source to control when the navbar collapses\/expands. The default value is <code>768px<\/code> (the smallest \"small\" or \"tablet\" screen)."
+		},{
+			"rus": "Be sure to use a <code>&lt;nav&gt;<\/code> element or, if using a more generic element such as a <code>&lt;div&gt;<\/code>, add a <code>role=\"navigation\"<\/code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.",
+			"eng": "Be sure to use a <code>&lt;nav&gt;<\/code> element or, if using a more generic element such as a <code>&lt;div&gt;<\/code>, add a <code>role=\"navigation\"<\/code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies."
+		},{
+			"rus": "Replace the navbar brand with your own image by swapping the text for an <code>&lt;img&gt;<\/code>. Since the <code>.navbar-brand<\/code> has its own padding and height, you may need to override some CSS depending on your image.",
+			"eng": "Replace the navbar brand with your own image by swapping the text for an <code>&lt;img&gt;<\/code>. Since the <code>.navbar-brand<\/code> has its own padding and height, you may need to override some CSS depending on your image."
+		},{
+			"rus": "Разместите содержимое формы в пределах <code>.navbar-form<\/code> для правильного вертикального выравнивания, и для обеспечения функцией свертывания на узких смотровых окнах. Используйте параметры выравнивания, чтобы решить, где будет находиться содержимое в пределах навигационной панели.",
+			"eng": "Place form content within <code>.navbar-form<\/code> for proper vertical alignment and collapsed behavior in narrow viewports. Use the alignment options to decide where it resides within the navbar content."
+		},{
+			"rus": "Как ведущий, класс <code>.navbar-form<\/code> имеет большинство своего кода совместно с <code>.form-inline<\/code> через mixin. <strong class=\"text-danger\">Некоторые элементы управления форм, таких как группы ввода, могут потребовать фиксированной для правильного отображения в navbar.<\/strong>",
+			"eng": "As a heads up, <code>.navbar-form<\/code> shares much of its code with <code>.form-inline<\/code> via mixin. <strong class=\"text-danger\">Some form controls, like input groups, may require fixed widths to be show up properly within a navbar.<\/strong>"
+		},{
+			"rus": "Есть некоторые предостережения относительно использования элементов управления формы в неподвижных элементах на мобильных устройствах. <a href=\"..\/getting-started\/#support-fixed-position-keyboards\">Смотрите наши документы поддержки браузера<\/a>.",
+			"eng": "There are some caveats regarding using form controls within fixed elements on mobile devices. <a href=\"..\/getting-started\/#support-fixed-position-keyboards\">See our browser support docs<\/a> for details."
+		},{
+			"rus": "Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only<\/code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label<\/code>, <code>aria-labelledby<\/code> or <code>title<\/code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder<\/code> attribute, if present, but note that use of <code>placeholder<\/code> as a replacement for other labelling methods is not advised.",
+			"eng": "Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only<\/code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label<\/code>, <code>aria-labelledby<\/code> or <code>title<\/code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder<\/code> attribute, if present, but note that use of <code>placeholder<\/code> as a replacement for other labelling methods is not advised."
+		},{
+			"rus": "Добавьте класс <code>.navbar-btn<\/code> к элементам <code>&lt;и&gt;<\/code>, которые не находятся в <code>&lt;html&gt;<\/code> для вертикального их центрирование в навигационных панелях.",
+			"eng": "Add the <code>.navbar-btn<\/code> class to <code>&lt;button&gt;<\/code> elements not residing in a <code>&lt;form&gt;<\/code> to vertically center them in the navbar."
+		},{
+			"rus": "Как и стандартные <a href=\"..\/css\/#buttons\">классы кнопок<\/a>, <code>.navbar-btn<\/code> может использоваться в элементах <code>&lt;a&gt;<\/code> и <code>&lt;input&gt;<\/code>. Тем не менее, ни один <code>.navbar-btn<\/code> или же стандартные классы кнопки не должны использоваться в элементах <code>&lt;a&gt;<\/code> внутри <code>.navbar-nav<\/code>.",
+			"eng": "Like the standard <a href=\"..\/css\/#buttons\">button classes<\/a>, <code>.navbar-btn<\/code> can be used on <code>&lt;a&gt;<\/code> and <code>&lt;input&gt;<\/code> elements. However, neither <code>.navbar-btn<\/code> nor the standard button classes should be used on <code>&lt;a&gt;<\/code> elements within <code>.navbar-nav<\/code>."
+		},{
+			"rus": "Заключите строку текста в элемент с классом <code>.navbar-text<\/code>, обычно с тегом <code>&lt;p&gt;<\/code>, для правильного выравнивания и цвета.",
+			"eng": "Wrap strings of text in an element with <code>.navbar-text<\/code>, usually on a <code>&lt;p&gt;<\/code> tag for proper leading and color."
+		},{
+			"rus": "Вы вошли как Марк Отто",
+			"eng": "Signed in as Mark Otto"
+		},{
+			"rus": "Люди, которые используют стандартные ссылки в пределах необычных компонентов навигационных панелей, могут применять класс <code>.navbar-link<\/code> для вставки правильных цветов в навигационных панелях по умолчанию и инвертированных навигационных панелях.",
+			"eng": "For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link<\/code> class to add the proper colors for the default and inverse navbar options."
+		},{
+			"rus": "Вы вошли как <a href=\"#\" class=\"navbar-link\">Марк Отто<\/a>",
+			"eng": "Signed in as <a href=\"#\" class=\"navbar-link\">Mark Otto<\/a>"
+		},{
+			"rus": "Выравнивайте навигационные ссылки, формы, кнопки, текст, используя вспомогательные классы <code>.navbar-left<\/code> или <code>.navbar-right<\/code>. Оба классы добавляют CSS float в указанном направлении. Например, чтобы выровнять навигационные ссылки, вложите их в отдельный <code>&lt;ul&gt;<\/code> с соответствующим вспомогательным классом.",
+			"eng": "Align nav links, forms, buttons, or text, using the <code>.navbar-left<\/code> or <code>.navbar-right<\/code> utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <code>&lt;ul&gt;<\/code> with the respective utility class applied."
+		},{
+			"rus": "Эти классы являются смешанной версией классов <code>.pull-left<\/code> и <code>.pull-right<\/code>, но они предназначены для медиа запросов, чтобы упростить обработку компонентов навигационных панелей для различных размеров устройств.",
+			"eng": "These classes are mixin-ed versions of <code>.pull-left<\/code> and <code>.pull-right<\/code>, but they're scoped to media queries for easier handling of navbar components across device sizes."
+		},{
+			"rus": "NavBars в настоящее время есть ограничение с множеством <code>.navbar-right<\/code> классов.  Чтобы правильно космической содержания, мы используем отрицательные поля на последней <code>.navbar правом<\/code> элемент.  Когда имеется несколько элементов, использующие этот класс, эти поля не работает надлежащим образом.",
+			"eng": "Navbars currently have a limitation with multiple <code>.navbar-right<\/code> classes. To properly space content, we use negative margin on the last <code>.navbar-right<\/code> element. When there are multiple elements using that class, these margins don't work as intended."
+		},{
+			"rus": "Мы вернемся к этому, когда перепишем этот компонент в v4.",
+			"eng": "We'll revisit this when we can rewrite that component in v4."
+		},{
+			"rus": "Добавьте <code>.navbar-fixed-top<\/code> и подключите <code>.container<\/code> или <code>.container-fluid<\/code> для центровки и внутренних отступлений содержимого навигационной панели.",
+			"eng": "Add <code>.navbar-fixed-top<\/code> and include a <code>.container<\/code> or <code>.container-fluid<\/code> to center and pad navbar content."
+		},{
+			"rus": "Фиксированная навигационная панель будет налагаться на остальные вашего содержимого, пока вы не добавите <code>padding<\/code> в верхней части <code>&lt;body&gt;<\/code>. Попробуйте установить свои собственные значения, или используйте фрагмент кода ниже. Справка: По умолчанию, навигационная панель имеет высоту 50px.",
+			"eng": "The fixed navbar will overlay your other content, unless you add <code>padding<\/code> to the top of the <code>&lt;body&gt;<\/code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high."
+		},{
+			"rus": "Убедитесь, что это включено <strong><\/strong> основного Bootstrap CSS.",
+			"eng": "Make sure to include this <strong>after<\/strong> the core Bootstrap CSS."
+		},{
+			"rus": "Добавьте <code>.navbar-fixed-bottom<\/code> и подключите <code>.container<\/code> или <code>.container-fluid<\/code> для центровки и внутренних отступлений содержимого навигационной панели.",
+			"eng": "Add <code>.navbar-fixed-bottom<\/code> and include a <code>.container<\/code> or <code>.container-fluid<\/code> to center and pad navbar content."
+		},{
+			"rus": "Фиксированная навигационная панель будет налагаться на остальные вашего содержимого, пока вы не добавите <code>padding<\/code> в нижней части <code>&lt;body&gt;<\/code>. Попробуйте установить свои собственные значения, или используйте фрагмент кода ниже. Справка: По умолчанию, навигационная панель имеет высоту 50px.",
+			"eng": "The fixed navbar will overlay your other content, unless you add <code>padding<\/code> to the bottom of the <code>&lt;body&gt;<\/code>. Try out your own values or use our snippet below. Tip: By default, the navbar is 50px high."
+		},{
+			"rus": "Создайте навигационную панель на полную ширину, которая будет прокручиваться вместе со страницей, добавив <code>.navbar-static-top<\/code> и включите <code>.container<\/code> или <code>.container-fluid<\/code>, для центровки и внутренних отступлений содержимого навигационной панели.",
+			"eng": "Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top<\/code> and include a <code>.container<\/code> or <code>.container-fluid<\/code> to center and pad navbar content."
+		},{
+			"rus": "В отличие от классов <code>.navbar-fixed-*<\/code>, вам не нужно изменять любой <code>padding<\/code> и <code>body<\/code>.",
+			"eng": "Unlike the <code>.navbar-fixed-*<\/code> classes, you do not need to change any padding on the <code>body<\/code>."
+		},{
+			"rus": "Изменить внешний вид панели навигации, добавив <code>.navbar-inverse<\/code>.",
+			"eng": "Modify the look of the navbar by adding <code>.navbar-inverse<\/code>."
+		}
+	],
+	"li": [
+		{
+			"rus": "Уменьшите количество или ширину NavBar пунктов.",
+			"eng": "Reduce the amount or width of navbar items."
+		},{
+			"rus": "Скройте определенные элементы NavBar в определенных размерах экрана с помощью <a href=\"..\/css\/#responsive-utilities\">классов адаптивных утилит<\/a>.",
+			"eng": "Hide certain navbar items at certain screen sizes using <a href=\"..\/css\/#responsive-utilities\">responsive utility classes<\/a>."
+		},{
+			"rus": "Измените точку, в которой ваши NavBar переключается между свернутым и горизонтальной режимом. Настройте переменную <code>@grid-float-breakpoint<\/code> или добавmnt свой собственный медиа-запрос.",
+			"eng": "Change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint<\/code> variable or add your own media query."
+		},{
+			"rus": "<a href=\"#\">Link <span class=\"sr-only\">(current)<\/span><\/a>",
+			"eng": "<a href=\"#\">Link <span class=\"sr-only\">(current)<\/span><\/a>"
+		},{
+			"rus": "<a href=\"#\">Ссылка<\/a>",
+			"eng": "<a href=\"#\">Link<\/a>"
+		},{
+			"rus": "\n              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Dropdown <span class=\"caret\"><\/span><\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\">\n                <li><a href=\"#\">Action<\/a><\/li>\n                <li><a href=\"#\">Another action<\/a><\/li>\n                <li><a href=\"#\">Something else here<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">Separated link<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">One more separated link<\/a><\/li>\n              <\/ul>\n            ",
+			"eng": "\n              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Dropdown <span class=\"caret\"><\/span><\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\">\n                <li><a href=\"#\">Action<\/a><\/li>\n                <li><a href=\"#\">Another action<\/a><\/li>\n                <li><a href=\"#\">Something else here<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">Separated link<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">One more separated link<\/a><\/li>\n              <\/ul>\n            "
+		},{
+			"rus": "<a href=\"#\">Действие<\/a>",
+			"eng": "<a href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Другое действие<\/a>",
+			"eng": "<a href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Что-то иное<\/a>",
+			"eng": "<a href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a href=\"#\">Separated link<\/a>"
+		},{
+			"rus": "<a href=\"#\">Еще один разделен ссылка<\/a>",
+			"eng": "<a href=\"#\">One more separated link<\/a>"
+		},{
+			"rus": "\n              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Dropdown <span class=\"caret\"><\/span><\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\">\n                <li><a href=\"#\">Action<\/a><\/li>\n                <li><a href=\"#\">Another action<\/a><\/li>\n                <li><a href=\"#\">Something else here<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">Separated link<\/a><\/li>\n              <\/ul>\n            ",
+			"eng": "\n              <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">Dropdown <span class=\"caret\"><\/span><\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\">\n                <li><a href=\"#\">Action<\/a><\/li>\n                <li><a href=\"#\">Another action<\/a><\/li>\n                <li><a href=\"#\">Something else here<\/a><\/li>\n                <li class=\"divider\"><\/li>\n                <li><a href=\"#\">Separated link<\/a><\/li>\n              <\/ul>\n            "
+		},{
+			"rus": "<a href=\"#\">Главная<\/a>",
+			"eng": "<a href=\"#\">Home<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "\n            <span class=\"sr-only\">Toggle navigation<\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n          ",
+			"eng": "\n            <span class=\"sr-only\">Toggle navigation<\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n          "
+		},{
+			"rus": "Отправить",
+			"eng": "Submit"
+		},{
+			"rus": "Войти",
+			"eng": "Sign in"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Марка и переключение сгруппированы для лучшего мобильного дисплея -->",
+			"eng": "<!-- Brand and toggle get grouped for better mobile display -->"
+		},{
+			"rus": "<!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->",
+			"eng": "<!-- Collect the nav links, forms, and other content for toggling -->"
+		},{
+			"rus": "<!-- \/.navbar-collapse -->",
+			"eng": "<!-- \/.navbar-collapse -->"
+		},{
+			"rus": "<!-- \/.container-fluid -->",
+			"eng": "<!-- \/.container-fluid -->"
+		},{
+			"rus": "<!-- Мы используем опцию флюида здесь, чтобы избежать переопределения фиксированную ширину нормального контейнера в узких колонки контента. -->",
+			"eng": "<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->"
+		},{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		}
+	]
+}

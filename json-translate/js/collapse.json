@@ -1,0 +1,245 @@
+{
+	"h": [
+		{
+			"rus": "Сворачивание <small>collapse.js<\/small>",
+			"eng": "Collapse <small>collapse.js<\/small>"
+		},{
+			"rus": "Example",
+			"eng": "Example"
+		},{
+			"rus": "Accordion example",
+			"eng": "Accordion example"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Через атрибуты данных",
+			"eng": "Via data attributes"
+		},{
+			"rus": "Через JavaScript",
+			"eng": "Via JavaScript"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "Зависимость от плагинов",
+			"eng": "Plugin dependency"
+		},{
+			"rus": "\n            <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n              Collapsible Group Item #1\n            <\/a>\n          ",
+			"eng": "\n            <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n              Collapsible Group Item #1\n            <\/a>\n          "
+		},{
+			"rus": "\n            <a class=\"collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n              Collapsible Group Item #2\n            <\/a>\n          ",
+			"eng": "\n            <a class=\"collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n              Collapsible Group Item #2\n            <\/a>\n          "
+		},{
+			"rus": "\n            <a class=\"collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n              Collapsible Group Item #3\n            <\/a>\n          ",
+			"eng": "\n            <a class=\"collapsed\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n              Collapsible Group Item #3\n            <\/a>\n          "
+		},{
+			"rus": "\n          <a class=\"collapsed\" data-toggle=\"collapse\" href=\"#collapseListGroup1\" aria-expanded=\"false\" aria-controls=\"collapseListGroup1\">\n            Collapsible list group\n          <\/a>\n        ",
+			"eng": "\n          <a class=\"collapsed\" data-toggle=\"collapse\" href=\"#collapseListGroup1\" aria-expanded=\"false\" aria-controls=\"collapseListGroup1\">\n            Collapsible list group\n          <\/a>\n        "
+		},{
+			"rus": "Make expand\/collapse controls accessible",
+			"eng": "Make expand\/collapse controls accessible"
+		},{
+			"rus": ".collapse(параметры)",
+			"eng": ".collapse(options)"
+		},{
+			"rus": ".collapse('toggle')",
+			"eng": ".collapse('toggle')"
+		},{
+			"rus": ".collapse('show')",
+			"eng": ".collapse('show')"
+		},{
+			"rus": ".collapse('hide')",
+			"eng": ".collapse('hide')"
+		}
+	],
+	"p": [
+		{
+			"rus": "Flexible plugin that utilizes a handful of classes for easy toggle behavior.",
+			"eng": "Flexible plugin that utilizes a handful of classes for easy toggle behavior."
+		},{
+			"rus": "Сворачивание нуждается подключенного в вашей версии Bootstrap <a href=\"#transitions\">плагина transitions<\/a>.",
+			"eng": "Collapse requires the <a href=\"#transitions\">transitions plugin<\/a> to be included in your version of Bootstrap."
+		},{
+			"rus": "Click the buttons below to show and hide another element via class changes:",
+			"eng": "Click the buttons below to show and hide another element via class changes:"
+		},{
+			"rus": "You can use a link with the <code>href<\/code> attribute, or a button with the <code>data-target<\/code> attribute. In both cases, the <code>data-toggle=\"collapse\"<\/code> is required.",
+			"eng": "You can use a link with the <code>href<\/code> attribute, or a button with the <code>data-target<\/code> attribute. In both cases, the <code>data-toggle=\"collapse\"<\/code> is required."
+		},{
+			"rus": "\n      <a class=\"btn btn-primary\" data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        Link with href\n      <\/a>\n      <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        Button with data-target\n      <\/button>\n    ",
+			"eng": "\n      <a class=\"btn btn-primary\" data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        Link with href\n      <\/a>\n      <button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseExample\">\n        Button with data-target\n      <\/button>\n    "
+		},{
+			"rus": "Extend the default collapse behavior to create an accordion with the panel component.",
+			"eng": "Extend the default collapse behavior to create an accordion with the panel component."
+		},{
+			"rus": "It's also possible to swap out <code>.panel-body<\/code>s with <code>.list-group<\/code>s.",
+			"eng": "It's also possible to swap out <code>.panel-body<\/code>s with <code>.list-group<\/code>s."
+		},{
+			"rus": "Be sure to add <code>aria-expanded<\/code> to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code>aria-expanded=\"false\"<\/code>. If you've set the collapsible element to be open by default using the <code>in<\/code> class, set <code>aria-expanded=\"true\"<\/code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed.",
+			"eng": "Be sure to add <code>aria-expanded<\/code> to the control element. This attribute explicitly defines the current state of the collapsible element to screen readers and similar assistive technologies. If the collapsible element is closed by default, it should have a value of <code>aria-expanded=\"false\"<\/code>. If you've set the collapsible element to be open by default using the <code>in<\/code> class, set <code>aria-expanded=\"true\"<\/code> on the control instead. The plugin will automatically toggle this attribute based on whether or not the collapsible element has been opened or closed."
+		},{
+			"rus": "Additionally, if your control element is targetting a single collapsible element \u2013 i.e. the <code>data-target<\/code> attribute is pointing to an <code>id<\/code> selector \u2013 you may add an additional <code>aria-controls<\/code> attribute to the control element, containing the <code>id<\/code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself.",
+			"eng": "Additionally, if your control element is targetting a single collapsible element \u2013 i.e. the <code>data-target<\/code> attribute is pointing to an <code>id<\/code> selector \u2013 you may add an additional <code>aria-controls<\/code> attribute to the control element, containing the <code>id<\/code> of the collapsible element. Modern screen readers and similar assistive technologies make use of this attribute to provide users with additional shortcuts to navigate directly to the collapsible element itself."
+		},{
+			"rus": "Плагин свертывания использует несколько классов для обеспечения плавного подъема:",
+			"eng": "The collapse plugin utilizes a few classes to handle the heavy lifting:"
+		},{
+			"rus": "Эти классы можно найти в <code>component-animations.less<\/code>.",
+			"eng": "These classes can be found in <code>component-animations.less<\/code>."
+		},{
+			"rus": "Just add <code>data-toggle=\"collapse\"<\/code> and a <code>data-target<\/code> to the element to automatically assign control of a collapsible element. The <code>data-target<\/code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse<\/code> to the collapsible element. If you'd like it to default open, add the additional class <code>in<\/code>.",
+			"eng": "Just add <code>data-toggle=\"collapse\"<\/code> and a <code>data-target<\/code> to the element to automatically assign control of a collapsible element. The <code>data-target<\/code> attribute accepts a CSS selector to apply the collapse to. Be sure to add the class <code>collapse<\/code> to the collapsible element. If you'd like it to default open, add the additional class <code>in<\/code>."
+		},{
+			"rus": "Чтобы до группы элементов, которые могут сворачиваться, добавить управления, похоже на аккордеон, добавьте атрибут данных <code>data-parent=\"#selector\"<\/code>. Посмотрите демонстрацию (выше), чтобы увидеть это в действии.",
+			"eng": "To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent=\"#selector\"<\/code>. Refer to the demo to see this in action."
+		},{
+			"rus": "Ручное включение с:",
+			"eng": "Enable manually with:"
+		},{
+			"rus": "параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку названия параметра <code>data<\/code>, как в примере: <code>data-parent=\"\"<\/code>.",
+			"eng": "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-<\/code>, as in <code>data-parent=\"\"<\/code>."
+		},{
+			"rus": "Активирует свой \u200b\u200bконтент как складной элемента. Принимает необязательные параметры <code>object<\/code>.\n{% highlight js %}\n$('#myCollapsible').collapse({\n  toggle: false\n})\n{% endhighlight %}\n\n  <h4>.collapse('toggle')<\/h4>\n  ",
+			"eng": "Activates your content as a collapsible element. Accepts an optional options <code>object<\/code>.\n{% highlight js %}\n$('#myCollapsible').collapse({\n  toggle: false\n})\n{% endhighlight %}\n\n  <h4>.collapse('toggle')<\/h4>\n  "
+		},{
+			"rus": "Переключает складной элемент, чтобы его отобразить или скрыть.",
+			"eng": "Toggles a collapsible element to shown or hidden."
+		},{
+			"rus": "Отражает складной элемент.",
+			"eng": "Shows a collapsible element."
+		},{
+			"rus": "Скрывает складной элемент.",
+			"eng": "Hides a collapsible element."
+		},{
+			"rus": "Класс Bootstrap для згортанння представляет несколько событий для подключения функциональности свертывания.",
+			"eng": "Bootstrap's collapse class exposes a few events for hooking into collapse functionality."
+		}
+	],
+	"li": [
+		{
+			"rus": "<code>.collapse<\/code> сокрытие содержимого",
+			"eng": "<code>.collapse<\/code> hides content"
+		},{
+			"rus": "<code>.collapsing<\/code> is applied during transitions",
+			"eng": "<code>.collapsing<\/code> is applied during transitions"
+		},{
+			"rus": "<code>.collapse.in<\/code> отображение содержимого",
+			"eng": "<code>.collapse.in<\/code> shows content"
+		},{
+			"rus": "Bootply",
+			"eng": "Bootply"
+		},{
+			"rus": "One itmus ac facilin",
+			"eng": "One itmus ac facilin"
+		},{
+			"rus": "Second eros",
+			"eng": "Second eros"
+		},{
+			"rus": "<code>.collapse<\/code> сокрытие содержимого",
+			"eng": "<code>.collapse<\/code> hides the content"
+		},{
+			"rus": "<code>.collapse.in<\/code> отображение содержимого",
+			"eng": "<code>.collapse.in<\/code> shows the content"
+		},{
+			"rus": "<code>.collapsing<\/code> добавляется в начале перехода, и удаляется после его завершения",
+			"eng": "<code>.collapsing<\/code> is added when the transition starts, and removed when it finishes"
+		}
+	],
+	"th": [
+		{
+			"rus": "Название",
+			"eng": "Name"
+		},{
+			"rus": "Тип",
+			"eng": "type"
+		},{
+			"rus": "По умолчанию",
+			"eng": "default"
+		},{
+			"rus": "Описание",
+			"eng": "description"
+		},{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "parent",
+			"eng": "parent"
+		},{
+			"rus": "selector",
+			"eng": "selector"
+		},{
+			"rus": "false",
+			"eng": "false"
+		},{
+			"rus": "If a selector is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the <code>panel<\/code> class)",
+			"eng": "If a selector is provided, then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior - this is dependent on the <code>panel<\/code> class)"
+		},{
+			"rus": "toggle",
+			"eng": "toggle"
+		},{
+			"rus": "логический",
+			"eng": "boolean"
+		},{
+			"rus": "true",
+			"eng": "true"
+		},{
+			"rus": "При вызове переключает складной элемент",
+			"eng": "Toggles the collapsible element on invocation"
+		},{
+			"rus": "show.bs.collapse",
+			"eng": "show.bs.collapse"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>show<\/code>.",
+			"eng": "This event fires immediately when the <code>show<\/code> instance method is called."
+		},{
+			"rus": "shown.bs.collapse",
+			"eng": "shown.bs.collapse"
+		},{
+			"rus": "Это событие срабатывает, когда этот элемент отображается пользователю (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when a collapse element has been made visible to the user (will wait for CSS transitions to complete)."
+		},{
+			"rus": "hide.bs.collapse",
+			"eng": "hide.bs.collapse"
+		},{
+			"rus": "\n Это событие срабатывает во время вызова метода <code>hide<\/code>.\n ",
+			"eng": "\n          This event is fired immediately when the <code>hide<\/code> method has been called.\n         "
+		},{
+			"rus": "hidden.bs.collapse",
+			"eng": "hidden.bs.collapse"
+		},{
+			"rus": "Это событие срабатывает, когда развернутый элемент защищен от пользователя (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when a collapse element has been hidden from the user (will wait for CSS transitions to complete)."
+		}
+	],
+	"button": [
+		{
+			"rus": "\n        Button with data-target\n      ",
+			"eng": "\n        Button with data-target\n      "
+		},{
+			"rus": "\n        Link with href\n      ",
+			"eng": "\n        Link with href\n      "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

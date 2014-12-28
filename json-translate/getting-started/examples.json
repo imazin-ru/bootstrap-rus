@@ -1,0 +1,134 @@
+{
+	"h": [
+		{
+			"rus": "Примеры шаблонов",
+			"eng": "Examples"
+		},{
+			"rus": "Использование фреймверка",
+			"eng": "Using the framework"
+		},{
+			"rus": "Navbars в действии",
+			"eng": "Navbars in action"
+		},{
+			"rus": "Пользовательские компоненты",
+			"eng": "Custom components"
+		},{
+			"rus": "Эксперименты",
+			"eng": "Experiments"
+		},{
+			"rus": "Стартовый шаблон",
+			"eng": "Starter template"
+		},{
+			"rus": "Темы Bootstrap",
+			"eng": "Bootstrap theme"
+		},{
+			"rus": "Разметки",
+			"eng": "Grids"
+		},{
+			"rus": "Jumbotron",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Узкий Jumbotron",
+			"eng": "Narrow jumbotron"
+		},{
+			"rus": "Навигационное меню",
+			"eng": "Navbar"
+		},{
+			"rus": "Статическое навигационное меню",
+			"eng": "Static top navbar"
+		},{
+			"rus": "Фиксированное навигационное меню",
+			"eng": "Fixed navbar"
+		},{
+			"rus": "Cover",
+			"eng": "Cover"
+		},{
+			"rus": "Карусель",
+			"eng": "Carousel"
+		},{
+			"rus": "Блог",
+			"eng": "Blog"
+		},{
+			"rus": "Панель приборов",
+			"eng": "Dashboard"
+		},{
+			"rus": "Страница входа",
+			"eng": "Sign-in page"
+		},{
+			"rus": "Выровненное нав. меню",
+			"eng": "Justified nav"
+		},{
+			"rus": "Sticky footer",
+			"eng": "Sticky footer"
+		},{
+			"rus": "Sticky footer with navbar",
+			"eng": "Sticky footer with navbar"
+		},{
+			"rus": "Неадаптивный Bootstrap",
+			"eng": "Non-responsive Bootstrap"
+		},{
+			"rus": "Offcanvas",
+			"eng": "Offcanvas"
+		}
+	],
+	"p": [
+		{
+			"rus": "На шаблоне, что представлен выше, Bootstrap создает множество компонентов. Мы рекомендуем Вам настроить и адаптировать Bootstrap в соответствии с потребностями Вашего индивидуального проекта.",
+			"eng": "Build on the basic template above with Bootstrap's many components. We encourage you to customize and adapt Bootstrap to suit your individual project's needs."
+		},{
+			"rus": "Ничего кроме базового: сборник CSS, JavaScript, и использован контейнер.",
+			"eng": "Nothing but the basics: compiled CSS and JavaScript along with a container."
+		},{
+			"rus": "Настройте темы Bootstrap чтобы разнообразить вид страниц.",
+			"eng": "Load the optional Bootstrap theme for a visually enhanced experience."
+		},{
+			"rus": "Несколько примеров макетов разметки со всеми четырьмя уровнями вложенности и прочее.",
+			"eng": "Multiple examples of grid layouts with all four tiers, nesting, and more."
+		},{
+			"rus": "Создание вокруг большого экрана навигационной панели и нескольких колонок, используя базовую систему разметки.",
+			"eng": "Build around the jumbotron with a navbar and some basic grid columns."
+		},{
+			"rus": "Создание более персонализированных страниц через сужение контейнера по умолчанию и большого экрана.",
+			"eng": "Build a more custom page by narrowing the default container and jumbotron."
+		},{
+			"rus": "Базовый шаблон, который включает навигационное меню вместе с дополнительным содержанием.",
+			"eng": "Super basic template that includes the navbar along with some additional content."
+		},{
+			"rus": "Базовый шаблон, который включает навигационное меню вместе с дополнительным содержанием.",
+			"eng": "Super basic template with a static top navbar along with some additional content."
+		},{
+			"rus": "Базовый шаблон, который включает навигационное меню вместе с дополнительным содержанием.",
+			"eng": "Super basic template with a fixed top navbar along with some additional content."
+		},{
+			"rus": "Одностраничный шаблон для построения простых и красивых домашних страниц.",
+			"eng": "A one-page template for building simple and beautiful home pages."
+		},{
+			"rus": "Сочетание в шаблоне нав. меню и карусели, с добавлением некоторых новых компонентов.",
+			"eng": "Customize the navbar and carousel, then add some new components."
+		},{
+			"rus": "Простой блог в две колонки с пользовательской навигацией, заголовком, и видом.",
+			"eng": "Simple two-column blog layout with custom navigation, header, and type."
+		},{
+			"rus": "Базовая структура для администратора приборная панель с фиксированным боковым меню и панели навигации.",
+			"eng": "Basic structure for an admin dashboard with fixed sidebar and navbar."
+		},{
+			"rus": "Шаблон пользовательской формы настроен для простого входа на сайт.",
+			"eng": "Custom form layout and design for a simple sign in form."
+		},{
+			"rus": "Создание компонованого нав. меню с выровненными ссылками. Внимание! <a href=\"..\/components\/#nav-justified\">Не очень дружит с Safari.<\/a>",
+			"eng": "Create a custom navbar with justified links. Heads up! <a href=\"..\/components\/#nav-justified\">Not too Safari friendly.<\/a>"
+		},{
+			"rus": "Закрепление колонтитула в нижней части браузера для случая, когда высота контента сама собой не делает этого.",
+			"eng": "Attach a footer to the bottom of the viewport when the content is shorter than it."
+		},{
+			"rus": "Прикреплено колонтитул в нижнюю часть браузера, с нав. меню в верхней части.",
+			"eng": "Attach a footer to the bottom of the viewport with a fixed navbar at the top."
+		},{
+			"rus": "Легко отключить адаптивность Bootstrap <a href=\"#disable-responsive\">согласно нашим документам<\/a>.",
+			"eng": "Easily disable the responsiveness of Bootstrap <a href=\"#disable-responsive\">per our docs<\/a>."
+		},{
+			"rus": "Создание навигационного off-canvas меню с возможностью переключения для Bootstrap.",
+			"eng": "Build a toggleable off-canvas navigation menu for use with Bootstrap."
+		}
+	]
+}

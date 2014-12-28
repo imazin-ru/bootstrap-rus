@@ -1,0 +1,26 @@
+{
+	"title": [
+		{
+			"rus": "title: C чего начать",
+			"eng": "title: Getting started"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Обзор Бутстрап, как загружать и пользоваться, базовые шаблоны, примеры и другое.\"",
+			"eng": "lead: \"An overview of Bootstrap, how to download and use, basic templates and examples, and more.\""
+		}
+	],
+	"h": [
+		{
+			"rus": "Переход с v2.x на v3.x",
+			"eng": "Migrating from v2.x to v3.x"
+		}
+	],
+	"p": [
+		{
+			"rus": "Посмотрите на переход из старой версии Bootstrap на v3.x? Ознакомьтесь <a href=\"..\/migration\">наше руководство по переходу<\/a>.",
+			"eng": "Looking to migrate from an older version of Bootstrap to v3.x? Check out <a href=\"..\/migration\">our migration guide<\/a>."
+		}
+	]
+}

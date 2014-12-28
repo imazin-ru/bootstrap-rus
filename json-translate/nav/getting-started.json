@@ -1,0 +1,116 @@
+{
+	"a": [
+		{
+			"rus": "Загрузка",
+			"eng": "Download"
+		},{
+			"rus": "Что включено",
+			"eng": "What's included"
+		},{
+			"rus": "Предварительная компиляция",
+			"eng": "Precompiled"
+		},{
+			"rus": "Исходный код",
+			"eng": "Source code"
+		},{
+			"rus": "Компиляция CSS и JavaScript",
+			"eng": "Compiling CSS and JavaScript"
+		},{
+			"rus": "Установка Grunt",
+			"eng": "Installing Grunt"
+		},{
+			"rus": "Доступные команды Grunt",
+			"eng": "Available Grunt commands"
+		},{
+			"rus": "Поиск и устранение неисправностей",
+			"eng": "Troubleshooting"
+		},{
+			"rus": "Базовый шаблон",
+			"eng": "Basic template"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Использование frameworkа",
+			"eng": "Using the framework"
+		},{
+			"rus": "Навигации в действии",
+			"eng": "Navbars in action"
+		},{
+			"rus": "Настройка компонентов",
+			"eng": "Custom components"
+		},{
+			"rus": "Эксперименты",
+			"eng": "Experiments"
+		},{
+			"rus": "Инструменты",
+			"eng": "Tools"
+		},{
+			"rus": "Bootlint",
+			"eng": "Bootlint"
+		},{
+			"rus": "Сообщество",
+			"eng": "Community"
+		},{
+			"rus": "Блокировка адаптивности",
+			"eng": "Disabling responsiveness"
+		},{
+			"rus": "Переход с 2.x на версию 3.0",
+			"eng": "Migrating from 2.x to 3.0"
+		},{
+			"rus": "Браузер и поддержка устройств",
+			"eng": "Browser and device support"
+		},{
+			"rus": "Поддерживаемые браузеры",
+			"eng": "Supported browsers"
+		},{
+			"rus": "Internet Explorer 8-9",
+			"eng": "Internet Explorer 8-9"
+		},{
+			"rus": "IE8 и Respond.js",
+			"eng": "IE8 and Respond.js"
+		},{
+			"rus": "IE8 и box-sizing",
+			"eng": "IE8 and box-sizing"
+		},{
+			"rus": "IE8 и @font-face",
+			"eng": "IE8 and @font-face"
+		},{
+			"rus": "Режимы совместимости с IE ",
+			"eng": "IE Compatibility modes"
+		},{
+			"rus": "IE10 и Windows (Phone) 8",
+			"eng": "IE10 and Windows (Phone) 8"
+		},{
+			"rus": "Safari процент округления",
+			"eng": "Safari percent rounding"
+		},{
+			"rus": "Модаль, навигации, и виртуальные клавиатуры",
+			"eng": "Modals, navbars, and virtual keyboards"
+		},{
+			"rus": "Браузерное масштабирование",
+			"eng": "Browser zooming"
+		},{
+			"rus": "Печать",
+			"eng": "Printing"
+		},{
+			"rus": "Android stock browser",
+			"eng": "Android stock browser"
+		},{
+			"rus": "Валидаторы",
+			"eng": "Validators"
+		},{
+			"rus": "Поддержка третьих сторон",
+			"eng": "Third party support"
+		},{
+			"rus": "Доступность",
+			"eng": "Accessibility"
+		},{
+			"rus": "Лицензия FAQs",
+			"eng": "License FAQs"
+		},{
+			"rus": "Переводы",
+			"eng": "Translations"
+		}
+	]
+}

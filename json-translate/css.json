@@ -1,0 +1,14 @@
+{
+	"title": [
+		{
+			"rus": "title: CSS",
+			"eng": "title: CSS"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Общие настройки CSS, стилизация основных HTML элементов с использованием расширенных классов, и передовая система разметки.\"",
+			"eng": "lead: \"Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.\""
+		}
+	]
+}

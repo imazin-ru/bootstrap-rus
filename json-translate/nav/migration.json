@@ -1,0 +1,17 @@
+{
+	"a": [
+		{
+			"rus": "Основные изменения классов",
+			"eng": "Major class changes"
+		},{
+			"rus": "Что нового",
+			"eng": "What's new"
+		},{
+			"rus": "Что удалено",
+			"eng": "What's removed"
+		},{
+			"rus": "Дополнительные примечания",
+			"eng": "Additional notes"
+		}
+	]
+}

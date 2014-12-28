@@ -1,0 +1,134 @@
+{
+	"h": [
+		{
+			"rus": "Группы формы ввода",
+			"eng": "Input groups"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Изменение размера",
+			"eng": "Sizing"
+		},{
+			"rus": "Дополнение для флажков и переключателей",
+			"eng": "Checkboxes and radio addons"
+		},{
+			"rus": "Дополнение для кнопок",
+			"eng": "Button addons"
+		},{
+			"rus": "Кнопки с выпадающим меню",
+			"eng": "Buttons with dropdowns"
+		},{
+			"rus": "Сегментированные кнопки",
+			"eng": "Segmented buttons"
+		},{
+			"rus": "Textual <code>&lt;input&gt;<\/code>s only",
+			"eng": "Textual <code>&lt;input&gt;<\/code>s only"
+		},{
+			"rus": "Подсказки и информеры в группе введение требуют специальных настроек",
+			"eng": "Tooltips &amp; popovers in input groups require special setting"
+		},{
+			"rus": "Не смешивайте с другими компонентами",
+			"eng": "Don't mix with other components"
+		},{
+			"rus": "Always add labels",
+			"eng": "Always add labels"
+		}
+	],
+	"p": [
+		{
+			"rus": "Разверните элементы управления формы добавив текст или кнопки до, после, с обеих сторон любого текстового поля формы <code>&lt;input&gt;<\/code>. Используйте <code>.input-group<\/code> с <code>.input-group-addon<\/code> в начало или конец для одного элемента <code>.form-control<\/code>.",
+			"eng": "Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;<\/code>. Use <code>.input-group<\/code> with an <code>.input-group-addon<\/code> to prepend or append elements to a single <code>.form-control<\/code>."
+		},{
+			"rus": "В данном случае избегайте использования элементов <code>&lt;select&gt;<\/code>, поскольку они в полной мере не могут стил\u0456зуватись в WebKit браузерах.",
+			"eng": "Avoid using <code>&lt;select&gt;<\/code> elements here as they cannot be fully styled in WebKit browsers."
+		},{
+			"rus": "Avoid using <code>&lt;textarea&gt;<\/code> elements here as their <code>rows<\/code> attribute will not be respected in some cases.",
+			"eng": "Avoid using <code>&lt;textarea&gt;<\/code> elements here as their <code>rows<\/code> attribute will not be respected in some cases."
+		},{
+			"rus": "Когда используете подсказки или информеры (popovers) на элементах в пределах <code>.input-group<\/code>, вам необходимо определить параметр <code>container: 'body'<\/code>, для избежания нежелательных побочных эффектов (например, когда элемент становится шире и\/или когда теряется закругленння углов при вызове подсказок или информеров).",
+			"eng": "When using tooltips or popovers on elements within an <code>.input-group<\/code>, you'll have to specify the option <code>container: 'body'<\/code> to avoid unwanted side effects (such as the element growing wider and\/or losing its rounded corners when the tooltip or popover is triggered)."
+		},{
+			"rus": "Не смешивайте группы форм или классы столбцов разметки непосредственно с группами ввода. Вместо этого, внедрите группу ввода внутри группы формы или связанной разметки с элементом.",
+			"eng": "Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element."
+		},{
+			"rus": "Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.",
+			"eng": "Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies."
+		},{
+			"rus": "The exact technique to be used (<code>&lt;label&gt;<\/code> elements hidden using the <code>.sr-only<\/code> class, or use of the <code>aria-label<\/code>, <code>aria-labelledby<\/code>, <code>aria-describedby<\/code>, <code>title<\/code> or <code>placeholder<\/code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.",
+			"eng": "The exact technique to be used (<code>&lt;label&gt;<\/code> elements hidden using the <code>.sr-only<\/code> class, or use of the <code>aria-label<\/code>, <code>aria-labelledby<\/code>, <code>aria-describedby<\/code>, <code>title<\/code> or <code>placeholder<\/code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches."
+		},{
+			"rus": "Поместите дополнительный компонент или кнопку по обе стороны от ввода. Вы также можете разместить один с обеих сторон.",
+			"eng": "Place one add-on or button on either side of an input. You may also place one on both sides of an input."
+		},{
+			"rus": "<strong class=\"text-danger\">Мы не поддерживаем несколько дополнительных компонентов на одной стВместоороне.<\/strong>",
+			"eng": "<strong class=\"text-danger\">We do not support multiple add-ons on a single side.<\/strong>"
+		},{
+			"rus": "<strong class=\"text-danger\">Мы не поддерживаем несколько form-control в одной группе ввода.<\/strong>",
+			"eng": "<strong class=\"text-danger\">We do not support multiple form-controls in a single input group.<\/strong>"
+		},{
+			"rus": "Разместите один приложение или одну кнопку с любой стороны от формы ввода. Вы также можете разместить их по обе стороны от формы ввода. <strong class=\"text-danger\">Мы не поддерживаем несколько приложений с одной стороны.<\/strong>",
+			"eng": "Add the relative form sizing classes to the <code>.input-group<\/code> itself and contents within will automatically resize\u2014no need for repeating the form control size classes on each element."
+		},{
+			"rus": "Поместите любые опции галочек (checkbox) или переключателей в рамках дополнения формы ввода вместо текста.",
+			"eng": "Place any checkbox or radio option within an input group's addon instead of text."
+		},{
+			"rus": "Кнопки в группах ввода немного отличаются и требуют один дополнительный уровень вложенности. Вместо <code>.input-group-addon<\/code>, вы должны будете использовать <code>.input-group-btn<\/code>. Это необходимо из-за стилей браузера по умолчанию, которые не могут быть переопределены.",
+			"eng": "Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon<\/code>, you'll need to use <code>.input-group-btn<\/code> to wrap the buttons. This is required due to default browser styles that cannot be overridden."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#\">Действие<\/a>",
+			"eng": "<a href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Другое действие<\/a>",
+			"eng": "<a href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Что-то иное<\/a>",
+			"eng": "<a href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a href=\"#\">Separated link<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "Действие <span class=\"caret\"><\/span>",
+			"eng": "Action <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Действие",
+			"eng": "Action"
+		},{
+			"rus": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n ",
+			"eng": "\n              <span class=\"caret\"><\/span>\n              <span class=\"sr-only\">Toggle Dropdown<\/span>\n            "
+		},{
+			"rus": "Действие <span class=\"caret\"><\/span>",
+			"eng": "Действие <span class=\"caret\"><\/span>"
+		},{
+			"rus": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n ",
+			"eng": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/input-группа -->",
+			"eng": "<!-- \/input-group -->"
+		},{
+			"rus": "<!-- \/.col-lg-6 -->",
+			"eng": "<!-- \/.col-lg-6 -->"
+		},{
+			"rus": "<!-- \/.row -->",
+			"eng": "<!-- \/.row -->"
+		},{
+			"rus": "<!-- \/btn-группа -->",
+			"eng": "<!-- \/btn-group -->"
+		},{
+			"rus": "<!-- \/.input-group -->",
+			"eng": "<!-- \/.input-group -->"
+		},{
+			"rus": "<!-- Кнопка и выпадающее меню -->",
+			"eng": "<!-- Button and dropdown menu -->"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"h": [
+		{
+			"rus": "Метки",
+			"eng": "Labels"
+		},{
+			"rus": "Пример заголовка <span class=\"label label-default\">Новый<\/span>",
+			"eng": "Example heading <span class=\"label label-default\">New<\/span>"
+		},{
+			"rus": "Пример",
+			"eng": "Example"
+		},{
+			"rus": "Доступные варианты",
+			"eng": "Available variations"
+		},{
+			"rus": "Есть тонна меток?",
+			"eng": "Have tons of labels?"
+		}
+	],
+	"p": [
+		{
+			"rus": "Добавте любой из перечисленных ниже модификаторов классов, чтобы изменить внешний вид меткии.",
+			"eng": "Add any of the below mentioned modifier classes to change the appearance of a label."
+		},{
+			"rus": "Оказание проблемы могут возникнуть, когда у вас есть десятки встроенных ярлыков в узком контейнере, каждый из которых содержит свой \u200b\u200bсобственный <code>inline-block<\/code> элементе (похожая иконка). Способом решить эту проблему является создание <code>display: inline-block;<\/code>. Для примера, <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/13219\">смотрите #13219<\/a>.",
+			"eng": "Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own <code>inline-block<\/code> element (like an icon). The way around this is setting <code>display: inline-block;<\/code>. For context and an example, <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/13219\">see #13219<\/a>."
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"h": [
+		{
+			"rus": "Заголовок страницы",
+			"eng": "Page header"
+		},{
+			"rus": "Пример заголовка страницы <small>Дополнительный текст<\/small>",
+			"eng": "Example page header <small>Subtext for header<\/small>"
+		}
+	],
+	"p": [
+		{
+			"rus": "Представляем вам простую оболочку для <code>h1<\/code>, которая устанавливает соответствующий отступ и сегментирует содержание страницы. В ней можно использовать элемент по умолчанию <code>small<\/code> и <code>h1<\/code>, а также много других компонентов (с дополнительными стилями).",
+			"eng": "A simple shell for an <code>h1<\/code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1<\/code>'s default <code>small<\/code> element, as well as most other components (with additional styles)."
+		}
+	]
+}

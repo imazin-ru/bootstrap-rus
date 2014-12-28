@@ -1,0 +1,182 @@
+{
+	"h": [
+		{
+			"rus": "Выпадающее меню <small>dropdown.js<\/small>",
+			"eng": "Dropdowns <small>dropdown.js<\/small>"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Внутри навигационной панели",
+			"eng": "Within a navbar"
+		},{
+			"rus": "Внутри навигационных кнопок",
+			"eng": "Within pills"
+		},{
+			"rus": "Через атрибуты данных",
+			"eng": "Via data attributes"
+		},{
+			"rus": "Через JavaScript",
+			"eng": "Via JavaScript"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "<code>data-toggle=\"dropdown\"<\/code> still required",
+			"eng": "<code>data-toggle=\"dropdown\"<\/code> still required"
+		},{
+			"rus": "$().dropdown('toggle')",
+			"eng": "$().dropdown('toggle')"
+		}
+	],
+	"p": [
+		{
+			"rus": "С нашим простым плагином добавьте выпадающее меню к любому, в том числе к навигационной панели, закладок и навигационных кнопок.",
+			"eng": "Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills."
+		},{
+			"rus": "Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open<\/code> class on the parent list item.",
+			"eng": "Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open<\/code> class on the parent list item."
+		},{
+			"rus": "On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop<\/code> as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. <strong class=\"text-danger\">This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.<\/strong>",
+			"eng": "On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop<\/code> as a tap area for closing dropdown menus when tapping outside the menu, a requirement for proper iOS support. <strong class=\"text-danger\">This means that switching from an open dropdown menu to a different dropdown menu requires an extra tap on mobile.<\/strong>"
+		},{
+			"rus": "Note: The <code>data-toggle=\"dropdown\"<\/code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.",
+			"eng": "Note: The <code>data-toggle=\"dropdown\"<\/code> attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it."
+		},{
+			"rus": "Добавьте <code>data-toggle=\"dropdown\"<\/code> ссылок или кнопок для возможности переключения выпадающего меню.",
+			"eng": "Add <code>data-toggle=\"dropdown\"<\/code> to a link or button to toggle a dropdown."
+		},{
+			"rus": "Чтобы оставить URL нетронутой, используйте атрибут <code>data-target<\/code> вместо <code>href=\"#\"<\/code>.",
+			"eng": "To keep URLs intact with link buttons, use the <code>data-target<\/code> attribute instead of <code>href=\"#\"<\/code>."
+		},{
+			"rus": "Вызывайте выпадающее меню через JavaScript:",
+			"eng": "Call the dropdowns via JavaScript:"
+		},{
+			"rus": "Независимо от того, вызываете вы выпадающий эффект через JavaScript или вместо этого использовуете, data-api, <code>data-toggle=\"dropdown\"<\/code> всегда должен присутствовать на пусковом элементе в выпадающем окне.",
+			"eng": "Regardless of whether you call your dropdown via JavaScript or instead use the data-api, <code>data-toggle=\"dropdown\"<\/code> is always required to be present on the dropdown's trigger element."
+		},{
+			"rus": "<em>Отсутствуют<\/em>",
+			"eng": "<em>None<\/em>"
+		},{
+			"rus": "Переключайте выпадающее меню в навигационных панелях или навигационных вкладках.",
+			"eng": "Toggles the dropdown menu of a given navbar or tabbed navigation."
+		},{
+			"rus": "Все выпадающие события сгорают при <code>.dropdown-menu<\/code> родительского элемента.",
+			"eng": "All dropdown events are fired at the <code>.dropdown-menu<\/code>'s parent element."
+		},{
+			"rus": "All dropdown events have a <code>relatedTarget<\/code> property, whose value is the toggling anchor element.",
+			"eng": "All dropdown events have a <code>relatedTarget<\/code> property, whose value is the toggling anchor element."
+		}
+	],
+	"li": [
+		{
+			"rus": "\n              <a id=\"drop1\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop1\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            ",
+			"eng": "\n              <a id=\"drop1\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop1\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            "
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Здесь еще что-то<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a>"
+		},{
+			"rus": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a>",
+			"eng": "<a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a>"
+		},{
+			"rus": "\n              <a id=\"drop2\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop2\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            ",
+			"eng": "\n              <a id=\"drop2\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop2\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            "
+		},{
+			"rus": "\n              <a id=\"drop3\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop3\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            ",
+			"eng": "\n              <a id=\"drop3\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n                Dropdown\n                <span class=\"caret\"><\/span>\n              <\/a>\n              <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop3\">\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n                <li role=\"presentation\" class=\"divider\"><\/li>\n                <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n              <\/ul>\n            "
+		},{
+			"rus": "<a href=\"#\">Обычная ссылка<\/a>",
+			"eng": "<a href=\"#\">Regular link<\/a>"
+		},{
+			"rus": "\n        <a id=\"drop4\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu1\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop4\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      ",
+			"eng": "\n        <a id=\"drop4\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu1\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop4\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      "
+		},{
+			"rus": "\n        <a id=\"drop5\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu2\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop5\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      ",
+			"eng": "\n        <a id=\"drop5\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu2\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop5\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      "
+		},{
+			"rus": "\n        <a id=\"drop6\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu3\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop6\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      ",
+			"eng": "\n        <a id=\"drop6\" href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" role=\"button\" aria-expanded=\"false\">\n          Dropdown\n          <span class=\"caret\"><\/span>\n        <\/a>\n        <ul id=\"menu3\" class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"drop6\">\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Another action<\/a><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Something else here<\/a><\/li>\n          <li role=\"presentation\" class=\"divider\"><\/li>\n          <li role=\"presentation\"><a role=\"menuitem\" tabindex=\"-1\" href=\"https:\/\/twitter.com\/fat\">Separated link<\/a><\/li>\n        <\/ul>\n      "
+		}
+	],
+	"th": [
+		{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "show.bs.dropdown",
+			"eng": "show.bs.dropdown"
+		},{
+			"rus": "This event fires immediately when the show instance method is called.",
+			"eng": "This event fires immediately when the show instance method is called."
+		},{
+			"rus": "shown.bs.dropdown",
+			"eng": "shown.bs.dropdown"
+		},{
+			"rus": "This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete).",
+			"eng": "This event is fired when the dropdown has been made visible to the user (will wait for CSS transitions, to complete)."
+		},{
+			"rus": "hide.bs.dropdown",
+			"eng": "hide.bs.dropdown"
+		},{
+			"rus": "This event is fired immediately when the hide instance method has been called.",
+			"eng": "This event is fired immediately when the hide instance method has been called."
+		},{
+			"rus": "hidden.bs.dropdown",
+			"eng": "hidden.bs.dropdown"
+		},{
+			"rus": "Это событие срабатывает, когда выпадающее меню завершит скрытие пунктов меню от пользователя (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when the dropdown has finished being hidden from the user (will wait for CSS transitions, to complete)."
+		}
+	],
+	"button": [
+		{
+			"rus": "\n            <span class=\"sr-only\">Переключить навигацию<\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n          ",
+			"eng": "\n            <span class=\"sr-only\">Toggle navigation<\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n            <span class=\"icon-bar\"><\/span>\n          "
+		},{
+			"rus": "\n    Dropdown trigger\n    <span class=\"caret\"><\/span>\n  ",
+			"eng": "\n    Dropdown trigger\n    <span class=\"caret\"><\/span>\n  "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/.nav-collapse -->",
+			"eng": "<!-- \/.nav-collapse -->"
+		},{
+			"rus": "<!-- \/.container-fluid -->",
+			"eng": "<!-- \/.container-fluid -->"
+		},{
+			"rus": "<!-- \/navbar-пример -->",
+			"eng": "<!-- \/navbar-example -->"
+		},{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- \/ячейки -->",
+			"eng": "<!-- \/pills -->"
+		},{
+			"rus": "<!-- .\/bs-table-responsive -->",
+			"eng": "<!-- .\/bs-table-responsive -->"
+		}
+	]
+}

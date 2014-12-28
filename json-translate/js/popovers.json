@@ -1,0 +1,374 @@
+{
+	"h": [
+		{
+			"rus": "Информеры <small>popover.js<\/small>",
+			"eng": "Popovers <small>popover.js<\/small>"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Статические информеры",
+			"eng": "Static popover"
+		},{
+			"rus": "Информер вверху",
+			"eng": "Popover top"
+		},{
+			"rus": "Информер справа",
+			"eng": "Popover right"
+		},{
+			"rus": "Информер внизу",
+			"eng": "Popover bottom"
+		},{
+			"rus": "Информер слева",
+			"eng": "Popover left"
+		},{
+			"rus": "Живое демо",
+			"eng": "Live demo"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "Зависимость от плагинов",
+			"eng": "Plugin dependency"
+		},{
+			"rus": "Неавтоматическая функциональность",
+			"eng": "Opt-in functionality"
+		},{
+			"rus": "Информеры в группах кнопок и группах ввода требуют специальных настроек",
+			"eng": "Popovers in button groups and input groups require special setting"
+		},{
+			"rus": "Не пытайтесь показать Popovers на скрытых элементов",
+			"eng": "Don't try to show popovers on hidden elements"
+		},{
+			"rus": "Информеры на заблокированных элементах нуждаются обертывание",
+			"eng": "Popovers on disabled elements require wrapper elements"
+		},{
+			"rus": "Многолинейные ссылки",
+			"eng": "Multiple-line links"
+		},{
+			"rus": "Четыре направления",
+			"eng": "Four directions"
+		},{
+			"rus": "Прекращать по следующему клику",
+			"eng": "Dismiss on next click"
+		},{
+			"rus": "Specific markup required for dismiss-on-next-click",
+			"eng": "Specific markup required for dismiss-on-next-click"
+		},{
+			"rus": "Атрибуты данных для индивидуальных информеров",
+			"eng": "Data attributes for individual popovers"
+		},{
+			"rus": "$().popover(параметры)",
+			"eng": "$().popover(options)"
+		},{
+			"rus": ".popover('show')",
+			"eng": ".popover('show')"
+		},{
+			"rus": ".popover('hide')",
+			"eng": ".popover('hide')"
+		},{
+			"rus": ".popover('toggle')",
+			"eng": ".popover('toggle')"
+		},{
+			"rus": ".popover('destroy')",
+			"eng": ".popover('destroy')"
+		}
+	],
+	"p": [
+		{
+			"rus": "Добавьте небольшие накладки содержания, вроде тех, которые показываются в iPad, в любых элементов, для размещения дополнительной информации.",
+			"eng": "Add small overlays of content, like those on the iPad, to any element for housing secondary information."
+		},{
+			"rus": "Popovers whose both title and content are zero-length are never displayed.",
+			"eng": "Popovers whose both title and content are zero-length are never displayed."
+		},{
+			"rus": "Информеры требуют подключения <a href=\"#tooltips\">плагина подсказок<\/a> в вашей версии Bootstrap.",
+			"eng": "Popovers require the <a href=\"#tooltips\">tooltip plugin<\/a> to be included in your version of Bootstrap."
+		},{
+			"rus": "Для улучшения производительности, дата-интерфейсы Подсказок и Информеров (Tooltip and Popover) неавтоматические, то есть <strong>вы должны инициализировать их собственноручно<\/strong>.",
+			"eng": "For performance reasons, the Tooltip and Popover data-apis are opt-in, meaning <strong>you must initialize them yourself<\/strong>."
+		},{
+			"rus": "One way to initialize all popovers on a page would be to select them by their <code>data-toggle<\/code> attribute:",
+			"eng": "One way to initialize all popovers on a page would be to select them by their <code>data-toggle<\/code> attribute:"
+		},{
+			"rus": "При использовании информеров внутри элементов <code>.btn-group<\/code> или <code>.input-group<\/code>, вы должны указывать параметры <code>container: 'body'<\/code> (документация ниже), чтобы избежать нежелательных побочных эффектов (например, когда элемент становится шире и\/или когда теряется закругленння углов, при вызове информеров).",
+			"eng": "When using popovers on elements within a <code>.btn-group<\/code> or an <code>.input-group<\/code>, you'll have to specify the option <code>container: 'body'<\/code> (documented below) to avoid unwanted side effects (such as the element growing wider and\/or losing its rounded corners when the popover is triggered)."
+		},{
+			"rus": "Invoking <code>$(...).popover('show')<\/code> when the target element is <code>display: none;<\/code> will cause the popover to be incorrectly positioned.",
+			"eng": "Invoking <code>$(...).popover('show')<\/code> when the target element is <code>display: none;<\/code> will cause the popover to be incorrectly positioned."
+		},{
+			"rus": "Чтобы добавить подсказку элемента <code>disabled<\/code> или <code>.disabled<\/code>, вставьте элемент внутрь <code>&lt;div&gt;<\/code> и примените подсказку именно к этому <code>&lt;div&gt;<\/code>.",
+			"eng": "To add a popover to a <code>disabled<\/code> or <code>.disabled<\/code> element, put the element inside of a <code>&lt;div&gt;<\/code> and apply the popover to that <code>&lt;div&gt;<\/code> instead."
+		},{
+			"rus": "Иногда вы хотите добавить информер к гиперссылке, в который заключается несколько строк. По умолчанию плагина подсказка появляется в центре по горизонтали и вертикали. Добавьте <code>white-space: nowrap;<\/code> для якорей, чтобы избежать этого.",
+			"eng": "Sometimes you want to add a popover to a hyperlink that wraps multiple lines. The default behavior of the popover plugin is to center it horizontally and vertically. Add <code>white-space: nowrap;<\/code> to your anchors to avoid this."
+		},{
+			"rus": "Доступны четыре варианта информеров: вверху, справа, внизу, и слева.",
+			"eng": "Four options are available: top, right, bottom, and left aligned."
+		},{
+			"rus": "Здесь произвольный текст. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+			"eng": "Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+		},{
+			"rus": "Используйте <code>focus<\/code> триггера чтобы прекратить popovers следующим кликом, что делает пользователь.",
+			"eng": "Use the <code>focus<\/code> trigger to dismiss popovers on the next click that the user makes."
+		},{
+			"rus": "For proper cross-browser and cross-platform behavior, you must use the <code>&lt;a&gt;<\/code> tag, <i>not<\/i> the <code>&lt;button&gt;<\/code> tag, and you also must include a <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML\/Global_attributes#tabindex\"><code>tabindex<\/code><\/a> attribute.",
+			"eng": "For proper cross-browser and cross-platform behavior, you must use the <code>&lt;a&gt;<\/code> tag, <i>not<\/i> the <code>&lt;button&gt;<\/code> tag, and you also must include a <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML\/Global_attributes#tabindex\"><code>tabindex<\/code><\/a> attribute."
+		},{
+			"rus": "Включите информеры через JavaScript:",
+			"eng": "Enable popovers via JavaScript:"
+		},{
+			"rus": "Параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку с названием атрибута в <code>data<\/code>, как в примере: <code>data-animation=\"\"<\/code>.",
+			"eng": "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-<\/code>, as in <code>data-animation=\"\"<\/code>."
+		},{
+			"rus": "Добавляет popover на конкретный элемент. Пример: <code>container: 'body'<\/code>. Эта опция особенно полезна тем, что позволяет позиционировать popover в потоке документа возле пускового элемента -\u00a0который будет препятствовать popover от плавающей пускового элемента во время изменении размера окна.",
+			"eng": "Appends the popover to a specific element. Example: <code>container: 'body'<\/code>. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element -\u00a0which will prevent the popover from floating away from the triggering element during a window resize."
+		},{
+			"rus": "Содержимое по умолчанию значение, если <code>data-content<\/code> атрибут отсутствует",
+			"eng": "Default content value if <code>data-content<\/code> attribute isn't present."
+		},{
+			"rus": "Если функция задана, она будет называться с <code>this<\/code> ссылки на элемент, к которому крепится всплывающее окно.",
+			"eng": "If a function is given, it will be called with its <code>this<\/code> reference set to the element that the popover is attached to."
+		},{
+			"rus": "Задержка показа и отображения информеров (ms) - не применяется для ручного типа вызова",
+			"eng": "Delay showing and hiding the popover (ms) - does not apply to manual trigger type"
+		},{
+			"rus": "Если указывается число, задержка применяется и для сокрытия, и для отображения",
+			"eng": "If a number is supplied, delay is applied to both hide\/show"
+		},{
+			"rus": "Такая Структура объекта: <code>delay: { \"show\": 500, \"hide\": 100 }<\/code>",
+			"eng": "Object structure is: <code>delay: { \"show\": 500, \"hide\": 100 }<\/code>"
+		},{
+			"rus": "How to position the popover - top | bottom | left | right | auto.<br>When \"auto\" is specified, it will dynamically reorient the popover. For example, if placement is \"auto left\", the popover will display to the left when possible, otherwise it will display right.",
+			"eng": "How to position the popover - top | bottom | left | right | auto.<br>When \"auto\" is specified, it will dynamically reorient the popover. For example, if placement is \"auto left\", the popover will display to the left when possible, otherwise it will display right."
+		},{
+			"rus": "When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this<\/code> context is set to the popover instance.",
+			"eng": "When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this<\/code> context is set to the popover instance."
+		},{
+			"rus": "База HTML использует при создании всплывающее окно.",
+			"eng": "Base HTML to use when creating the popover."
+		},{
+			"rus": "The popover's <code>title<\/code> будет введен в <code>.popover-title<\/code>.",
+			"eng": "The popover's <code>title<\/code> will be injected into the <code>.popover-title<\/code>."
+		},{
+			"rus": "The popover's <code>content<\/code> будет выведена на <code>.popover-content<\/code>.",
+			"eng": "The popover's <code>content<\/code> will be injected into the <code>.popover-content<\/code>."
+		},{
+			"rus": "<code>.arrow<\/code> станет стрелкой в всплывающем окне.",
+			"eng": "<code>.arrow<\/code> will become the popover's arrow."
+		},{
+			"rus": "Самый внешний элемент должен иметь <code>.popover<\/code> класс.",
+			"eng": "The outermost wrapper element should have the <code>.popover<\/code> class."
+		},{
+			"rus": "Default title value if <code>title<\/code> attribute isn't present.",
+			"eng": "Default title value if <code>title<\/code> attribute isn't present."
+		},{
+			"rus": "Сохраняет всплывающее окно в рамках этого элемента. Пример: <code>viewport: '#viewport'<\/code> or <code>{ \"selector\": \"#viewport\", \"padding\": 0 }<\/code>",
+			"eng": "Keeps the popover within the bounds of this element. Example: <code>viewport: '#viewport'<\/code> or <code>{ \"selector\": \"#viewport\", \"padding\": 0 }<\/code>"
+		},{
+			"rus": "Параметры для индивидуальных информеров еще можете указывать через атрибуты данных, как описано выше.",
+			"eng": "Options for individual popovers can alternatively be specified through the use of data attributes, as explained above."
+		},{
+			"rus": "Инициализация информеров для набора элементов.",
+			"eng": "Initializes popovers for an element collection."
+		},{
+			"rus": "Reveals an element's popover. Popovers whose both title and content are zero-length are never displayed.",
+			"eng": "Reveals an element's popover. Popovers whose both title and content are zero-length are never displayed."
+		},{
+			"rus": "Скрытие информера элемента.",
+			"eng": "Hides an element's popover."
+		},{
+			"rus": "Переключение информера элемента.",
+			"eng": "Toggles an element's popover."
+		},{
+			"rus": "Скрытие и удаление информера элемента.",
+			"eng": "Hides and destroys an element's popover."
+		}
+	],
+	"th": [
+		{
+			"rus": "Название",
+			"eng": "Name"
+		},{
+			"rus": "Тип",
+			"eng": "Type"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		},{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		}
+	],
+	"td": [
+		{
+			"rus": "анимация",
+			"eng": "animation"
+		},{
+			"rus": "логический",
+			"eng": "boolean"
+		},{
+			"rus": "правда",
+			"eng": "true"
+		},{
+			"rus": "Применяет CSS для плавного перехода к информера",
+			"eng": "Apply a CSS fade transition to the popover"
+		},{
+			"rus": "контейнер",
+			"eng": "container"
+		},{
+			"rus": "строковый | ложь",
+			"eng": "string | false"
+		},{
+			"rus": "ложь",
+			"eng": "false"
+		},{
+			"rus": "\n            <p>Добавляет popover на конкретный элемент. Пример: <code>container: 'body'<\/code>. Эта опция особенно полезна тем, что позволяет позиционировать popover в потоке документа возле пускового элемента -\u00a0который будет препятствовать popover от плавающей пускового элемента во время изменении размера окна.<\/p>\n          ",
+			"eng": "\n            <p>Добавляет popover на конкретный элемент. Пример: <code>container: 'body'<\/code>. Эта опция особенно полезна тем, что позволяет позиционировать popover в потоке документа возле пускового элемента -\u00a0который будет препятствовать popover от плавающей пускового элемента во время изменении размера окна.<\/p>\n          "
+		},{
+			"rus": "содержание",
+			"eng": "content"
+		},{
+			"rus": "строковый | функция",
+			"eng": "string | function"
+		},{
+			"rus": "\n            <p>Содержимое по умолчанию значение, если <code>data-content<\/code> атрибут отсутствует<\/p>\n            <p>Если функция задана, она будет называться с <code>this<\/code> ссылки на элемент, к которому крепится всплывающее окно.<\/p>\n          ",
+			"eng": "\n            <p>Содержимое по умолчанию значение, если <code>data-content<\/code> атрибут отсутствует<\/p>\n            <p>Если функция задана, она будет называться с <code>this<\/code> ссылки на элемент, к которому крепится всплывающее окно.<\/p>\n          "
+		},{
+			"rus": "задержка",
+			"eng": "delay"
+		},{
+			"rus": "числовой | объект",
+			"eng": "number | object"
+		},{
+			"rus": "\n           <p>Задержка показа и отображения информеров (ms) - не применяется для ручного типа вызова<\/p>\n           <p>Если указывается число, задержка применяется и для сокрытия, и для отображения<\/p>\n           <p>Такая Структура объекта: <code>delay: { \"show\": 500, \"hide\": 100 }<\/code><\/p>\n          ",
+			"eng": "\n           <p>Задержка показа и отображения информеров (ms) - не применяется для ручного типа вызова<\/p>\n           <p>Если указывается число, задержка применяется и для сокрытия, и для отображения<\/p>\n           <p>Такая Структура объекта: <code>delay: { \"show\": 500, \"hide\": 100 }<\/code><\/p>\n          "
+		},{
+			"rus": "html",
+			"eng": "html"
+		},{
+			"rus": "Вставляет в HTML информер. При значении false, будет использоваться метод jQuery <code>text<\/code> для вставки содержимого в DOM. Используйте текст, если побоютесь XSS атаки.",
+			"eng": "Insert HTML into the popover. If false, jQuery's <code>text<\/code> method will be used to insert content into the DOM. Use text if you're worried about XSS attacks."
+		},{
+			"rus": "размещение",
+			"eng": "placement"
+		},{
+			"rus": "'right'",
+			"eng": "'right'"
+		},{
+			"rus": "\n            <p>How to position the popover - top | bottom | left | right | auto.<br>When \"auto\" is specified, it will dynamically reorient the popover. For example, if placement is \"auto left\", the popover will display to the left when possible, otherwise it will display right.<\/p>\n            <p>When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this<\/code> context is set to the popover instance.<\/p>\n          ",
+			"eng": "\n            <p>How to position the popover - top | bottom | left | right | auto.<br>When \"auto\" is specified, it will dynamically reorient the popover. For example, if placement is \"auto left\", the popover will display to the left when possible, otherwise it will display right.<\/p>\n            <p>When a function is used to determine the placement, it is called with the popover DOM node as its first argument and the triggering element DOM node as its second. The <code>this<\/code> context is set to the popover instance.<\/p>\n          "
+		},{
+			"rus": "selector",
+			"eng": "selector"
+		},{
+			"rus": "строковый",
+			"eng": "string"
+		},{
+			"rus": "если селектор предоставлено, объект подсказки будет делегировано для указанной цели. На практике это используется для добавления информеров при включении динамического содержимого HTML. Просмотрите <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/4215\">это<\/a> и <a href=\"http:\/\/jsbin.com\/zopod\/1\/edit\">пример<\/a>.",
+			"eng": "If a selector is provided, popover objects will be delegated to the specified targets. In practice, this is used to enable dynamic HTML content to have popovers added. See <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/4215\">this<\/a> and <a href=\"http:\/\/jsbin.com\/zopod\/1\/edit\">an informative example<\/a>."
+		},{
+			"rus": "template",
+			"eng": "template"
+		},{
+			"rus": "<code>'&lt;div class=\"popover\" role=\"tooltip\"&gt;&lt;div class=\"arrow\"&gt;&lt;\/div&gt;&lt;h3 class=\"popover-title\"&gt;&lt;\/h3&gt;&lt;div class=\"popover-content\"&gt;&lt;\/div&gt;&lt;\/div&gt;'<\/code>",
+			"eng": "<code>'&lt;div class=\"popover\" role=\"tooltip\"&gt;&lt;div class=\"arrow\"&gt;&lt;\/div&gt;&lt;h3 class=\"popover-title\"&gt;&lt;\/h3&gt;&lt;div class=\"popover-content\"&gt;&lt;\/div&gt;&lt;\/div&gt;'<\/code>"
+		},{
+			"rus": "\n            <p>База HTML использует при создании всплывающее окно.<\/p>\n            <p>The popover's <code>title<\/code> будет введен в <code>.popover-title<\/code>.<\/p>\n            <p>The popover's <code>content<\/code> будет выведена на <code>.popover-content<\/code>.<\/p>\n            <p><code>.arrow<\/code> станет стрелкой в всплывающем окне.<\/p>\n            <p>Самый внешний элемент должен иметь <code>.popover<\/code> класс.<\/p>\n          ",
+			"eng": "\n            <p>База HTML использует при создании всплывающее окно.<\/p>\n            <p>The popover's <code>title<\/code> будет введен в <code>.popover-title<\/code>.<\/p>\n            <p>The popover's <code>content<\/code> будет выведена на <code>.popover-content<\/code>.<\/p>\n            <p><code>.arrow<\/code> станет стрелкой в всплывающем окне.<\/p>\n            <p>Самый внешний элемент должен иметь <code>.popover<\/code> класс.<\/p>\n          "
+		},{
+			"rus": "title",
+			"eng": "title"
+		},{
+			"rus": "\n            <p>Default title value if <code>title<\/code> attribute isn't present.<\/p>\n            <p>Если функция задана, она будет называться с <code>this<\/code> ссылки на элемент, к которому крепится всплывающее окно.<\/p>\n          ",
+			"eng": "\n            <p>Default title value if <code>title<\/code> attribute isn't present.<\/p>\n            <p>Если функция задана, она будет называться с <code>this<\/code> ссылки на элемент, к которому крепится всплывающее окно.<\/p>\n          "
+		},{
+			"rus": "trigger",
+			"eng": "trigger"
+		},{
+			"rus": "'click'",
+			"eng": "'click'"
+		},{
+			"rus": "Как вызвать подсказку - click | hover | focus | manual. Вы можете передавать несколько параметров, разделенных пробелами.",
+			"eng": "How popover is triggered - click | hover | focus | manual. You may pass multiple triggers; separate them with a space."
+		},{
+			"rus": "viewport",
+			"eng": "viewport"
+		},{
+			"rus": "строковый | объект",
+			"eng": "string | object"
+		},{
+			"rus": "{ selector: 'body', padding: 0 }",
+			"eng": "{ selector: 'body', padding: 0 }"
+		},{
+			"rus": "\n            <p>Сохраняет всплывающее окно в рамках этого элемента. Пример: <code>viewport: '#viewport'<\/code> or <code>{ \"selector\": \"#viewport\", \"padding\": 0 }<\/code><\/p>\n          ",
+			"eng": "\n            <p>Сохраняет всплывающее окно в рамках этого элемента. Пример: <code>viewport: '#viewport'<\/code> or <code>{ \"selector\": \"#viewport\", \"padding\": 0 }<\/code><\/p>\n          "
+		},{
+			"rus": "show.bs.popover",
+			"eng": "show.bs.popover"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>show<\/code>.",
+			"eng": "This event fires immediately when the <code>show<\/code> instance method is called."
+		},{
+			"rus": "shown.bs.popover",
+			"eng": "shown.bs.popover"
+		},{
+			"rus": "Это событие срабатывает, когда информер будет отображаться для пользователя (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete)."
+		},{
+			"rus": "hide.bs.popover",
+			"eng": "hide.bs.popover"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>hide<\/code>.",
+			"eng": "This event is fired immediately when the <code>hide<\/code> instance method has been called."
+		},{
+			"rus": "hidden.bs.popover",
+			"eng": "hidden.bs.popover"
+		},{
+			"rus": "Это событие срабатывает, когда будет скрыто информер для пользователя (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when the popover has finished being hidden from the user (will wait for CSS transitions to complete)."
+		}
+	],
+	"button": [
+		{
+			"rus": "Кликни для переключения информера",
+			"eng": "Click to toggle popover"
+		},{
+			"rus": "\n Информер слева\n ",
+			"eng": "\n        Popover on left\n      "
+		},{
+			"rus": "\n Информер вверху\n ",
+			"eng": "\n        Popover on top\n      "
+		},{
+			"rus": "\n Информер внизу\n ",
+			"eng": "\n        Popover on bottom\n      "
+		},{
+			"rus": "\n Информер справа\n ",
+			"eng": "\n        Popover on right\n      "
+		},{
+			"rus": "Неотсранимый popover",
+			"eng": "Dismissible popover"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

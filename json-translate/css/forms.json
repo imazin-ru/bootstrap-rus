@@ -1,0 +1,377 @@
+{
+	"h": [
+		{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Простой пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Встроенная форма",
+			"eng": "Inline form"
+		},{
+			"rus": "Горизонтальные формы",
+			"eng": "Horizontal form"
+		},{
+			"rus": "Поддерживаемые элементы управления",
+			"eng": "Supported controls"
+		},{
+			"rus": "Статическое управление",
+			"eng": "Static control"
+		},{
+			"rus": "Focus state",
+			"eng": "Focus state"
+		},{
+			"rus": "Disabled state",
+			"eng": "Disabled state"
+		},{
+			"rus": "Readonly state",
+			"eng": "Readonly state"
+		},{
+			"rus": "Проверка состояний",
+			"eng": "Validation states"
+		},{
+			"rus": "Управление измерением",
+			"eng": "Control sizing"
+		},{
+			"rus": "Текст справки",
+			"eng": "Help text"
+		},{
+			"rus": "Ввод",
+			"eng": "Inputs"
+		},{
+			"rus": "Текстовая область",
+			"eng": "Textarea"
+		},{
+			"rus": "Флажки и радиоприемники",
+			"eng": "Checkboxes and radios"
+		},{
+			"rus": "Подборки",
+			"eng": "Selects"
+		},{
+			"rus": "Отключенные наборы полей",
+			"eng": "Disabled fieldsets"
+		},{
+			"rus": "С дополнительными иконками",
+			"eng": "With optional icons"
+		},{
+			"rus": "Высота измерения",
+			"eng": "Height sizing"
+		},{
+			"rus": "Горизонтальные размеры групповых форм",
+			"eng": "Horizontal form group sizes"
+		},{
+			"rus": "Измерение столбца",
+			"eng": "Column sizing"
+		},{
+			"rus": "Не смешивайте группы форм с группами ввода",
+			"eng": "Don't mix form groups with input groups"
+		},{
+			"rus": "Необходимо настраивать ширину",
+			"eng": "Requires custom widths"
+		},{
+			"rus": "Всегда добавляйте ярлыки",
+			"eng": "Always add labels"
+		},{
+			"rus": "Необходимо объявлять тип поля",
+			"eng": "Type declaration required"
+		},{
+			"rus": "Группы форм ввода",
+			"eng": "Input groups"
+		},{
+			"rus": "По умолчанию (stacked)",
+			"eng": "Default (stacked)"
+		},{
+			"rus": "Встроенные галочки и радио",
+			"eng": "Inline checkboxes and radios"
+		},{
+			"rus": "Checkboxes and radios without label text",
+			"eng": "Checkboxes and radios without label text"
+		},{
+			"rus": "Демо <code>:focus<\/code> состояние",
+			"eng": "Demo <code>:focus<\/code> state"
+		},{
+			"rus": "Предостережение о функциональности ссылочной <code>&lt;a&gt;<\/code>",
+			"eng": "Caveat about link functionality of <code>&lt;a&gt;<\/code>"
+		},{
+			"rus": "Совместимость кроссбраузерности",
+			"eng": "Cross-browser compatibility"
+		},{
+			"rus": "Conveying validation state to assistive technologies",
+			"eng": "Conveying validation state to assistive technologies"
+		},{
+			"rus": "Иконки, этикетки, и входные группы",
+			"eng": "Icons, labels, and input groups"
+		},{
+			"rus": "Conveying the icon's meaning to assistive technologies",
+			"eng": "Conveying the icon's meaning to assistive technologies"
+		},{
+			"rus": "Дополнительные значки в горизонтальных и встроенных формах",
+			"eng": "Optional icons in horizontal and inline forms"
+		},{
+			"rus": "Дополнительные значки с скрытыми <code>.sr-only<\/code> этикетками",
+			"eng": "Optional icons with hidden <code>.sr-only<\/code> labels"
+		},{
+			"rus": "Associating help text with form controls",
+			"eng": "Associating help text with form controls"
+		}
+	],
+	"p": [
+		{
+			"rus": "Индивидуальные формы управления автоматически получают глобальную стилизованность. Вся текстовая <code>&lt;input&gt;<\/code>, <code>&lt;textarea&gt;<\/code> и <code>&lt;select&gt;<\/code> элементы с  и <code>&lt;textarea&gt;<\/code>установлены к<code>width: 100%;<\/code> по умолчанию. Преобразуйте этикетки и настройки в <code>.form-group<\/code>для оптимального интервала.",
+			"eng": "Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;<\/code>, <code>&lt;textarea&gt;<\/code>, and <code>&lt;select&gt;<\/code> elements with <code>.form-control<\/code> are set to <code>width: 100%;<\/code> by default. Wrap labels and controls in <code>.form-group<\/code> for optimum spacing."
+		},{
+			"rus": "Пример уровня блока текст справки здесь.",
+			"eng": "Example block-level help text here."
+		},{
+			"rus": "Добавьте <code>.form-inline<\/code> для выравнивания по левому краю и встроенному блоку управления для компактной планировки.",
+			"eng": "Do not mix form groups directly with <a href=\"\/components\/#input-groups\">input groups<\/a>. Instead, nest the input group inside of the form group."
+		},{
+			"rus": "Добавьте <code>.form-inline<\/code> для выравнивания по левому краю и встроенному блоку управления для компактной планировки.",
+			"eng": "Add <code>.form-inline<\/code> to your <code>&lt;form&gt;<\/code> for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.<\/strong>"
+		},{
+			"rus": "Inputs and selects have <code>width: 100%;<\/code> applied by default in Bootstrap. Within inline forms, we reset that to <code>width: auto;<\/code> so multiple controls can reside on the same line. Depending on your layout, additional custom widths may be required.",
+			"eng": "Inputs and selects have <code>width: 100%;<\/code> applied by default in Bootstrap. Within inline forms, we reset that to <code>width: auto;<\/code> so multiple controls can reside on the same line. Depending on your layout, additional custom widths may be required."
+		},{
+			"rus": "Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only<\/code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label<\/code>, <code>aria-labelledby<\/code> or <code>title<\/code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder<\/code> attribute, if present, but note that use of <code>placeholder<\/code> as a replacement for other labelling methods is not advised.",
+			"eng": "Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only<\/code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label<\/code>, <code>aria-labelledby<\/code> or <code>title<\/code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder<\/code> attribute, if present, but note that use of <code>placeholder<\/code> as a replacement for other labelling methods is not advised."
+		},{
+			"rus": "Используя Bootstrap предопределенные классы разметки для выравнивания лейблов и груп контролов форм в горизонтальном макете добавляя <code>.form-horizontal<\/code> в форму. Делая это изменяют поведение <code>.form-group<\/code> как ряд разметки, поэтому не нужен <code>.row<\/code>.",
+			"eng": "Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal<\/code> to the form. Doing so changes <code>.form-group<\/code>s to behave as grid rows, so no need for <code>.row<\/code>."
+		},{
+			"rus": "Примеры стандартных элементов управления поддерживаются на примере формы макета.",
+			"eng": "Examples of standard form controls supported in an example form layout."
+		},{
+			"rus": "Наиболее распространенные формы управления, текстовые поля ввода включают поддержку для всех типов HTML5 : <code>text<\/code>, <code>text<\/code>, <code>datetime<\/code>, <code>datetime-local<\/code>, <code>date<\/code>, <code>month<\/code>, <code>time<\/code>, <code>week<\/code>, <code>number<\/code>, <code>email<\/code>, <code>url<\/code>, <code>search<\/code>, <code>tel<\/code>, и <code>color<\/code>.",
+			"eng": "Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text<\/code>, <code>password<\/code>, <code>datetime<\/code>, <code>datetime-local<\/code>, <code>date<\/code>, <code>month<\/code>, <code>time<\/code>, <code>week<\/code>, <code>number<\/code>, <code>email<\/code>, <code>url<\/code>, <code>search<\/code>, <code>tel<\/code>, and <code>color<\/code>."
+		},{
+			"rus": "Ввод будет полностью оформлен, если их <code>type<\/code> правильно декларирован.",
+			"eng": "Inputs will only be fully styled if their <code>type<\/code> is properly declared."
+		},{
+			"rus": "Для того, чтобы добавить интегрированный текст или кнопки до и \/ или после любой текстовый <code>&lt;input&gt;<\/code>, <a href=\"..\/components\/#input-groups\"> проверить вход группа компонентов <\/a>.",
+			"eng": "To add integrated text or buttons before and\/or after any text-based <code>&lt;input&gt;<\/code>, <a href=\"..\/components\/#input-groups\">check out the input group component<\/a>."
+		},{
+			"rus": "Форма управления, которая поддерживает несколько строк текста. Изменение <code>rows<\/code>атрибута так необходимо.",
+			"eng": "Form control which supports multiple lines of text. Change <code>rows<\/code> attribute as necessary."
+		},{
+			"rus": "Флажки для выбора одного или нескольких вариантов, в то время как радиостанции для выбора одного варианта из многих.",
+			"eng": "Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many."
+		},{
+			"rus": "Флажок или радио с <code>disabled<\/code> атрибутом будет в стиле соответствующим образом. Чтобы иметь <code>&lt;label&gt;<\/code> для флажка или радио также отображать \"not-allowed\" курсор, когда пользователь наводит курсор на этикетку, добавить <code>.disabled<\/code> класс в <code>.radio<\/code>, <code>.radio-inline<\/code>, <code>.checkbox<\/code>, <code>.checkbox-inline<\/code>, или <code>&lt;fieldset&gt;<\/code>.",
+			"eng": "A checkbox or radio with the <code>disabled<\/code> attribute will be styled appropriately. To have the <code>&lt;label&gt;<\/code> for the checkbox or radio also display a \"not-allowed\" cursor when the user hovers over the label, add the <code>.disabled<\/code> class to your <code>.radio<\/code>, <code>.radio-inline<\/code>, <code>.checkbox<\/code>, <code>.checkbox-inline<\/code>, or <code>&lt;fieldset&gt;<\/code>."
+		},{
+			"rus": "Используйте <code>.checkbox-inline<\/code> или <code>.radio-inline<\/code> класса набором флажков или радиоприемников для управления отображениями на той же линии.",
+			"eng": "Use the <code>.checkbox-inline<\/code> or <code>.radio-inline<\/code> classes on a series of checkboxes or radios for controls that appear on the same line."
+		},{
+			"rus": "Should you have no text within the <code>&lt;label&gt;<\/code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.<\/strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label<\/code>).",
+			"eng": "Should you have no text within the <code>&lt;label&gt;<\/code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.<\/strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label<\/code>)."
+		},{
+			"rus": "For <code>&lt;select&gt;<\/code> controls with the <code>multiple<\/code> attribute, multiple options are shown by default.",
+			"eng": "For <code>&lt;select&gt;<\/code> controls with the <code>multiple<\/code> attribute, multiple options are shown by default."
+		},{
+			"rus": "Когда вам необходимо разместить текст рядом с формой этикетки в пределах формы, используйте <code>.form-control-static<\/code> класс на <code>&lt;p&gt;<\/code>.",
+			"eng": "When you need to place plain text next to a form label within a form, use the <code>.form-control-static<\/code> class on a <code>&lt;p&gt;<\/code>."
+		},{
+			"rus": "email@example.com",
+			"eng": "email@example.com"
+		},{
+			"rus": "Мы удаляем по умолчанию <code>outline<\/code> стили на формы управления и применяем <code>box-shadow<\/code> на его место для <code>:focus<\/code>.",
+			"eng": "We remove the default <code>outline<\/code> styles on some form controls and apply a <code>box-shadow<\/code> in its place for <code>:focus<\/code>."
+		},{
+			"rus": "Приведенный выше пример ввода использует пользовательские стили в нашей документации для демонстрации <code>:focus<\/code> состояние на <code>.form-control<\/code>.",
+			"eng": "The above example input uses custom styles in our documentation to demonstrate the <code>:focus<\/code> state on a <code>.form-control<\/code>."
+		},{
+			"rus": "Добавьте <code>disabled<\/code> атрибут на входе, чтобы предотвратить ввод пользователя и вызвать несколько иной вид.",
+			"eng": "Add the <code>disabled<\/code> boolean attribute on an input to prevent user input and trigger a slightly different look."
+		},{
+			"rus": "Добавьте <code>disabled<\/code> атрибут к <code>&lt;fieldset&gt;<\/code>, чтобы отключить все элементы управления в <code>&lt;fieldset&gt;<\/code> сразу.",
+			"eng": "Add the <code>disabled<\/code> attribute to a <code>&lt;fieldset&gt;<\/code> to disable all the controls within the <code>&lt;fieldset&gt;<\/code> at once."
+		},{
+			"rus": "By default, browsers will treat all native form controls (<code>&lt;input&gt;<\/code>, <code>&lt;select&gt;<\/code> and <code>&lt;button&gt;<\/code> elements) inside a <code>&lt;fieldset disabled&gt;<\/code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class=\"btn btn-*\"&gt;<\/code> elements, these will only be given a style of <code>pointer-events: none<\/code>. As noted in the section about <a href=\"#buttons-disabled\">disabled state for buttons<\/a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.",
+			"eng": "By default, browsers will treat all native form controls (<code>&lt;input&gt;<\/code>, <code>&lt;select&gt;<\/code> and <code>&lt;button&gt;<\/code> elements) inside a <code>&lt;fieldset disabled&gt;<\/code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class=\"btn btn-*\"&gt;<\/code> elements, these will only be given a style of <code>pointer-events: none<\/code>. As noted in the section about <a href=\"#buttons-disabled\">disabled state for buttons<\/a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links."
+		},{
+			"rus": "Bootstrap применят эти стили ко всем браузерам. Internet Explorer 11 и ниже в действительности не поддерживают аттрибут <code>disabled<\/code> на <code>&lt;fieldset&gt;<\/code>. Используйте измененный JavaScript для ограничения филдсета в этих браузерах.",
+			"eng": "While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the <code>disabled<\/code> attribute on a <code>&lt;fieldset&gt;<\/code>. Use custom JavaScript to disable the fieldset in these browsers."
+		},{
+			"rus": "Добавьте <code>readonly<\/code> атрибут на входе, чтобы предотвратить ввод пользователя и вызвать несколько иной вид.",
+			"eng": "Add the <code>readonly<\/code> boolean attribute on an input to prevent user input and style the input as disabled."
+		},{
+			"rus": "Bootstrap включает в себя проверку стилей на ошибки, предупреждения и успех положений на формы управления. Для использования, добавьте <code>.has-warning<\/code>, <code>.has-error<\/code>, или <code>.has-success<\/code> к исходному элементу. Любой <code>.control-label<\/code>, <code>.form-control<\/code> и <code>.help-block<\/code> внутри этого элемента получит подтверждение стилей.",
+			"eng": "Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add <code>.has-warning<\/code>, <code>.has-error<\/code>, or <code>.has-success<\/code> to the parent element. Any <code>.control-label<\/code>, <code>.form-control<\/code>, and <code>.help-block<\/code> within that element will receive the validation styles."
+		},{
+			"rus": "Using these validation styles to denote the state of a form control only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers.",
+			"eng": "Using these validation styles to denote the state of a form control only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers."
+		},{
+			"rus": "Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;<\/code> text itself (as is the case in the following code example), or associate an additional element with textual information about the validation state with the form control using <code>aria-describedby<\/code> (see the example in the following section). In the case of an error, you could also use the <code>aria-invalid=\"true\"<\/code> attribute on the form control.",
+			"eng": "Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;<\/code> text itself (as is the case in the following code example), or associate an additional element with textual information about the validation state with the form control using <code>aria-describedby<\/code> (see the example in the following section). In the case of an error, you could also use the <code>aria-invalid=\"true\"<\/code> attribute on the form control."
+		},{
+			"rus": "Вы можете также добавить дополнительные значки обратной связи с добавлением <code>.has-feedback<\/code> и значка справа.",
+			"eng": "You can also add optional feedback icons with the addition of <code>.has-feedback<\/code> and the right icon."
+		},{
+			"rus": "<strong class=\"text-danger\">Feedback icons only work with textual <code>&lt;input class=\"form-control\"&gt;<\/code> elements.<\/strong>",
+			"eng": "<strong class=\"text-danger\">Feedback icons only work with textual <code>&lt;input class=\"form-control\"&gt;<\/code> elements.<\/strong>"
+		},{
+			"rus": "Manual positioning of feedback icons is required for inputs without a label and for <a href=\"..\/components#input-groups\">input groups<\/a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only<\/code> class. If you must do without labels, adjust the <code>top<\/code> value of the feedback icon. For input groups, adjust the <code>right<\/code> value to an appropriate pixel value depending on the width of your addon.",
+			"eng": "Manual positioning of feedback icons is required for inputs without a label and for <a href=\"..\/components#input-groups\">input groups<\/a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only<\/code> class. If you must do without labels, adjust the <code>top<\/code> value of the feedback icon. For input groups, adjust the <code>right<\/code> value to an appropriate pixel value depending on the width of your addon."
+		},{
+			"rus": "To ensure that assistive technologies \u2013 such as screen readers \u2013 correctly convey the meaning of an icon, additional hidden text should be included with the <code>.sr-only<\/code> class and explicitly associated with the form control it relates to using <code>aria-describedby<\/code>. Alternatively, ensure that the meaning (for instance, the fact that there is a warning for a particular text entry field) is conveyed in some other form, such as changing the text of the actual <code>&lt;label&gt;<\/code> associated with the form control.",
+			"eng": "To ensure that assistive technologies \u2013 such as screen readers \u2013 correctly convey the meaning of an icon, additional hidden text should be included with the <code>.sr-only<\/code> class and explicitly associated with the form control it relates to using <code>aria-describedby<\/code>. Alternatively, ensure that the meaning (for instance, the fact that there is a warning for a particular text entry field) is conveyed in some other form, such as changing the text of the actual <code>&lt;label&gt;<\/code> associated with the form control."
+		},{
+			"rus": "Although the following examples already mention the validation state of their respective form controls in the <code>&lt;label&gt;<\/code> text itself, the above technique (using <code>.sr-only<\/code> text and <code>aria-describedby<\/code>) has been included for illustrative purposes.",
+			"eng": "Although the following examples already mention the validation state of their respective form controls in the <code>&lt;label&gt;<\/code> text itself, the above technique (using <code>.sr-only<\/code> text and <code>aria-describedby<\/code>) has been included for illustrative purposes."
+		},{
+			"rus": "If you use the <code>.sr-only<\/code> class to hide a form control's <code>&lt;label&gt;<\/code> (rather than using other labelling options, such as the <code>aria-label<\/code> attribute), Bootstrap will automatically adjust the position of the icon once it's been added.",
+			"eng": "If you use the <code>.sr-only<\/code> class to hide a form control's <code>&lt;label&gt;<\/code> (rather than using other labelling options, such as the <code>aria-label<\/code> attribute), Bootstrap will automatically adjust the position of the icon once it's been added."
+		},{
+			"rus": "Задавать высоту с помощью классов <code>.input-lg<\/code>, и задавать ширину с использованием классов столбцовой разметки, как <code>.col-lg-*<\/code>.",
+			"eng": "Set heights using classes like <code>.input-lg<\/code>, and set widths using grid column classes like <code>.col-lg-*<\/code>."
+		},{
+			"rus": "Создать выше или короче форму управления, которая соответствуют размерам кнопки.",
+			"eng": "Create taller or shorter form controls that match button sizes."
+		},{
+			"rus": "Быстро размер этикетки и управления форм в пределах <code>.form-horizontal<\/code> путем добавления <code>.form-group-lg<\/code> или <code>.form-group-sm<\/code>.",
+			"eng": "Quickly size labels and form controls within <code>.form-horizontal<\/code> by adding <code>.form-group-lg<\/code> or <code>.form-group-sm<\/code>."
+		},{
+			"rus": "Преобразуйте вводы в сетке столбцов, или в любом пользовательском исходном элементе, для легкого соблюдения желаемой ширины.",
+			"eng": "Wrap inputs in grid columns, or any custom parent element, to easily enforce desired widths."
+		},{
+			"rus": "Блок уровня справки для формы управления.",
+			"eng": "Block level help text for form controls."
+		},{
+			"rus": "Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby<\/code> attribute. This will ensure that assistive technologies \u2013 such as screen readers \u2013 will announce this help text when the user focuses or enters the control.",
+			"eng": "Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby<\/code> attribute. This will ensure that assistive technologies \u2013 such as screen readers \u2013 will announce this help text when the user focuses or enters the control."
+		}
+	],
+	"label": [
+		{
+			"rus": "Email",
+			"eng": "Email address"
+		},{
+			"rus": "Пароль",
+			"eng": "Password"
+		},{
+			"rus": "File input",
+			"eng": "File input"
+		},{
+			"rus": "\n          <input type=\"checkbox\"> Проверить меня\n        ",
+			"eng": "\n          <input type=\"checkbox\"> Check me out\n        "
+		},{
+			"rus": "\n          <input type=\"checkbox\"> Запомнить меня\n        ",
+			"eng": "\n          <input type=\"checkbox\"> Remember me\n        "
+		},{
+			"rus": "Amount (in dollars)",
+			"eng": "Amount (in dollars)"
+		},{
+			"rus": "Email",
+			"eng": "Email"
+		},{
+			"rus": "\n          <input type=\"checkbox\" value=\"\">\n          Первая опция&mdash;выбирайте его, если вам нравится этот пункт\n        ",
+			"eng": "\n          <input type=\"checkbox\" value=\"\">\n          Option one is this and that&mdash;be sure to include why it's great\n        "
+		},{
+			"rus": "\n          <input type=\"checkbox\" value=\"\" disabled>\n          Option two is disabled\n        ",
+			"eng": "\n          <input type=\"checkbox\" value=\"\" disabled>\n          Option two is disabled\n        "
+		},{
+			"rus": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked>\n          Первая опция&mdash;выбирайте его, если вам нравится этот пункт\n        ",
+			"eng": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked>\n          Option one is this and that&mdash;be sure to include why it's great\n        "
+		},{
+			"rus": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\">\n          Вторая опция - это несколько другое, и она отменяет выбор первой опции\n        ",
+			"eng": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\">\n          Option two can be something else and selecting it will deselect option one\n        "
+		},{
+			"rus": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios3\" value=\"option3\" disabled>\n          Option three is disabled\n        ",
+			"eng": "\n          <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios3\" value=\"option3\" disabled>\n          Option three is disabled\n        "
+		},{
+			"rus": "\n        <input type=\"checkbox\" id=\"inlineCheckbox1\" value=\"option1\"> 1\n    ",
+			"eng": "\n        <input type=\"checkbox\" id=\"inlineCheckbox1\" value=\"option1\"> 1\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" id=\"inlineCheckbox2\" value=\"option2\"> 2\n    ",
+			"eng": "\n        <input type=\"checkbox\" id=\"inlineCheckbox2\" value=\"option2\"> 2\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" id=\"inlineCheckbox3\" value=\"option3\"> 3\n    ",
+			"eng": "\n        <input type=\"checkbox\" id=\"inlineCheckbox3\" value=\"option3\"> 3\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio1\" value=\"option1\"> 1\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio1\" value=\"option1\"> 1\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio2\" value=\"option2\"> 2\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio2\" value=\"option2\"> 2\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio3\" value=\"option3\"> 3\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"inlineRadioOptions\" id=\"inlineRadio3\" value=\"option3\"> 3\n      "
+		},{
+			"rus": "\n          <input type=\"checkbox\" id=\"blankCheckbox\" value=\"option1\" aria-label=\"Checkbox without label text\">\n        ",
+			"eng": "\n          <input type=\"checkbox\" id=\"blankCheckbox\" value=\"option1\" aria-label=\"Checkbox without label text\">\n        "
+		},{
+			"rus": "\n          <input type=\"radio\" name=\"blankRadio\" id=\"blankRadio1\" value=\"option1\" aria-label=\"Radio button without label text\">\n        ",
+			"eng": "\n          <input type=\"radio\" name=\"blankRadio\" id=\"blankRadio1\" value=\"option1\" aria-label=\"Radio button without label text\">\n        "
+		},{
+			"rus": "\n    <input type=\"checkbox\" id=\"blankCheckbox\" value=\"option1\" aria-label=\"...\">\n  ",
+			"eng": "\n    <input type=\"checkbox\" id=\"blankCheckbox\" value=\"option1\" aria-label=\"...\">\n  "
+		},{
+			"rus": "\n    <input type=\"radio\" name=\"blankRadio\" id=\"blankRadio1\" value=\"option1\" aria-label=\"...\">\n  ",
+			"eng": "\n    <input type=\"radio\" name=\"blankRadio\" id=\"blankRadio1\" value=\"option1\" aria-label=\"...\">\n  "
+		},{
+			"rus": "Неактивный ввод",
+			"eng": "Disabled input"
+		},{
+			"rus": "Неактивный select menu",
+			"eng": "Disabled select menu"
+		},{
+			"rus": "\n            <input type=\"checkbox\"> Не могу проверить это\n          ",
+			"eng": "\n            <input type=\"checkbox\"> Can't check this\n          "
+		},{
+			"rus": "Успешный ввод",
+			"eng": "Input with success"
+		},{
+			"rus": "Ввод с предупреждением",
+			"eng": "Input with warning"
+		},{
+			"rus": "Ввод с ошибкой",
+			"eng": "Input with error"
+		},{
+			"rus": "\n            <input type=\"checkbox\" id=\"checkboxSuccess\" value=\"option1\">\n            Checkbox with success\n          ",
+			"eng": "\n            <input type=\"checkbox\" id=\"checkboxSuccess\" value=\"option1\">\n            Checkbox with success\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" id=\"checkboxWarning\" value=\"option1\">\n            Checkbox with warning\n          ",
+			"eng": "\n            <input type=\"checkbox\" id=\"checkboxWarning\" value=\"option1\">\n            Checkbox with warning\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" id=\"checkboxError\" value=\"option1\">\n            Checkbox with error\n          ",
+			"eng": "\n            <input type=\"checkbox\" id=\"checkboxError\" value=\"option1\">\n            Checkbox with error\n          "
+		},{
+			"rus": "Скрытая этикетка",
+			"eng": "Hidden label"
+		},{
+			"rus": "Огромная этикетка",
+			"eng": "Large label"
+		},{
+			"rus": "Маленькая этикетка",
+			"eng": "Small label"
+		},{
+			"rus": "Input with help text",
+			"eng": "Input with help text"
+		}
+	],
+	"button": [
+		{
+			"rus": "Отправить",
+			"eng": "Submit"
+		},{
+			"rus": "Войти",
+			"eng": "Sign in"
+		},{
+			"rus": "Transfer cash",
+			"eng": "Transfer cash"
+		},{
+			"rus": "Подтверждение личности",
+			"eng": "Confirm identity"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- \/.bs-example -->",
+			"eng": "<!-- \/.bs-example -->"
+		}
+	]
+}

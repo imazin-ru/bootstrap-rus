@@ -1,0 +1,143 @@
+{
+	"h": [
+		{
+			"rus": "Кнопки <small>button.js<\/small>",
+			"eng": "Buttons <small>button.js<\/small>"
+		},{
+			"rus": "Состояние загрузки",
+			"eng": "Stateful"
+		},{
+			"rus": "Единичное переключение",
+			"eng": "Single toggle"
+		},{
+			"rus": "Checkbox \/ Radio",
+			"eng": "Checkbox \/ Radio"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "Кросс-браузерная совместимость",
+			"eng": "Cross-browser compatibility"
+		},{
+			"rus": "Use whichever state you like!",
+			"eng": "Use whichever state you like!"
+		},{
+			"rus": "Pre-toggled buttons need <code>.active<\/code> and <code>aria-pressed=\"true\"<\/code>",
+			"eng": "Pre-toggled buttons need <code>.active<\/code> and <code>aria-pressed=\"true\"<\/code>"
+		},{
+			"rus": "Заранее выбранные должны быть <code>.active<\/code>",
+			"eng": "Preselected options need <code>.active<\/code>"
+		},{
+			"rus": "Visual checked state only updated on click",
+			"eng": "Visual checked state only updated on click"
+		},{
+			"rus": "$().button('toggle')",
+			"eng": "$().button('toggle')"
+		},{
+			"rus": "$().button('reset')",
+			"eng": "$().button('reset')"
+		},{
+			"rus": "$().button(string)",
+			"eng": "$().button(string)"
+		}
+	],
+	"p": [
+		{
+			"rus": "Настройте дополнительно кнопки. Контролируйте состояния кнопок, или создавайте группы кнопок увеличивая количество компонентов, как в панели инструментов.",
+			"eng": "Do more with buttons. Control button states or create groups of buttons for more components like toolbars."
+		},{
+			"rus": "<a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/793\">Firefox persists form control states (disabledness and checkedness) across page loads<\/a>. A workaround for this is to use <code>autocomplete=\"off\"<\/code>. See <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=654072\">Mozilla bug #654072<\/a>.",
+			"eng": "<a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/793\">Firefox persists form control states (disabledness and checkedness) across page loads<\/a>. A workaround for this is to use <code>autocomplete=\"off\"<\/code>. See <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=654072\">Mozilla bug #654072<\/a>."
+		},{
+			"rus": "Добавьте <code>data-loading-text=\"Загружается...\"<\/code>, чтобы использовать состояние загрузки на кнопке.",
+			"eng": "Add <code>data-loading-text=\"Loading...\"<\/code> to use a loading state on a button."
+		},{
+			"rus": "For the sake of this demonstration, we are using <code>data-loading-text<\/code> and <code>$().button('loading')<\/code>, but that's not the only state you can use. <a href=\"#buttons-methods\">See more on this below in the <code>$().button(string)<\/code> documentation<\/a>.",
+			"eng": "For the sake of this demonstration, we are using <code>data-loading-text<\/code> and <code>$().button('loading')<\/code>, but that's not the only state you can use. <a href=\"#buttons-methods\">See more on this below in the <code>$().button(string)<\/code> documentation<\/a>."
+		},{
+			"rus": "Добавьте <code>data-toggle=\"button\"<\/code>, чтобы активировать переключение на единичном кнопке.",
+			"eng": "Add <code>data-toggle=\"button\"<\/code> to activate toggling on a single button."
+		},{
+			"rus": "For pre-toggled buttons, you must add the <code>.active<\/code> class and the <code>aria-pressed=\"true\"<\/code> attribute to the <code>button<\/code> yourself.",
+			"eng": "For pre-toggled buttons, you must add the <code>.active<\/code> class and the <code>aria-pressed=\"true\"<\/code> attribute to the <code>button<\/code> yourself."
+		},{
+			"rus": "Add <code>data-toggle=\"buttons\"<\/code> to a <code>.btn-group<\/code> containing checkbox or radio inputs to enable toggling in their respective styles.",
+			"eng": "Add <code>data-toggle=\"buttons\"<\/code> to a <code>.btn-group<\/code> containing checkbox or radio inputs to enable toggling in their respective styles."
+		},{
+			"rus": "Для предварительно выбранных опций, необходимо добавить <code>.active<\/code> класс для инпутов <code>label<\/code>.",
+			"eng": "For preselected options, you must add the <code>.active<\/code> class to the input's <code>label<\/code> yourself."
+		},{
+			"rus": "If the checked state of a checkbox button is updated without firing a <code>click<\/code> event on the button (e.g. via <code>&lt;input type=\"reset\"&gt;<\/code> or via setting the <code>checked<\/code> property of the input), you will need to toggle the <code>.active<\/code> class on the input's <code>label<\/code> yourself.",
+			"eng": "If the checked state of a checkbox button is updated without firing a <code>click<\/code> event on the button (e.g. via <code>&lt;input type=\"reset\"&gt;<\/code> or via setting the <code>checked<\/code> property of the input), you will need to toggle the <code>.active<\/code> class on the input's <code>label<\/code> yourself."
+		},{
+			"rus": "Переключите состояние кнопки. Предоставьте кнопки вид, как будто ее активировано.",
+			"eng": "Toggles push state. Gives the button the appearance that it has been activated."
+		},{
+			"rus": "Сброс состояния кнопки - изменение текста на первоначальный текст.",
+			"eng": "Resets button state - swaps text to original text."
+		},{
+			"rus": "Изменение текста на любой указанный текст состояния.",
+			"eng": "Swaps text to any data defined text state."
+		}
+	],
+	"label": [
+		{
+			"rus": "\n        <input type=\"checkbox\" checked autocomplete=\"off\"> Checkbox 1 (pre-checked)\n      ",
+			"eng": "\n        <input type=\"checkbox\" checked autocomplete=\"off\"> Checkbox 1 (pre-checked)\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 2\n      ",
+			"eng": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 2\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 3\n      ",
+			"eng": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 3\n      "
+		},{
+			"rus": "\n    <input type=\"checkbox\" autocomplete=\"off\" checked> Checkbox 1 (pre-checked)\n  ",
+			"eng": "\n    <input type=\"checkbox\" autocomplete=\"off\" checked> Checkbox 1 (pre-checked)\n  "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked> Radio 1 (preselected)\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked> Radio 1 (preselected)\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option2\" autocomplete=\"off\"> Radio 2\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option2\" autocomplete=\"off\"> Radio 2\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option3\" autocomplete=\"off\"> Radio 3\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option3\" autocomplete=\"off\"> Radio 3\n      "
+		}
+	],
+	"button": [
+		{
+			"rus": "\n        Состояние загрузки\n      ",
+			"eng": "\n      Loading state\n    "
+		},{
+			"rus": "Единичное переключение",
+			"eng": "\n      Single toggle\n    "
+		},{
+			"rus": "\n        <input type=\"checkbox\" checked autocomplete=\"off\"> Checkbox 1 (pre-checked)\n      ",
+			"eng": "\n        <input type=\"checkbox\" checked autocomplete=\"off\"> Checkbox 1 (pre-checked)\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 2\n      ",
+			"eng": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 2\n      "
+		},{
+			"rus": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 3\n      ",
+			"eng": "\n        <input type=\"checkbox\" autocomplete=\"off\"> Checkbox 3\n      "
+		},{
+			"rus": "\n    <input type=\"checkbox\" autocomplete=\"off\" checked> Checkbox 1 (pre-checked)\n  ",
+			"eng": "\n    <input type=\"checkbox\" autocomplete=\"off\" checked> Checkbox 1 (pre-checked)\n  "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked> Radio 1 (preselected)\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked> Radio 1 (preselected)\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option2\" autocomplete=\"off\"> Radio 2\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option2\" autocomplete=\"off\"> Radio 2\n      "
+		},{
+			"rus": "\n        <input type=\"radio\" name=\"options\" id=\"option3\" autocomplete=\"off\"> Radio 3\n      ",
+			"eng": "\n        <input type=\"radio\" name=\"options\" id=\"option3\" autocomplete=\"off\"> Radio 3\n      "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		}
+	]
+}

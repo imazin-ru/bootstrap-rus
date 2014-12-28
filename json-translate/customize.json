@@ -1,0 +1,236 @@
+{
+	"title": [
+		{
+			"rus": "title: Настроить и скачать",
+			"eng": "title: Customize and download"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: Измените Bootstrap компоненты, переменные Less, и jQuery плагины, чтобы получить собственную версию сборки.",
+			"eng": "lead: Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version."
+		}
+	],
+	"h": [
+		{
+			"rus": "Компоненты Less",
+			"eng": "Less files"
+		},{
+			"rus": "jQuery Плагины",
+			"eng": "jQuery plugins"
+		},{
+			"rus": "Less переменные",
+			"eng": "Less variables"
+		},{
+			"rus": "Скачать",
+			"eng": "Download"
+		},{
+			"rus": "Общие CSS",
+			"eng": "Common CSS"
+		},{
+			"rus": "Компоненты",
+			"eng": "Components"
+		},{
+			"rus": "Компоненты JavaScript",
+			"eng": "JavaScript components"
+		},{
+			"rus": "Связанные компоненты",
+			"eng": "Linked to components"
+		},{
+			"rus": "Magic",
+			"eng": "Magic"
+		},{
+			"rus": "Производит два файла",
+			"eng": "Produces two files"
+		},{
+			"rus": "Требуется jQuery",
+			"eng": "jQuery required"
+		}
+	],
+	"p": [
+		{
+			"rus": "Have an existing configuration? Upload your <code>config.json<\/code> to import it.",
+			"eng": "Have an existing configuration? Upload your <code>config.json<\/code> to import it."
+		},{
+			"rus": "Drag and drop here, or <label id=\"import-manual-trigger\" class=\"btn-link\">manually upload<input type=\"file\" id=\"import-file-select\" class=\"hidden\"><\/label>.",
+			"eng": "Drag and drop here, or <label id=\"import-manual-trigger\" class=\"btn-link\">manually upload<input type=\"file\" id=\"import-file-select\" class=\"hidden\"><\/label>."
+		},{
+			"rus": "<strong>Don't have one?<\/strong> That's okay\u2014just start customizing the fields below.",
+			"eng": "<strong>Don't have one?<\/strong> That's okay\u2014just start customizing the fields below."
+		},{
+			"rus": "Выберите из файлов Less которые будут включены в вашу собственную сборку Bootstrap. Не уверены, какие файлы использовать? Ознакомьтесь с документацией по <a href=\"..\/css\/\">CSS<\/a> и <a href=\"..\/components\/\">Компонентам<\/a>.",
+			"eng": "Choose which Less files to compile into your custom build of Bootstrap. Not sure which files to use? Read through the <a href=\"..\/css\/\">CSS<\/a> and <a href=\"..\/components\/\">Components<\/a> pages in the docs."
+		},{
+			"rus": "Выберите из jQuery плагинов которые должны включаться в вашу собственную сборку файлов JavaScript. Не уверены что именно включать? Прочитайте документацию относительно <a href=\"..\/javascript-doc\/\">JavaScript<\/a>.",
+			"eng": "Choose which jQuery plugins should be included in your custom JavaScript files. Unsure what to include? Read the <a href=\"..\/javascript\/\">JavaScript<\/a> page in the docs."
+		},{
+			"rus": "Все отмеченные плагины будут собраны в читабельный <code>bootstrap.js<\/code> и минимизированный <code>bootstrap.min.js<\/code>. Мы рекомендуем использовать минимизированную версию для рабочих (production) версий.",
+			"eng": "All checked plugins will be compiled into a readable <code>bootstrap.js<\/code> and a minified <code>bootstrap.min.js<\/code>. We recommend you use the minified version in production."
+		},{
+			"rus": "Все плагины требуют подключения последней версии <a href=\"http:\/\/jquery.com\/\" target=\"_blank\">jQuery<\/a>.",
+			"eng": "All plugins require the latest version of <a href=\"http:\/\/jquery.com\/\" target=\"_blank\">jQuery<\/a> to be included."
+		},{
+			"rus": "Настроить Less переменные, чтобы определить цвет, размер и другое внутри ваших пользовательских CSS стилей.",
+			"eng": "Customize Less variables to define colors, sizes and more inside your custom CSS stylesheets."
+		},{
+			"rus": "Ура! Ваша собственная версия Bootstrap готова к сборке. Просто кликните кнопку внизу, чтобы завершить процесс.",
+			"eng": "Hooray! Your custom version of Bootstrap is now ready to be compiled. Just click the button below to finish the process."
+		}
+	],
+	"label": [
+		{
+			"rus": "manually upload<input type=\"file\" id=\"import-file-select\" class=\"hidden\">",
+			"eng": "manually upload<input type=\"file\" id=\"import-file-select\" class=\"hidden\">"
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"print.less\">\n            Print media styles\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"print.less\">\n            Print media styles\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"type.less\">\n            Typography\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"type.less\">\n            Typography\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"code.less\">\n            Code\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"code.less\">\n            Code\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"grid.less\">\n            Grid system\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"grid.less\">\n            Grid system\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"tables.less\">\n            Tables\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"tables.less\">\n            Tables\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"forms.less\" data-dependents=\"navbar.less,input-groups.less\">\n            Forms\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"forms.less\" data-dependents=\"navbar.less,input-groups.less\">\n            Forms\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"buttons.less\" data-dependents=\"button-groups.less\">\n            Buttons\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"buttons.less\" data-dependents=\"button-groups.less\">\n            Buttons\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"responsive-utilities.less\">\n            Responsive utilities\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"responsive-utilities.less\">\n            Responsive utilities\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"glyphicons.less\">\n            Glyphicons\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"glyphicons.less\">\n            Glyphicons\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"button-groups.less\" data-dependencies=\"buttons.less\">\n            Button groups\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"button-groups.less\" data-dependencies=\"buttons.less\">\n            Button groups\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"input-groups.less\" data-dependencies=\"forms.less\">\n            Input groups\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"input-groups.less\" data-dependencies=\"forms.less\">\n            Input groups\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"navs.less\" data-dependents=\"navbar.less\">\n            Navs\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"navs.less\" data-dependents=\"navbar.less\">\n            Navs\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"navbar.less\" data-dependencies=\"forms.less,navs.less\">\n            Navbar\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"navbar.less\" data-dependencies=\"forms.less,navs.less\">\n            Navbar\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"breadcrumbs.less\">\n            Breadcrumbs\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"breadcrumbs.less\">\n            Breadcrumbs\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"pagination.less\">\n            Pagination\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"pagination.less\">\n            Pagination\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"pager.less\">\n            Pager\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"pager.less\">\n            Pager\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"labels.less\">\n            Labels\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"labels.less\">\n            Labels\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"badges.less\">\n            Badges\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"badges.less\">\n            Badges\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"jumbotron.less\">\n            Jumbotron\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"jumbotron.less\">\n            Jumbotron\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"thumbnails.less\">\n            Thumbnails\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"thumbnails.less\">\n            Thumbnails\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"alerts.less\">\n            Alerts\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"alerts.less\">\n            Alerts\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"progress-bars.less\">\n            Progress bars\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"progress-bars.less\">\n            Progress bars\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"media.less\">\n            Media items\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"media.less\">\n            Media items\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"list-group.less\">\n            List groups\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"list-group.less\">\n            List groups\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"panels.less\">\n            Panels\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"panels.less\">\n            Panels\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"responsive-embed.less\">\n            Responsive embed\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"responsive-embed.less\">\n            Responsive embed\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"wells.less\">\n            Wells\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"wells.less\">\n            Wells\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"close.less\">\n            Close icon\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"close.less\">\n            Close icon\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"component-animations.less\">\n            Component animations (for JS)\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"component-animations.less\">\n            Component animations (for JS)\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"dropdowns.less\">\n            Dropdowns\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"dropdowns.less\">\n            Dropdowns\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"tooltip.less\">\n            Tooltips\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"tooltip.less\">\n            Tooltips\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"popovers.less\">\n            Popovers\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"popovers.less\">\n            Popovers\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"modals.less\">\n            Modals\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"modals.less\">\n            Modals\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"carousel.less\">\n            Carousel\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"carousel.less\">\n            Carousel\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"alert.js\">\n            Alert dismissal\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"alert.js\">\n            Alert dismissal\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"button.js\">\n            Advanced buttons\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"button.js\">\n            Advanced buttons\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"carousel.js\">\n            Carousel functionality\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"carousel.js\">\n            Carousel functionality\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"dropdown.js\">\n            Dropdowns\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"dropdown.js\">\n            Dropdowns\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"modal.js\">\n            Modals\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"modal.js\">\n            Modals\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"tooltip.js\">\n            Tooltips\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"tooltip.js\">\n            Tooltips\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"popover.js\" data-dependencies=\"tooltip.js\">\n            Popovers <small>(requires Tooltips)<\/small>\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"popover.js\" data-dependencies=\"tooltip.js\">\n            Popovers <small>(requires Tooltips)<\/small>\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"tab.js\">\n            Togglable tabs\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"tab.js\">\n            Togglable tabs\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"affix.js\">\n            Affix\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"affix.js\">\n            Affix\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"collapse.js\">\n            Collapse\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"collapse.js\">\n            Collapse\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"scrollspy.js\">\n            Scrollspy\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"scrollspy.js\">\n            Scrollspy\n          "
+		},{
+			"rus": "\n            <input type=\"checkbox\" checked value=\"transition.js\">\n            Transitions <small>(required for any kind of animation)<\/small>\n          ",
+			"eng": "\n            <input type=\"checkbox\" checked value=\"transition.js\">\n            Transitions <small>(required for any kind of animation)<\/small>\n          "
+		}
+	],
+	"button": [
+		{
+			"rus": "Перекличить все",
+			"eng": "Toggle all"
+		},{
+			"rus": "Восстановить значения по умолчанию",
+			"eng": "Reset to defaults"
+		},{
+			"rus": "Компилировать и скачать",
+			"eng": "Compile and Download"
+		}
+	]
+}

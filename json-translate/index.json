@@ -1,0 +1,83 @@
+{
+	"title": [
+		{
+			"rus": "title: Bootstrap &middot; Самый популярный в мире front-end фреймверк для мобильных.",
+			"eng": "title: Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework."
+		}
+	],
+	"h": [
+		{
+			"rus": "Предназначен для всех, во всем мире.",
+			"eng": "Designed for everyone, everywhere."
+		},{
+			"rus": "Сделано на Bootstrap.",
+			"eng": "Built with Bootstrap."
+		},{
+			"rus": "Препроцессоры",
+			"eng": "Preprocessors"
+		},{
+			"rus": "Один фреймворк, на каждое устройство.",
+			"eng": "One framework, every device."
+		},{
+			"rus": "Полный возможностей",
+			"eng": "Full of features"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap cамый популярный HTML, CSS, и JS фреймворк для разработки адаптивных и мобильных web-проектов.",
+			"eng": "Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
+		},{
+			"rus": "\n      <a href=\"getting-started#download\" class=\"btn btn-outline-inverse btn-lg\" onclick=\"ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');\">Скачать Bootstrap<\/a>\n    ",
+			"eng": "\n      <a href=\"getting-started#download\" class=\"btn btn-outline-inverse btn-lg\" onclick=\"ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');\">Download Bootstrap<\/a>\n    "
+		},{
+			"rus": "Текущая v{{ site.current_version }}",
+			"eng": "Currently v{{ site.current_version }}"
+		},{
+			"rus": "Bootstrap делает фронтэнд веб-разработку быстрее и проще. Это сделано для людей с любым уровнем подготовки, устройств всех форм и проектов любого масштаба.",
+			"eng": "Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes."
+		},{
+			"rus": "Быстрый Bootstrap с приятным CSS, так как исходныйе утилиты используют два популярных CSS препроцессора, <a href=\"..\/css\/#less\">Less<\/a> и <a href=\"..\/css\/#sass\">Sass<\/a>. Быстро начать работу с предкомпилированного CSS или построить на источнике.",
+			"eng": "Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href=\"..\/css\/#less\">Less<\/a> and <a href=\"..\/css\/#sass\">Sass<\/a>. Quickly get started with precompiled CSS or build on the source."
+		},{
+			"rus": "Bootstrap легко и эффективно маштабируется для ваших веб-сайтов и приложений с единой базой кода, от телефонов и планшетов до настольных компьютеров с помощью CSS media queries.",
+			"eng": "Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries."
+		},{
+			"rus": "С Bootstrap, вы получаете обширную и красивую документацию для общих HTML элементов, десятки пользовательского HTML и компонентов CSS, и удивительных плагинов JQuery.",
+			"eng": "With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins."
+		},{
+			"rus": "Bootstrap с открытым исходным кодом. Он размещается, развиваться и поддерживаться на GitHub.",
+			"eng": "Bootstrap is open source. It's hosted, developed, and maintained on GitHub."
+		},{
+			"rus": "Миллионы удивительных сайтов по всему Интернету строятся на Bootstrap. Начните по своему усмотрению с нашей растущей <a href=\"..\/getting-started\/#examples\">коллекцией примеров<\/a> или ознакомтесь с некоторыми из наших фаворитов.",
+			"eng": "Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href=\"..\/getting-started\/#examples\">collection of examples<\/a> or by exploring some of our favorites."
+		},{
+			"rus": "Мы демонстрируем десятки творческих проектов, созданных с Bootstrap на Bootstrap Expo.",
+			"eng": "We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo."
+		}
+	],
+	"a": [
+		{
+			"rus": "Скачать Bootstrap",
+			"eng": "Download Bootstrap"
+		},{
+			"rus": "Less",
+			"eng": "Less"
+		},{
+			"rus": "Sass",
+			"eng": "Sass"
+		},{
+			"rus": "Посмотреть на GitHub",
+			"eng": "View the GitHub project"
+		},{
+			"rus": "коллекция примеров",
+			"eng": "collection of examples"
+		},{
+			"rus": "\n          <img src=\"http:\/\/expo.getbootstrap.com\/thumbs\/{{ showcase.img }}-thumb.jpg\" alt=\"{{ showcase.name }}\" class=\"img-responsive\">\n        ",
+			"eng": "\n          <img src=\"http:\/\/expo.getbootstrap.com\/thumbs\/{{ showcase.img }}-thumb.jpg\" alt=\"{{ showcase.name }}\" class=\"img-responsive\">\n        "
+		},{
+			"rus": "Перейти на Expo",
+			"eng": "Explore the Expo"
+		}
+	]
+}

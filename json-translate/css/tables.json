@@ -1,0 +1,182 @@
+{
+	"h": [
+		{
+			"rus": "Таблицы",
+			"eng": "Tables"
+		},{
+			"rus": "Простой пример",
+			"eng": "Basic example"
+		},{
+			"rus": "\"Зебра\"",
+			"eng": "Striped rows"
+		},{
+			"rus": "Границы таблицы",
+			"eng": "Bordered table"
+		},{
+			"rus": "Курсор строк",
+			"eng": "Hover rows"
+		},{
+			"rus": "Сокращенная таблица",
+			"eng": "Condensed table"
+		},{
+			"rus": "Контекстные классы",
+			"eng": "Contextual classes"
+		},{
+			"rus": "Адаптивные таблицы",
+			"eng": "Responsive tables"
+		},{
+			"rus": "Совместимость кроссбраузерности",
+			"eng": "Cross-browser compatibility"
+		},{
+			"rus": "Conveying meaning to assistive technologies",
+			"eng": "Conveying meaning to assistive technologies"
+		},{
+			"rus": "Firefox и fieldsets",
+			"eng": "Firefox and fieldsets"
+		}
+	],
+	"p": [
+		{
+			"rus": "Для базовой стилизации&mdash;легкие отступы и только горизонтальные разделители&mdash;добавив базовые классы <code>.table<\/code> для любых <code>&lt;table&gt;<\/code>.  Это может показаться избыточным, но учитывая широкое распространение использование таблиц для других плагинов как календари и выбор дат, мы решили изолировать пользовательские стили таблицы.",
+			"eng": "For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table<\/code> to any <code>&lt;table&gt;<\/code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles."
+		},{
+			"rus": "Используйте <code>.table-striped<\/code>, чтобы добавить зебру- чередование для любой строки таблицы внутри <code>&lt;tbody&gt;<\/code>.",
+			"eng": "Use <code>.table-striped<\/code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;<\/code>."
+		},{
+			"rus": "Полосатые таблицы оформлены через <code>:nth-child<\/code>CSS селектор, который не доступен в Internet Explorer 8.",
+			"eng": "Striped tables are styled via the <code>:nth-child<\/code> CSS selector, which is not available in Internet Explorer 8."
+		},{
+			"rus": "Добавьте <code>.table-bordered<\/code> для границы со всех сторон таблицы и яичеек.",
+			"eng": "Add <code>.table-bordered<\/code> for borders on all sides of the table and cells."
+		},{
+			"rus": "Добавьте <code>.table-hover<\/code>, чтобы позволить установить курсор на строках таблицы внутри <code>&lt;tbody&gt;<\/code>.",
+			"eng": "Add <code>.table-hover<\/code> to enable a hover state on table rows within a <code>&lt;tbody&gt;<\/code>."
+		},{
+			"rus": "Добавьте <code>.table-condensed<\/code> чтобы сделать таблицы более компактными путем срезания клеточных промежутков наполовину.",
+			"eng": "Add <code>.table-condensed<\/code> to make tables more compact by cutting cell padding in half."
+		},{
+			"rus": "Используйте контекстные классы для цвета строки таблицы или отдельных ячеек.",
+			"eng": "Use contextual classes to color table rows or individual cells."
+		},{
+			"rus": "Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row\/cell), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class.",
+			"eng": "Using color to add meaning to a table row or individual cell only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text in the relevant table row\/cell), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class."
+		},{
+			"rus": "Можно создать адаптивные таблицы путем преобразования любого <code>.table<\/code> в <code>.table-responsive<\/code>, чтобы сделать их прокрученными горизонтально для небольших экранов (до 768px). При просмотре на экране при разрешении больше чем 768px, вы не увидите никакой разницы в этих таблицах.",
+			"eng": "Create responsive tables by wrapping any <code>.table<\/code> in <code>.table-responsive<\/code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables."
+		},{
+			"rus": "Firefox имеет некоторый неловкий Fieldset стиль участием <code>width<\/code> которые препятствуют реагировать таблице. Это не может быть переопределен без Firefox-specific hack, что мы <strong>don't<\/strong> обеспечить в Bootstrap",
+			"eng": "Firefox has some awkward fieldset styling involving <code>width<\/code> that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we <strong>don't<\/strong> provide in Bootstrap:"
+		},{
+			"rus": "Для получения дополнительной информации, прочитайте <a href=\"http:\/\/stackoverflow.com\/questions\/17408815\/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content\/17863685#17863685\">this Stack Overflow answer<\/a>.",
+			"eng": "For more information, read <a href=\"http:\/\/stackoverflow.com\/questions\/17408815\/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content\/17863685#17863685\">this Stack Overflow answer<\/a>."
+		}
+	],
+	"th": [
+		{
+			"rus": "Имя",
+			"eng": "First Name"
+		},{
+			"rus": "Фамилия",
+			"eng": "Last Name"
+		},{
+			"rus": "Пользователь",
+			"eng": "Username"
+		},{
+			"rus": "Класс",
+			"eng": "Class"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		},{
+			"rus": "\n            <code>.active<\/code>\n          ",
+			"eng": "\n            <code>.active<\/code>\n          "
+		},{
+			"rus": "\n            <code>.success<\/code>\n          ",
+			"eng": "\n            <code>.success<\/code>\n          "
+		},{
+			"rus": "\n            <code>.info<\/code>\n          ",
+			"eng": "\n            <code>.info<\/code>\n          "
+		},{
+			"rus": "\n            <code>.warning<\/code>\n          ",
+			"eng": "\n            <code>.warning<\/code>\n          "
+		},{
+			"rus": "\n            <code>.danger<\/code>\n          ",
+			"eng": "\n            <code>.danger<\/code>\n          "
+		},{
+			"rus": "Заголовок столбца",
+			"eng": "Column heading"
+		},{
+			"rus": "Заголовок таблицы",
+			"eng": "Table heading"
+		}
+	],
+	"td": [
+		{
+			"rus": "Mark",
+			"eng": "Mark"
+		},{
+			"rus": "Otto",
+			"eng": "Otto"
+		},{
+			"rus": "@mdo",
+			"eng": "@mdo"
+		},{
+			"rus": "Jacob",
+			"eng": "Jacob"
+		},{
+			"rus": "Thornton",
+			"eng": "Thornton"
+		},{
+			"rus": "@fat",
+			"eng": "@fat"
+		},{
+			"rus": "Larry",
+			"eng": "Larry"
+		},{
+			"rus": "the Bird",
+			"eng": "the Bird"
+		},{
+			"rus": "@twitter",
+			"eng": "@twitter"
+		},{
+			"rus": "Larry the Bird",
+			"eng": "Larry the Bird"
+		},{
+			"rus": "Применяет цвет при наведении на конкретную строку или ячейку",
+			"eng": "Applies the hover color to a particular row or cell"
+		},{
+			"rus": "Указывает на успешное или позитивное действие",
+			"eng": "Indicates a successful or positive action"
+		},{
+			"rus": "Указывает на нейтральные информативные изменения или действия",
+			"eng": "Indicates a neutral informative change or action"
+		},{
+			"rus": "Указывает на предупреждения, которые могут потребовать внимания",
+			"eng": "Indicates a warning that might need attention"
+		},{
+			"rus": "Указывает на опасное или потенциально негативное действие",
+			"eng": "Indicates a dangerous or potentially negative action"
+		},{
+			"rus": "Содержимое столбца",
+			"eng": "Column content"
+		},{
+			"rus": "Ячейка",
+			"eng": "Table cell"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- В строках -->",
+			"eng": "<!-- On rows -->"
+		},{
+			"rus": "<!-- В ячейках (`td` или `th`) -->",
+			"eng": "<!-- On cells (`td` or `th`) -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

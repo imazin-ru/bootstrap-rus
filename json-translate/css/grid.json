@@ -1,0 +1,242 @@
+{
+	"h": [
+		{
+			"rus": "Система разметки",
+			"eng": "Grid system"
+		},{
+			"rus": "Введение",
+			"eng": "Introduction"
+		},{
+			"rus": "Медиа запросы",
+			"eng": "Media queries"
+		},{
+			"rus": "Функционал разметки",
+			"eng": "Grid options"
+		},{
+			"rus": "Пример: Сложенные по горизонтали",
+			"eng": "Example: Stacked-to-horizontal"
+		},{
+			"rus": "Пример: Резиновые блоки",
+			"eng": "Example: Fluid container"
+		},{
+			"rus": "Пример: Мобильные и настольные",
+			"eng": "Example: Mobile and desktop"
+		},{
+			"rus": "Пример: Мобильные, планшеты, настольные",
+			"eng": "Example: Mobile, tablet, desktop"
+		},{
+			"rus": "Пример: Колонка wrapping",
+			"eng": "Example: Column wrapping"
+		},{
+			"rus": "Адаптивные колонки сброса",
+			"eng": "Responsive column resets"
+		},{
+			"rus": "Смещенные колонки",
+			"eng": "Offsetting columns"
+		},{
+			"rus": "Вложенные столбцы",
+			"eng": "Nesting columns"
+		},{
+			"rus": "Выравнивание колонок",
+			"eng": "Column ordering"
+		},{
+			"rus": "Less смешивания и переменные",
+			"eng": "Less mixins and variables"
+		},{
+			"rus": "Переменные",
+			"eng": "Variables"
+		},{
+			"rus": "Смешивания",
+			"eng": "Mixins"
+		},{
+			"rus": "Примеры использования",
+			"eng": "Example usage"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap включает в себя адаптивную, первую мобильную резиновую систему разметки, которая масштабируется до 12 столбцов как на устройствах или при изменении окна просмотра. Она включает в себя <a href=\"#grid-example-basic\">как для простых вариантов планировки, так и мощных <a href=\"#grid-less\"> для создания более смысловых макетов<\/a>.",
+			"eng": "Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes <a href=\"#grid-example-basic\">predefined classes<\/a> for easy layout options, as well as powerful <a href=\"#grid-less\">mixins for generating more semantic layouts<\/a>."
+		},{
+			"rus": "Система разметки используются для создания макетов страниц с помощью ряда строк и столбцов, в которых размещается ваш контент. Вот так работает система разметки Bootstrap:",
+			"eng": "Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:"
+		},{
+			"rus": "Посмотрите на примеры применения этих принципов в код.",
+			"eng": "Look to the examples for applying these principles to your code."
+		},{
+			"rus": "Мы используем следующие медиа запросы в наших Less файлах, чтобы создать определяющую контрольную точку в нашей системе разметки.",
+			"eng": "We use the following media queries in our Less files to create the key breakpoints in our grid system."
+		},{
+			"rus": "Мы иногда расширяем медиа запросы для включения <code>max-width<\/code>, чтобы ограничить CSS до более узкого набора устройств.",
+			"eng": "We occasionally expand on these media queries to include a <code>max-width<\/code> to limit CSS to a narrower set of devices."
+		},{
+			"rus": "Посмотрите, как аспекты системы рзметки Bootstrap работают между несколькими устройствами с управляемой таблицей.",
+			"eng": "See how aspects of the Bootstrap grid system work across multiple devices with a handy table."
+		},{
+			"rus": "Используя единичный набор <code>.col-md-*<\/code> классовой разметки, вы можете создать базовую систему разметки, которая запускается одновременно на мобильные устройства и планшетные устройства (от экстра маленьких до малых диапазонов) до того как выстроится горизонталь на рабочем столе (средних) устройств. Разместите столбцы разметки в любом <code>.row<\/code>.",
+			"eng": "Using a single set of <code>.col-md-*<\/code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row<\/code>."
+		},{
+			"rus": "Превратите любую фиксированную ширину сетки макет в полную ширину макета, изменив последний <code>.container<\/code> на <code>.container-fluid<\/code>.",
+			"eng": "Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container<\/code> to <code>.container-fluid<\/code>."
+		},{
+			"rus": "Не хотите чтобы ваши колонки просто складывались на небольших устройствах? Используйте очень маленькие xs или средние md классы разметки устройства добавляя <code>.col-xs-*<\/code> <code>.col-md-*<\/code> к вашим столбцам. Смотрите пример ниже для лучшего понимания как это работает.",
+			"eng": "Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*<\/code> <code>.col-md-*<\/code> to your columns. See the example below for a better idea of how it all works."
+		},{
+			"rus": "Постройте предыдущий пример, создав еще более динамичные и мощные макеты для планшета <code>.col-sm-*<\/code> класса.",
+			"eng": "Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*<\/code> classes."
+		},{
+			"rus": "Если более 12 колонок размещены в одной строке, каждая группа дополнительных столбцов будет, как единое целое, переносятся на новую строку.",
+			"eng": "If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line."
+		},{
+			"rus": "Из четырех доступных разметок вы обязательно столкнетесь с проблемой, в определенных точках, ваши колонки выглядят не правильно так как одна может быть выше чем другие. Для того чтобы это исправить, используйте комбинацию <code>.clearfix<\/code> и наши <a href=\"#responsive-utilities\">адаптивные служебные классы<\/a>.",
+			"eng": "With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix<\/code> and our <a href=\"#responsive-utilities\">responsive utility classes<\/a>."
+		},{
+			"rus": "В дополнение к очистке столбца на адаптивных точках, вам может понадобиться <strong>сброс offsets, pushes, или pulls<\/strong>. Смотрите это в действии на <a href=\"..\/examples\/grid\/\">примере разметкок<\/a>.",
+			"eng": "In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls<\/strong>. See this in action in <a href=\"..\/examples\/grid\/\">the grid example<\/a>."
+		},{
+			"rus": "Переместить колонки направо с помощью <code>.col-md-offset-*<\/code> класса. Эти классы увеличивают отступ слева столбца <code>*<\/code> колонки. Например, <code>.col-md-offset-4<\/code> сдвигает <code>.col-md-4<\/code> пропуская один такой же столбец",
+			"eng": "Move columns to the right using <code>.col-md-offset-*<\/code> classes. These classes increase the left margin of a column by <code>*<\/code> columns. For example, <code>.col-md-offset-4<\/code> moves <code>.col-md-4<\/code> over four columns."
+		},{
+			"rus": "Чтобы вложить ваше содержание в разметку, необходимо добавить новый <code>.row<\/code> и набор <code>.col-md-*<\/code> столбцов в существующую <code>.col-md-*<\/code> колонку. Вложенные строки должны включать в себя набор столбцов, которые добавляются до 12 или менее (Не требуется использовать все 12 доступных столбцов).",
+			"eng": "To nest your content with the default grid, add a new <code>.row<\/code> and set of <code>.col-sm-*<\/code> columns within an existing <code>.col-sm-*<\/code> column. Nested rows should include a set of columns that add up to 12 or less (it is not required that you use all 12 available columns)."
+		},{
+			"rus": "Легко изменить порядок наших встроенных столбцов разметки с <code>.col-md-push-*<\/code> и <code>.col-md-pull-*<\/code> модифицированными классами.",
+			"eng": "Easily change the order of our built-in grid columns with <code>.col-md-push-*<\/code> and <code>.col-md-pull-*<\/code> modifier classes."
+		},{
+			"rus": "В дополнение к <a href=\"#grid-example-basic\">готовым классы разметок<\/a> для быстрых макетов, Bootstrap включает в себя Less переменные и смешений для быстрого формирования собственных простых, семантических макетов.",
+			"eng": "In addition to <a href=\"#grid-example-basic\">prebuilt grid classes<\/a> for fast layouts, Bootstrap includes Less variables and mixins for quickly generating your own simple, semantic layouts."
+		},{
+			"rus": "Переменные определяют число столбцов, ширину промежутка, и точку медиа запроса, с которого начинается перемещение столбцов. Мы используем это для генерации предопределенных классов разметки задокументированных выше, также как для пользовательского смешения перечисленного ниже.",
+			"eng": "Variables determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below."
+		},{
+			"rus": "Смешивания используются в сочетании с переменных разметкок, чтобы образовать семантические CSS для отдельных столбцов разметки.",
+			"eng": "Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns."
+		},{
+			"rus": "Вы можете изменять переменные в собственных пользовательские значения, или просто использовать смешивания с их значениями по умолчанию. Вот пример использования настроек по умолчанию для создания макета с двумя колонками и зазором между ними.",
+			"eng": "You can modify the variables to your own custom values, or just use the mixins with their default values. Here's an example of using the default settings to create a two-column layout with a gap between."
+		}
+	],
+	"li": [
+		{
+			"rus": "<code>.row<\/code> должны быть помещены в <code>.container<\/code> (fixed-width) или <code>.container-fluid<\/code> (full-width) для правильного выравнивания и заполнения.",
+			"eng": "Rows must be placed within a <code>.container<\/code> (fixed-width) or <code>.container-fluid<\/code> (full-width) for proper alignment and padding."
+		},{
+			"rus": "Использовать строки для создания горизонтальных группы столбцов.",
+			"eng": "Use rows to create horizontal groups of columns."
+		},{
+			"rus": "Контент должен быть помещен в столбцах, и только колонки могут быть непосредственными потомками строк.",
+			"eng": "Content should be placed within columns, and only columns may be immediate children of rows."
+		},{
+			"rus": "Стандартные классы разметки как <code>.row<\/code> и <code>.col-xs-4<\/code> доступны для быстрого принятия разметки макетов. Less смешивания также может быть использован для более семантических схем.",
+			"eng": "Predefined grid classes like <code>.row<\/code> and <code>.col-xs-4<\/code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts."
+		},{
+			"rus": "Столбцы создают желоба (промежутки между содержанием столбцов) с помощью <code>padding<\/code>. Тогда padding компенсируется в строках для первого и последнего столбца с помощью отрицательного margin на <code>.row<\/code>.",
+			"eng": "Columns create gutters (gaps between column content) via <code>padding<\/code>. That padding is offset in rows for the first and last column via negative margin on <code>.row<\/code>s."
+		},{
+			"rus": "Отрицательный маржа - это потому, что ниже примеры неактуальны. Содержание в столбцах сетки выстроилось с содержанием не-сетки.",
+			"eng": "The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content."
+		},{
+			"rus": "Столбцы разметки создаются с указанием количества двенадцати доступных столбцов, которые вы хотите охватить. Например, три равные колонки использовали бы три <code>.col-xs-4<\/code>.",
+			"eng": "Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4<\/code>."
+		},{
+			"rus": "Если более 12 колонок размещены в одной строке, каждая группа дополнительных столбцов будет, как единое целое, переносится на новую строку.",
+			"eng": "If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line."
+		},{
+			"rus": "Сетка классов относится к приборам с экрана шириной более или равными основы размеров и классов коррекции сетки, направленных на небольшие устройства. Поэтому, применяя любой <code>.col-md-<\/code> класс к элементу будет не только влиять на его стиль на средних устройств, но и на больших устройств, если <code>.col-lg-<\/code> класса нет.",
+			"eng": "Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any <code>.col-md-*<\/code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*<\/code> class is not present."
+		}
+	],
+	"th": [
+		{
+			"rus": "\n            Очень маленькие устройство <small>Телефоны  (&lt;768px)<\/small>         ",
+			"eng": "\n            Extra small devices\n            <small>Phones (&lt;768px)<\/small>\n          "
+		},{
+			"rus": "\n            Малые устройства\n         <small>Планшеты (&ge;768px)<\/small>\n          ",
+			"eng": "\n            Small devices\n            <small>Tablets (&ge;768px)<\/small>\n          "
+		},{
+			"rus": "\n            Средние устройства\n        <small>Настольные (&ge;992px)<\/small>\n          ",
+			"eng": "\n            Medium devices\n            <small>Desktops (&ge;992px)<\/small>\n          "
+		},{
+			"rus": "\n            Большие устройства\n       <small>Настольные (&ge;1200px)<\/small>\n          ",
+			"eng": "\n            Large devices\n            <small>Desktops (&ge;1200px)<\/small>\n          "
+		},{
+			"rus": "Поведение разметки",
+			"eng": "Grid behavior"
+		},{
+			"rus": "Ширина контейнера",
+			"eng": "Container width"
+		},{
+			"rus": "Класс префикса",
+			"eng": "Class prefix"
+		},{
+			"rus": "# колонок",
+			"eng": "# of columns"
+		},{
+			"rus": "Ширина колонки",
+			"eng": "Column width"
+		},{
+			"rus": "Промежуточная ширина",
+			"eng": "Gutter width"
+		},{
+			"rus": "Вкладка",
+			"eng": "Nestable"
+		},{
+			"rus": "Отступ",
+			"eng": "Offsets"
+		},{
+			"rus": "Выравнивание колонки",
+			"eng": "Column ordering"
+		}
+	],
+	"td": [
+		{
+			"rus": "Горизонтальный все время",
+			"eng": "Horizontal at all times"
+		},{
+			"rus": "Терпеть неудачу при начатии, горизонтальный выше контрольной точки",
+			"eng": "Collapsed to start, horizontal above breakpoints"
+		},{
+			"rus": "Нет (автом.)",
+			"eng": "None (auto)"
+		},{
+			"rus": "<code>.col-xs-<\/code>",
+			"eng": "<code>.col-xs-<\/code>"
+		},{
+			"rus": "<code>.col-sm-<\/code>",
+			"eng": "<code>.col-sm-<\/code>"
+		},{
+			"rus": "<code>.col-md-<\/code>",
+			"eng": "<code>.col-md-<\/code>"
+		},{
+			"rus": "<code>.col-lg-<\/code>",
+			"eng": "<code>.col-lg-<\/code>"
+		},{
+			"rus": "Авто",
+			"eng": "Auto"
+		},{
+			"rus": "30px(15px) на каждой стороне колонки",
+			"eng": "30px (15px on each side of a column)"
+		},{
+			"rus": "Да",
+			"eng": "Yes"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Стек столбцы по мобильному, сделав один полную ширину, а другая половина ширины -->",
+			"eng": "<!-- Stack the columns on mobile by making one full-width and the other half-width -->"
+		},{
+			"rus": "<!-- Колонны начать на 50% в ширину на мобильном и поднять до 33,3% в ширину на рабочий стол -->",
+			"eng": "<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->"
+		},{
+			"rus": "<!--Колонны всегда 50% в ширину, на мобильный и рабочий стол -->",
+			"eng": "<!-- Columns are always 50% wide, on mobile and desktop -->"
+		},{
+			"rus": "<!-- Дополнительно: очистить XS cols если их содержание не соответствует по высоте -->",
+			"eng": "<!-- Optional: clear the XS cols if their content doesn't match in height -->"
+		},{
+			"rus": "<!-- Добавить дополнительный clearfix только требуемой видовом -->",
+			"eng": "<!-- Add the extra clearfix for only the required viewport -->"
+		}
+	]
+}

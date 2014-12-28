@@ -1,0 +1,101 @@
+{
+	"a": [
+		{
+			"rus": "Обзор",
+			"eng": "Overview"
+		},{
+			"rus": "Индивидуально или сборником",
+			"eng": "Individual or compiled"
+		},{
+			"rus": "Атрибуты данных",
+			"eng": "Data attributes"
+		},{
+			"rus": "Программный API",
+			"eng": "Programmatic API"
+		},{
+			"rus": "Без конфликта",
+			"eng": "No conflict"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "When JavaScript is disabled",
+			"eng": "When JavaScript is disabled"
+		},{
+			"rus": "Third-party libraries",
+			"eng": "Third-party libraries"
+		},{
+			"rus": "Переходы",
+			"eng": "Transitions"
+		},{
+			"rus": "Модальные окна",
+			"eng": "Modal"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Размеры",
+			"eng": "Sizes"
+		},{
+			"rus": "Remove animation",
+			"eng": "Remove animation"
+		},{
+			"rus": "Varying content based on trigger button",
+			"eng": "Varying content based on trigger button"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Опции",
+			"eng": "Options"
+		},{
+			"rus": "Methods",
+			"eng": "Methods"
+		},{
+			"rus": "Выпадающее меню Dropdown",
+			"eng": "Dropdown"
+		},{
+			"rus": "Прокрутка ScrollSpy",
+			"eng": "Scrollspy"
+		},{
+			"rus": "Вкладки Tab",
+			"eng": "Tab"
+		},{
+			"rus": "Подсказки Tooltip",
+			"eng": "Tooltip"
+		},{
+			"rus": "Информеры Popover",
+			"eng": "Popover"
+		},{
+			"rus": "Уведомления Alerts",
+			"eng": "Alert"
+		},{
+			"rus": "Кнопки Buttons",
+			"eng": "Button"
+		},{
+			"rus": "Stateful",
+			"eng": "Stateful"
+		},{
+			"rus": "Single toggle",
+			"eng": "Single toggle"
+		},{
+			"rus": "Checkbox \/ Radio",
+			"eng": "Checkbox \/ Radio"
+		},{
+			"rus": "Сворачивание Collapse",
+			"eng": "Collapse"
+		},{
+			"rus": "Example",
+			"eng": "Example"
+		},{
+			"rus": "Accordion example",
+			"eng": "Accordion example"
+		},{
+			"rus": "Карусель Carousel",
+			"eng": "Carousel"
+		},{
+			"rus": "Позиционирование Affix",
+			"eng": "Affix"
+		}
+	]
+}

@@ -1,0 +1,89 @@
+{
+	"title": [
+		{
+			"rus": "title: О нас",
+			"eng": "title: About"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Прочтите об истории проекта, отвечают, поддерживающих команду, и узнать, как использовать Bootstrap бренд.\"",
+			"eng": "lead: \"Learn about the project's history, meet the maintaining teams, and find out how to use the Bootstrap brand.\""
+		}
+	],
+	"h": [
+		{
+			"rus": "История",
+			"eng": "History"
+		},{
+			"rus": "Команда",
+			"eng": "Team"
+		},{
+			"rus": "Brand guidelines",
+			"eng": "Brand guidelines"
+		},{
+			"rus": "Bootstrap",
+			"eng": "Bootstrap"
+		},{
+			"rus": "Core team",
+			"eng": "Core team"
+		},{
+			"rus": "Sass team",
+			"eng": "Sass team"
+		},{
+			"rus": "Mark и logo",
+			"eng": "Mark and logo"
+		},{
+			"rus": "Загрузка mark",
+			"eng": "Download mark"
+		},{
+			"rus": "Имя",
+			"eng": "Name"
+		},{
+			"rus": "Цвета",
+			"eng": "Colors"
+		},{
+			"rus": "BootStrap",
+			"eng": "BootStrap"
+		},{
+			"rus": "Twitter Bootstrap",
+			"eng": "Twitter Bootstrap"
+		}
+	],
+	"p": [
+		{
+			"rus": "Изначально созданный дизайнером и разработчиком в Twitter, Bootstrap стал одним из самых популярных фронт энд фреймворков и проектов с открытым кодом в мире.",
+			"eng": "Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world."
+		},{
+			"rus": "Bootstrap был создан в Twitter в середине 2010 года по <a href=\"https:\/\/twitter.com\/mdo\">@mdo<\/a> and <a href=\"https:\/\/twitter.com\/fat\">@fat<\/a>. До будучи открытым кодом рамки, Bootstrap был известен как <em>Twitter Blueprint<\/em>. Спустя несколько месяцев после развития, Twitter провел свою <a href=\"https:\/\/blog.twitter.com\/2010\/hack-week\">первый Hack Week<\/a> и проект взорвалась как разработчики всех уровней квалификации прыгнул в без внешнего руководства. Он служил в качестве руководства по стилю для развития внутренних инструментов в компании в течение года до его обнародования, и продолжает делать это сегодня.",
+			"eng": "Bootstrap was created at Twitter in mid-2010 by <a href=\"https:\/\/twitter.com\/mdo\">@mdo<\/a> and <a href=\"https:\/\/twitter.com\/fat\">@fat<\/a>. Prior to being an open-sourced framework, Bootstrap was known as <em>Twitter Blueprint<\/em>. A few months into development, Twitter held its <a href=\"https:\/\/blog.twitter.com\/2010\/hack-week\">first Hack Week<\/a> and the project exploded as developers of all skill levels jumped in without any external guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today."
+		},{
+			"rus": "Первоначально <a href=\"https:\/\/dev.twitter.com\/blog\/bootstrap-twitter\">released<\/a> в <a href=\"https:\/\/twitter.com\/mdo\/statuses\/104620039650557952\"><time datetime=\"2011-08-19 11:25\">пятницу, 19-го августа, 2011<\/time><\/a>, было мы с  более <a href=\"https:\/\/github.com\/twbs\/bootstrap\/releases\">twenty releases<\/a>, в том числе две крупных перезаписи с v2 и v3. С Bootstrap 2, мы добавили отзывчивую функциональность всей рамки как дополнительную стилей. Основываясь на том, что с Bootstrap 3, мы переписали библиотеку еще раз, чтобы сделать его реагирующим по умолчанию с помощью мобильного первого подхода.",
+			"eng": "Originally <a href=\"https:\/\/dev.twitter.com\/blog\/bootstrap-twitter\">released<\/a> on <a href=\"https:\/\/twitter.com\/mdo\/statuses\/104620039650557952\"><time datetime=\"2011-08-19 11:25\">Friday, August 19, 2011<\/time><\/a>, we've since had over <a href=\"https:\/\/github.com\/twbs\/bootstrap\/releases\">twenty releases<\/a>, including two major rewrites with v2 and v3. With Bootstrap 2, we added responsive functionality to the entire framework as an optional stylesheet. Building on that with Bootstrap 3, we rewrote the library once more to make it responsive by default with a mobile first approach."
+		},{
+			"rus": "Bootstrap поддерживается командой основателя и небольшой группой бесценных основных вкладчиков, с массивной поддержке и участии нашего сообщества.",
+			"eng": "Bootstrap is maintained by the founding team and a small group of invaluable core contributors, with the massive support and involvement of our community."
+		},{
+			"rus": "Примите участие в развитии Bootstrap по <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/new\">opening an issue<\/a> или отправить запрос на усиление. Читайте наши<a href=\"https:\/\/github.com\/twbs\/bootstrap\/blob\/master\/CONTRIBUTING.md\">способствующие руководящие принципы<\/a> для информации о том, как мы разрабатываем.",
+			"eng": "Get involved with Bootstrap development by <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/new\">opening an issue<\/a> or submitting a pull request. Read our <a href=\"https:\/\/github.com\/twbs\/bootstrap\/blob\/master\/CONTRIBUTING.md\">contributing guidelines<\/a> for information on how we develop."
+		},{
+			"rus": "Это <a href=\"{{ site.sass_repo }}\">Официальный Sass порт Bootstrap<\/a> была создана и поддерживается этой команде. Она стала частью организации начальной загрузки с v3.1.0. Читайте Sass<a href=\"https:\/\/github.com\/twbs\/bootstrap-sass\/blob\/master\/CONTRIBUTING.md\">contributing guidelines<\/a> о том, как развивается порт Sass.",
+			"eng": "The <a href=\"{{ site.sass_repo }}\">official Sass port of Bootstrap<\/a> was created and is maintained by this team. It became part of Bootstrap's organization with v3.1.0. Read the Sass <a href=\"https:\/\/github.com\/twbs\/bootstrap-sass\/blob\/master\/CONTRIBUTING.md\">contributing guidelines<\/a> for information on how the Sass port is developed."
+		},{
+			"rus": "Есть потребность в фирменных ресурсов Bootstrap? Отлично! У нас есть только несколько руководящих принципов, которым мы следуем, и в свою очередь просим вас следовать также. Эти руководящие принципы были вдохновлены MailChimp сайт<a href=\"http:\/\/mailchimp.com\/about\/brand-assets\/\" target=\"_blank\">Brand Assets<\/a>.",
+			"eng": "Have a need for Bootstrap's brand resources? Great! We have only a few guidelines we follow, and in turn ask you to follow as well. These guidelines were inspired by MailChimp's <a href=\"http:\/\/mailchimp.com\/about\/brand-assets\/\" target=\"_blank\">Brand Assets<\/a>."
+		},{
+			"rus": "Используйте либо отметку Bootstrap(a capital <strong>B<\/strong>) или стандартный логотип (just <strong>Bootstrap<\/strong>).Следует всегда появлятся в Helvetica Neue Bold. <strong> Не используйте Twitter<\/strong> одновременно с Bootstrap.",
+			"eng": "Use either the Bootstrap mark (a capital <strong>B<\/strong>) or the standard logo (just <strong>Bootstrap<\/strong>). It should always appear in Helvetica Neue Bold. <strong>Do not use the Twitter bird<\/strong> in association with Bootstrap."
+		},{
+			"rus": "Скачать отметку Bootstrap в одном из трех стилей, каждый из которых доступен в виде файла SVG. Щелкните правой кнопкой мыши, Сохранить как.",
+			"eng": "Download the Bootstrap mark in one of three styles, each available as an SVG file. Right click, Save as."
+		},{
+			"rus": "Проект и рамки всегда должны быть отнесены к <strong>Bootstrap<\/strong>. Нет Twitter перед ним, не капитал <em>s<\/em>, и без сокращения для одного, капитала, кроме<strong>B<\/strong>.",
+			"eng": "The project and framework should always be referred to as <strong>Bootstrap<\/strong>. No Twitter before it, no capital <em>s<\/em>, and no abbreviations except for one, a capital <strong>B<\/strong>."
+		},{
+			"rus": "Наши документы и брендинг использовать горсть основных цветов дифференцировать что <em>is<\/em> Bootstrap от того, что <em>находится <\/em> Bootstrap.Другими словами, если это фиолетовый, это представитель Bootstrap.",
+			"eng": "Our docs and branding use a handful of primary colors to differentiate what <em>is<\/em> Bootstrap from what <em>is in<\/em> Bootstrap. In other words, if it's purple, it's representative of Bootstrap."
+		}
+	]
+}

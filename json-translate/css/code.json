@@ -1,0 +1,50 @@
+{
+	"h": [
+		{
+			"rus": "Код",
+			"eng": "Code"
+		},{
+			"rus": "Встроенный",
+			"eng": "Inline"
+		},{
+			"rus": "Пользовательский ввод",
+			"eng": "User input"
+		},{
+			"rus": "Основной блок",
+			"eng": "Basic block"
+		},{
+			"rus": "Переменные",
+			"eng": "Variables"
+		},{
+			"rus": "Пример вывода",
+			"eng": "Sample output"
+		}
+	],
+	"p": [
+		{
+			"rus": "Поместите встроенные участки кода с <code>&lt;code&gt;<\/code>.",
+			"eng": "Wrap inline snippets of code with <code>&lt;code&gt;<\/code>."
+		},{
+			"rus": "Используйте <code>&lt;kbd&gt;<\/code> чтобы указать ввод, который как правило вводится с клавиатуры.",
+			"eng": "Use the <code>&lt;kbd&gt;<\/code> to indicate input that is typically entered via keyboard."
+		},{
+			"rus": "Используйте <code>&lt;pre&gt;<\/code> для нескольких строк кода. Будьте уверены, чтобы избежать любые угловые скобки в коде для правильного отображения.",
+			"eng": "Use <code>&lt;pre&gt;<\/code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering."
+		},{
+			"rus": "Вы можете по желанию добавить <code>.pre-scrollable<\/code> класса, в котором будут определена максимальная высота 350пкс и обеспечена ось У для полосы прокрутки.",
+			"eng": "You may optionally add the <code>.pre-scrollable<\/code> class, which will set a max-height of 350px and provide a y-axis scrollbar."
+		},{
+			"rus": "Для обозначения переменных используйте <code>&lt;var&gt;<\/code> тег.",
+			"eng": "For indicating variables use the <code>&lt;var&gt;<\/code> tag."
+		},{
+			"rus": "<var>y<\/var> = <var>m<\/var><var>x<\/var> + <var>b<\/var>",
+			"eng": "<var>y<\/var> = <var>m<\/var><var>x<\/var> + <var>b<\/var>"
+		},{
+			"rus": "Для обозначения блоков пример вывода из программы использовать <code>&lt;samp&gt;<\/code> тег.",
+			"eng": "For indicating blocks sample output from a program use the <code>&lt;samp&gt;<\/code> tag."
+		},{
+			"rus": "<samp>Этот текст предназначен для рассматрения как пример вывода компьютерной программы.<\/samp>",
+			"eng": "<samp>This text is meant to be treated as sample output from a computer program.<\/samp>"
+		}
+	]
+}

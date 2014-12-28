@@ -1,0 +1,128 @@
+{
+	"a": [
+		{
+			"rus": "Import",
+			"eng": "Import"
+		},{
+			"rus": "Компоненты Less",
+			"eng": "Less components"
+		},{
+			"rus": "jQuery Плагины",
+			"eng": "jQuery plugins"
+		},{
+			"rus": "Переменные Less",
+			"eng": "Less variables"
+		},{
+			"rus": "Цвета",
+			"eng": "Colors"
+		},{
+			"rus": "Каркас",
+			"eng": "Scaffolding"
+		},{
+			"rus": "Типография",
+			"eng": "Typography"
+		},{
+			"rus": "Иконография",
+			"eng": "Iconography"
+		},{
+			"rus": "Компоненты",
+			"eng": "Components"
+		},{
+			"rus": "Таблицы",
+			"eng": "Tables"
+		},{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Dropdowns",
+			"eng": "Dropdowns"
+		},{
+			"rus": "Медиа запросы точки прерывания",
+			"eng": "Media queries breakpoints"
+		},{
+			"rus": "Система разметки",
+			"eng": "Grid system"
+		},{
+			"rus": "Размер контейнера",
+			"eng": "Container sizes"
+		},{
+			"rus": "Navbar",
+			"eng": "Navbar"
+		},{
+			"rus": "Навигация",
+			"eng": "Navs"
+		},{
+			"rus": "Вкладки",
+			"eng": "Tabs"
+		},{
+			"rus": "Таблетки",
+			"eng": "Pills"
+		},{
+			"rus": "Разбивка на страницы",
+			"eng": "Pagination"
+		},{
+			"rus": "Пейджер",
+			"eng": "Pager"
+		},{
+			"rus": "Jumbotron",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Состояния форм и уведомления",
+			"eng": "Form states and alerts"
+		},{
+			"rus": "Всплывающие подсказки",
+			"eng": "Tooltips"
+		},{
+			"rus": "Popovers",
+			"eng": "Popovers"
+		},{
+			"rus": "Этикетки",
+			"eng": "Labels"
+		},{
+			"rus": "Модули",
+			"eng": "Modals"
+		},{
+			"rus": "Уведомления",
+			"eng": "Alerts"
+		},{
+			"rus": "Индикатор выполнения",
+			"eng": "Progress bars"
+		},{
+			"rus": "Список групп",
+			"eng": "List group"
+		},{
+			"rus": "Панели",
+			"eng": "Panels"
+		},{
+			"rus": "Миниатюры",
+			"eng": "Thumbnails"
+		},{
+			"rus": "Wells",
+			"eng": "Wells"
+		},{
+			"rus": "Жетоны",
+			"eng": "Badges"
+		},{
+			"rus": "Хлебные крошки",
+			"eng": "Breadcrumbs"
+		},{
+			"rus": "Карусель",
+			"eng": "Carousel"
+		},{
+			"rus": "Кнопка закрытия",
+			"eng": "Close"
+		},{
+			"rus": "Код",
+			"eng": "Code"
+		},{
+			"rus": "Тип",
+			"eng": "Type"
+		},{
+			"rus": "Загрузка",
+			"eng": "Download"
+		}
+	]
+}

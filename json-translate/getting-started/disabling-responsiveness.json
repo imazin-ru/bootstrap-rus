@@ -1,0 +1,44 @@
+{
+	"h": [
+		{
+			"rus": "Блокировка адаптивности",
+			"eng": "Disabling responsiveness"
+		},{
+			"rus": "Шаги для блокировки адаптивного просмотра",
+			"eng": "Steps to disable page responsiveness"
+		},{
+			"rus": "Шаблон Bootstrap с заблокированной адаптивностью",
+			"eng": "Bootstrap template with responsiveness disabled"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap автоматически адаптирует просмотр страниц под несколько размеров экранов.\n Здесь показано как заблокировать такую возможность, чтобы страницы отображались как в <a href=\"..\/examples\/non-responsive\/\">этом нечувствительном шаблоне<\/a>.",
+			"eng": "Bootstrap automatically adapts your pages for various screen sizes.\n    Here's how to disable this feature so your page works like in <a href=\"..\/examples\/non-responsive\/\">this non-responsive example<\/a>."
+		},{
+			"rus": "Вам все еще нужен Respond.js для IE8 (поскольку наши медиа-запросы все еще существуют и должны обрабатываться).\n Это заблокирует свойство \"мобильность сайта\" Bootstrap.",
+			"eng": "You'll still need Respond.js for IE8 (since our media queries are still there and need to be processed).\n    This disables the \"mobile site\" aspects of Bootstrap."
+		},{
+			"rus": "Эти шаги мы применили для примера. Просмотрите исходный код, чтобы увидеть специфические отличия.",
+			"eng": "We've applied these steps to an example. Read its source code to see the specific changes implemented."
+		},{
+			"rus": "\n <a href=\"..\/examples\/non-responsive\/\" class=\"btn btn-primary\">Просмотреть пример неадаптивного шаблона<\/a>\n ",
+			"eng": "\n    <a href=\"..\/examples\/non-responsive\/\" class=\"btn btn-primary\">View non-responsive example<\/a>\n  "
+		}
+	],
+	"li": [
+		{
+			"rus": "Не создавайте <code>&lt;meta&gt;<\/code> с именем <b>viewport<\/b> как об этом сказано в <a href=\"..\/css\/#overview-mobile\">документах CSS<\/a>",
+			"eng": "Omit the viewport <code>&lt;meta&gt;<\/code> mentioned in <a href=\"..\/css\/#overview-mobile\">the CSS docs<\/a>"
+		},{
+			"rus": "Отмените <code>width<\/code>, <code>.container<\/code> для каждого уровня разметки определенной ширины, например так : <code>width: 970px !important;<\/code> Убедитесь, что этот код идет после включения основного кода Bootstrap CSS. При желании можно избежать <code>!important<\/code> с медиа-запросами или со специальным селектором.",
+			"eng": "Override the <code>width<\/code> on the <code>.container<\/code> for each grid tier with a single width, for example <code>width: 970px !important;<\/code> Be sure that this comes after the default Bootstrap CSS. You can optionally avoid the <code>!important<\/code> with media queries or some selector-fu."
+		},{
+			"rus": "Если вы используете навигационное меню, удалите все меню, которые могут сворачиваться\/разворачиваться.",
+			"eng": "If using navbars, remove all navbar collapsing and expanding behavior."
+		},{
+			"rus": "Для макета разметки используйте классы <code>.col-xs-*<\/code> как дополнение или вместо классов medium\/large. Не волнуйтесь, разметка с классом <code>xs<\/code> (extra small) масштабируется для всех размеров экранов.",
+			"eng": "For grid layouts, use <code>.col-xs-*<\/code> classes in addition to, or in place of, the medium\/large ones. Don't worry, the extra-small device grid scales to all resolutions."
+		}
+	]
+}

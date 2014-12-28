@@ -1,0 +1,581 @@
+{
+	"h": [
+		{
+			"rus": "Цвета",
+			"eng": "Colors"
+		},{
+			"rus": "Scaffolding",
+			"eng": "Scaffolding"
+		},{
+			"rus": "Типография",
+			"eng": "Typography"
+		},{
+			"rus": "Iconography",
+			"eng": "Iconography"
+		},{
+			"rus": "Компоненты",
+			"eng": "Components"
+		},{
+			"rus": "Таблицы",
+			"eng": "Tables"
+		},{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Выпадающее меню",
+			"eng": "Dropdowns"
+		},{
+			"rus": "Медиа запросы точки прерывания",
+			"eng": "Media queries breakpoints"
+		},{
+			"rus": "Система разметки",
+			"eng": "Grid system"
+		},{
+			"rus": "Размеры контейнера",
+			"eng": "Container sizes"
+		},{
+			"rus": "Навигационная панель",
+			"eng": "Navbar"
+		},{
+			"rus": "Навигация",
+			"eng": "Navs"
+		},{
+			"rus": "Tabs",
+			"eng": "Tabs"
+		},{
+			"rus": "Pills",
+			"eng": "Pills"
+		},{
+			"rus": "Нумерация",
+			"eng": "Pagination"
+		},{
+			"rus": "Листание",
+			"eng": "Pager"
+		},{
+			"rus": "Большой экран",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Состояние формы и уведомления",
+			"eng": "Form states and alerts"
+		},{
+			"rus": "Подсказки",
+			"eng": "Tooltips"
+		},{
+			"rus": "Информеры",
+			"eng": "Popovers"
+		},{
+			"rus": "Ярлыки",
+			"eng": "Labels"
+		},{
+			"rus": "Модали",
+			"eng": "Modals"
+		},{
+			"rus": "Уведомления",
+			"eng": "Alerts"
+		},{
+			"rus": "Индикатор выполнения",
+			"eng": "Progress bars"
+		},{
+			"rus": "Список группы",
+			"eng": "List group"
+		},{
+			"rus": "Панели",
+			"eng": "Panels"
+		},{
+			"rus": "Эскизы",
+			"eng": "Thumbnails"
+		},{
+			"rus": "Ячейки",
+			"eng": "Wells"
+		},{
+			"rus": "Значки",
+			"eng": "Badges"
+		},{
+			"rus": "Навигационный маршрут",
+			"eng": "Breadcrumbs"
+		},{
+			"rus": "Карусель",
+			"eng": "Carousel"
+		},{
+			"rus": "Кнопка закрытия",
+			"eng": "Close"
+		},{
+			"rus": "Код",
+			"eng": "Code"
+		},{
+			"rus": "Тип",
+			"eng": "Type"
+		},{
+			"rus": "Разделяемые навигационные стили",
+			"eng": "Shared nav styles"
+		}
+	],
+	"p": [
+		{
+			"rus": "Серые и фирменные цвета для использования во всем Bootstrap.",
+			"eng": "Gray and brand colors for use across Bootstrap."
+		},{
+			"rus": "Настройки для некоторых из самых глобальных стилей.",
+			"eng": "Settings for some of the most global styles."
+		},{
+			"rus": "Цвет фона для <code>&lt;body&gt;<\/code>.",
+			"eng": "Background color for <code>&lt;body&gt;<\/code>."
+		},{
+			"rus": "Глобальный цвет текста для <code>&lt;body&gt;<\/code>.",
+			"eng": "Global text color on <code>&lt;body&gt;<\/code>."
+		},{
+			"rus": "Глобальный цвет текстовой ссылкой.",
+			"eng": "Global textual link color."
+		},{
+			"rus": "Цвет наведения ссылки устанавливается через функцию <code>darken()<\/code>.",
+			"eng": "Link hover color set via <code>darken()<\/code> function."
+		},{
+			"rus": "Link hover decoration.",
+			"eng": "Link hover decoration."
+		},{
+			"rus": "Шрифт, интервал, цвет для основного текста, заголовков, и многое другое.",
+			"eng": "Font, line-height, and color for body text, headings, and more."
+		},{
+			"rus": "По умолчанию шрифт monospace для <code>&lt;code&gt;<\/code>, <code>&lt;kbd&gt;<\/code>, и <code>&lt;pre&gt;<\/code>.",
+			"eng": "Default monospace fonts for <code>&lt;code&gt;<\/code>, <code>&lt;kbd&gt;<\/code>, and <code>&lt;pre&gt;<\/code>."
+		},{
+			"rus": "Измерение-less <code>line-height<\/code> для использования в компонентах как кнопки.",
+			"eng": "Unit-less <code>line-height<\/code> for use in components like buttons."
+		},{
+			"rus": "Компьютерная и Quot; высота строки и Quot;  (<code>font-size<\/code> * <code>line-height<\/code>) для использования с <code>margin<\/code>, <code>padding<\/code>,и т.д.",
+			"eng": "Computed &quot;line-height&quot; (<code>font-size<\/code> * <code>line-height<\/code>) for use with <code>margin<\/code>, <code>padding<\/code>, etc."
+		},{
+			"rus": "По умолчанию этот наследуется от <code>&lt;body&gt;<\/code>.",
+			"eng": "By default, this inherits from the <code>&lt;body&gt;<\/code>."
+		},{
+			"rus": "Укажите другое расположение и имя файла включены шрифта Glyphicons значок. Полезно для тех, в том числе Bootstrap через Bower.",
+			"eng": "Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower."
+		},{
+			"rus": "Загружать шрифты из этого каталога.",
+			"eng": "Load fonts from this directory."
+		},{
+			"rus": "Имя файла для всех файлов шрифтов.",
+			"eng": "File name for all font files."
+		},{
+			"rus": "Элемент ID в SVG значок файла.",
+			"eng": "Element ID within SVG icon file."
+		},{
+			"rus": "Определите общий padding и размер border и многое другое. Базовые значения 14px текст и 1.428 line-height (~20px to start).",
+			"eng": "Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start)."
+		},{
+			"rus": "Глобальный цвет для активных элементов (т.к. navs or dropdowns).",
+			"eng": "Global color for active items (e.g., navs or dropdowns)."
+		},{
+			"rus": "Глобальный фон для активных элементов (т.к. navs or dropdowns).",
+			"eng": "Global background color for active items (e.g., navs or dropdowns)."
+		},{
+			"rus": "Глобальный цвет для активных пунктов (например, навигации или ниспадающих меню)",
+			"eng": "Width of the <code>border<\/code> for generating carets that indicator dropdowns."
+		},{
+			"rus": "Каретка слегка увеличивается в размерах для больших компонентов.",
+			"eng": "Carets increase slightly in size for larger components."
+		},{
+			"rus": "Настраивает <code>.table<\/code> компонетнт с базовыми значениями, используется во всех вариантах таблицы.",
+			"eng": "Customizes the <code>.table<\/code> component with basic values, each used across all table variations."
+		},{
+			"rus": "Padding для <code>&lt;th&gt;<\/code> и <code>&lt;td&gt;<\/code>",
+			"eng": "Padding for <code>&lt;th&gt;<\/code>s and <code>&lt;td&gt;<\/code>s."
+		},{
+			"rus": "Padding для ячеек в <code>.table-condensed<\/code>.",
+			"eng": "Padding for cells in <code>.table-condensed<\/code>."
+		},{
+			"rus": "Цвет фона по умолчанию, который используется для всех таблиц.",
+			"eng": "Default background color used for all tables."
+		},{
+			"rus": "Цвет фона по умолчанию, который используется для <code>.table-striped<\/code>.",
+			"eng": "Background color used for <code>.table-striped<\/code>."
+		},{
+			"rus": "Цвет фона по умолчанию, который используется <code>.table-hover<\/code>.",
+			"eng": "Background color used for <code>.table-hover<\/code>."
+		},{
+			"rus": "Цвет рамок для таблиц и ячеек.",
+			"eng": "Border color for table and cell borders."
+		},{
+			"rus": "Для каждой Bootstrap&#39;s кнопки, определите текст, цвет фона и рамки.",
+			"eng": "For each of Bootstrap's buttons, define text, background and border color."
+		},{
+			"rus": "Цвет фона <code>&lt;input&gt;<\/code>",
+			"eng": "<code>&lt;input&gt;<\/code> background color"
+		},{
+			"rus": "Цвет фона <code>&lt;input disabled&gt;<\/code>",
+			"eng": "<code>&lt;input disabled&gt;<\/code> background color"
+		},{
+			"rus": "Цвет текста для <code>&lt;input&gt;<\/code>",
+			"eng": "Text color for <code>&lt;input&gt;<\/code>s"
+		},{
+			"rus": "Цвет рамок <code>&lt;input&gt;<\/code>",
+			"eng": "<code>&lt;input&gt;<\/code> border color"
+		},{
+			"rus": "Default <code>.form-control<\/code> border radius",
+			"eng": "Default <code>.form-control<\/code> border radius"
+		},{
+			"rus": "Large <code>.form-control<\/code> border radius",
+			"eng": "Large <code>.form-control<\/code> border radius"
+		},{
+			"rus": "Small <code>.form-control<\/code> border radius",
+			"eng": "Small <code>.form-control<\/code> border radius"
+		},{
+			"rus": "Цвет рамки формы ввода (input) в фокусе",
+			"eng": "Border color for inputs on focus"
+		},{
+			"rus": "Цвет текста Placeholder",
+			"eng": "Placeholder text color"
+		},{
+			"rus": "Высота <code>.form-control<\/code> по умолчанию",
+			"eng": "Default <code>.form-control<\/code> height"
+		},{
+			"rus": "Большая высота <code>.form-control<\/code>",
+			"eng": "Large <code>.form-control<\/code> height"
+		},{
+			"rus": "Малая высота <code>.form-control<\/code>",
+			"eng": "Small <code>.form-control<\/code> height"
+		},{
+			"rus": "Цвет фона для текстовых приложений форм ввода (input)",
+			"eng": "Background color for textual input addons"
+		},{
+			"rus": "Цвет рамок для текстовых приложений форм ввода (input)",
+			"eng": "Border color for textual input addons"
+		},{
+			"rus": "Disabled cursor for form controls and buttons.",
+			"eng": "Disabled cursor for form controls and buttons."
+		},{
+			"rus": "Контейнер выпадающего меню и содержание",
+			"eng": "Dropdown menu container and contents."
+		},{
+			"rus": "Фон для выпадающего menu.",
+			"eng": "Background for the dropdown menu."
+		},{
+			"rus": "Выпадающее меню <code>border-color<\/code>.",
+			"eng": "Dropdown menu <code>border-color<\/code>."
+		},{
+			"rus": "Выпадающее меню <code>border-color<\/code> <strong>для IE8<\/strong>.",
+			"eng": "Dropdown menu <code>border-color<\/code> <strong>for IE8<\/strong>."
+		},{
+			"rus": "Делитель цвет между элементы раскрывающегося списка.",
+			"eng": "Divider color for between dropdown items."
+		},{
+			"rus": "Цвет текста выпадающего меню",
+			"eng": "Dropdown link text color."
+		},{
+			"rus": "Цвет наведения ссылок выпадающего меню.",
+			"eng": "Hover color for dropdown links."
+		},{
+			"rus": "Фон наведения для ссылок выпадающего меню.",
+			"eng": "Hover background for dropdown links."
+		},{
+			"rus": "Цвет текста активного списка выпадающего меню.",
+			"eng": "Active dropdown menu item text color."
+		},{
+			"rus": "Цвет фона активного списка выпадающего меню.",
+			"eng": "Active dropdown menu item background color."
+		},{
+			"rus": "Цвет текста неактивного списка выпадающего меню.",
+			"eng": "Disabled dropdown menu item background color."
+		},{
+			"rus": "Цвет текста для заголовков внутри выпадающих меню.",
+			"eng": "Text color for headers within dropdown menus."
+		},{
+			"rus": "Устаревшее <code>@dropdown-caret-color<\/code> по состоянию на v3.1.0",
+			"eng": "Deprecated <code>@dropdown-caret-color<\/code> as of v3.1.0"
+		},{
+			"rus": "Определите контрольные точки, при которых ваш макет будет меняться, приспосабливаясь к различным размерам экрана.",
+			"eng": "Define the breakpoints at which your layout will change, adapting to different screen sizes."
+		},{
+			"rus": "Устаревшее <code>@screen-xs<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-xs<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-xs-min<\/code> по состоянию на v3.2.0",
+			"eng": "Deprecated <code>@screen-xs-min<\/code> as of v3.2.0"
+		},{
+			"rus": "Устаревшее <code>@screen-phone<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-phone<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-sm<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-sm<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-tablet<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-tablet<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-md<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-md<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-desktop<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-desktop<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-lg<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-lg<\/code> as of v3.0.1"
+		},{
+			"rus": "Устаревшее <code>@screen-lg-desktop<\/code> по состоянию на v3.0.1",
+			"eng": "Deprecated <code>@screen-lg-desktop<\/code> as of v3.0.1"
+		},{
+			"rus": "Определите свою адаптивную разметку.",
+			"eng": "Define your custom responsive grid."
+		},{
+			"rus": "Количество колонок в сетке.",
+			"eng": "Number of columns in the grid."
+		},{
+			"rus": "Padding между столбцами. Возвращает разделенные пополам слева и справа.",
+			"eng": "Padding between columns. Gets divided in half for the left and right."
+		},{
+			"rus": "Минимальная точка, в которой навигация остается не свернутой.",
+			"eng": "Point at which the navbar becomes uncollapsed."
+		},{
+			"rus": "Максимальная точка, после которой навигация свернется",
+			"eng": "Point at which the navbar begins collapsing."
+		},{
+			"rus": "Задайте максимальную ширину <code>.container<\/code> для разных размеров экрана.",
+			"eng": "Define the maximum width of <code>.container<\/code> for different screen sizes."
+		},{
+			"rus": "Для <code>@screen-sm-min<\/code> и выше.",
+			"eng": "For <code>@screen-sm-min<\/code> and up."
+		},{
+			"rus": "Для <code>@screen-md-min<\/code> и выше.",
+			"eng": "For <code>@screen-md-min<\/code> and up."
+		},{
+			"rus": "Для <code>@screen-lg-min<\/code> и выше.",
+			"eng": "For <code>@screen-lg-min<\/code> and up."
+		},{
+			"rus": "Определить цвета для формы состояний обратной связи, по умолчанию, и предупреждений.",
+			"eng": "Define colors for form feedback states and, by default, alerts."
+		},{
+			"rus": "Максимальная ширина подсказки",
+			"eng": "Tooltip max width"
+		},{
+			"rus": "Цвет текста подсказок",
+			"eng": "Tooltip text color"
+		},{
+			"rus": "Цвет фона подсказок",
+			"eng": "Tooltip background color"
+		},{
+			"rus": "Ширина стрелки подсказки",
+			"eng": "Tooltip arrow width"
+		},{
+			"rus": "Цвет стрелки подсказки",
+			"eng": "Tooltip arrow color"
+		},{
+			"rus": "Цвет фона тела информера",
+			"eng": "Popover body background color"
+		},{
+			"rus": "Максимальная ширина информера",
+			"eng": "Popover maximum width"
+		},{
+			"rus": "Цвет рамки информера",
+			"eng": "Popover border color"
+		},{
+			"rus": "Цвет рамки отступления информера",
+			"eng": "Popover fallback border color"
+		},{
+			"rus": "Цвет фона названия информера",
+			"eng": "Popover title background color"
+		},{
+			"rus": "Ширина стрелочки информера",
+			"eng": "Popover arrow width"
+		},{
+			"rus": "Цвет стрелочки информера",
+			"eng": "Popover arrow color"
+		},{
+			"rus": "Внешняя ширина ст\u0456лочки информера",
+			"eng": "Popover outer arrow width"
+		},{
+			"rus": "Внешний цвет стрелочки информера",
+			"eng": "Popover outer arrow color"
+		},{
+			"rus": "Цвет отступления стрелки информера",
+			"eng": "Popover outer arrow fallback color"
+		},{
+			"rus": "Цвет фона ярлыка по умолчанию",
+			"eng": "Default label background color"
+		},{
+			"rus": "Главный цвет фона ярлыка",
+			"eng": "Primary label background color"
+		},{
+			"rus": "Цвет фона ярлыка при успехе",
+			"eng": "Success label background color"
+		},{
+			"rus": "Цвет фона информационного ярлыка",
+			"eng": "Info label background color"
+		},{
+			"rus": "Цвет фона ярлыка при предупреждении",
+			"eng": "Warning label background color"
+		},{
+			"rus": "Цвет фона ярлыка при опастности",
+			"eng": "Danger label background color"
+		},{
+			"rus": "Цвет текста ярлыка по умолчанию",
+			"eng": "Default label text color"
+		},{
+			"rus": "Цвет текста по умолчанию из связанной метки",
+			"eng": "Default text color of a linked label"
+		},{
+			"rus": "Внутренние отступы (padding) для тела модали(body)",
+			"eng": "Padding applied to the modal body"
+		},{
+			"rus": "Внутренние отступы (padding) для названий модалей",
+			"eng": "Padding applied to the modal title"
+		},{
+			"rus": "Высота строки названия модали",
+			"eng": "Modal title line-height"
+		},{
+			"rus": "Цвет фона области содержимого в модали",
+			"eng": "Background color of modal content area"
+		},{
+			"rus": "Цвет рамки модали",
+			"eng": "Modal content border color"
+		},{
+			"rus": "Цвет рамки модали для <strong>for IE8<\/strong>",
+			"eng": "Modal content border color <strong>for IE8<\/strong>"
+		},{
+			"rus": "Цвет заднего фона модали",
+			"eng": "Modal backdrop background color"
+		},{
+			"rus": "Прозрачность заднего фона модали",
+			"eng": "Modal backdrop opacity"
+		},{
+			"rus": "Цвет рамки заголовке модали",
+			"eng": "Modal header border color"
+		},{
+			"rus": "Цвет рамки нижнего колонтитула модали",
+			"eng": "Modal footer border color"
+		},{
+			"rus": "Определить цвета уведомлений, радиус рамок и отступы.",
+			"eng": "Define alert colors, border radius, and padding."
+		},{
+			"rus": "Цвет фона всего компонента прогресса",
+			"eng": "Background color of the whole progress component"
+		},{
+			"rus": "Цвет текста шкалы прогресса",
+			"eng": "Progress bar text color"
+		},{
+			"rus": "Variable for setting rounded corners on progress bar.",
+			"eng": "Variable for setting rounded corners on progress bar."
+		},{
+			"rus": "Цвет шкалы прогреса по умолчанию",
+			"eng": "Default progress bar color"
+		},{
+			"rus": "Цвет шкалы прогресса при успехе",
+			"eng": "Success progress bar color"
+		},{
+			"rus": "Цвет шкалы прогресса при предупреждении",
+			"eng": "Warning progress bar color"
+		},{
+			"rus": "Цвет шкалы прогресса при ошибке",
+			"eng": "Danger progress bar color"
+		},{
+			"rus": "Цвет шкалы прогресса инфо",
+			"eng": "Info progress bar color"
+		},{
+			"rus": "Цвет фона в <code>.list-group-item<\/code>",
+			"eng": "Background color on <code>.list-group-item<\/code>"
+		},{
+			"rus": "Цвет рамки в <code>.list-group-item<\/code>",
+			"eng": "<code>.list-group-item<\/code> border color"
+		},{
+			"rus": "Радиус рамки список группы",
+			"eng": "List group border radius"
+		},{
+			"rus": "Цвет фона одиночного элемента списка при наведении",
+			"eng": "Background color of single list items on hover"
+		},{
+			"rus": "Цвет текста активного элемента списка",
+			"eng": "Text color of active list items"
+		},{
+			"rus": "Цвет фона активного элемента списка",
+			"eng": "Background color of active list items"
+		},{
+			"rus": "Цвет рамки активных элементов списка",
+			"eng": "Border color of active list elements"
+		},{
+			"rus": "Цвет текста для содержимого внутри активных элементов списка",
+			"eng": "Text color for content within active list items"
+		},{
+			"rus": "Цвет текста пришедших в негодность элементов списка",
+			"eng": "Text color of disabled list items"
+		},{
+			"rus": "Цвет фона инвалидов список itemsText цвет инвалидов элементов списка",
+			"eng": "Background color of disabled list items"
+		},{
+			"rus": "Цвет текста для содержимого внутри пришедших в негодность элементов списка",
+			"eng": "Text color for content within disabled list items"
+		},{
+			"rus": "Цвет рамки для элементов внутри панелей",
+			"eng": "Border color for elements within panels"
+		},{
+			"rus": "Величина внутренних отступов (padding) вокруг эскизов изображений",
+			"eng": "Padding around the thumbnail image"
+		},{
+			"rus": "Цвет фона эскизов",
+			"eng": "Thumbnail background color"
+		},{
+			"rus": "Цвет рамки эскизов",
+			"eng": "Thumbnail border color"
+		},{
+			"rus": "Радиус рамок миниатюр",
+			"eng": "Thumbnail border radius"
+		},{
+			"rus": "Пользовательский цвет текста для подписей миниатюр",
+			"eng": "Custom text color for thumbnail captions"
+		},{
+			"rus": "Padding вокруг подписи миниатюр",
+			"eng": "Padding around the thumbnail caption"
+		},{
+			"rus": "Цвет текста ссылочного значка при наведении",
+			"eng": "Linked badge text color on hover"
+		},{
+			"rus": "Цвет текста навигационной ссылки в активном состоянии",
+			"eng": "Badge text color in active nav link"
+		},{
+			"rus": "Цвет фона значока активной ссылки навигации",
+			"eng": "Badge background color in active nav link"
+		},{
+			"rus": "Цвет фона навигационного пути (Breadcrumb)",
+			"eng": "Breadcrumb background color"
+		},{
+			"rus": "Цвет текста навигационного пути (Breadcrumb)",
+			"eng": "Breadcrumb text color"
+		},{
+			"rus": "Цвет текста текущей страницы в навигационном пути",
+			"eng": "Text color of current page in the breadcrumb"
+		},{
+			"rus": "Текстовый сепаратор для между breadcrumb элементами",
+			"eng": "Textual separator for between breadcrumb elements"
+		},{
+			"rus": "Горизонтальное смещение для форм и списков",
+			"eng": "Horizontal offset for forms and lists."
+		},{
+			"rus": "Приглушенный цвет текста",
+			"eng": "Text muted color"
+		},{
+			"rus": "Цвет рамки аббревиатур и акронимов",
+			"eng": "Abbreviations and acronyms border color"
+		},{
+			"rus": "Цвет заголовков в рамках элемента small",
+			"eng": "Headings small color"
+		},{
+			"rus": "Цвет цитаты в рамках элемента small",
+			"eng": "Blockquote small color"
+		},{
+			"rus": "Размер шрифта блока цитат",
+			"eng": "Blockquote font size"
+		},{
+			"rus": "Цвет рамки цитаты",
+			"eng": "Blockquote border color"
+		},{
+			"rus": "Цвет рамки заголовков страниц",
+			"eng": "Page header border color"
+		},{
+			"rus": "Ширина горизонтального описания заголовка списков",
+			"eng": "Width of horizontal description list titles"
+		},{
+			"rus": "Цвет горизонтальной линии.",
+			"eng": "Horizontal line color."
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+	"h": [
+		{
+			"rus": "Jumbotron",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Привет, мир!",
+			"eng": "Hello, world!"
+		}
+	],
+	"p": [
+		{
+			"rus": "Легкий, гибкий компонент, который можно расширять на весь экран, чтобы продемонстрировать ключевой содержимое вашего сайта.",
+			"eng": "A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site."
+		},{
+			"rus": "Это простая и очень выразительная часть с большим экраном, для привлечения дополнительного внимания к вашей информации.",
+			"eng": "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information."
+		},{
+			"rus": "<a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Узнать больше<\/a>",
+			"eng": "<a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Learn more<\/a>"
+		},{
+			"rus": "Создайте большой экран на всю ширину, без закругленных углов, который размещен за пределами <code>.container<\/code>, но, вместо этого, который вмещает <code>.container<\/code>.",
+			"eng": "To make the jumbotron full width, and without rounded corners, place it outside all <code>.container<\/code>s and instead add a <code>.container<\/code> within."
+		}
+	],
+	"button": [
+		{
+			"rus": "Узнать больше",
+			"eng": "Learn more"
+		}
+	]
+}

@@ -1,0 +1,206 @@
+{
+	"h": [
+		{
+			"rus": "Использование Less",
+			"eng": "Using Less"
+		},{
+			"rus": "Компиляция Bootstrap",
+			"eng": "Compiling Bootstrap"
+		},{
+			"rus": "Переменные",
+			"eng": "Variables"
+		},{
+			"rus": "Поставщики mixin",
+			"eng": "Vendor mixins"
+		},{
+			"rus": "Утилиты mixin",
+			"eng": "Utility mixins"
+		},{
+			"rus": "Цвета",
+			"eng": "Colors"
+		},{
+			"rus": "Каркас",
+			"eng": "Scaffolding"
+		},{
+			"rus": "Ссылки",
+			"eng": "Links"
+		},{
+			"rus": "Типография",
+			"eng": "Typography"
+		},{
+			"rus": "Иконки",
+			"eng": "Icons"
+		},{
+			"rus": "Компоненты",
+			"eng": "Components"
+		},{
+			"rus": "Размерность блоков",
+			"eng": "Box-sizing"
+		},{
+			"rus": "Округление углов",
+			"eng": "Rounded corners"
+		},{
+			"rus": "Тени",
+			"eng": "Box (Drop) shadows"
+		},{
+			"rus": "Переходы",
+			"eng": "Transitions"
+		},{
+			"rus": "Преобразования",
+			"eng": "Transformations"
+		},{
+			"rus": "Анимации",
+			"eng": "Animations"
+		},{
+			"rus": "Прозрачность",
+			"eng": "Opacity"
+		},{
+			"rus": "Текст заполнения",
+			"eng": "Placeholder text"
+		},{
+			"rus": "Столбцы",
+			"eng": "Columns"
+		},{
+			"rus": "Градиенты",
+			"eng": "Gradients"
+		},{
+			"rus": "Clearfix",
+			"eng": "Clearfix"
+		},{
+			"rus": "Горизонтальное центрирование",
+			"eng": "Horizontal centering"
+		},{
+			"rus": "Калибровка подсказок",
+			"eng": "Sizing helpers"
+		},{
+			"rus": "Изменение размера textareas",
+			"eng": "Resizable textareas"
+		},{
+			"rus": "Усеченный текст",
+			"eng": "Truncating text"
+		},{
+			"rus": "Retina изображения",
+			"eng": "Retina images"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap's CSS построен на Less, препроцессор с дополнительной функциональностью, как переменных, mixins, и функции для компиляции CSS. Тем, кто хочет использовать источник Less файлы вместо наших скомпилированных файлов CSS могут воспользоваться многочисленными переменными и mixins которые мы используем во всем фреймверке.",
+			"eng": "Bootstrap's CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. Those looking to use the source Less files instead of our compiled CSS files can make use of the numerous variables and mixins we use throughout the framework."
+		},{
+			"rus": "Переменные разметки и mixins охвачены <a href=\"#grid-less\">в разделе Разметка системы<\/a>.",
+			"eng": "Grid variables and mixins are covered <a href=\"#grid-less\">within the Grid system section<\/a>."
+		},{
+			"rus": "Bootstrap может быть использован в по меньшей мере двумя способами: компилированным CSS или с источником Less файлов. Для компиляции Less файлов, <a href=\"..\/getting-started\/#grunt\">consult the Getting Started section<\/a> для того, как настроить среду разработки для запуска через необходимые команды.",
+			"eng": "Bootstrap can be used in at least two ways: with the compiled CSS or with the source Less files. To compile the Less files, <a href=\"..\/getting-started\/#grunt\">consult the Getting Started section<\/a> for how to setup your development environment to run the necessary commands."
+		},{
+			"rus": "Инструменты сторонних компиляций могут работать с Bootstrap, но они не поддерживается нашей основной командой.",
+			"eng": "Third party compilation tools may work with Bootstrap, but they are not supported by our core team."
+		},{
+			"rus": "Переменные используются на протяжении всего проекта, как способ централизации и обмена часто используемых значений как цвета, отступы, или стеки шрифта. Для полной разбивки смотрите <a href=\"..\/customize\/#less-variables-section\">Настроить<\/a>.",
+			"eng": "Variables are used throughout the entire project as a way to centralize and share commonly used values like colors, spacing, or font stacks. For a complete breakdown, please see <a href=\"..\/customize\/#less-variables-section\">the Customizer<\/a>."
+		},{
+			"rus": "Легкие в использовании две цветовые схемы: оттенки серого и семантического. Оттенки серого цвета обеспечивают быстрый доступ к часто используемым оттенкам черного, а семантические включают в себя различные цвета, присвоенные на конструктивных контекстных значениях.",
+			"eng": "Easily make use of two color schemes: grayscale and semantic. Grayscale colors provide quick access to commonly used shades of black while semantic include various colors assigned to meaningful contextual values."
+		},{
+			"rus": "Используйте любые из этих цветовых переменных, как они есть, или присвойте их для более значимых переменных в проекте.",
+			"eng": "Use any of these color variables as they are or reassign them to more meaningful variables for your project."
+		},{
+			"rus": "Количество переменных для быстрой настройки основных элементов структуры вашего сайта.",
+			"eng": "A handful of variables for quickly customizing key elements of your site's skeleton."
+		},{
+			"rus": "Легко делать стиль ваших ссылок с нужным цветом только с одним значением.",
+			"eng": "Easily style your links with the right color with only one value."
+		},{
+			"rus": "Обратите внимание, что <code>@link-hover-color<\/code> использует функцию, другого удивительного инструмента Less, чтобы автоматически создавать право изменять цвет при наведении. Вы можете использовать <code>darken<\/code>, <code>lighten<\/code>, <code>saturate<\/code>, и <code>desaturate<\/code>.",
+			"eng": "Note that the <code>@link-hover-color<\/code> uses a function, another awesome tool from Less, to automagically create the right hover color. You can use <code>darken<\/code>, <code>lighten<\/code>, <code>saturate<\/code>, and <code>desaturate<\/code>."
+		},{
+			"rus": "Легко установить тип вида (type face), размер текста, ведущий текст, и прочее с несколькими быстрыми переменными. Bootstrap позволяет использовать их, а также предоставляет легкие типографские mixins..",
+			"eng": "Easily set your type face, text size, leading, and more with a few quick variables. Bootstrap makes use of these as well to provide easy typographic mixins."
+		},{
+			"rus": "Две быстрые переменные для настройки размещения и определения названий файлов значков.",
+			"eng": "Two quick variables for customizing the location and filename of your icons."
+		},{
+			"rus": "Компоненты во всем Bootstrap позволяют использовать некоторые переменные по умолчанию для установления общих значений. Вот наиболее часто используемые.",
+			"eng": "Components throughout Bootstrap make use of some default variables for setting common values. Here are the most commonly used."
+		},{
+			"rus": "Поставщики mixins подмешиваются в код, чтобы помочь поддерживать большинство браузеров через включение их соответствующих префиксов в вашу сборку CSS.",
+			"eng": "Vendor mixins are mixins to help support multiple browsers by including all relevant vendor prefixes in your compiled CSS."
+		},{
+			"rus": "Сброс компонентов box model в одном реализован. Чтобы понять контекст, посмотрите это <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/CSS\/box-sizing\" target=\"_blank\">полезные статьи от Mozilla<\/a>.",
+			"eng": "Reset your components' box model with a single mixin. For context, see this <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/CSS\/box-sizing\" target=\"_blank\">helpful article from Mozilla<\/a>."
+		},{
+			"rus": "<strong>Не рекомендуемые<\/strong> смешивания по состоянию на v3.2.0, с введением autoprefixer. Для сохранения обратной совместимости, Bootstrap будет продолжать использовать mixin до тех пор, пока внутренне до Bootstrap v4.",
+			"eng": "The mixin is <strong>deprecated<\/strong> as of v3.2.0, with the introduction of autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixin internally until Bootstrap v4."
+		},{
+			"rus": "Сегодня все современные браузеры поддерживают безпрефиксные свойства <code>border-radius<\/code>. И поэтому, сейчас нет <code>.border-radius()<\/code> mixin, но Bootstrap делает включения ярлыков для быстрого закругления двух углов с определенных сторон объекта.",
+			"eng": "Today all modern browsers support the non-prefixed <code>border-radius<\/code> property. As such, there is no <code>.border-radius()<\/code> mixin, but Bootstrap does include shortcuts for quickly rounding two corners on a particular side of an object."
+		},{
+			"rus": "Если ваша целевая аудитория использует новейшие версии современных браузеров и устройств, убедитесь, что вы в себя используете свойство <code>box-shadow<\/code> Если вы нуждаетесь в поддержке устройств, работающих на предыдущих версиях Android (перед-v4) и iOS (перед-iOS 5), используйте <strong>устаревший<\/strong> для включения необходимых префиксов <code>-webkit<\/code>.",
+			"eng": "If your target audience is using the latest and greatest browsers and devices, be sure to just use the <code>box-shadow<\/code> property on its own. If you need support for older Android (pre-v4) and iOS devices (pre-iOS 5), use the <strong>deprecated<\/strong> mixin to pick up the required <code>-webkit<\/code> prefix."
+		},{
+			"rus": "<strong>Не рекомендуемые<\/strong> mixin по состоянию на v3.1.0, изначально Bootstrap официально не поддерживает устаревшие платформы, не поддерживающие стандартные свойства. Для сохранения обратной совместимости, Bootstrap будет продолжать использовать mixin до тех пор, пока внутренне до Bootstrap v4.",
+			"eng": "The mixin is <strong>deprecated<\/strong> as of v3.1.0, since Bootstrap doesn't officially support the outdated platforms that don't support the standard property. To preserve backwards-compatibility, Bootstrap will continue to use the mixin internally until Bootstrap v4."
+		},{
+			"rus": "Не забудьде использовать цвета в режиме <code>rgba()<\/code> в ваших блоках тени (box shadows), ибо в таком случае они наименее проблематично сливаются с фоном.",
+			"eng": "Be sure to use <code>rgba()<\/code> colors in your box shadows so they blend as seamlessly as possible with backgrounds."
+		},{
+			"rus": "Несколько смешиваний для гибкости. Укажите всю информацию по переходам за раз, или укажите отдельно задержки и продолжительность, если необходимо.",
+			"eng": "Multiple mixins for flexibility. Set all transition information with one, or specify a separate delay and duration as needed."
+		},{
+			"rus": "<strong>Не рекомендуемые<\/strong> смешивания по состоянию на v3.2.0, с введением autoprefixer. Для сохранения обратной совместимости, Bootstrap будет продолжать использовать mixin до тех пор, пока внутренне до Bootstrap v4.",
+			"eng": "The mixins are <strong>deprecated<\/strong> as of v3.2.0, with the introduction of autoprefixer. To preserve backwards-compatibility, Bootstrap will continue to use the mixins internally until Bootstrap v4."
+		},{
+			"rus": "Вращение, масштабирование, перевод (перенос), или наклон любого объекта.",
+			"eng": "Rotate, scale, translate (move), or skew any object."
+		},{
+			"rus": "Одиночный mixin для использования всех свойств анимации CSS3 в одном объявлении, а другие mixins - для индивидуальных свойств.",
+			"eng": "A single mixin for using all of CSS3's animation properties in one declaration and other mixins for individual properties."
+		},{
+			"rus": "Установите непрозрачность для всех браузеров и предоставьте отдельный <code>filter<\/code> для IE8.",
+			"eng": "Set the opacity for all browsers and provide a <code>filter<\/code> fallback for IE8."
+		},{
+			"rus": "Предоставьте контекст для элементов управления формы внутри каждого поля.",
+			"eng": "Provide context for form controls within each field."
+		},{
+			"rus": "Генерируйте колонки через CSS внутри одиночного элемента.",
+			"eng": "Generate columns via CSS within a single element."
+		},{
+			"rus": "Легко превратить любые два цвета в градиенты фона. Можно сделать еще больше - установить направление, используя три цвета, или используя радиальный градиент. С одиночным mixin вы получите все перфиксированный синтаксис, что вам надо.",
+			"eng": "Easily turn any two colors into a background gradient. Get more advanced and set a direction, use three colors, or use a radial gradient. With a single mixin you get all the prefixed syntaxes you'll need."
+		},{
+			"rus": "Вы также можете указать угол стандартного двокольора, линейный градиент:",
+			"eng": "You can also specify the angle of a standard two-color, linear gradient:"
+		},{
+			"rus": "Если вам нужен стиль градиента туманны-полосы, то это легко, также. Просто определите единичный цвет, и будете иметь накладку полупрозрачных белых линий.",
+			"eng": "If you need a barber-stripe style gradient, that's easy, too. Just specify a single color and we'll overlay a translucent white stripe."
+		},{
+			"rus": "Поднимите ставки и используйте вместо три цвета. Установите первый цвет, второй цвет, цветовую остановку второго цвета (процентное значение, например 0.25%), и третий цвет с этими mixins:",
+			"eng": "Up the ante and use three colors instead. Set the first color, the second color, the second color's color stop (a percentage value like 25%), and the third color with these mixins:"
+		},{
+			"rus": "<strong>Внимание!<\/strong> Если вам когда-нибудь понадобится удалить градиент, не забудьте удалить все IE-специальные <code>filter<\/code> которые вы могли добавить. Вы можете это сделать с помощью <code>.reset-filter()<\/code> mixin рядом с <code>background-image: none;<\/code>.",
+			"eng": "<strong>Heads up!<\/strong> Should you ever need to remove a gradient, be sure to remove any IE-specific <code>filter<\/code> you may have added. You can do that by using the <code>.reset-filter()<\/code> mixin alongside <code>background-image: none;<\/code>."
+		},{
+			"rus": "Вспомогательные mixins есть примесями, сочетающие несвязанные (в противном случае) свойства CSS, для достижения конкретной цели или задачи.",
+			"eng": "Utility mixins are mixins that combine otherwise unrelated CSS properties to achieve a specific goal or task."
+		},{
+			"rus": "Забудьте про добавление <code>class=\"clearfix\"<\/code> к каждому элементу, а вместо этого добавьте mixin <code>.clearfix()<\/code> в случае необходимости. В этом примере используется <a href=\"http:\/\/nicolasgallagher.com\/micro-clearfix-hack\/\" target=\"_blank\">micro clearfix<\/a> созданный <a href=\"https:\/\/twitter.com\/necolas\" target=\"_blank\">Nicolas Gallagher<\/a>.",
+			"eng": "Forget adding <code>class=\"clearfix\"<\/code> to any element and instead add the <code>.clearfix()<\/code> mixin where appropriate. Uses the <a href=\"http:\/\/nicolasgallagher.com\/micro-clearfix-hack\/\" target=\"_blank\">micro clearfix<\/a> from <a href=\"https:\/\/twitter.com\/necolas\" target=\"_blank\">Nicolas Gallagher<\/a>."
+		},{
+			"rus": "Быстро центруйте любой элемент внутри его родителя <strong>Требуется <code>width<\/code> или <code>max-width<\/code> должны быть установленны<\/strong>",
+			"eng": "Quickly center any element within its parent. <strong>Requires <code>width<\/code> or <code>max-width<\/code> to be set.<\/strong>"
+		},{
+			"rus": "Стало проще указывать размеры объектов.",
+			"eng": "Specify the dimensions of an object more easily."
+		},{
+			"rus": "Легко настроить параметры калибровки к любой текстовой области (textarea), или любого другого элемента. По умолчанию для нормального поведения браузеров (<code>both<\/code>).",
+			"eng": "Easily configure the resize options for any textarea, or any other element. Defaults to normal browser behavior (<code>both<\/code>)."
+		},{
+			"rus": "Легко сократить текст, с тремя точками, с помощью одиночного mixin. <strong>При этом необходимо, чтобы элемент был стилизован как <code>block<\/code> или как <code>inline-block<\/code><\/strong>",
+			"eng": "Easily truncate text with an ellipsis with a single mixin. <strong>Requires element to be <code>block<\/code> or <code>inline-block<\/code> level.<\/strong>"
+		},{
+			"rus": "Определите два пути изображений и @1x размер изображений, и Bootstrap обеспечит @2x медиа запросы. <strong>Если вы обслуживаете много изображений, подумайте о написании кода для CSS сетки изображений в одиночном медиа запросе.<\/strong>",
+			"eng": "Specify two image paths and the @1x image dimensions, and Bootstrap will provide an @2x media query. <strong>If you have many images to serve, consider writing your retina image CSS manually in a single media query.<\/strong>"
+		}
+	]
+}

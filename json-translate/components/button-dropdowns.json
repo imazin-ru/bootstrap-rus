@@ -1,0 +1,185 @@
+{
+	"h": [
+		{
+			"rus": "Кнопка выпадающего меню",
+			"eng": "Button dropdowns"
+		},{
+			"rus": "Одиночная кнопка выпадающего меню",
+			"eng": "Single button dropdowns"
+		},{
+			"rus": "Расщепленная кнопка выпадающего меню",
+			"eng": "Split button dropdowns"
+		},{
+			"rus": "Изменение размера",
+			"eng": "Sizing"
+		},{
+			"rus": "Вариант списка сверху",
+			"eng": "Dropup variation"
+		},{
+			"rus": "Зависимость плагина",
+			"eng": "Plugin dependency"
+		}
+	],
+	"p": [
+		{
+			"rus": "Используйте любую кнопку для выпадающего меню разместив ее в <code>.btn-group<\/code>, и обеспечив ее правильно-размеченным меню.",
+			"eng": "Use any button to trigger a dropdown menu by placing it within a <code>.btn-group<\/code> and providing the proper menu markup."
+		},{
+			"rus": "Кнопка выпадающего меню требует включения в вашу версию Bootstrap <a href=\"..\/javascript-doc\/#dropdowns\">плагина для выпадающего меню<\/a>.",
+			"eng": "Button dropdowns require the <a href=\"..\/javascript\/#dropdowns\">dropdown plugin<\/a> to be included in your version of Bootstrap."
+		},{
+			"rus": "Предоставьте другого вида кнопке, с выпадающим меню, с помощью определенных базовых изменений.",
+			"eng": "Turn a button into a dropdown toggle with some basic markup changes."
+		},{
+			"rus": "Аналогично создайте розщеплену кнопку выпадающего меню с такими же изменениями в розм\u0456тк\u0456, только с разделенной кнопкой.",
+			"eng": "Similarly, create split button dropdowns with the same markup changes, only with a separate button."
+		},{
+			"rus": "Кнопки в выпадающем меню могут иметь любой размер.",
+			"eng": "Button dropdowns work with buttons of all sizes."
+		},{
+			"rus": "Создайте меню, элементы которого поднимаются вверх, прибавив <code>.dropup<\/code> к родительскому контейнеру.",
+			"eng": "Trigger dropdown menus above elements by adding <code>.dropup<\/code> to the parent."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#\">Действие<\/a>",
+			"eng": "<a href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Другое действие<\/a>",
+			"eng": "<a href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Что-то иное<\/a>",
+			"eng": "<a href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a href=\"#\">Separated link<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "По умолчанию <span class=\"caret\"><\/span>",
+			"eng": "Default <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Первичная <span class=\"caret\"><\/span>",
+			"eng": "Primary <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Успех <span class=\"caret\"><\/span>",
+			"eng": "Success <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Информация <span class=\"caret\"><\/span>",
+			"eng": "Info <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Предупреждение <span class=\"caret\"><\/span>",
+			"eng": "Warning <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Опасность <span class=\"caret\"><\/span>",
+			"eng": "Danger <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Действие <span class=\"caret\"><\/span>",
+			"eng": "\n    Action <span class=\"caret\"><\/span>\n  "
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default"
+		},{
+			"rus": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n ",
+			"eng": "\n        <span class=\"caret\"><\/span>\n        <span class=\"sr-only\">Toggle Dropdown<\/span>\n      "
+		},{
+			"rus": "Первичная",
+			"eng": "Primary"
+		},{
+			"rus": "Успех",
+			"eng": "Success"
+		},{
+			"rus": "Информация",
+			"eng": "Info"
+		},{
+			"rus": "Предупреждение",
+			"eng": "Warning"
+		},{
+			"rus": "Опасность",
+			"eng": "Danger"
+		},{
+			"rus": "Действие",
+			"eng": "Action"
+		},{
+			"rus": "\n Большая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n          Large button <span class=\"caret\"><\/span>\n        "
+		},{
+			"rus": "\n Малая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n          Small button <span class=\"caret\"><\/span>\n        "
+		},{
+			"rus": "\n Очень малая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n          Extra small button <span class=\"caret\"><\/span>\n        "
+		},{
+			"rus": "Поднимающееся меню",
+			"eng": "Dropup"
+		},{
+			"rus": "Правое поднимающееся меню",
+			"eng": "Right dropup"
+		},{
+			"rus": "По умолчанию <span class=\"caret\"><\/span>",
+			"eng": "По умолчанию <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Первичная <span class=\"caret\"><\/span>",
+			"eng": "Первичная <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Успех <span class=\"caret\"><\/span>",
+			"eng": "Успех <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Информация <span class=\"caret\"><\/span>",
+			"eng": "Информация <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Предупреждение <span class=\"caret\"><\/span>",
+			"eng": "Предупреждение <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Опасность <span class=\"caret\"><\/span>",
+			"eng": "Опасность <span class=\"caret\"><\/span>"
+		},{
+			"rus": "Действие <span class=\"caret\"><\/span>",
+			"eng": "Действие <span class=\"caret\"><\/span>"
+		},{
+			"rus": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n ",
+			"eng": "\n <span class=\"caret\"><\/span>\n <span class=\"sr-only\">Меню с переключением<\/span>\n "
+		},{
+			"rus": "\n Большая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n Большая кнопка <span class=\"caret\"><\/span>\n "
+		},{
+			"rus": "\n Малая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n Малая кнопка <span class=\"caret\"><\/span>\n "
+		},{
+			"rus": "\n Очень малая кнопка <span class=\"caret\"><\/span>\n ",
+			"eng": "\n Очень малая кнопка <span class=\"caret\"><\/span>\n "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/btn-group -->",
+			"eng": "<!-- \/btn-group -->"
+		},{
+			"rus": "<!-- Одна кнопка -->",
+			"eng": "<!-- Single button -->"
+		},{
+			"rus": "<!-- Раздельная кнопка -->",
+			"eng": "<!-- Split button -->"
+		},{
+			"rus": "<!-- \/btn-toolbar -->",
+			"eng": "<!-- \/btn-toolbar -->"
+		},{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- Большая группа кнопок -->",
+			"eng": "<!-- Large button group -->"
+		},{
+			"rus": "<!-- Малая группа кнопок -->",
+			"eng": "<!-- Small button group -->"
+		},{
+			"rus": "<!-- Очень малая группа кнопок -->",
+			"eng": "<!-- Extra small button group -->"
+		},{
+			"rus": "<!-- Ссылки выпадающего меню -->",
+			"eng": "<!-- Dropdown menu links -->"
+		}
+	]
+}

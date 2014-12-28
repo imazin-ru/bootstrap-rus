@@ -1,0 +1,26 @@
+{
+	"h": [
+		{
+			"rus": "Переводы",
+			"eng": "Translations"
+		}
+	],
+	"p": [
+		{
+			"rus": "Члены сообщества перевели документацию Bootstrap на различные языки. Никто официально не поддерживается и они не всегда могут быть в курсе событий.",
+			"eng": "Community members have translated Bootstrap's documentation into various languages. None are officially supported and they may not always be up to date."
+		},{
+			"rus": "<strong class=\"text-danger\">Мы не помогаем организовывать перевод, мы просто даем на них ссылки.<\/strong>",
+			"eng": "<strong class=\"text-danger\">We don't help organize or host translations, we just link to them.<\/strong>"
+		},{
+			"rus": "Перевели новый или есть перевод лучше? Откройте запрос, чтобы добавить его в наш список.",
+			"eng": "Finished a new or better translation? Open a pull request to add it to our list."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"{{ language.url }}\" hreflang=\"{{ language.code }}\">{{ language.description }} ({{ language.name }})<\/a>",
+			"eng": "<a href=\"{{ language.url }}\" hreflang=\"{{ language.code }}\">{{ language.description }} ({{ language.name }})<\/a>"
+		}
+	]
+}

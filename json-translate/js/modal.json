@@ -1,0 +1,368 @@
+{
+	"h": [
+		{
+			"rus": "Модальные окна <small>modal.js<\/small>",
+			"eng": "Modals <small>modal.js<\/small>"
+		},{
+			"rus": "Примеры",
+			"eng": "Examples"
+		},{
+			"rus": "Дополнительные размеры",
+			"eng": "Optional sizes"
+		},{
+			"rus": "Удаление анимации",
+			"eng": "Remove animation"
+		},{
+			"rus": "Varying modal content based on trigger button",
+			"eng": "Varying modal content based on trigger button"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Пример статического окна",
+			"eng": "Static example"
+		},{
+			"rus": "Живое демо",
+			"eng": "Live demo"
+		},{
+			"rus": "Через атрибуты данных",
+			"eng": "Via data attributes"
+		},{
+			"rus": "Через JavaScript",
+			"eng": "Via JavaScript"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "Перекрытия модали не поддерживается",
+			"eng": "Overlapping modals not supported"
+		},{
+			"rus": "Модальные размещения разметки",
+			"eng": "Modal markup placement"
+		},{
+			"rus": "Оговорки в отношении мобильных устройств",
+			"eng": "Mobile device caveats"
+		},{
+			"rus": "Название модали",
+			"eng": "Modal title"
+		},{
+			"rus": "Текст модали",
+			"eng": "Text in a modal"
+		},{
+			"rus": "Информационная панель в модали",
+			"eng": "Popover in a modal"
+		},{
+			"rus": "Подсказки в модали",
+			"eng": "Tooltips in a modal"
+		},{
+			"rus": "Переполнение текстом, чтобы показать поведение с прокруткой",
+			"eng": "Overflowing text to show scroll behavior"
+		},{
+			"rus": "Сделайте модали доступными",
+			"eng": "Make modals accessible"
+		},{
+			"rus": "Вложения видео YouTube",
+			"eng": "Embedding YouTube videos"
+		},{
+			"rus": "Большая модаль",
+			"eng": "Large modal"
+		},{
+			"rus": "Малая модаль",
+			"eng": "Small modal"
+		},{
+			"rus": "New message",
+			"eng": "New message"
+		},{
+			"rus": ".modal(параметры)",
+			"eng": ".modal(options)"
+		},{
+			"rus": ".modal('toggle')",
+			"eng": ".modal('toggle')"
+		},{
+			"rus": ".modal('show')",
+			"eng": ".modal('show')"
+		},{
+			"rus": ".modal('hide')",
+			"eng": ".modal('hide')"
+		}
+	],
+	"p": [
+		{
+			"rus": "Модаль является рационализированным, но гибким диалоговым окном, с минимальным, лишь необходимой функциональностью и умными настройками по умолчанию.",
+			"eng": "Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults."
+		},{
+			"rus": "Убедитесь, что вы не открываете модали в то время, когда другая модаль все еще видимая. Отображение более, чем одной модали одновременно, требует пользовательского кода.",
+			"eng": "Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code."
+		},{
+			"rus": "Всегда стараемся размещать модаль в HTML код в положении верхнего уровня в документе, чтобы избежать других компонентов, влияющих на внешний вид и\/ или функциональность модали.",
+			"eng": "Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and\/or functionality."
+		},{
+			"rus": "Есть определенные предостережения относительно использования модальных окон на мобильных устройствах. <a href=\"..\/getting-started\/#support-fixed-position-keyboards\">Просмотрите наши документы относительно поддержки браузеров<\/a> для уточнений.",
+			"eng": "There are some caveats regarding using modals on mobile devices. <a href=\"..\/getting-started\/#support-fixed-position-keyboards\">See our browser support docs<\/a> for details."
+		},{
+			"rus": "<strong class=\"text-danger\">Due to how HTML5 defines its semantics, the <code>autofocus<\/code> HTML attribute has no effect in Bootstrap modals.<\/strong> Чтобы добиться такого же эффекта, используя пользовательские JavaScript:",
+			"eng": "<strong class=\"text-danger\">Due to how HTML5 defines its semantics, the <code>autofocus<\/code> HTML attribute has no effect in Bootstrap modals.<\/strong> To achieve the same effect, use some custom JavaScript:"
+		},{
+			"rus": "Создание модального окна с заголовком, основным содержанием, и перечнем действий в нижнем колонтитуле.",
+			"eng": "A rendered modal with header, body, and set of actions in the footer."
+		},{
+			"rus": "Один файл body&hellip;",
+			"eng": "One fine body&hellip;"
+		},{
+			"rus": "Модальное окно, созданное с помощью JavaScript, задействуется кликом кнопки, что внизу. Оно будет спадать вниз и уходить вверху страницы.",
+			"eng": "Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page."
+		},{
+			"rus": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
+			"eng": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula."
+		},{
+			"rus": "Эта <a href=\"#\" role=\"button\" class=\"btn btn-default popover-test\" title=\"A Title\" data-content=\"And here's some amazing content. It's very engaging. right?\">кнопка<\/a> должна вызвать popover на клик.",
+			"eng": "This <a href=\"#\" role=\"button\" class=\"btn btn-default popover-test\" title=\"A Title\" data-content=\"And here's some amazing content. It's very engaging. right?\">button<\/a> should trigger a popover on click."
+		},{
+			"rus": "<a href=\"#\" class=\"tooltip-test\" title=\"Tooltip\">Эта ссылка<\/a> и <a href=\"#\" class=\"tooltip-test\" title=\"Tooltip\">эта ссылка<\/a> должны иметь подсказки при наведении курсора мыши.",
+			"eng": "<a href=\"#\" class=\"tooltip-test\" title=\"Tooltip\">This link<\/a> and <a href=\"#\" class=\"tooltip-test\" title=\"Tooltip\">that link<\/a> should have tooltips on hover."
+		},{
+			"rus": "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+			"eng": "Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+		},{
+			"rus": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+			"eng": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+		},{
+			"rus": "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.",
+			"eng": "Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla."
+		},{
+			"rus": "Убедитесь, что добавили <code>role=\"dialog\"<\/code> - <code>.modal<\/code>, атрибут <code>aria-labelledby=\"myModalLabel\"<\/code> для ссылки на название модали, и <code>aria-hidden=\"true\"<\/code> для оповещения assistive technologies (вспомогательных технологий), чтобы пропускали DOM-элементы модальных окон.",
+			"eng": "Be sure to add <code>role=\"dialog\"<\/code> to <code>.modal<\/code>, <code>aria-labelledby=\"myModalLabel\"<\/code> attribute to reference the modal title, and <code>aria-hidden=\"true\"<\/code> to tell assistive technologies to skip the modal's DOM elements."
+		},{
+			"rus": "Кроме этого, вы можете предоставить описание диалоговой модали при помощи <code>aria-describedby<\/code>, <code>.modal<\/code>.",
+			"eng": "Additionally, you may give a description of your modal dialog with <code>aria-describedby<\/code> on <code>.modal<\/code>."
+		},{
+			"rus": "Вложение YouTube видео в модали требует дополнительных настроек не в Bootstrap, автоматически остановки воспроизведение и другое. <a href=\"http:\/\/stackoverflow.com\/questions\/18622508\/bootstrap-3-and-youtube-in-modal\">See this helpful Stack Overflow post<\/a> для подробной информации.",
+			"eng": "Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href=\"http:\/\/stackoverflow.com\/questions\/18622508\/bootstrap-3-and-youtube-in-modal\">See this helpful Stack Overflow post<\/a> for more information."
+		},{
+			"rus": "Модали имеют два дополнительных размера, доступные через модификаторы классов, которые будут размещены на <code>.modal-dialog<\/code>.",
+			"eng": "Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog<\/code>."
+		},{
+			"rus": "For modals that simply appear rather than fade in to view, remove the <code>.fade<\/code> class from your modal markup.",
+			"eng": "For modals that simply appear rather than fade in to view, remove the <code>.fade<\/code> class from your modal markup."
+		},{
+			"rus": "Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget<\/code> and <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/Guide\/HTML\/Using_data_attributes\">HTML <code>data-*<\/code> attributes<\/a> (possibly <a href=\"http:\/\/api.jquery.com\/data\/\">via jQuery<\/a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget<\/code>,",
+			"eng": "Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget<\/code> and <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/Guide\/HTML\/Using_data_attributes\">HTML <code>data-*<\/code> attributes<\/a> (possibly <a href=\"http:\/\/api.jquery.com\/data\/\">via jQuery<\/a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget<\/code>,"
+		},{
+			"rus": "Модальный плагин переключает ваш скрытый контент по запросу, через атрибуты данных или JavaScript. Он также добавляет <code>.modal-open<\/code> к <code>&lt;body&gt;<\/code> для изменения поведения прокрутки по умолчанию и генерирует <code>.modal-backdrop<\/code> to provide a click area for dismissing shown modals when clicking outside the modal.",
+			"eng": "The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open<\/code> to the <code>&lt;body&gt;<\/code> to override default scrolling behavior and generates a <code>.modal-backdrop<\/code> to provide a click area for dismissing shown modals when clicking outside the modal."
+		},{
+			"rus": "Активируйте модальные окна без написания JavaScript. Установите <code>data-toggle=\"modal\"<\/code> в контроллере элемента, такого как кнопка, рядом с <code>data-target=\"#foo\"<\/code> или <code>href=\"#foo\"<\/code>, чтобы нацелить определенную модаль для переключения.",
+			"eng": "Activate a modal without writing JavaScript. Set <code>data-toggle=\"modal\"<\/code> on a controller element, like a button, along with a <code>data-target=\"#foo\"<\/code> or <code>href=\"#foo\"<\/code> to target a specific modal to toggle."
+		},{
+			"rus": "Вызывайте модаль с помощью id <code>myModal<\/code> с лаконичной записью на JavaScript:",
+			"eng": "Call a modal with id <code>myModal<\/code> with a single line of JavaScript:"
+		},{
+			"rus": "Параметры могут передаваться через атрибуты данных или JavaScript. В случае передачи через атрибуты данных, добавьте приставку с названием параметра <code>data<\/code>, как в примере: <code>data-backdrop=\"\"<\/code>.",
+			"eng": "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-<\/code>, as in <code>data-backdrop=\"\"<\/code>."
+		},{
+			"rus": "<strong class=\"text-danger\">This option is deprecated since v3.3.0 and will be removed in v4.<\/strong> We recommend instead using client-side templating or a data binding framework, or calling <a href=\"http:\/\/api.jquery.com\/load\/\">jQuery.load<\/a> yourself.",
+			"eng": "<strong class=\"text-danger\">This option is deprecated since v3.3.0 and will be removed in v4.<\/strong> We recommend instead using client-side templating or a data binding framework, or calling <a href=\"http:\/\/api.jquery.com\/load\/\">jQuery.load<\/a> yourself."
+		},{
+			"rus": "Если предоставлен удаленный URL, содержимое будет загружаться <\/strong> через jQuery's <code>load<\/code> и вставлятись в корневой элемент модали <code>.modal-content<\/code>. Если вы используете data api, вы можете еще использовать атрибут <code>href<\/code> для определения удаленного ресурса. Пример такого варианта показан ниже:",
+			"eng": "If a remote URL is provided, <strong>content will be loaded one time<\/strong> via jQuery's <code>load<\/code> method and injected into the <code>.modal-content<\/code> div. If you're using the data-api, you may alternatively use the <code>href<\/code> attribute to specify the remote source. An example of this is shown below:"
+		},{
+			"rus": "Активизирует содержимое как модальный. Принимает необязательный параметр с типом данных <code>объект<\/code>.",
+			"eng": "Activates your content as a modal. Accepts an optional options <code>object<\/code>."
+		},{
+			"rus": "Ручное переключение модали. <strong title=\"Returns to the caller before the modal has actually been shown or hidden\">Возвращается к инициатору перед фактическим показом или сокрытием модали <\/strong> (то есть, перед запуском событий <code>shown.bs.modal<\/code> или <code>hidden.bs.modal<\/code>).",
+			"eng": "Manually toggles a modal. <strong>Returns to the caller before the modal has actually been shown or hidden<\/strong> (i.e. before the <code>shown.bs.modal<\/code> or <code>hidden.bs.modal<\/code> event occurs)."
+		},{
+			"rus": "Ручное отображения модали. <strong title=\"Returns to the caller before the modal has actually been shown\">Возвращается к инициатору перед фактическим показом или сокрытием модали <\/strong> (то есть, перед запуском событий <code>shown.bs.modal<\/code>).",
+			"eng": "Manually opens a modal. <strong>Returns to the caller before the modal has actually been shown<\/strong> (i.e. before the <code>shown.bs.modal<\/code> event occurs)."
+		},{
+			"rus": "Ручное сокрытие модали. <strong title=\"Returns to the caller before the modal has actually been hidden\">Возвращается к инициатору перед фактическим показом или сокрытием модали <\/strong> (то есть, перед запуском событий <code>hidden.bs.modal<\/code>).",
+			"eng": "Manually hides a modal. <strong>Returns to the caller before the modal has actually been hidden<\/strong> (i.e. before the <code>hidden.bs.modal<\/code> event occurs)."
+		},{
+			"rus": "Класс для модалей в Bootstrap предоставляет несколько событий, чтобы обеспечить функциональность модали.",
+			"eng": "Bootstrap's modal class exposes a few events for hooking into modal functionality."
+		}
+	],
+	"label": [
+		{
+			"rus": "Recipient:",
+			"eng": "Recipient:"
+		},{
+			"rus": "Message:",
+			"eng": "Message:"
+		}
+	],
+	"th": [
+		{
+			"rus": "Название",
+			"eng": "Name"
+		},{
+			"rus": "Тип",
+			"eng": "type"
+		},{
+			"rus": "По умолчанию",
+			"eng": "default"
+		},{
+			"rus": "Описание",
+			"eng": "description"
+		},{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "фон",
+			"eng": "backdrop"
+		},{
+			"rus": "логический или строковый <code>'static'<\/code>",
+			"eng": "boolean or the string <code>'static'<\/code>"
+		},{
+			"rus": "правда",
+			"eng": "true"
+		},{
+			"rus": "Включает элемент modal-backdrop. Можно также указать <code>static<\/code> для обстановке, который не закрывается при нажатии на модаль.",
+			"eng": "Includes a modal-backdrop element. Alternatively, specify <code>static<\/code> for a backdrop which doesn't close the modal on click."
+		},{
+			"rus": "клавиатура",
+			"eng": "keyboard"
+		},{
+			"rus": "логический",
+			"eng": "boolean"
+		},{
+			"rus": "Закрытие модали при клике на клавишу escape.",
+			"eng": "Closes the modal when escape key is pressed"
+		},{
+			"rus": "Показать",
+			"eng": "show"
+		},{
+			"rus": "Показывает модаль при инициализации.",
+			"eng": "Shows the modal when initialized."
+		},{
+			"rus": "дистанционный",
+			"eng": "remote"
+		},{
+			"rus": "путь",
+			"eng": "path"
+		},{
+			"rus": "ложь",
+			"eng": "false"
+		},{
+			"rus": "\n          <p><strong class=\"text-danger\">This option is deprecated since v3.3.0 and will be removed in v4.<\/strong> We recommend instead using client-side templating or a data binding framework, or calling <a href=\"http:\/\/api.jquery.com\/load\/\">jQuery.load<\/a> yourself.<\/p>\n          <p>Если предоставлен удаленный URL, содержимое будет загружаться <\/strong> через jQuery's <code>load<\/code> и вставлятись в корневой элемент модали <code>.modal-content<\/code>. Если вы используете data api, вы можете еще использовать атрибут <code>href<\/code> для определения удаленного ресурса. Пример такого варианта показан ниже:<\/p>\n{% highlight html %}\n<a data-toggle=\"modal\" href=\"remote.html\" data-target=\"#modal\">Click me<\/a>\n{% endhighlight %}\n         ",
+			"eng": "\n          <p><strong class=\"text-danger\">This option is deprecated since v3.3.0 and will be removed in v4.<\/strong> We recommend instead using client-side templating or a data binding framework, or calling <a href=\"http:\/\/api.jquery.com\/load\/\">jQuery.load<\/a> yourself.<\/p>\n          <p>Если предоставлен удаленный URL, содержимое будет загружаться <\/strong> через jQuery's <code>load<\/code> и вставлятись в корневой элемент модали <code>.modal-content<\/code>. Если вы используете data api, вы можете еще использовать атрибут <code>href<\/code> для определения удаленного ресурса. Пример такого варианта показан ниже:<\/p>\n{% highlight html %}\n<a data-toggle=\"modal\" href=\"remote.html\" data-target=\"#modal\">Click me<\/a>\n{% endhighlight %}\n         "
+		},{
+			"rus": "show.bs.modal",
+			"eng": "show.bs.modal"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>show<\/code>. Если вызов происходит за клик, то элемент, на котором был этот клик, доступный как свойство события <code>relatedTarget<\/code>.",
+			"eng": "This event fires immediately when the <code>show<\/code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget<\/code> property of the event."
+		},{
+			"rus": "shown.bs.modal",
+			"eng": "shown.bs.modal"
+		},{
+			"rus": "Эта подействует срабатывает, когда модаль будет отражена для пользователя (при этом ожидается завершение навигации CSS). Если вызов происходит за клик, то элемент, на котором был этот клик, доступный как свойство события <code>relatedTarget<\/code>.",
+			"eng": "This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget<\/code> property of the event."
+		},{
+			"rus": "hide.bs.modal",
+			"eng": "hide.bs.modal"
+		},{
+			"rus": "Это событие срабатывает во время вызова метода <code>hide<\/code>.",
+			"eng": "This event is fired immediately when the <code>hide<\/code> instance method has been called."
+		},{
+			"rus": "hidden.bs.modal",
+			"eng": "hidden.bs.modal"
+		},{
+			"rus": "Это событие срабатывает, когда модаль завершит скрытие от пользователя (при этом ожидается завершение навигации CSS).",
+			"eng": "This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete)."
+		},{
+			"rus": "loaded.bs.modal",
+			"eng": "loaded.bs.modal"
+		},{
+			"rus": "Это событие генерируется, когда модаль загружена контент использует <code>remote<\/code> вариант.",
+			"eng": "This event is fired when the modal has loaded content using the <code>remote<\/code> option."
+		}
+	],
+	"button": [
+		{
+			"rus": "Закрыть",
+			"eng": "Close"
+		},{
+			"rus": "Сохранить изменения",
+			"eng": "Save changes"
+		},{
+			"rus": "\n        Запуск демо\n      ",
+			"eng": "\n      Launch demo modal\n    "
+		},{
+			"rus": "Большая модаль",
+			"eng": "Large modal"
+		},{
+			"rus": "Малая модаль",
+			"eng": "Small modal"
+		},{
+			"rus": "Open modal for @mdo",
+			"eng": "Open modal for @mdo"
+		},{
+			"rus": "Open modal for @fat",
+			"eng": "Open modal for @fat"
+		},{
+			"rus": "Open modal for @twbootstrap",
+			"eng": "Open modal for @twbootstrap"
+		},{
+			"rus": "Send message",
+			"eng": "Send message"
+		},{
+			"rus": "Запустить модаль",
+			"eng": "Launch modal"
+		},{
+			"rus": "кнопка",
+			"eng": "button"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/.modal-content -->",
+			"eng": "<!-- \/.modal-content -->"
+		},{
+			"rus": "<!-- \/.modal-dialog -->",
+			"eng": "<!-- \/.modal-dialog -->"
+		},{
+			"rus": "<!-- \/.modal -->",
+			"eng": "<!-- \/.modal -->"
+		},{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- пример модального содержания -->",
+			"eng": "<!-- sample modal content -->"
+		},{
+			"rus": "<!-- Триггер кнопка модали-->",
+			"eng": "<!-- Button trigger modal -->"
+		},{
+			"rus": "<!-- Модаль -->",
+			"eng": "<!-- Modal -->"
+		},{
+			"rus": "<!-- Большая модаль -->",
+			"eng": "<!-- Large modal -->"
+		},{
+			"rus": "<!-- Малая модаль -->",
+			"eng": "<!-- Small modal -->"
+		},{
+			"rus": "<!--  Состав модали для приведенного выше примера -->",
+			"eng": "<!--  Modal content for the above example -->"
+		},{
+			"rus": "<!-- \/.bs-example -->",
+			"eng": "<!-- \/.bs-example -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

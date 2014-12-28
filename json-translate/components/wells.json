@@ -1,0 +1,23 @@
+{
+	"h": [
+		{
+			"rus": "Ячейки",
+			"eng": "Wells"
+		},{
+			"rus": "Основной эффект ячейки",
+			"eng": "Default well"
+		},{
+			"rus": "Дополнительные классы",
+			"eng": "Optional classes"
+		}
+	],
+	"p": [
+		{
+			"rus": "Используйте ячейку, чтобы получить простой эффект - будто внутренний текст находится в оболочке.",
+			"eng": "Use the well as a simple effect on an element to give it an inset effect."
+		},{
+			"rus": "Чтобы контролировать отступы (padding) и закругления углов, используйте два дополнительных модификаторы классов.",
+			"eng": "Control padding and rounded corners with two optional modifier classes."
+		}
+	]
+}

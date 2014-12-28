@@ -1,0 +1,86 @@
+{
+	"h": [
+		{
+			"rus": "Использование Sass",
+			"eng": "Using Sass"
+		},{
+			"rus": "Что включено",
+			"eng": "What's included"
+		},{
+			"rus": "Установка",
+			"eng": "Installation"
+		}
+	],
+	"p": [
+		{
+			"rus": "В то время как Bootstrap построен на Less, он также имеет <a href=\"{{ site.sass_repo }}\">официальный Sass порт<\/a>. Мы поддерживаем его в отдельном репозиторий GitHub и обновляем через скрипт преобразования.",
+			"eng": "While Bootstrap is built on Less, it also has an <a href=\"{{ site.sass_repo }}\">official Sass port<\/a>. We maintain it in a separate GitHub repository and handle updates with a conversion script."
+		},{
+			"rus": "Поскольку порт Sass имеет отдельный репо и служит несколько иной аудитории, содержимое проекта сильно отличаться от основного проекта Bootstrap. Это гарантирует, что порт Sass является совместимым с мнгоими Sass-системами.",
+			"eng": "Since the Sass port has a separate repo and serves a slightly different audience, the contents of the project differ greatly from the main Bootstrap project. This ensures the Sass port is as compatible with as many Sass-based systems as possible."
+		},{
+			"rus": "Посетите <a href=\"{{ site.sass_repo }}\">Sass порты GitHub репозитория<\/a> чтобы увидеть эти файлы в действии.",
+			"eng": "Visit the <a href=\"{{ site.sass_repo }}\">Sass port's GitHub repository<\/a> to see these files in action."
+		},{
+			"rus": "Для получения информации о том, как установить и использовать Bootstrap для Sass, обратитесь <a href=\"{{ site.sass_repo }}\">GitHub репозиторий readme<\/a>. Это наиболее современный источник, он включает в себя информацию для использования с Rails, Compass, и типовым проектам Sass.",
+			"eng": "For information on how to install and use Bootstrap for Sass, consult the <a href=\"{{ site.sass_repo }}\">GitHub repository readme<\/a>. It's the most up to date source and includes information for use with Rails, Compass, and standard Sass projects."
+		},{
+			"rus": "\n    <a class=\"btn btn-lg btn-outline\" href=\"{{ site.sass_repo }}\">Bootstrap для Sass<\/a>\n  ",
+			"eng": "\n    <a class=\"btn btn-lg btn-outline\" href=\"{{ site.sass_repo }}\">Bootstrap for Sass<\/a>\n  "
+		}
+	],
+	"th": [
+		{
+			"rus": "Путь",
+			"eng": "Path"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		},{
+			"rus": "<code>lib\/<\/code>",
+			"eng": "<code>lib\/<\/code>"
+		},{
+			"rus": "<code>tasks\/<\/code>",
+			"eng": "<code>tasks\/<\/code>"
+		},{
+			"rus": "<code>test\/<\/code>",
+			"eng": "<code>test\/<\/code>"
+		},{
+			"rus": "<code>templates\/<\/code>",
+			"eng": "<code>templates\/<\/code>"
+		},{
+			"rus": "<code>vendor\/assets\/<\/code>",
+			"eng": "<code>vendor\/assets\/<\/code>"
+		},{
+			"rus": "<code>Rakefile<\/code>",
+			"eng": "<code>Rakefile<\/code>"
+		}
+	],
+	"td": [
+		{
+			"rus": "Ruby gem код (Sass конфигурация, Rails и Compass интеграция)",
+			"eng": "Ruby gem code (Sass configuration, Rails and Compass integrations)"
+		},{
+			"rus": "Скрипты конвертеры (turning upstream Less to Sass)",
+			"eng": "Converter scripts (turning upstream Less to Sass)"
+		},{
+			"rus": "Тесты компиляции",
+			"eng": "Compilation tests"
+		},{
+			"rus": "Compass пакет манифеста",
+			"eng": "Compass package manifest"
+		},{
+			"rus": "Sass, JavaScript, и файлы шрифтов",
+			"eng": "Sass, JavaScript, and font files"
+		},{
+			"rus": "Внутренние задачи, такие как rake и convert",
+			"eng": "Internal tasks, such as rake and convert"
+		}
+	],
+	"button": [
+		{
+			"rus": "Bootstrap для Sass",
+			"eng": "Bootstrap for Sass"
+		}
+	]
+}

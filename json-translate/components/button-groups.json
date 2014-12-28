@@ -1,0 +1,137 @@
+{
+	"h": [
+		{
+			"rus": "Группы кнопок",
+			"eng": "Button groups"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "Кнопка панели инструментов",
+			"eng": "Button toolbar"
+		},{
+			"rus": "Изменение размера",
+			"eng": "Sizing"
+		},{
+			"rus": "Вложенность",
+			"eng": "Nesting"
+		},{
+			"rus": "Вертикальные вариации",
+			"eng": "Vertical variation"
+		},{
+			"rus": "Группа кнопок Justified",
+			"eng": "Justified button groups"
+		},{
+			"rus": "Подсказки и информеры в группе кнопок требуют специальных настроек",
+			"eng": "Tooltips &amp; popovers in button groups require special setting"
+		},{
+			"rus": "Ensure correct <code>role<\/code> and provide a label",
+			"eng": "Ensure correct <code>role<\/code> and provide a label"
+		},{
+			"rus": "Обработка рамок",
+			"eng": "Handling borders"
+		},{
+			"rus": "IE8 и рамки",
+			"eng": "IE8 and borders"
+		},{
+			"rus": "С <code>&lt;a&gt;<\/code> элементами",
+			"eng": "With <code>&lt;a&gt;<\/code> elements"
+		},{
+			"rus": "Links acting as buttons",
+			"eng": "Links acting as buttons"
+		},{
+			"rus": "С <code>&lt;button&gt;<\/code> элементами",
+			"eng": "With <code>&lt;button&gt;<\/code> elements"
+		}
+	],
+	"p": [
+		{
+			"rus": "Сгруппируйте серию кнопок вместе в одну линию, создав таким образом групповую кнопку. С помощью JavaScript и <a href=\"..\/javascript-doc\/#buttons\">нашего плагина кнопок<\/a>, можно еще добавить стиль поведения переключателей или галочек (checkbox).",
+			"eng": "Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href=\"..\/javascript\/#buttons\">our buttons plugin<\/a>."
+		},{
+			"rus": "При использовании подсказок или информеров (popovers) в пределах <code>.btn-group<\/code>, необходимо определить параметр <code>container: 'body'<\/code>, чтобы избежать нежелательных эффектов (например, когда элемент становится шире и\/или когда теряется закругленння углов при вызове подсказок или информеров).",
+			"eng": "When using tooltips or popovers on elements within a <code>.btn-group<\/code>, you'll have to specify the option <code>container: 'body'<\/code> to avoid unwanted side effects (such as the element growing wider and\/or losing its rounded corners when the tooltip or popover is triggered)."
+		},{
+			"rus": "In order for assistive technologies \u2013 such as screen readers \u2013 to convey that a series of buttons is grouped, an appropriate <code>role<\/code> attribute needs to be provided. For button groups, this would be <code>role=\"group\"<\/code>, while toolbars should have a <code>role=\"toolbar\"<\/code>.",
+			"eng": "In order for assistive technologies \u2013 such as screen readers \u2013 to convey that a series of buttons is grouped, an appropriate <code>role<\/code> attribute needs to be provided. For button groups, this would be <code>role=\"group\"<\/code>, while toolbars should have a <code>role=\"toolbar\"<\/code>."
+		},{
+			"rus": "One exception are groups which only contain a single control (for instance the <a href=\"#btn-groups-justified\">justified button groups<\/a> with <code>&lt;button&gt;<\/code> elements) or a dropdown.",
+			"eng": "One exception are groups which only contain a single control (for instance the <a href=\"#btn-groups-justified\">justified button groups<\/a> with <code>&lt;button&gt;<\/code> elements) or a dropdown."
+		},{
+			"rus": "In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role<\/code> attribute. In the examples provided here, we use <code>aria-label<\/code>, but alternatives such as <code>aria-labelledby<\/code> can also be used.",
+			"eng": "In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct <code>role<\/code> attribute. In the examples provided here, we use <code>aria-label<\/code>, but alternatives such as <code>aria-labelledby<\/code> can also be used."
+		},{
+			"rus": "Оберните серию кнопок с классом <code>.btn<\/code> класс <code>.btn-group<\/code>.",
+			"eng": "Wrap a series of buttons with <code>.btn<\/code> in <code>.btn-group<\/code>."
+		},{
+			"rus": "Объедините набор <code>&lt;div class=\"btn-group\"&gt;<\/code> с помощью <code>&lt;div class=\"btn-toolbar\"&gt;<\/code> для более сложных компонентов.",
+			"eng": "Combine sets of <code>&lt;div class=\"btn-group\"&gt;<\/code> into a <code>&lt;div class=\"btn-toolbar\"&gt;<\/code> for more complex components."
+		},{
+			"rus": "Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*<\/code> to each <code>.btn-group<\/code>, including when nesting multiple groups.",
+			"eng": "Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*<\/code> to each <code>.btn-group<\/code>, including when nesting multiple groups."
+		},{
+			"rus": "Разместите <code>.btn-group<\/code> в середине другой <code>.btn-group<\/code>, если вы хотите совместить выпадающее меню с серией кнопок.",
+			"eng": "Place a <code>.btn-group<\/code> within another <code>.btn-group<\/code> when you want dropdown menus mixed with a series of buttons."
+		},{
+			"rus": "Сделайте набор кнопок, составленных вертикально, а не горизонтально. <strong class=\"text-danger\">Split кнопки выпадающего меню не поддерживаются.<\/strong>",
+			"eng": "Make a set of buttons appear vertically stacked rather than horizontally. <strong class=\"text-danger\">Split button dropdowns are not supported here.<\/strong>"
+		},{
+			"rus": "Создавайте группы кнопок, растянуты на всю ширину их родительского элемента. Также рассмотрите вариант с кнопкой в выпадающем меню внутри группы кнопок.",
+			"eng": "Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group."
+		},{
+			"rus": "Из-за специфических HTML и CSS, используемой для обоснования кнопок (а именно <code>display: table-cell<\/code>), границы между которыми удвоятся. В регулярных группах кнопок, <code>margin-left: -1px<\/code> используется для стека границ вместо удаления их. Впрочем, <code>margin<\/code> не работает с <code>display: table-cell<\/code>. В результате этого, в зависимости от ваших настроек в Bootstrap, вы можете удалить или повторно изменить цвет рамок.",
+			"eng": "Due to the specific HTML and CSS used to justify buttons (namely <code>display: table-cell<\/code>), the borders between them are doubled. In regular button groups, <code>margin-left: -1px<\/code> is used to stack the borders instead of removing them. However, <code>margin<\/code> doesn't work with <code>display: table-cell<\/code>. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders."
+		},{
+			"rus": "Internet Explorer 8 не оказывает границы на кнопках в обоснованной группе кнопок, будь то на <code>&lt;a&gt;<\/code> или <code>&lt;button&gt;<\/code> елементах. Чтобы избежать этого, обернуть каждую кнопку в другую <code>.btn-group<\/code>.",
+			"eng": "Internet Explorer 8 doesn't render borders on buttons in a justified button group, whether it's on <code>&lt;a&gt;<\/code> or <code>&lt;button&gt;<\/code> elements. To get around that, wrap each button in another <code>.btn-group<\/code>."
+		},{
+			"rus": "Смотрите <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/12476\">#12476<\/a> для подробной информации.",
+			"eng": "See <a href=\"https:\/\/github.com\/twbs\/bootstrap\/issues\/12476\">#12476<\/a> for more information."
+		},{
+			"rus": "Просто заключите серию <code>.btn<\/code>s в <code>.btn-group.btn-group-justified<\/code>.",
+			"eng": "Just wrap a series of <code>.btn<\/code>s in <code>.btn-group.btn-group-justified<\/code>."
+		},{
+			"rus": "If the <code>&lt;a&gt;<\/code> elements are used to act as buttons \u2013 triggering in-page functionality, rather than navigating to another document or section within the current page \u2013 they should also be given an appropriate <code>role=\"button\"<\/code>.",
+			"eng": "If the <code>&lt;a&gt;<\/code> elements are used to act as buttons \u2013 triggering in-page functionality, rather than navigating to another document or section within the current page \u2013 they should also be given an appropriate <code>role=\"button\"<\/code>."
+		},{
+			"rus": "Для использования групп кнопок по ширине с элементами <code>&lt;button&gt;<\/code>, <strong class=\"text-danger\">вы должны заключить каждую кнопку в группу кнопок<\/strong>. Большинство браузеров не правильно применяют наш CSS для обоснования, элемента <code>&lt;button&gt;<\/code>, но так как мы поддерживаем кнопки выпадающего меню, мы можем обойти это",
+			"eng": "To use justified button groups with <code>&lt;button&gt;<\/code> elements, <strong class=\"text-danger\">you must wrap each button in a button group<\/strong>. Most browsers don't properly apply our CSS for justification to <code>&lt;button&gt;<\/code> elements, but since we support button dropdowns, we can work around that."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#\">Dropdown ссылка<\/a>",
+			"eng": "<a href=\"#\">Dropdown link<\/a>"
+		},{
+			"rus": "<a href=\"#\">Действие<\/a>",
+			"eng": "<a href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Другое действие<\/a>",
+			"eng": "<a href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Что-то иное<\/a>",
+			"eng": "<a href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a href=\"#\">Separated link<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "Левая",
+			"eng": "Left"
+		},{
+			"rus": "Средняя",
+			"eng": "Middle"
+		},{
+			"rus": "Правая",
+			"eng": "Right"
+		},{
+			"rus": "\n        Dropdown\n        <span class=\"caret\"><\/span>\n      ",
+			"eng": "\n          Dropdown\n          <span class=\"caret\"><\/span>\n        "
+		},{
+			"rus": "Кнопка",
+			"eng": "Button"
+		}
+	]
+}

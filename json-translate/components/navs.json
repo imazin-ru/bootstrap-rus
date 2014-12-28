@@ -1,0 +1,125 @@
+{
+	"h": [
+		{
+			"rus": "Навигация",
+			"eng": "Navs"
+		},{
+			"rus": "Вкладки",
+			"eng": "Tabs"
+		},{
+			"rus": "Навигационные кнопки",
+			"eng": "Pills"
+		},{
+			"rus": "Выравнивание по ширине навигаций",
+			"eng": "Justified"
+		},{
+			"rus": "Заблокированные ссылки",
+			"eng": "Disabled links"
+		},{
+			"rus": "Использование выпадающего меню",
+			"eng": "Using dropdowns"
+		},{
+			"rus": "Вкладки с выпадающем меню",
+			"eng": "Tabs with dropdowns"
+		},{
+			"rus": "Навигационные кнопки с выпадающем меню",
+			"eng": "Pills with dropdowns"
+		},{
+			"rus": "Using navs for tab panels requires JavaScript tabs plugin",
+			"eng": "Using navs for tab panels requires JavaScript tabs plugin"
+		},{
+			"rus": "Make navs used as navigation accessible",
+			"eng": "Make navs used as navigation accessible"
+		},{
+			"rus": "WebKit и адаптивные навигационные меню, выровнены по ширине",
+			"eng": "Safari and responsive justified navs"
+		},{
+			"rus": "Функциональности ссылки не изменны",
+			"eng": "Link functionality not impacted"
+		}
+	],
+	"p": [
+		{
+			"rus": "Доступна в Bootstrap навигация имеет общую разметку, начиная с базового класса <code>.nav<\/code>, и вплоть до совместных состояний. Осуществляется обмен модификаторами доступа для переключения между каждым стилем.",
+			"eng": "Navs available in Bootstrap have shared markup, starting with the base <code>.nav<\/code> class, as well as shared states. Swap modifier classes to switch between each style."
+		},{
+			"rus": "For tabs with tabbable areas, you must use the <a href=\"..\/javascript\/#tabs\">tabs JavaScript plugin<\/a>. The markup will also require additional <code>role<\/code> and ARIA attributes \u2013 see the plugin's <a href=\"..\/javascript\/#tabs-usage\">example markup<\/a> for further details.",
+			"eng": "For tabs with tabbable areas, you must use the <a href=\"..\/javascript\/#tabs\">tabs JavaScript plugin<\/a>. The markup will also require additional <code>role<\/code> and ARIA attributes \u2013 see the plugin's <a href=\"..\/javascript\/#tabs-usage\">example markup<\/a> for further details."
+		},{
+			"rus": "If you are using navs to provide a navigation bar, be sure to add a <code>role=\"navigation\"<\/code> to the most logical parent container of the <code>&lt;ul&gt;<\/code>, or wrap a <code>&lt;nav&gt;<\/code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;<\/code> itself, as this would prevent it from being announced as an actual list by assistive technologies.",
+			"eng": "If you are using navs to provide a navigation bar, be sure to add a <code>role=\"navigation\"<\/code> to the most logical parent container of the <code>&lt;ul&gt;<\/code>, or wrap a <code>&lt;nav&gt;<\/code> element around the whole navigation. Do not add the role to the <code>&lt;ul&gt;<\/code> itself, as this would prevent it from being announced as an actual list by assistive technologies."
+		},{
+			"rus": "Заметьте, что класс <code>.nav-tabs<\/code> требует базового класса <code>.nav<\/code>.",
+			"eng": "Note the <code>.nav-tabs<\/code> class requires the <code>.nav<\/code> base class."
+		},{
+			"rus": "Возьмите тот же HTML, но используйте <code>.nav-pills<\/code> вместо <code>.nav-tabs<\/code>:",
+			"eng": "Take that same HTML, but use <code>.nav-pills<\/code> instead:"
+		},{
+			"rus": "Навигационные кнопки также доступны в вертикальной сборке. Просто добавьте <code>.nav-stacked<\/code>.",
+			"eng": "Pills are also vertically stackable. Just add <code>.nav-stacked<\/code>."
+		},{
+			"rus": "При помощи <code>.nav-justified<\/code> можно легко создавать вкладки или кнопки, одинаковой ширины с их родительскими элементами, для более широких экранов по 768px. На меньших экранах, навигационные ссылки будут состоять.",
+			"eng": "Easily make tabs or pills equal widths of their parent at screens wider than 768px with <code>.nav-justified<\/code>. On smaller screens, the nav links are stacked."
+		},{
+			"rus": "<strong class=\"text-danger\">Justified navbar nav links are currently not supported.<\/strong>",
+			"eng": "<strong class=\"text-danger\">Justified navbar nav links are currently not supported.<\/strong>"
+		},{
+			"rus": "По состоянию на v8.0, Safari проявляется ошибка, в котором при изменение размера окна ваш браузер по горизонтали вызывает ошибки рендеринга нивигации по ширине, которые были удалены при обновлении. Эта ошибка проявляется также в <a href=\"..\/examples\/justified-nav\/\">пример justified nav<\/a>.",
+			"eng": "As of v8.0, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing. This bug is also shown in the <a href=\"..\/examples\/justified-nav\/\">justified nav example<\/a>."
+		},{
+			"rus": "В любых навигационных компонентов (вкладок, кнопок, списков) можно добавить <code>.disabled<\/code> для отображения в них <strong>серых ссылок и отсутствия эффектов при наведении курсора<\/strong>.",
+			"eng": "For any nav component (tabs or pills), add <code>.disabled<\/code> for <strong>gray links and no hover effects<\/strong>."
+		},{
+			"rus": "Этот класс меняет лишь отражение <code>&lt;a&gt;<\/code>, но не его функциональность. Для блокировки функциональности ссылки используйте JavaScript.",
+			"eng": "This class will only change the <code>&lt;a&gt;<\/code>'s appearance, not its functionality. Use custom JavaScript to disable links here."
+		},{
+			"rus": "Создавайте выпадающее меню с небольшим добавлением HTML и <a href=\"..\/javascript-doc\/#dropdowns\">JavaScript плагина для выпадающего меню<\/a>.",
+			"eng": "Add dropdown menus with a little extra HTML and the <a href=\"..\/javascript\/#dropdowns\">dropdowns JavaScript plugin<\/a>."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#\">Главная<\/a>",
+			"eng": "<a href=\"#\">Home<\/a>"
+		},{
+			"rus": "<a href=\"#\">Профиль<\/a>",
+			"eng": "<a href=\"#\">Profile<\/a>"
+		},{
+			"rus": "<a href=\"#\">Сообщение<\/a>",
+			"eng": "<a href=\"#\">Messages<\/a>"
+		},{
+			"rus": "<a href=\"#\">Активная ссылка<\/a>",
+			"eng": "<a href=\"#\">Clickable link<\/a>"
+		},{
+			"rus": "<a href=\"#\">Заблокированная ссылка<\/a>",
+			"eng": "<a href=\"#\">Disabled link<\/a>"
+		},{
+			"rus": "<a href=\"#\">Помощь<\/a>",
+			"eng": "<a href=\"#\">Help<\/a>"
+		},{
+			"rus": "\n        <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">\n          Dropdown <span class=\"caret\"><\/span>\n        <\/a>\n        <ul class=\"dropdown-menu\" role=\"menu\">\n          <li><a href=\"#\">Action<\/a><\/li>\n          <li><a href=\"#\">Another action<\/a><\/li>\n          <li><a href=\"#\">Something else here<\/a><\/li>\n          <li class=\"divider\"><\/li>\n          <li><a href=\"#\">Separated link<\/a><\/li>\n        <\/ul>\n      ",
+			"eng": "\n        <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">\n          Dropdown <span class=\"caret\"><\/span>\n        <\/a>\n        <ul class=\"dropdown-menu\" role=\"menu\">\n          <li><a href=\"#\">Action<\/a><\/li>\n          <li><a href=\"#\">Another action<\/a><\/li>\n          <li><a href=\"#\">Something else here<\/a><\/li>\n          <li class=\"divider\"><\/li>\n          <li><a href=\"#\">Separated link<\/a><\/li>\n        <\/ul>\n      "
+		},{
+			"rus": "<a href=\"#\">Действие<\/a>",
+			"eng": "<a href=\"#\">Action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Другое действие<\/a>",
+			"eng": "<a href=\"#\">Another action<\/a>"
+		},{
+			"rus": "<a href=\"#\">Что-то иное<\/a>",
+			"eng": "<a href=\"#\">Something else here<\/a>"
+		},{
+			"rus": "<a href=\"#\">Отдельная ссылка<\/a>",
+			"eng": "<a href=\"#\">Separated link<\/a>"
+		},{
+			"rus": "\n    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">\n      Dropdown <span class=\"caret\"><\/span>\n    <\/a>\n    <ul class=\"dropdown-menu\" role=\"menu\">\n      ...\n    <\/ul>\n  ",
+			"eng": "\n    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">\n      Dropdown <span class=\"caret\"><\/span>\n    <\/a>\n    <ul class=\"dropdown-menu\" role=\"menu\">\n      ...\n    <\/ul>\n  "
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		}
+	]
+}

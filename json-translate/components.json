@@ -1,0 +1,14 @@
+{
+	"title": [
+		{
+			"rus": "title: Компоненты",
+			"eng": "title: Components"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Создано большое количество компонентов для различных нужд: графические значки, выпадающие меню, группы ввода, навигационные панели, сообщения для предупреждений, и многе другое.\"",
+			"eng": "lead: \"Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.\""
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"h": [
+		{
+			"rus": "Эскизы",
+			"eng": "Thumbnails"
+		},{
+			"rus": "Основной пример",
+			"eng": "Default example"
+		},{
+			"rus": "Настраиваемое содержимое",
+			"eng": "Custom content"
+		},{
+			"rus": "Ярлык эскиза",
+			"eng": "Thumbnail label"
+		}
+	],
+	"p": [
+		{
+			"rus": "Расширьте <a href=\"..\/css\/#grid\">систему сетки<\/a> Bootstrap с помощью компонента эскиза для легкого создания сетки с изображениями, видео, текстом, и так далее.",
+			"eng": "Extend Bootstrap's <a href=\"..\/css\/#grid\">grid system<\/a> with the thumbnail component to easily display grids of images, videos, text, and more."
+		},{
+			"rus": "По умолчанию, эскизы Bootstrap спроектированы для отображения связанных изображений с минимальной, лишь необходимой разметкой.",
+			"eng": "By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup."
+		},{
+			"rus": "Добавив немного разметки, можно включать любое содержимое HTML, такой как заголовки, параграфы, или кнопки в середине эскизов.",
+			"eng": "With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails."
+		},{
+			"rus": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+			"eng": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit."
+		},{
+			"rus": "<a href=\"#\" class=\"btn btn-primary\" role=\"button\">Кнопка<\/a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Кнопка<\/a>",
+			"eng": "<a href=\"#\" class=\"btn btn-primary\" role=\"button\">Button<\/a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">Button<\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "Кнопка",
+			"eng": "Button"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/.bs-example -->",
+			"eng": "<!-- \/.bs-example -->"
+		}
+	]
+}

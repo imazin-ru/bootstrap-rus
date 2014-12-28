@@ -1,0 +1,35 @@
+{
+	"h": [
+		{
+			"rus": "Навигационный маршрут",
+			"eng": "Breadcrumbs"
+		}
+	],
+	"p": [
+		{
+			"rus": "Установите текущую страницу расположение в пределах навигационной иерархии.",
+			"eng": "Indicate the current page's location within a navigational hierarchy."
+		},{
+			"rus": "Разделители автоматически добавляются в CSS через <code>:before<\/code> и <code>content<\/code>.",
+			"eng": "Separators are automatically added in CSS through <code>:before<\/code> and <code>content<\/code>."
+		}
+	],
+	"li": [
+		{
+			"rus": "Главная",
+			"eng": "Home"
+		},{
+			"rus": "<a href=\"#\">Главная<\/a>",
+			"eng": "<a href=\"#\">Home<\/a>"
+		},{
+			"rus": "Библиотека",
+			"eng": "Library"
+		},{
+			"rus": "<a href=\"#\">Библиотека<\/a>",
+			"eng": "<a href=\"#\">Library<\/a>"
+		},{
+			"rus": "Данные",
+			"eng": "Data"
+		}
+	]
+}

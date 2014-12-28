@@ -1,0 +1,158 @@
+{
+	"h": [
+		{
+			"rus": "Позиционирование Affix <small>affix.js<\/small>",
+			"eng": "Affix <small>affix.js<\/small>"
+		},{
+			"rus": "Пример",
+			"eng": "Example"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Позиционирование через CSS",
+			"eng": "Positioning via CSS"
+		},{
+			"rus": "Через атрибуты данных",
+			"eng": "Via data attributes"
+		},{
+			"rus": "Через JavaScript",
+			"eng": "Via JavaScript"
+		},{
+			"rus": "Параметры",
+			"eng": "Options"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		}
+	],
+	"p": [
+		{
+			"rus": "Субнавигация справа является живым примером работы плагина affix.",
+			"eng": "The subnavigation on the right is a live demo of the affix plugin."
+		},{
+			"rus": "Используйте плагин affix с помощью атрибутов данных, или напишите свой собственный JavaScript. <strong class=\"text-danger\">В обоих случаях вы должны предоставить CSS для позиционирования содержимого.<\/strong>",
+			"eng": "Use the affix plugin via data attributes or manually with your own JavaScript. <strong class=\"text-danger\">In both situations, you must provide CSS for the positioning and width of your affixed content.<\/strong>"
+		},{
+			"rus": "Плагин affix переключается между тремя классами, каждый из которых соответствует определенному состоянию: <code>.affix<\/code>, <code>.affix-top<\/code>и <code>.affix-bottom<\/code>. Вы должны самостоятельно создать стили для этих классов (независимо от этого плагина), для обработки текущей позиции.",
+			"eng": "The affix plugin toggles between three classes, each representing a particular state: <code>.affix<\/code>, <code>.affix-top<\/code>, and <code>.affix-bottom<\/code>. You must provide the styles for these classes yourself (independent of this plugin) to handle the actual positions."
+		},{
+			"rus": "Вот как работает плагин affix:",
+			"eng": "Here's how the affix plugin works:"
+		},{
+			"rus": "Следуйте вышеуказанным шагам, чтобы в дальнейшем установить CSS для любого использования опций.",
+			"eng": "Follow the above steps to set your CSS for either of the usage options below."
+		},{
+			"rus": "Можно легко предоставить поведение affix любому элементу, просто добавив <code>data-spy=\"affix\"<\/code> к элементу, по которому вы хотите следить. Используйте смещение для определения, когда следует отключать плагин для заданного элемента.",
+			"eng": "To easily add affix behavior to any element, just add <code>data-spy=\"affix\"<\/code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element."
+		},{
+			"rus": "Вызов плагина affix через JavaScript:",
+			"eng": "Call the affix plugin via JavaScript:"
+		},{
+			"rus": "Параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку с названием параметра <code>data<\/code>, как в примере: <code>data offset-top=\"200\"<\/code>.",
+			"eng": "Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-<\/code>, as in <code>data-offset-top=\"200\"<\/code>."
+		},{
+			"rus": "Bootstrap плагин affix предоставляет несколько событий для подключения в функциональности.",
+			"eng": "Bootstrap's affix plugin exposes a few events for hooking into affix functionality."
+		}
+	],
+	"li": [
+		{
+			"rus": "Сначала, плагин добавляет <code>.affix-top<\/code> для обозначения элемента, находящегося выше. На данный момент позиционирования через CSS не требуется.",
+			"eng": "To start, the plugin adds <code>.affix-top<\/code> to indicate the element is in its top-most position. At this point no CSS positioning is required."
+		},{
+			"rus": "Прокрутки мимо элемент, который вы хотите закрепить, должно актуализировать закрепления. Это тот момент, когда <code>.affix<\/code> заменяет <code>.affix-top<\/code> и устанавливает <code>position: fixed;<\/code> (обеспеченное кодом Bootstrap CSS).",
+			"eng": "Scrolling past the element you want affixed should trigger the actual affixing. This is where <code>.affix<\/code> replaces <code>.affix-top<\/code> and sets <code>position: fixed;<\/code> (provided by Bootstrap's CSS)."
+		},{
+			"rus": "Если нижнее смещение определено, прокрутки вниз должен заменить <code>.affix<\/code>, <code>.affix-bottom<\/code>. Поскольку смещение является необязательным, вам необходимо установить соответствующие CSS. В данном случае, добавьте <code>position: absolute;<\/code>, когда это необходимо. Плагин использует атрибуты данных или параметры JavaScript для определения позиции элемента.",
+			"eng": "If a bottom offset is defined, scrolling past it should replace <code>.affix<\/code> with <code>.affix-bottom<\/code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position: absolute;<\/code> when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there."
+		}
+	],
+	"th": [
+		{
+			"rus": "Название",
+			"eng": "Name"
+		},{
+			"rus": "Тип",
+			"eng": "type"
+		},{
+			"rus": "По умолчанию",
+			"eng": "default"
+		},{
+			"rus": "Описание",
+			"eng": "description"
+		},{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "offset",
+			"eng": "offset"
+		},{
+			"rus": "числовой | функция | объект",
+			"eng": "number | function | object"
+		},{
+			"rus": "Пиксели для сдвига экрана, при исчислении позиции прокрутки. Если предоставлено единичное число, сдвиг будет применяться и вверху, и внизу. Чтобы придать уникальности сдвига снизу и сверху, просто предоставьте такой объект <code>offset: { top: 10 }<\/code> или такой <code>offset: { top: 10, bottom: 5 }<\/code>. Используйте функцию, когда вам нужно динамически вычислять сдвиг.",
+			"eng": "Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and bottom directions. To provide a unique, bottom and top offset just provide an object <code>offset: { top: 10 }<\/code> or <code>offset: { top: 10, bottom: 5 }<\/code>. Use a function when you need to dynamically calculate an offset."
+		},{
+			"rus": "target",
+			"eng": "target"
+		},{
+			"rus": "selector | node | jQuery element",
+			"eng": "selector | node | jQuery element"
+		},{
+			"rus": "the <code>window<\/code> object",
+			"eng": "the <code>window<\/code> object"
+		},{
+			"rus": "Задает элемент аффиксом.",
+			"eng": "Specifies the target element of the affix."
+		},{
+			"rus": "affix.bs.affix",
+			"eng": "affix.bs.affix"
+		},{
+			"rus": "Это событие вызывается непосредственно перед приклепленным элементом.",
+			"eng": "This event fires immediately before the element has been affixed."
+		},{
+			"rus": "affixed.bs.affix",
+			"eng": "affixed.bs.affix"
+		},{
+			"rus": "Это событие возникает после того, как элемент был приклеплен.",
+			"eng": "This event is fired after the element has been affixed."
+		},{
+			"rus": "affix-top.bs.affix",
+			"eng": "affix-top.bs.affix"
+		},{
+			"rus": "Это событие вызывается непосредственно перед элементом, прикрепленному сверху.",
+			"eng": "This event fires immediately before the element has been affixed-top."
+		},{
+			"rus": "affixed-top.bs.affix",
+			"eng": "affixed-top.bs.affix"
+		},{
+			"rus": "Это событие возникает после того, как элемент был приклеплен свверху.",
+			"eng": "This event is fired after the element has been affixed-top."
+		},{
+			"rus": "affix-bottom.bs.affix",
+			"eng": "affix-bottom.bs.affix"
+		},{
+			"rus": "Это событие вызывается непосредственно перед элементом, прикрепленному внизу.",
+			"eng": "This event fires immediately before the element has been affixed-bottom."
+		},{
+			"rus": "affixed-bottom.bs.affix",
+			"eng": "affixed-bottom.bs.affix"
+		},{
+			"rus": "Это событие возникает после того, как элемент был приклеплен снизу.",
+			"eng": "This event is fired after the element has been affixed-bottom."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

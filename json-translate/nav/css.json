@@ -1,0 +1,260 @@
+{
+	"a": [
+		{
+			"rus": "Обзор",
+			"eng": "Overview"
+		},{
+			"rus": "HTML5 doctype",
+			"eng": "HTML5 doctype"
+		},{
+			"rus": "В первую очередь - мобильные",
+			"eng": "Mobile first"
+		},{
+			"rus": "Типография и ссылки",
+			"eng": "Typography and links"
+		},{
+			"rus": "Normalize.css",
+			"eng": "Normalize.css"
+		},{
+			"rus": "Контейнеры",
+			"eng": "Containers"
+		},{
+			"rus": "Система разметки",
+			"eng": "Grid system"
+		},{
+			"rus": "Введение",
+			"eng": "Introduction"
+		},{
+			"rus": "Медиа запросы",
+			"eng": "Media queries"
+		},{
+			"rus": "Функционал разметки",
+			"eng": "Grid options"
+		},{
+			"rus": "Пр.: Сложенные по горизонтали",
+			"eng": "Ex: Stacked-to-horizontal"
+		},{
+			"rus": "Пр.: Резиновые блоки",
+			"eng": "Ex: Fluid container"
+		},{
+			"rus": "Пр.: Мобильные устройства и компьютеры",
+			"eng": "Ex: Mobile and desktop"
+		},{
+			"rus": "Пр.: Мобильные устройства, планшеты, компьютеры",
+			"eng": "Ex: Mobile, tablet, desktop"
+		},{
+			"rus": "Пр: Колонка wrapping",
+			"eng": "Ex: Column wrapping"
+		},{
+			"rus": "Адаптивные колонки сброса",
+			"eng": "Responsive column resets"
+		},{
+			"rus": "Смещенные колонки",
+			"eng": "Offsetting columns"
+		},{
+			"rus": "Вложенные столбцы",
+			"eng": "Nesting columns"
+		},{
+			"rus": "Выравнивание колонки",
+			"eng": "Column ordering"
+		},{
+			"rus": "Less модули и переменные",
+			"eng": "Less mixins and variables"
+		},{
+			"rus": "Типография",
+			"eng": "Typography"
+		},{
+			"rus": "Заголовки",
+			"eng": "Headings"
+		},{
+			"rus": "Основной текст",
+			"eng": "Body copy"
+		},{
+			"rus": "Inline текстовые элементы",
+			"eng": "Inline text elements"
+		},{
+			"rus": "Классы выравнивания",
+			"eng": "Alignment classes"
+		},{
+			"rus": "Классы преображения",
+			"eng": "Transformation classes"
+		},{
+			"rus": "Аббревиатуры",
+			"eng": "Abbreviations"
+		},{
+			"rus": "Адреса",
+			"eng": "Addresses"
+		},{
+			"rus": "Цитаты",
+			"eng": "Blockquotes"
+		},{
+			"rus": "Списки",
+			"eng": "Lists"
+		},{
+			"rus": "Код",
+			"eng": "Code"
+		},{
+			"rus": "Inline",
+			"eng": "Inline"
+		},{
+			"rus": "Пользовательский ввод",
+			"eng": "User input"
+		},{
+			"rus": "Basic block",
+			"eng": "Basic block"
+		},{
+			"rus": "Переменные",
+			"eng": "Variables"
+		},{
+			"rus": "Пример вывода",
+			"eng": "Sample output"
+		},{
+			"rus": "Таблицы",
+			"eng": "Tables"
+		},{
+			"rus": "Простой пример",
+			"eng": "Basic example"
+		},{
+			"rus": "\"Зебра\"",
+			"eng": "Striped rows"
+		},{
+			"rus": "Границы таблицы",
+			"eng": "Bordered table"
+		},{
+			"rus": "Курсор строк",
+			"eng": "Hover rows"
+		},{
+			"rus": "Сокращенная таблица",
+			"eng": "Condensed table"
+		},{
+			"rus": "Контекстные классы",
+			"eng": "Contextual classes"
+		},{
+			"rus": "Адаптивные таблицы",
+			"eng": "Responsive tables"
+		},{
+			"rus": "Формы",
+			"eng": "Forms"
+		},{
+			"rus": "Встроенная форма",
+			"eng": "Inline form"
+		},{
+			"rus": "Горизонтальные формы",
+			"eng": "Horizontal form"
+		},{
+			"rus": "Поддерживаемые элементы управления",
+			"eng": "Supported controls"
+		},{
+			"rus": "Статическое управление",
+			"eng": "Static control"
+		},{
+			"rus": "Состояние фокуса",
+			"eng": "Focus state"
+		},{
+			"rus": "Отключенное состояние",
+			"eng": "Disabled state"
+		},{
+			"rus": "Readonly состояние",
+			"eng": "Readonly state"
+		},{
+			"rus": "Проверка состояния",
+			"eng": "Validation states"
+		},{
+			"rus": "Управление измерением",
+			"eng": "Control sizing"
+		},{
+			"rus": "Текст справки",
+			"eng": "Help text"
+		},{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Теги кнопки",
+			"eng": "Button tags"
+		},{
+			"rus": "Опции",
+			"eng": "Options"
+		},{
+			"rus": "Размеры",
+			"eng": "Sizes"
+		},{
+			"rus": "Активное состояние",
+			"eng": "Active state"
+		},{
+			"rus": "Изображения",
+			"eng": "Images"
+		},{
+			"rus": "Адаптивные изображения",
+			"eng": "Responsive images"
+		},{
+			"rus": "Формы изображения",
+			"eng": "Image shapes"
+		},{
+			"rus": "Вспомогательные классы",
+			"eng": "Helper classes"
+		},{
+			"rus": "Контекстные цвета",
+			"eng": "Contextual colors"
+		},{
+			"rus": "Контекстные фоны",
+			"eng": "Contextual backgrounds"
+		},{
+			"rus": "Значки закрытия",
+			"eng": "Close icon"
+		},{
+			"rus": "Значек меню",
+			"eng": "Carets"
+		},{
+			"rus": "Быстрое выравнивание",
+			"eng": "Quick floats"
+		},{
+			"rus": "Центровка содержимого блоков",
+			"eng": "Center content blocks"
+		},{
+			"rus": "Clearfix",
+			"eng": "Clearfix"
+		},{
+			"rus": "Показ содержимого",
+			"eng": "Showing and hiding content"
+		},{
+			"rus": "Screen reader and keyboard navigation content",
+			"eng": "Screen reader and keyboard navigation content"
+		},{
+			"rus": "Замещение изображения",
+			"eng": "Image replacement"
+		},{
+			"rus": "Утилиты адаптивности",
+			"eng": "Responsive utilities"
+		},{
+			"rus": "Доступные классы",
+			"eng": "Available classes"
+		},{
+			"rus": "Классы для печати",
+			"eng": "Print classes"
+		},{
+			"rus": "Раздел для тестирования",
+			"eng": "Test cases"
+		},{
+			"rus": "Использование Less",
+			"eng": "Using Less"
+		},{
+			"rus": "Компиляция Bootstrap",
+			"eng": "Compiling Bootstrap"
+		},{
+			"rus": "Поставщики mixin",
+			"eng": "Vendor mixins"
+		},{
+			"rus": "Утилиты mixin",
+			"eng": "Utility mixins"
+		},{
+			"rus": "Использование Sass",
+			"eng": "Using Sass"
+		},{
+			"rus": "Что включено",
+			"eng": "What's included"
+		},{
+			"rus": "Installation",
+			"eng": "Installation"
+		}
+	]
+}

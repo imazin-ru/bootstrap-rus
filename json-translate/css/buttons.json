@@ -1,0 +1,200 @@
+{
+	"h": [
+		{
+			"rus": "Кнопки",
+			"eng": "Buttons"
+		},{
+			"rus": "Теги кнопки",
+			"eng": "Button tags"
+		},{
+			"rus": "Опции",
+			"eng": "Options"
+		},{
+			"rus": "Размеры",
+			"eng": "Sizes"
+		},{
+			"rus": "Активное состояние",
+			"eng": "Active state"
+		},{
+			"rus": "Заблокированное состояние",
+			"eng": "Disabled state"
+		},{
+			"rus": "Элемент кнопки",
+			"eng": "Button element"
+		},{
+			"rus": "Элементы якоря",
+			"eng": "Anchor element"
+		},{
+			"rus": "Контекстная специфика использования",
+			"eng": "Context-specific usage"
+		},{
+			"rus": "Links acting as buttons",
+			"eng": "Links acting as buttons"
+		},{
+			"rus": "Рендеринг кросс-браузера",
+			"eng": "Cross-browser rendering"
+		},{
+			"rus": "Conveying meaning to assistive technologies",
+			"eng": "Conveying meaning to assistive technologies"
+		},{
+			"rus": "Совместимость кроссбраузерности",
+			"eng": "Cross-browser compatibility"
+		},{
+			"rus": "Нюанс ссылки функциональность ",
+			"eng": "Link functionality caveat"
+		}
+	],
+	"p": [
+		{
+			"rus": "В качестве лучшего решения, <strong> мы настоятельно рекомендуем использовать <code>&lt;button&gt;<\/code> элемент, по возможности <\/strong>чтобы обеспечить соответствующий рендеринг кросс-браузера.",
+			"eng": "Use the button classes on an <code>&lt;a&gt;<\/code>, <code>&lt;button&gt;<\/code>, or <code>&lt;input&gt;<\/code> element."
+		},{
+			"rus": "Используйте кнопку класса на <code>&lt;a&gt;<\/code>,<code>&lt;button&gt;<\/code>, или <code>&lt;input&gt;<\/code> элемент.",
+			"eng": "While button classes can be used on <code>&lt;a&gt;<\/code> and <code>&lt;button&gt;<\/code> elements, only <code>&lt;button&gt;<\/code> elements are supported within our nav and navbar components."
+		},{
+			"rus": "If the <code>&lt;a&gt;<\/code> elements are used to act as buttons \u2013 triggering in-page functionality, rather than navigating to another document or section within the current page \u2013 they should also be given an appropriate <code>role=\"button\"<\/code>.",
+			"eng": "If the <code>&lt;a&gt;<\/code> elements are used to act as buttons \u2013 triggering in-page functionality, rather than navigating to another document or section within the current page \u2013 they should also be given an appropriate <code>role=\"button\"<\/code>."
+		},{
+			"rus": "В качестве лучшего решения, <strong> мы настоятельно рекомендуем использовать элемент<code>&lt;button&gt;<\/code> когда это возможно<\/strong> для обеспечения соответствия кросс-браузерного рендеринга.",
+			"eng": "As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;<\/code> element whenever possible<\/strong> to ensure matching cross-browser rendering."
+		},{
+			"rus": "Среди прочего, есть <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=697451\">ошибка Firefox<\/a> что мешает нам установить<code>line-height<\/code> на <code>&lt;input&gt;<\/code> базовой кнопки, заставляя их не точно соответствовать с высотой других кнопок в Firefox.",
+			"eng": "Among other things, there's <a href=\"https:\/\/bugzilla.mozilla.org\/show_bug.cgi?id=697451\">a bug in Firefox &lt;30<\/a> that prevents us from setting the <code>line-height<\/code> of <code>&lt;input&gt;<\/code>-based buttons, causing them to not exactly match the height of other buttons on Firefox."
+		},{
+			"rus": "Используйте любой из доступных типов кнопок, чтобы быстро создать стильную кнопку.",
+			"eng": "Use any of the available button classes to quickly create a styled button."
+		},{
+			"rus": "Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class.",
+			"eng": "Using color to add meaning to a button only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the visible text of the button), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class."
+		},{
+			"rus": "Больше или малые кнопки? Добавьте <code>.btn-lg<\/code>, <code>.btn-sm<\/code>, или <code>.btn-xs<\/code> для дополнительных размеров.",
+			"eng": "Fancy larger or smaller buttons? Add <code>.btn-lg<\/code>, <code>.btn-sm<\/code>, or <code>.btn-xs<\/code> for additional sizes."
+		},{
+			"rus": "\n      <button type=\"button\" class=\"btn btn-primary btn-lg\">Большая кнопка<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-lg\">Большая кнопка<\/button>\n    ",
+			"eng": "\n      <button type=\"button\" class=\"btn btn-primary btn-lg\">Large button<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-lg\">Large button<\/button>\n    "
+		},{
+			"rus": "\n      <button type=\"button\" class=\"btn btn-primary\">По умолчанию<\/button>\n      <button type=\"button\" class=\"btn btn-default\">По умолчанию<\/button>\n    ",
+			"eng": "\n      <button type=\"button\" class=\"btn btn-primary\">Default button<\/button>\n      <button type=\"button\" class=\"btn btn-default\">Default button<\/button>\n    "
+		},{
+			"rus": "\n      <button type=\"button\" class=\"btn btn-primary btn-sm\">Малая кнопка<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-sm\">Малая кнопка<\/button>\n    ",
+			"eng": "\n      <button type=\"button\" class=\"btn btn-primary btn-sm\">Small button<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-sm\">Small button<\/button>\n    "
+		},{
+			"rus": "\n      <button type=\"button\" class=\"btn btn-primary btn-xs\">Очень малая кнопка<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-xs\">Очень малая кнопка<\/button>\n    ",
+			"eng": "\n      <button type=\"button\" class=\"btn btn-primary btn-xs\">Extra small button<\/button>\n      <button type=\"button\" class=\"btn btn-default btn-xs\">Extra small button<\/button>\n    "
+		},{
+			"rus": "Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block<\/code>.",
+			"eng": "Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block<\/code>."
+		},{
+			"rus": "Когда кнопка будет активной, она будет выглядеть нажатой (с затемненным фоном, темным ободком, и внутренней тенью). Для элемента <code>&lt;и&gt;<\/code> это делается при помощи <code>:active<\/code>. Для элемента <code>&lt;a&gt;<\/code> это делается через <code>.active<\/code>. Однако, вы можете использовать <code>.active<\/code> - <code>&lt;и&gt;<\/code> (и подключите аттрибут <code>aria-pressed=\"true\"<\/code>) если вам нужно повторить активное состояние программно.",
+			"eng": "Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;<\/code> elements, this is done via <code>:active<\/code>. For <code>&lt;a&gt;<\/code> elements, it's done with <code>.active<\/code>. However, you may use <code>.active<\/code> on <code>&lt;button&gt;<\/code>s (and include the <code>aria-pressed=\"true\"<\/code> attribute) should you need to replicate the active state programmatically."
+		},{
+			"rus": "Нет необходимости добавлять <code>:active<\/code>, поскольку это является псевдо-класс, но если вам необходимо предоставить кнопки такого же вида, добавляйте <code>.active<\/code>.",
+			"eng": "No need to add <code>:active<\/code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active<\/code>."
+		},{
+			"rus": "\n <button type=\"button\" class=\"btn btn-primary btn-lg active\">Главная кнопка<\/button>\n <button type=\"button\" class=\"btn btn-default btn-lg active\">Кнопка<\/button>\n ",
+			"eng": "\n    <button type=\"button\" class=\"btn btn-primary btn-lg active\">Primary button<\/button>\n    <button type=\"button\" class=\"btn btn-default btn-lg active\">Button<\/button>\n  "
+		},{
+			"rus": "Добавьте класс <code>.active<\/code> ссылок <code>&lt;a&gt;<\/code> в виде кнопки.",
+			"eng": "Add the <code>.active<\/code> class to <code>&lt;a&gt;<\/code> buttons."
+		},{
+			"rus": "\n    <a href=\"#\" class=\"btn btn-primary btn-lg active\" role=\"button\">Главная ссылка<\/a>\n    <a href=\"#\" class=\"btn btn-default btn-lg active\" role=\"button\">Ссылка<\/a>\n  ",
+			"eng": "\n    <a href=\"#\" class=\"btn btn-primary btn-lg active\" role=\"button\">Primary link<\/a>\n    <a href=\"#\" class=\"btn btn-default btn-lg active\" role=\"button\">Link<\/a>\n  "
+		},{
+			"rus": "Создайте неактиные кнопки, с применением прозрачности <code>opacity<\/code>.",
+			"eng": "Make buttons look unclickable by fading them back with <code>opacity<\/code>."
+		},{
+			"rus": "Добавьте <code>disabled<\/code> атрибут к <code>&lt;button&gt;<\/code> кнопке.",
+			"eng": "Add the <code>disabled<\/code> attribute to <code>&lt;button&gt;<\/code> buttons."
+		},{
+			"rus": "\n    <button type=\"button\" class=\"btn btn-primary btn-lg\" disabled=\"disabled\">Главная кнопка<\/button>\n    <button type=\"button\" class=\"btn btn-default btn-lg\" disabled=\"disabled\">Кнопка<\/button>\n    ",
+			"eng": "\n    <button type=\"button\" class=\"btn btn-primary btn-lg\" disabled=\"disabled\">Primary button<\/button>\n    <button type=\"button\" class=\"btn btn-default btn-lg\" disabled=\"disabled\">Button<\/button>\n  "
+		},{
+			"rus": "Если вы добавите <code>disabled<\/code> атрибут к <code>&lt;button&gt;<\/code>, Internet Explorer 9, то внизу будет отражен серый текст с неприятной текстовой тенью, которую мы не можем исправить.",
+			"eng": "If you add the <code>disabled<\/code> attribute to a <code>&lt;button&gt;<\/code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix."
+		},{
+			"rus": "Добавьте <code>.disabled<\/code> класс к <code>&lt;a&gt;<\/code> кнопке.",
+			"eng": "Add the <code>.disabled<\/code> class to <code>&lt;a&gt;<\/code> buttons."
+		},{
+			"rus": "\n    <a href=\"#\" class=\"btn btn-primary btn-lg disabled\" role=\"button\">Главная ссылка<\/a>\n    <a href=\"#\" class=\"btn btn-default btn-lg disabled\" role=\"button\">Ссылка<\/a>\n  ",
+			"eng": "\n    <a href=\"#\" class=\"btn btn-primary btn-lg disabled\" role=\"button\">Primary link<\/a>\n    <a href=\"#\" class=\"btn btn-default btn-lg disabled\" role=\"button\">Link<\/a>\n  "
+		},{
+			"rus": "\n        Мы используем <code>.disabled<\/code> как поддержку класса здесь, типичную для общего <code>.active<\/code> класса, так что префикс не требуется.    ",
+			"eng": "\n    We use <code>.disabled<\/code> as a utility class here, similar to the common <code>.active<\/code> class, so no prefix is required.\n  "
+		},{
+			"rus": "This class uses <code>pointer-events: none<\/code> to try to disable the link functionality of <code>&lt;a&gt;<\/code>s, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support <code>pointer-events: none<\/code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.",
+			"eng": "This class uses <code>pointer-events: none<\/code> to try to disable the link functionality of <code>&lt;a&gt;<\/code>s, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addition, even in browsers that do support <code>pointer-events: none<\/code>, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links."
+		}
+	],
+	"button": [
+		{
+			"rus": "Кнопка",
+			"eng": "Button"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default"
+		},{
+			"rus": "Первичная",
+			"eng": "Primary"
+		},{
+			"rus": "Успех",
+			"eng": "Success"
+		},{
+			"rus": "Информация",
+			"eng": "Info"
+		},{
+			"rus": "Предупреждение",
+			"eng": "Warning"
+		},{
+			"rus": "Опасность",
+			"eng": "Danger"
+		},{
+			"rus": "Ссылка",
+			"eng": "Link"
+		},{
+			"rus": "Большая кнопка",
+			"eng": "Large button"
+		},{
+			"rus": "По умолчанию",
+			"eng": "Default button"
+		},{
+			"rus": "Малая кнопка",
+			"eng": "Small button"
+		},{
+			"rus": "Очень малая кнопка",
+			"eng": "Extra small button"
+		},{
+			"rus": "Блок кнопка",
+			"eng": "Block level button"
+		},{
+			"rus": "Главная кнопка",
+			"eng": "Primary button"
+		},{
+			"rus": "Главная ссылка",
+			"eng": "Primary link"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Стандартная кнопка -->",
+			"eng": "<!-- Standard button -->"
+		},{
+			"rus": "<!-- Обеспечивает дополнительную визуальный вес и идентифицирует основное действие в набор кнопок -->",
+			"eng": "<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->"
+		},{
+			"rus": "<!-- Указывает на успешное или позитивные действия -->",
+			"eng": "<!-- Indicates a successful or positive action -->"
+		},{
+			"rus": "<!-- Контекстуальные кнопка для информационных сообщений о сигналах тревоги -->",
+			"eng": "<!-- Contextual button for informational alert messages -->"
+		},{
+			"rus": "<!-- Указывает, что следует проявлять осторожность с этим действием -->",
+			"eng": "<!-- Indicates caution should be taken with this action -->"
+		},{
+			"rus": "<!-- Указывает на опасное или потенциально негативное действие -->",
+			"eng": "<!-- Indicates a dangerous or potentially negative action -->"
+		},{
+			"rus": "<!-- Преуменьшить роль кнопки, сделав его похожим на ссылку, сохраняя поведение кнопки -->",
+			"eng": "<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->"
+		}
+	]
+}

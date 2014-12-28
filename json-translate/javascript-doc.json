@@ -1,0 +1,14 @@
+{
+	"title": [
+		{
+			"rus": "title: JavaScript",
+			"eng": "title: JavaScript"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Оживите компоненты Bootstrap множеством пользовательских плагинов jQuery. Можете подключать их сразу все, или использовать по одному - это просто.\"",
+			"eng": "lead: \"Bring Bootstrap's components to life with over a dozen custom jQuery plugins. Easily include them all, or one by one.\""
+		}
+	]
+}

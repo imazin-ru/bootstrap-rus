@@ -1,0 +1,71 @@
+{
+	"h": [
+		{
+			"rus": "Обзор",
+			"eng": "Overview"
+		},{
+			"rus": "HTML5 doctype",
+			"eng": "HTML5 doctype"
+		},{
+			"rus": "В первую очередь - мобильные",
+			"eng": "Mobile first"
+		},{
+			"rus": "Типография и ссылки",
+			"eng": "Typography and links"
+		},{
+			"rus": "Normalize.css",
+			"eng": "Normalize.css"
+		},{
+			"rus": "Контейнеры",
+			"eng": "Containers"
+		}
+	],
+	"p": [
+		{
+			"rus": "Получите подробную информацию о ключевых элементах инфраструктуры Bootstrap, в том числе о нашем подходе к созданию более качественных, быстрых и мощных веб-приложений.",
+			"eng": "Get the lowdown on the key pieces of Bootstrap's infrastructure, including our approach to better, faster, stronger web development."
+		},{
+			"rus": "В Bootstrap используются некоторые элементы HTML и свойства CSS, которые требуют использования HTML5 doctype. Включайте его в начале всех проектов.",
+			"eng": "Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects."
+		},{
+			"rus": "В Bootstrap 2 мы внедряли возможности адаптирования сайтов для мобильных устройств.  Приложение Bootstrap 3 изначально рассчитано на работу с мобильными устройствами. Вместо того чтобы добавлять дополнительные шаблоны для мобильных устройств, мы встроили их в ядро программы. <strong>Bootstrap в первую очередь рассчитан на мобильные устройства<\/strong>. Макеты для мобильных устройств хранятся в библиотеке, а не отдельными файлами.",
+			"eng": "With Bootstrap 2, we added optional mobile friendly styles for key aspects of the framework. With Bootstrap 3, we've rewritten the project to be mobile friendly from the start. Instead of adding on optional mobile styles, they're baked right into the core. In fact, <strong>Bootstrap is mobile first<\/strong>. Mobile first styles can be found throughout the entire library instead of in separate files."
+		},{
+			"rus": "Чтобы обеспечить надлежащий рендеринг и изменение размера касанием, <strong>добавьте метатег viewport<\/strong> в ваш <code>&lt;head&gt;<\/code>.",
+			"eng": "To ensure proper rendering and touch zooming, <strong>add the viewport meta tag<\/strong> to your <code>&lt;head&gt;<\/code>."
+		},{
+			"rus": "Вы можете ограничить возможности приближения на мобильных устройствах добавляя <code>user-scalable=no<\/code> в мета тег видимого экрана. Это ограничит приближение, означающее что пользователи могут только скроллить, и результат на вашем сайте будет чувствоваться как нативное приложение. В любом случае, мы не рекомендуем это на каждом сайте, используйте с осторожностью.",
+			"eng": "You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no<\/code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!"
+		},{
+			"rus": "Bootstrap устанавливает основные глобальные дисплеи, типографии, и стили ссылок. В частности, мы:",
+			"eng": "Bootstrap sets basic global display, typography, and link styles. Specifically, we:"
+		},{
+			"rus": "Эти стили можно найти в <code>scaffolding.less<\/code>.",
+			"eng": "These styles can be found within <code>scaffolding.less<\/code>."
+		},{
+			"rus": "Для улучшения кросс-браузерного рендеринга, мы используем <a href=\"http:\/\/necolas.github.io\/normalize.css\/\" target=\"_blank\">Normalize.css<\/a>, проект от <a href=\"https:\/\/twitter.com\/necolas\" target=\"_blank\">Nicolas Gallagher<\/a> и <a href=\"https:\/\/twitter.com\/jon_neal\" target=\"_blank\">Jonathan Neal<\/a>.",
+			"eng": "For improved cross-browser rendering, we use <a href=\"http:\/\/necolas.github.io\/normalize.css\/\" target=\"_blank\">Normalize.css<\/a>, a project by <a href=\"https:\/\/twitter.com\/necolas\" target=\"_blank\">Nicolas Gallagher<\/a> and <a href=\"https:\/\/twitter.com\/jon_neal\" target=\"_blank\">Jonathan Neal<\/a>."
+		},{
+			"rus": "Bootstrap требует, содержащий элемент, чтобы обернуть содержание сайта и содержать наше в подвесной системе. Вы можете выбрать один из двух контейнеров для использования в проектах. Обратите внимание, что, в связи с<code>padding<\/code> и более, ни контейнер труба в трубе.",
+			"eng": "Bootstrap requires a containing element to wrap site contents and house our grid system. You may choose one of two containers to use in your projects. Note that, due to <code>padding<\/code> and more, neither container is nestable."
+		},{
+			"rus": "Используйте <code>.container<\/code> для отзывчивого фиксированной ширины контейнера.",
+			"eng": "Use <code>.container<\/code> for a responsive fixed width container."
+		},{
+			"rus": "Используйте <code>.container-fluid<\/code> для всей ширине контейнера, охватывающих всю ширину вашего просмотра.",
+			"eng": "Use <code>.container-fluid<\/code> for a full width container, spanning the entire width of your viewport."
+		}
+	],
+	"li": [
+		{
+			"rus": "Устанавливает <code>background-color: #fff;<\/code> на <code>body<\/code>",
+			"eng": "Set <code>background-color: #fff;<\/code> on the <code>body<\/code>"
+		},{
+			"rus": "Использует <code>@font-family-base<\/code>,<code>@font-size-base<\/code> и <code>@line-height-base<\/code> атрибуты как нашу типографическую базу",
+			"eng": "Use the <code>@font-family-base<\/code>, <code>@font-size-base<\/code>, and <code>@line-height-base<\/code> attributes as our typographic base"
+		},{
+			"rus": "Устанавливает цвет глобальных ссылок через <code>@link-color<\/code> и применяет подчеркивание ссылок только на <code>:hover<\/code>",
+			"eng": "Set the global link color via <code>@link-color<\/code> and apply link underlines only on <code>:hover<\/code>"
+		}
+	]
+}

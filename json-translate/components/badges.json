@@ -1,0 +1,53 @@
+{
+	"h": [
+		{
+			"rus": "Значки",
+			"eng": "Badges"
+		},{
+			"rus": "Самосвертывание",
+			"eng": "Self collapsing"
+		},{
+			"rus": "Кросс-браузерная совместимость",
+			"eng": "Cross-browser compatibility"
+		},{
+			"rus": "Адаптация под активные состояния",
+			"eng": "Adapts to active nav states"
+		}
+	],
+	"p": [
+		{
+			"rus": "Легко подсветить новые или непрочитанные записи добавив к ссылкам <code>&lt;span class=\"badge\"&gt;<\/code>, Bootstrap навигацию, и другое.",
+			"eng": "Easily highlight new or unread items by adding a <code>&lt;span class=\"badge\"&gt;<\/code> to links, Bootstrap navs, and more."
+		},{
+			"rus": "Когда нет новых или непрочитанных записей, значки будут просто свернуты (через CSS селектор <code>:empty<\/code>), при условии отсутствия внутри содержимого.",
+			"eng": "When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty<\/code> selector) provided no content exists within."
+		},{
+			"rus": "Значки не будут самозгортатись в Internet Explorer 8, потому что ему не хватает поддержки селектора <code>:empty<\/code>.",
+			"eng": "Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty<\/code> selector."
+		},{
+			"rus": "Встроенные стили позволяют содержать значки в активном состоянии, которые размещены в навигационных кнопках и навигационных списках.",
+			"eng": "Built-in styles are included for placing badges in active states in pill navigations."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#\">Главная <span class=\"badge\">42<\/span><\/a>",
+			"eng": "<a href=\"#\">Home <span class=\"badge\">42<\/span><\/a>"
+		},{
+			"rus": "<a href=\"#\">Профиль<\/a>",
+			"eng": "<a href=\"#\">Profile<\/a>"
+		},{
+			"rus": "<a href=\"#\">Сообщения <span class=\"badge\">3<\/span><\/a>",
+			"eng": "<a href=\"#\">Messages <span class=\"badge\">3<\/span><\/a>"
+		}
+	],
+	"button": [
+		{
+			"rus": "\n Сообщения <span class=\"badge\">4<\/span>\n ",
+			"eng": "\n      Messages <span class=\"badge\">4<\/span>\n    "
+		},{
+			"rus": "\n Сообщения <span class=\"badge\">4<\/span>\n ",
+			"eng": "\n Сообщения <span class=\"badge\">4<\/span>\n "
+		}
+	]
+}

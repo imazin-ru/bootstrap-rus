@@ -1,0 +1,47 @@
+{
+	"p": [
+		{
+			"rus": "Спроектирован и построен с любовью ко всему миру, авторами: <a href=\"https:\/\/twitter.com\/mdo\" target=\"_blank\">@mdo<\/a> and <a href=\"https:\/\/twitter.com\/fat\" target=\"_blank\">@fat<\/a>.",
+			"eng": "Designed and built with all the love in the world by <a href=\"https:\/\/twitter.com\/mdo\" target=\"_blank\">@mdo<\/a> and <a href=\"https:\/\/twitter.com\/fat\" target=\"_blank\">@fat<\/a>."
+		},{
+			"rus": "Поддержкой занимается <a href=\"https:\/\/github.com\/orgs\/twbs\/people\">основная команда<\/a> с помощью <a href=\"https:\/\/github.com\/twbs\/bootstrap\/graphs\/contributors\">наших вкладчиков<\/a>.",
+			"eng": "Maintained by the <a href=\"https:\/\/github.com\/orgs\/twbs\/people\">core team<\/a> with the help of <a href=\"https:\/\/github.com\/twbs\/bootstrap\/graphs\/contributors\">our contributors<\/a>."
+		},{
+			"rus": "Код по лицензией <a href=\"https:\/\/github.com\/twbs\/bootstrap\/blob\/master\/LICENSE\" target=\"_blank\">MIT<\/a>, документация в соответствии <a href=\"http:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>.",
+			"eng": "Code licensed under <a href=\"https:\/\/github.com\/twbs\/bootstrap\/blob\/master\/LICENSE\" target=\"_blank\">MIT<\/a>, documentation under <a href=\"http:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>."
+		}
+	],
+	"li": [
+		{
+			"rus": "Теукущая v{{ site.current_version }}",
+			"eng": "Currently v{{ site.current_version }}"
+		},{
+			"rus": "&middot;",
+			"eng": "&middot;"
+		},{
+			"rus": "<a href=\"{{ site.repo }}\">GitHub<\/a>",
+			"eng": "<a href=\"{{ site.repo }}\">GitHub<\/a>"
+		},{
+			"rus": "<a href=\"..\/getting-started\/#examples\">Примеры<\/a>",
+			"eng": "<a href=\"..\/getting-started\/#examples\">Examples<\/a>"
+		},{
+			"rus": "<a href=\"http:\/\/bootstrap-ru.com\/\">v2.3.2 docs<\/a>",
+			"eng": "<a href=\"..\/2.3.2\/\">v2.3.2 docs<\/a>"
+		},{
+			"rus": "<a href=\"..\/about\/\">О нас<\/a>",
+			"eng": "<a href=\"..\/about\/\">About<\/a>"
+		},{
+			"rus": "<a href=\"{{ site.expo }}\">Expo<\/a>",
+			"eng": "<a href=\"{{ site.expo }}\">Expo<\/a>"
+		},{
+			"rus": "<a href=\"{{ site.blog }}\">Блог<\/a>",
+			"eng": "<a href=\"{{ site.blog }}\">Blog<\/a>"
+		},{
+			"rus": "<a href=\"{{ site.repo }}\/issues\">Issues<\/a>",
+			"eng": "<a href=\"{{ site.repo }}\/issues\">Issues<\/a>"
+		},{
+			"rus": "<a href=\"{{ site.repo }}\/releases\">Релизы<\/a>",
+			"eng": "<a href=\"{{ site.repo }}\/releases\">Releases<\/a>"
+		}
+	]
+}

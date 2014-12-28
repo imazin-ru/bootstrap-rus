@@ -1,0 +1,59 @@
+{
+	"title": [
+		{
+			"rus": "title: Стена ошибок браузеров",
+			"eng": "title: Wall of browser bugs"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Список ошибок браузера, с какими борется Bootstrap в настоящее время.\"",
+			"eng": "lead: \"A list of the browser bugs that Bootstrap is currently grappling with.\""
+		}
+	],
+	"h": [
+		{
+			"rus": "Ошибки браузера",
+			"eng": "Browser bugs"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap в настоящее время работает с несколькими из выдающихся ошибок браузера в основных браузерах, чтобы предоставить кросс-браузерный опыт возможным . Некоторые ошибки, такие как те, которые перечислены ниже, не могут быть решены с помощью нас.",
+			"eng": "Bootstrap currently works around several outstanding browser bugs in major browsers to deliver the best cross-browser experience possible. Some bugs, like those listed below, cannot be solved by us."
+		},{
+			"rus": "Мы публично перечислить ошибки браузера, которые влияющих нас здесь, в надежде ускорить процесс их устранению. Для получения информации о совместимости браузера Bootstrap в,  <a href=\"..\/getting-started\/#support\">увидеть наши документы браузера совместимости<\/a>.",
+			"eng": "We publicly list browser bugs that are impacting us here, in the hopes of expediting the process of fixing them. For information on Bootstrap's browser compatibility, <a href=\"..\/getting-started\/#support\">see our browser compatibility docs<\/a>."
+		}
+	],
+	"th": [
+		{
+			"rus": "Браузер(ы)",
+			"eng": "Browser(s)"
+		},{
+			"rus": "Резюме ошибок",
+			"eng": "Summary of bug"
+		},{
+			"rus": "Иерархия ошибки (ок)",
+			"eng": "Upstream bug(s)"
+		},{
+			"rus": "Вопросы загрузки(ок)",
+			"eng": "Bootstrap issue(s)"
+		}
+	],
+	"td": [
+		{
+			"rus": "{{ bug.browser }}",
+			"eng": "{{ bug.browser }}"
+		},{
+			"rus": "{{ bug.summary | markdownify | bugify }}",
+			"eng": "{{ bug.summary | markdownify | bugify }}"
+		},{
+			"rus": "{{\u00a0bug.upstream_bug | bugify }}",
+			"eng": "{{\u00a0bug.upstream_bug | bugify }}"
+		},{
+			"rus": "{{ bug.origin | bugify }}",
+			"eng": "{{ bug.origin | bugify }}"
+		}
+	]
+}

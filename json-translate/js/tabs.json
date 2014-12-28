@@ -1,0 +1,167 @@
+{
+	"h": [
+		{
+			"rus": "Переход по вкладкам <small>tab.js<\/small>",
+			"eng": "Togglable tabs <small>tab.js<\/small>"
+		},{
+			"rus": "Пример вкладок",
+			"eng": "Example tabs"
+		},{
+			"rus": "Использование",
+			"eng": "Usage"
+		},{
+			"rus": "Разметка",
+			"eng": "Markup"
+		},{
+			"rus": "Эффект угасания",
+			"eng": "Fade effect"
+		},{
+			"rus": "Методы",
+			"eng": "Methods"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "Расширение навигационных вкладок",
+			"eng": "Extends tabbed navigation"
+		},{
+			"rus": "$().tab",
+			"eng": "$().tab"
+		}
+	],
+	"p": [
+		{
+			"rus": "Добавьте быструю, динамичную функциональность для перехода по вкладкам локального содержимого, в том числе с помощью выпадающего меню.",
+			"eng": "Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus."
+		},{
+			"rus": "Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi.",
+			"eng": "Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui."
+		},{
+			"rus": "Здесь произвольный текст. Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.",
+			"eng": "Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park."
+		},{
+			"rus": "Здесь произвольный текст. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.",
+			"eng": "Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr."
+		},{
+			"rus": "Здесь произвольный текст. Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.",
+			"eng": "Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan."
+		},{
+			"rus": "Этот плагин расширяет <a href=\"..\/components\/#nav-tabs\">компонент навигационных вкладок<\/a>, добавляя область переходов.",
+			"eng": "This plugin extends the <a href=\"..\/components\/#nav-tabs\">tabbed navigation component<\/a> to add tabbable areas."
+		},{
+			"rus": "Включение области навигации, вкладок через JavaScript (каждая вкладка требует индивидуальной активации):",
+			"eng": "Enable tabbable tabs via JavaScript (each tab needs to be activated individually):"
+		},{
+			"rus": "Вы можете индивидуально активировать вкладку несколько способов:",
+			"eng": "You can activate individual tabs in several ways:"
+		},{
+			"rus": "Вы можете активировать вкладку или навигационную кнопку и без написания кода JavaScript, просто указав в элементе <code>data-toggle=\"tab\"<\/code> или <code>data-toggle=\"pill\"<\/code>. Добавление классов <code>nav<\/code> и <code>nav-tabs<\/code> вкладка <code>ul<\/code> будет внедряться <a href=\"..\/components\/#nav-tabs\">стиль вкладок<\/a> Bootstrap, при добавлении классов <code>nav<\/code> и <code>nav-pills<\/code> будет внедряться <a href=\"..\/components\/#nav-pills\">стиль навигационных кнопок<\/a>.",
+			"eng": "You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle=\"tab\"<\/code> or <code>data-toggle=\"pill\"<\/code> on an element. Adding the <code>nav<\/code> and <code>nav-tabs<\/code> classes to the tab <code>ul<\/code> will apply the Bootstrap <a href=\"..\/components\/#nav-tabs\">tab styling<\/a>, while adding the <code>nav<\/code> and <code>nav-pills<\/code> classes will apply <a href=\"..\/components\/#nav-pills\">pill styling<\/a>."
+		},{
+			"rus": "Чтобы создать эффект плавного отображения вкладок, добавьте <code>.fade<\/code> каждый <code>.tab-pane<\/code>. Первая панель вкладки должна также иметь <code>.in<\/code> для правильного плавного отображения содержимого.",
+			"eng": "To make tabs fade in, add <code>.fade<\/code> to each <code>.tab-pane<\/code>. The first tab pane must also have <code>.in<\/code> to properly fade in initial content."
+		},{
+			"rus": "\n Включите элемент вкладки и содержимое контейнера. Вкладка должна иметь или <code>data-target<\/code>или <code>href<\/code> адресный узел контейнера в DOM.\n ",
+			"eng": "\n    Activates a tab element and content container. Tab should have either a <code>data-target<\/code> or an <code>href<\/code> targeting a container node in the DOM.\n  "
+		},{
+			"rus": "When showing a new tab, the events fire in the following order:",
+			"eng": "When showing a new tab, the events fire in the following order:"
+		},{
+			"rus": "If no tab was already active, then the <code>hide.bs.tab<\/code> and <code>hidden.bs.tab<\/code> events will not be fired.",
+			"eng": "If no tab was already active, then the <code>hide.bs.tab<\/code> and <code>hidden.bs.tab<\/code> events will not be fired."
+		}
+	],
+	"li": [
+		{
+			"rus": "<a href=\"#home\" id=\"home-tab\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"home\" aria-expanded=\"true\">Home<\/a>",
+			"eng": "<a href=\"#home\" id=\"home-tab\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"home\" aria-expanded=\"true\">Home<\/a>"
+		},{
+			"rus": "<a href=\"#profile\" role=\"tab\" id=\"profile-tab\" data-toggle=\"tab\" aria-controls=\"profile\">Profile<\/a>",
+			"eng": "<a href=\"#profile\" role=\"tab\" id=\"profile-tab\" data-toggle=\"tab\" aria-controls=\"profile\">Profile<\/a>"
+		},{
+			"rus": "\n        <a href=\"#\" id=\"myTabDrop1\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-controls=\"myTabDrop1-contents\">Dropdown <span class=\"caret\"><\/span><\/a>\n        <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"myTabDrop1\" id=\"myTabDrop1-contents\">\n          <li><a href=\"#dropdown1\" tabindex=\"-1\" role=\"tab\" id=\"dropdown1-tab\" data-toggle=\"tab\" aria-controls=\"dropdown1\">@fat<\/a><\/li>\n          <li><a href=\"#dropdown2\" tabindex=\"-1\" role=\"tab\" id=\"dropdown2-tab\" data-toggle=\"tab\" aria-controls=\"dropdown2\">@mdo<\/a><\/li>\n        <\/ul>\n      ",
+			"eng": "\n        <a href=\"#\" id=\"myTabDrop1\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-controls=\"myTabDrop1-contents\">Dropdown <span class=\"caret\"><\/span><\/a>\n        <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"myTabDrop1\" id=\"myTabDrop1-contents\">\n          <li><a href=\"#dropdown1\" tabindex=\"-1\" role=\"tab\" id=\"dropdown1-tab\" data-toggle=\"tab\" aria-controls=\"dropdown1\">@fat<\/a><\/li>\n          <li><a href=\"#dropdown2\" tabindex=\"-1\" role=\"tab\" id=\"dropdown2-tab\" data-toggle=\"tab\" aria-controls=\"dropdown2\">@mdo<\/a><\/li>\n        <\/ul>\n      "
+		},{
+			"rus": "<a href=\"#dropdown1\" tabindex=\"-1\" role=\"tab\" id=\"dropdown1-tab\" data-toggle=\"tab\" aria-controls=\"dropdown1\">@fat<\/a>",
+			"eng": "<a href=\"#dropdown1\" tabindex=\"-1\" role=\"tab\" id=\"dropdown1-tab\" data-toggle=\"tab\" aria-controls=\"dropdown1\">@fat<\/a>"
+		},{
+			"rus": "<a href=\"#dropdown2\" tabindex=\"-1\" role=\"tab\" id=\"dropdown2-tab\" data-toggle=\"tab\" aria-controls=\"dropdown2\">@mdo<\/a>",
+			"eng": "<a href=\"#dropdown2\" tabindex=\"-1\" role=\"tab\" id=\"dropdown2-tab\" data-toggle=\"tab\" aria-controls=\"dropdown2\">@mdo<\/a>"
+		},{
+			"rus": "<a href=\"#home\" aria-controls=\"home\" role=\"tab\" data-toggle=\"tab\">Home<\/a>",
+			"eng": "<a href=\"#home\" aria-controls=\"home\" role=\"tab\" data-toggle=\"tab\">Home<\/a>"
+		},{
+			"rus": "<a href=\"#profile\" aria-controls=\"profile\" role=\"tab\" data-toggle=\"tab\">Profile<\/a>",
+			"eng": "<a href=\"#profile\" aria-controls=\"profile\" role=\"tab\" data-toggle=\"tab\">Profile<\/a>"
+		},{
+			"rus": "<a href=\"#messages\" aria-controls=\"messages\" role=\"tab\" data-toggle=\"tab\">Messages<\/a>",
+			"eng": "<a href=\"#messages\" aria-controls=\"messages\" role=\"tab\" data-toggle=\"tab\">Messages<\/a>"
+		},{
+			"rus": "<a href=\"#settings\" aria-controls=\"settings\" role=\"tab\" data-toggle=\"tab\">Settings<\/a>",
+			"eng": "<a href=\"#settings\" aria-controls=\"settings\" role=\"tab\" data-toggle=\"tab\">Settings<\/a>"
+		},{
+			"rus": "<code>hide.bs.tab<\/code> (on the current active tab)",
+			"eng": "<code>hide.bs.tab<\/code> (on the current active tab)"
+		},{
+			"rus": "<code>show.bs.tab<\/code> (on the to-be-shown tab)",
+			"eng": "<code>show.bs.tab<\/code> (on the to-be-shown tab)"
+		},{
+			"rus": "<code>hidden.bs.tab<\/code> (on the previous active tab, the same one as for the <code>hide.bs.tab<\/code> event)",
+			"eng": "<code>hidden.bs.tab<\/code> (on the previous active tab, the same one as for the <code>hide.bs.tab<\/code> event)"
+		},{
+			"rus": "<code>shown.bs.tab<\/code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab<\/code> event)",
+			"eng": "<code>shown.bs.tab<\/code> (on the newly-active just-shown tab, the same one as for the <code>show.bs.tab<\/code> event)"
+		}
+	],
+	"th": [
+		{
+			"rus": "Тип События",
+			"eng": "Event Type"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		}
+	],
+	"td": [
+		{
+			"rus": "show.bs.tab",
+			"eng": "show.bs.tab"
+		},{
+			"rus": "Это событие срабатывает на отображение вкладки, но перед тем, как новая вкладка будет отражена. Используйте <code>event.target<\/code> и <code>event.relatedTarget<\/code> для таргетинга соответственно - на активную вкладку и предыдущую активную вкладку (при наличии).",
+			"eng": "This event fires on tab show, but before the new tab has been shown. Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the active tab and the previous active tab (if available) respectively."
+		},{
+			"rus": "shown.bs.tab",
+			"eng": "shown.bs.tab"
+		},{
+			"rus": "Это событие срабатывает на отображение вкладки, после того, как вкладка будет отражена. Используйте <code>event.target<\/code> и <code>event.relatedTarget<\/code> для таргетинга соответственно - на активную вкладку и предыдущую активную вкладку (при наличии).",
+			"eng": "This event fires on tab show after a tab has been shown. Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the active tab and the previous active tab (if available) respectively."
+		},{
+			"rus": "hide.bs.tab",
+			"eng": "hide.bs.tab"
+		},{
+			"rus": "This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the current active tab and the new soon-to-be-active tab, respectively.",
+			"eng": "This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the current active tab and the new soon-to-be-active tab, respectively."
+		},{
+			"rus": "hidden.bs.tab",
+			"eng": "hidden.bs.tab"
+		},{
+			"rus": "This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the previous active tab and the new active tab, respectively.",
+			"eng": "This event fires after a new tab is shown (and thus the previous active tab is hidden). Use <code>event.target<\/code> and <code>event.relatedTarget<\/code> to target the previous active tab and the new active tab, respectively."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- \/пример -->",
+			"eng": "<!-- \/example -->"
+		},{
+			"rus": "<!-- Навигационные вкладки -->",
+			"eng": "<!-- Nav tabs -->"
+		},{
+			"rus": "<!-- Вкладки панелей -->",
+			"eng": "<!-- Tab panes -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

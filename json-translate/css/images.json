@@ -1,0 +1,35 @@
+{
+	"h": [
+		{
+			"rus": "Изображения",
+			"eng": "Images"
+		},{
+			"rus": "Адаптивные изображения",
+			"eng": "Responsive images"
+		},{
+			"rus": "Фигурные изображения",
+			"eng": "Image shapes"
+		},{
+			"rus": "SVG images and IE 8-10",
+			"eng": "SVG images and IE 8-10"
+		},{
+			"rus": "Совместимость кроссбраузерности",
+			"eng": "Cross-browser compatibility"
+		}
+	],
+	"p": [
+		{
+			"rus": "Изображения в Bootstrap 3 адаптируюся с помощью добавления класса <code>.img-responsive<\/code>. Это касается <code>max-width: 100%;<\/code> и <code>height: auto;<\/code> к изображению, чтобы он хорошо масштабировался к родительскому элементу.",
+			"eng": "Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive<\/code> class. This applies <code>max-width: 100%;<\/code> and <code>height: auto;<\/code> to the image so that it scales nicely to the parent element."
+		},{
+			"rus": "In Internet Explorer 8-10, SVG images with <code>.img-responsive<\/code> are disproportionately sized. To fix this, add <code>width: 100% \\9;<\/code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.",
+			"eng": "In Internet Explorer 8-10, SVG images with <code>.img-responsive<\/code> are disproportionately sized. To fix this, add <code>width: 100% \\9;<\/code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats."
+		},{
+			"rus": "Добавьте классы к <code>&lt;img&gt;<\/code> элементу чтобы легко стилизовать изображения в любом проекте.",
+			"eng": "Add classes to an <code>&lt;img&gt;<\/code> element to easily style images in any project."
+		},{
+			"rus": "Имейте в виду, что Internet Explorer 8 блокирует поддержку для закругленных краев.",
+			"eng": "Keep in mind that Internet Explorer 8 lacks support for rounded corners."
+		}
+	]
+}

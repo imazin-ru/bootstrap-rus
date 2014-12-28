@@ -1,0 +1,68 @@
+{
+	"h": [
+		{
+			"rus": "Лицензия FAQs",
+			"eng": "License FAQs"
+		},{
+			"rus": "Она требует:",
+			"eng": "It requires you to:"
+		},{
+			"rus": "Она позволяет:",
+			"eng": "It permits you to:"
+		},{
+			"rus": "Она запрещает:",
+			"eng": "It forbids you to:"
+		},{
+			"rus": "Она не требует:",
+			"eng": "It does not require you to:"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap выпущено под лицензией MIT и имеет авторское право {{ site.time | date: \"%Y\" }} Twitter. Сведена к меньшим частям, и может быть описана следующими условиями.",
+			"eng": "Bootstrap is released under the MIT license and is copyright {{ site.time | date: \"%Y\" }} Twitter. Boiled down to smaller chunks, it can be described with the following conditions."
+		},{
+			"rus": "Полная версия лицензии Bootstrap размещена <a href=\"{{ site.repo }}\/blob\/master\/LICENSE\">в проекте репозитория<\/a> более подробно.",
+			"eng": "The full Bootstrap license is located <a href=\"{{ site.repo }}\/blob\/master\/LICENSE\">in the project repository<\/a> for more information."
+		}
+	],
+	"li": [
+		{
+			"rus": "Включите лицензию и уведомление об авторских правах в ваших работах",
+			"eng": "Include the license and copyright notice in your works"
+		},{
+			"rus": "Свободно скачивать и использовать Bootstrap, полностью или частично, для личного, частного, внутренних или коммерческих целях компании",
+			"eng": "Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes"
+		},{
+			"rus": "Использовать Bootstrap в пакетах или в дистрибуции, которую вы сами создаете",
+			"eng": "Use Bootstrap in packages or distributions that you create"
+		},{
+			"rus": "Измените исходный код",
+			"eng": "Modify the source code"
+		},{
+			"rus": "Грант сублицензии изменять и распространять Bootstrap третьим лицам, не включенных в лицензии",
+			"eng": "Grant a sublicense to modify and distribute Bootstrap to third parties not included in the license"
+		},{
+			"rus": "Держите авторов и владельцев лицензий несет ответственности за ущерб, как Bootstrap предоставляется без гарантии",
+			"eng": "Hold the authors and license owners liable for damages as Bootstrap is provided without warranty"
+		},{
+			"rus": "Держите создателей или владельцев авторских прав к ответственности Bootstrap",
+			"eng": "Hold the creators or copyright holders of Bootstrap liable"
+		},{
+			"rus": "Распространять любую часть Bootstrap без ссылки на источник",
+			"eng": "Redistribute any piece of Bootstrap without proper attribution"
+		},{
+			"rus": "Использовать любые пометки, которые относятся к Twitter, чтобы в такой способ явно или неявно продемонстрировал, что Twitter одобряет ваш дистрибутив",
+			"eng": "Use any marks owned by Twitter in any way that might state or imply that Twitter endorses your distribution"
+		},{
+			"rus": "Использовать любые пометки, которые относятся к Twitter, чтобы в такой способ явно или неявно продемонстрировал будто вы создаете программное обеспечение по запросу Twitter",
+			"eng": "Use any marks owned by Twitter in any way that might state or imply that you created the Twitter software in question"
+		},{
+			"rus": "Включает в себя исходный код Bootstrap, или о любых изменениях, которые вы сделали с ним, можно собирать в другие дистрибутивы то, что он включает в себя",
+			"eng": "Include the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it"
+		},{
+			"rus": "Предоставлять изменения, которые вы внесли в Bootstrap для демонстрации в проекте Bootstrap (хотя обратная связь приветствуется)",
+			"eng": "Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)"
+		}
+	]
+}

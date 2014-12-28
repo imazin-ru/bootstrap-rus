@@ -1,0 +1,98 @@
+{
+	"h": [
+		{
+			"rus": "Обзор",
+			"eng": "Overview"
+		},{
+			"rus": "Индивидуально или сборником",
+			"eng": "Individual or compiled"
+		},{
+			"rus": "Атрибуты данных",
+			"eng": "Data attributes"
+		},{
+			"rus": "Программный API",
+			"eng": "Programmatic API"
+		},{
+			"rus": "Без конфликта",
+			"eng": "No conflict"
+		},{
+			"rus": "События",
+			"eng": "Events"
+		},{
+			"rus": "No special fallbacks when JavaScript is disabled",
+			"eng": "No special fallbacks when JavaScript is disabled"
+		},{
+			"rus": "Используя скомпилированный JavaScript",
+			"eng": "Using the compiled JavaScript"
+		},{
+			"rus": "Зависимость плагина",
+			"eng": "Plugin dependencies"
+		},{
+			"rus": "Only one plugin per element via data attributes",
+			"eng": "Only one plugin per element via data attributes"
+		},{
+			"rus": "Default settings",
+			"eng": "Default settings"
+		},{
+			"rus": "Библиотеки третьих сторон",
+			"eng": "Third-party libraries"
+		}
+	],
+	"p": [
+		{
+			"rus": "Плагины могут подключаться отдельно (используя отдельные файлы Bootstrap <code>*.js<\/code>), или все за один раз (используя <code>bootstrap.js<\/code> или минимизированы <code>bootstrap.min.js<\/code>).",
+			"eng": "Plugins can be included individually (using Bootstrap's individual <code>*.js<\/code> files), or all at once (using <code>bootstrap.js<\/code> or the minified <code>bootstrap.min.js<\/code>)."
+		},{
+			"rus": "<code>bootstrap.js<\/code> и <code>bootstrap.min.js<\/code> оба содержат все плагины в одном файле. Подключать только один.",
+			"eng": "Both <code>bootstrap.js<\/code> and <code>bootstrap.min.js<\/code> contain all plugins in a single file. Include only one."
+		},{
+			"rus": "Некоторые плагины и CSS и их компоненты имеют зависимость от других плагинов. Если вы включаете плагины отдельно, просмотрите их документацию, чтобы убедиться, что вы учли их зависимость. Также заметьте, что все плагины зависят от jQuery (это означает, что jQuery должен подключаться <strong>перед<\/strong> файлами плагинов). <a href=\"{{ site.repo }}\/blob\/v{{ site.current_version }}\/bower.json\">Просмотрите наш файл <code>bower.json<\/code><\/a>, чтобы узнать какая версия jQuery поддерживается.",
+			"eng": "Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before<\/strong> the plugin files). <a href=\"{{ site.repo }}\/blob\/v{{ site.current_version }}\/bower.json\">Consult our <code>bower.json<\/code><\/a> to see which versions of jQuery are supported."
+		},{
+			"rus": "Вы можете использовать все Bootstrap плагины исключительно на основе разметки API, без необходимости писать код на JavaScript. Это является первоочередной API класс для Bootstrap и должен рассматриваться в первую очередь при использовании плагинов.",
+			"eng": "You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin."
+		},{
+			"rus": "Тем не менее, в некоторых ситуациях может быть желанным отключения этой функции. Таким образом, мы также предоставляем возможность отключить API-атрибуты, через отвязке всех событий в пространстве имен (namespaced) документа, при помощи <code>data api<\/code>. Это выглядит примерно так:",
+			"eng": "That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api<\/code>. This looks like this:"
+		},{
+			"rus": "Также вы можете направить выстрела на определенный плагин, просто включив имя плагина рядом с пространством имен data api, как в примере:",
+			"eng": "Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:"
+		},{
+			"rus": "Не используйте атрибуты данных из нескольких плагинов, в том же элементе. Например, кнопка не может одновременно иметь подсказку и переключения модали. Для этого следует использовать поверх элементы.",
+			"eng": "Don't use data attributes from multiple plugins on the same element. For example, a button cannot both have a tooltip and toggle a modal. To accomplish this, use a wrapping element."
+		},{
+			"rus": "Мы также считаем, что вы должны иметь возможность использовать все плагины Bootstrap чисто на JavaScript API. <span title=\"All public APIs are single, chainable methods, and return the collection acted upon.\">Все публичные API являются одиночными, но их методы могут последовательно связываться и возвращать готовый набор для применения.<\/span>",
+			"eng": "We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon."
+		},{
+			"rus": "Все методы должны принимать в качестве необязательного параметра или объект, или строка, который нацелен на конкретный метод, или ничего (и таким образом просто инициализировать плагин с поведением по умолчанию):",
+			"eng": "All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):"
+		},{
+			"rus": "Каждый плагин также публикует свой собственный конструктор в свойства <code>Constructor<\/code>: <code>$.fn.popover.Constructor<\/code>. Если вы хотите получить конкретный экземпляр плагина, загружайте его непосредственно из элемента: <code>$('[rel=\"popover\"]').data('popover')<\/code>.",
+			"eng": "Each plugin also exposes its raw constructor on a <code>Constructor<\/code> property: <code>$.fn.popover.Constructor<\/code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=\"popover\"]').data('popover')<\/code>."
+		},{
+			"rus": "You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS<\/code> object:",
+			"eng": "You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS<\/code> object:"
+		},{
+			"rus": "\n{% highlight js %}\n$.fn.modal.Constructor.DEFAULTS.keyboard = false \/\/ changes default for the modal plugin's `keyboard` option to false\n{% endhighlight %}\n\n  <h3 id=\"js-noconflict\">Без конфликта<\/h3>\n  ",
+			"eng": "\n{% highlight js %}\n$.fn.modal.Constructor.DEFAULTS.keyboard = false \/\/ changes default for the modal plugin's `keyboard` option to false\n{% endhighlight %}\n\n  <h3 id=\"js-noconflict\">Без конфликта<\/h3>\n  "
+		},{
+			"rus": "Иногда необходимо использовать плагины Bootstrap с другими UI фрейморками. В таком случае иногда могут пересекаться их пространства имен. Если такое случается, вы можете вызвать <code>.noConflict<\/code> в том плагине, который должен вернуть прежнее значение.",
+			"eng": "Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict<\/code> on the plugin you wish to revert the value of."
+		},{
+			"rus": "Bootstrap предоставляет пользовательские события для большинства уникальных действий плагина. Как правило, они идут в форме инфинитива или причастия - причем инфинитив (например, <code>show<\/code>) срабатывает в начале события, а форма причастия (например, <code>shown<\/code>) срабатывает по завершению действия.",
+			"eng": "Bootstrap provides custom events for most plugins' unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show<\/code>) is triggered at the start of an event, and its past participle form (ex. <code>shown<\/code>) is triggered on the completion of an action."
+		},{
+			"rus": "По состоянию на 3.0.0, все события Bootstrap с именованными пространствами.",
+			"eng": "As of 3.0.0, all Bootstrap events are namespaced."
+		},{
+			"rus": "Все события в \u0456нф\u0456н\u0456тив\u0456 предоставляют <code>preventDefault<\/code> функциональность. Это дает возможность останавливать выполнение действий перед стартом.",
+			"eng": "All infinitive events provide <code>preventDefault<\/code> functionality. This provides the ability to stop the execution of an action before it starts."
+		},{
+			"rus": "Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML\/Element\/noscript\"><code>&lt;noscript&gt;<\/code><\/a> to explain the situation (and how to re-enable JavaScript) to your users, and\/or add your own custom fallbacks.",
+			"eng": "Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href=\"https:\/\/developer.mozilla.org\/en-US\/docs\/Web\/HTML\/Element\/noscript\"><code>&lt;noscript&gt;<\/code><\/a> to explain the situation (and how to re-enable JavaScript) to your users, and\/or add your own custom fallbacks."
+		},{
+			"rus": "<strong>Bootstrap неофициально поддерживает библиотеки JavaScript третьих сторон<\/strong>, такие как Prototype или jQuery UI. Несмотря на то, что мы предоставляем <code>.noConflict<\/code> и события с именованными пространствами, все равно могут быть проблемы совместимости, которые вам придется исправлять собственноручно.",
+			"eng": "<strong>Bootstrap does not officially support third-party JavaScript libraries<\/strong> like Prototype or jQuery UI. Despite <code>.noConflict<\/code> and namespaced events, there may be compatibility problems that you need to fix on your own."
+		}
+	]
+}

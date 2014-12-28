@@ -1,0 +1,65 @@
+{
+	"h": [
+		{
+			"rus": "Индикатор выполнения",
+			"eng": "Progress bars"
+		},{
+			"rus": "Основной пример",
+			"eng": "Basic example"
+		},{
+			"rus": "С меткой",
+			"eng": "With label"
+		},{
+			"rus": "Контекстные альтернативы",
+			"eng": "Contextual alternatives"
+		},{
+			"rus": "Полосатый индикатор",
+			"eng": "Striped"
+		},{
+			"rus": "Индикатор с анимацией",
+			"eng": "Animated"
+		},{
+			"rus": "Сводный индикатор",
+			"eng": "Stacked"
+		},{
+			"rus": "Кросс-браузерная совместимость",
+			"eng": "Cross-browser compatibility"
+		}
+	],
+	"p": [
+		{
+			"rus": "Предоставьте актуальные сведения о ходе рабочего процесса или действия, с помощью простого но гибкого индикатора выполнения.",
+			"eng": "Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars."
+		},{
+			"rus": "Индикатор выполнения использует переходы и анимацию CSS3 для обеспечения определенных эффектов. Эти функции не поддерживаются в Internet Explorer 9 и старше, или в старых версиях Firefox. Opera 12 не поддерживает анимации.",
+			"eng": "Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations."
+		},{
+			"rus": "Индикатор выполнения по умолчанию.",
+			"eng": "Default progress bar."
+		},{
+			"rus": "Remove the <code>&lt;span&gt;<\/code> with <code>.sr-only<\/code> class from within the progress bar to show a visible percentage.",
+			"eng": "Remove the <code>&lt;span&gt;<\/code> with <code>.sr-only<\/code> class from within the progress bar to show a visible percentage."
+		},{
+			"rus": "To ensure that the label text remains legible even for low percentages, consider adding a <code>min-width<\/code> to the progress bar.",
+			"eng": "To ensure that the label text remains legible even for low percentages, consider adding a <code>min-width<\/code> to the progress bar."
+		},{
+			"rus": "Индикатор выполнения в различных вариантах использует некоторые одинаковые кнопки и классы замечаний для согласования стилей.",
+			"eng": "Progress bars use some of the same button and alert classes for consistent styles."
+		},{
+			"rus": "Используйте градиент для создания полосатого эффекта. Это является недоступным в IE8.",
+			"eng": "Uses a gradient to create a striped effect. Not available in IE8."
+		},{
+			"rus": "Добавьте <code>.active<\/code> к <code>.progress-bar-striped<\/code> для анимации левой или правой полосатости. Это является недоступным в IE9 и ниже.",
+			"eng": "Add <code>.active<\/code> to <code>.progress-bar-striped<\/code> to animate the stripes right to left. Not available in IE9 and below."
+		},{
+			"rus": "Расположите нескольких экземпляров индикатора в одном контейнере с классом <code>.progress<\/code> для демонстрации сводного результата.",
+			"eng": "Place multiple bars into the same <code>.progress<\/code> to stack them."
+		}
+	],
+	"button": [
+		{
+			"rus": "Toggle animation",
+			"eng": "Toggle animation"
+		}
+	]
+}

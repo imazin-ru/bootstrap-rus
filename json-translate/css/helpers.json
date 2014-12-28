@@ -1,0 +1,131 @@
+{
+	"h": [
+		{
+			"rus": "Вспомогательные классы",
+			"eng": "Helper classes"
+		},{
+			"rus": "Пользовательский заголовок",
+			"eng": "Custom heading"
+		},{
+			"rus": "Значки закрытия",
+			"eng": "Contextual colors"
+		},{
+			"rus": "Значек меню",
+			"eng": "Contextual backgrounds"
+		},{
+			"rus": "Значки закрытия",
+			"eng": "Close icon"
+		},{
+			"rus": "Значек меню",
+			"eng": "Carets"
+		},{
+			"rus": "Быстрое выравнивание",
+			"eng": "Quick floats"
+		},{
+			"rus": "Центровка содержимого блоков",
+			"eng": "Center content blocks"
+		},{
+			"rus": "Clearfix",
+			"eng": "Clearfix"
+		},{
+			"rus": "Отображения и скрытия содержимого",
+			"eng": "Showing and hiding content"
+		},{
+			"rus": "Для чтения с экрана и клавиатуры содержание навигации",
+			"eng": "Screen reader and keyboard navigation content"
+		},{
+			"rus": "Замещение изображений",
+			"eng": "Image replacement"
+		},{
+			"rus": "Работа со спецификой",
+			"eng": "Dealing with specificity"
+		},{
+			"rus": "Conveying meaning to assistive technologies",
+			"eng": "Conveying meaning to assistive technologies"
+		},{
+			"rus": "Не использовать в Navbars",
+			"eng": "Not for use in navbars"
+		}
+	],
+	"p": [
+		{
+			"rus": "Передайте значение через цвет с использованием нескольких вспомогательных классов. Они также могут быть применены к ссылкам и потемнеют при наведении так же, как наши стили ссылок по умолчанию.",
+			"eng": "Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles."
+		},{
+			"rus": "Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.",
+			"eng": "Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh."
+		},{
+			"rus": "Nullam id dolor id nibh ultricies vehicula ut id elit.",
+			"eng": "Nullam id dolor id nibh ultricies vehicula ut id elit."
+		},{
+			"rus": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
+			"eng": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula."
+		},{
+			"rus": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+			"eng": "Maecenas sed diam eget risus varius blandit sit amet non magna."
+		},{
+			"rus": "Etiam porta sem malesuada magna mollis euismod.",
+			"eng": "Etiam porta sem malesuada magna mollis euismod."
+		},{
+			"rus": "Donec ullamcorper nulla non metus auctor fringilla.",
+			"eng": "Donec ullamcorper nulla non metus auctor fringilla."
+		},{
+			"rus": "Иногда акцент класса не может быть применен в силу специфики другого селектора. В большинстве случаев, необходимо заключить текст в <code>&lt;span&gt;<\/code> с классом.",
+			"eng": "Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a <code>&lt;span&gt;<\/code> with the class."
+		},{
+			"rus": "Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text\/markup), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class.",
+			"eng": "Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies \u2013 such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text\/markup), or is included through alternative means, such as additional text hidden with the <code>.sr-only<\/code> class."
+		},{
+			"rus": "Как и цвет текста контекстных классов, легко устанавливать фон элемента к любому контекстному классу. Якорные компоненты будут темнеть при наведении, как и текстовые классы.",
+			"eng": "Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes."
+		},{
+			"rus": "Иногда контекстные фоновые классы не могут быть применены в силу специфики другого селектора. В большинстве случаев, необходимо заключить текст в <code>&lt;span&gt;<\/code> с классом.",
+			"eng": "Sometimes contextual background classes cannot be applied due to the specificity of another selector. In some cases, a sufficient workaround is to wrap your element's content in a <code>&lt;div&gt;<\/code> with the class."
+		},{
+			"rus": "As with <a href=\"#helper-classes-colors\">contextual colors<\/a>, ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.",
+			"eng": "As with <a href=\"#helper-classes-colors\">contextual colors<\/a>, ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational."
+		},{
+			"rus": "Используйте общий значок закрытия для модальных окон или замечаний.",
+			"eng": "Use the generic close icon for dismissing content like modals and alerts."
+		},{
+			"rus": "<button type=\"button\" class=\"close\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;<\/span><\/button>",
+			"eng": "<button type=\"button\" class=\"close\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;<\/span><\/button>"
+		},{
+			"rus": "Используйте каретку, чтобы указать выпадающую функциональность и направление. Обратите внимание, что курсор по умолчанию автоматически изменится в <a href=\"..\/components\/#btn-dropdowns-dropup\"> dropup меню <\/a>.",
+			"eng": "Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href=\"..\/components\/#btn-dropdowns-dropup\">dropup menus<\/a>."
+		},{
+			"rus": "Выравнивайте элементы слева или справа, с помощью соответствующих классов. Включено <code>!important<\/code>, чтобы избежать некоторых проблем. Классы также могут использоваться в качестве mixins.",
+			"eng": "Float an element to the left or right with a class. <code>!important<\/code> is included to avoid specificity issues. Classes can also be used as mixins."
+		},{
+			"rus": "Чтобы выровнять компоненты с вспомогательными классами в навигационных панелях, используйте <code>.navbar-left<\/code> или <code>.navbar-right<\/code>. <a href=\"..\/components\/#navbar-component-alignment\">Просмотрите документацию навигационных панелей<\/a> для уточнений.",
+			"eng": "To align components in navbars with utility classes, use <code>.navbar-left<\/code> or <code>.navbar-right<\/code> instead. <a href=\"..\/components\/#navbar-component-alignment\">See the navbar docs<\/a> for details."
+		},{
+			"rus": "Установите для элемента блочное отображения через <code>display: block<\/code>, и отражение по центру через <code>margin<\/code>. Такая установка является доступной в качестве класса и реализован.",
+			"eng": "Set an element to <code>display: block<\/code> and center via <code>margin<\/code>. Available as a mixin and class."
+		},{
+			"rus": "Просто <code>float<\/code> с добавлением <code>.clearfix<\/code> <strong>родительский элемент<\/strong>. Здесь используется <a href=\"http:\/\/nicolasgallagher.com\/micro-clearfix-hack\/\" target=\"_blank\">the micro clearfix<\/a>, предоставленный Nicolas Gallagher. Это также может применяться в качестве реализован.",
+			"eng": "Easily clear <code>float<\/code>s by adding <code>.clearfix<\/code> <strong>to the parent element<\/strong>. Utilizes <a href=\"http:\/\/nicolasgallagher.com\/micro-clearfix-hack\/\">the micro clearfix<\/a> as popularized by Nicolas Gallagher. Can also be used as a mixin."
+		},{
+			"rus": "Чтобы скрыть или отобразить элемент, <strong>в том числе, для программ чтения с экрана<\/strong>, используйте классы <code>.show<\/code> и <code>.hidden<\/code>. Эти классы используют <code>!important<\/code>, чтобы избежать специфических конфликтов, подобно <a href=\"#helper-classes-floats\">быстрому выравниванию<\/a>. Они являются доступными для блочного уровня переключения. Они также могут использоваться в качестве mixins.",
+			"eng": "Force an element to be shown or hidden (<strong>including for screen readers<\/strong>) with the use of <code>.show<\/code> and <code>.hidden<\/code> classes. These classes use <code>!important<\/code> to avoid specificity conflicts, just like the <a href=\"#helper-classes-floats\">quick floats<\/a>. They are only available for block level toggling. They can also be used as mixins."
+		},{
+			"rus": "Класс <code>.hide<\/code> является доступным, но он не всегда обрабатывается программами чтения экранов и является <strong>устаревшим<\/strong> начиная с v3.0.1. Используйте вместо него класс <code>.hidden<\/code> или <code>.sr-only<\/code>.",
+			"eng": "<code>.hide<\/code> is available, but it does not always affect screen readers and is <strong>deprecated<\/strong> as of v3.0.1. Use <code>.hidden<\/code> or <code>.sr-only<\/code> instead."
+		},{
+			"rus": "Кроме этого, <code>.invisible<\/code> может использоваться для переключения лишь видимости элемента, то есть его <code>display<\/code> не изменен, и этот элемент все еще может влиять на работу документа.",
+			"eng": "Furthermore, <code>.invisible<\/code> can be used to toggle only the visibility of an element, meaning its <code>display<\/code> is not modified and the element can still affect the flow of the document."
+		},{
+			"rus": "Скрыть элемент на всех устройствах <strong>except screen readers<\/strong> c <code>.sr-only<\/code>. Объединить <code>.sr-only<\/code> с <code>.sr-only-focusable<\/code> чтобы показать элемент снова, когда он сосредоточены (например, с помощью клавиатуры-только пользователь).  Необходимые для следующих.<a href=\"..\/getting-started\/#accessibility\">accessibility best practices<\/a>. Может также использоваться как Mixins.",
+			"eng": "Hide an element to all devices <strong>except screen readers<\/strong> with <code>.sr-only<\/code>. Combine <code>.sr-only<\/code> with <code>.sr-only-focusable<\/code> to show the element again when it's focused (e.g. by a keyboard-only user). Necessary for following <a href=\"..\/getting-started\/#accessibility\">accessibility best practices<\/a>. Can also be used as mixins."
+		},{
+			"rus": "Применяйте класс <code>.text-hide<\/code> или реализован для замены текстового элемента контента фоновым изображением.",
+			"eng": "Utilize the <code>.text-hide<\/code> class or mixin to help replace an element's text content with a background image."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Использование как класс -->",
+			"eng": "<!-- Usage as a class -->"
+		}
+	]
+}

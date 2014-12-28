@@ -1,0 +1,653 @@
+{
+	"title": [
+		{
+			"rus": "title: Переход на v3.x",
+			"eng": "title: Migrating to v3.x"
+		}
+	],
+	"lead": [
+		{
+			"rus": "lead: \"Руководство о том, как обновить Bootstrap v2.x в v3.x с акцентом на основных изменений, что нового, и то, что было удалено.\"",
+			"eng": "lead: \"Guidance on how to upgrade from Bootstrap v2.x to v3.x with emphasis on major changes, what's new, and what's been removed.\""
+		}
+	],
+	"h": [
+		{
+			"rus": "Переход с версии 2.x на 3.0",
+			"eng": "Migrating from 2.x to 3.0"
+		},{
+			"rus": "Основные изменения классов",
+			"eng": "Major class changes"
+		},{
+			"rus": "Что нового",
+			"eng": "What's new"
+		},{
+			"rus": "Что удалено",
+			"eng": "What's removed"
+		},{
+			"rus": "Дополнительные примечания",
+			"eng": "Additional notes"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap 3 нет обратной совместимости с версии v2.x. Используйте данное описание как основной путеводитель миграции с v2.x к v3.0. Для более детального ознакомления просмотрите объявления релиза <a href=\"http:\/\/blog.getbootstrap.com\/2013\/08\/19\/bootstrap-3-released\/\" target=\"_blank\">что нового<\/a> в v3.0.",
+			"eng": "Bootstrap 3 is not backwards compatible with v2.x. Use this section as a general guide to upgrading from v2.x to v3.0. For a broader overview, see <a href=\"http:\/\/blog.getbootstrap.com\/2013\/08\/19\/bootstrap-3-released\/\">what's new<\/a> in the v3.0 release announcement."
+		},{
+			"rus": "В этой таблице показаны различия стилей между v2.x и v3.0.",
+			"eng": "This table shows the style changes between v2.x and v3.0."
+		},{
+			"rus": "Мы добавили новые элементы и изменили существующие. Здесь продемонстрированы новые или обновленные стили.",
+			"eng": "We've added new elements and changed some existing ones. Here are the new or updated styles."
+		},{
+			"rus": "Следующие элементы были удалены или изменены в v3.0.",
+			"eng": "The following elements have been dropped or changed in v3.0."
+		},{
+			"rus": "Другие изменения в v3.0 не столь очевидны. Базовые классы, основные стили поведения были скорректированы для гибкости и нашего подхода <em>в первую очередь для мобильных устройств<\/em>. Вот неполный список:",
+			"eng": "Other changes in v3.0 are not immediately apparent. Base classes, key styles, and behaviors have been adjusted for flexibility and our <em>mobile first<\/em> approach. Here's a partial list:"
+		},{
+			"rus": "Более подробную информацию о апгрейда до v3.0 смотрите на <a href=\"http:\/\/bootply.com\/\" target=\"_blank\">Bootply<\/a>, где участники обсуждений преподают также и части кода.",
+			"eng": "For more information on upgrading to v3.0, and code snippets from the community, see <a href=\"http:\/\/bootply.com\/\">Bootply<\/a>."
+		}
+	],
+	"li": [
+		{
+			"rus": "По умолчанию текстовые элементы управления формы теперь получают минимальный стиль. Для управления цветом фокуса и закругленными углами применяйте класс <code>.form-control<\/code>.",
+			"eng": "By default, text-based form controls now receive only minimal styling.  For focus colors and rounded corners, apply the <code>.form-control<\/code> class on the element to style."
+		},{
+			"rus": "Текстовые элементы управления формы с классом <code>.form-control<\/code> теперь по умолчанию имеют ширину со значением 100%. Вкладывайте формы ввода в середину <code>&lt;div class=\"col-*\"&gt;&lt;\/div&gt;<\/code> для управления их шириной.",
+			"eng": "Text-based form controls with the <code>.form-control<\/code> class applied are now 100% wide by default. Wrap inputs inside <code>&lt;div class=\"col-*\"&gt;&lt;\/div&gt;<\/code> to control input widths."
+		},{
+			"rus": "<code>.badge<\/code> больше нет контекстных классов (-success,-primary,и т.д.).",
+			"eng": "<code>.badge<\/code> no longer has contextual (-success,-primary,etc..) classes."
+		},{
+			"rus": "<code>.btn<\/code> должен также использовать <code>.btn-default<\/code>, чтобы создать кнопку по умолчанию.",
+			"eng": "<code>.btn<\/code> must also use <code>.btn-default<\/code> to get the \"default\" button."
+		},{
+			"rus": "<code>.row<\/code> сейчас флюид.",
+			"eng": "<code>.row<\/code> is now fluid."
+		},{
+			"rus": "Изображения неадаптивны по умолчанию. Используйте <code>.img-responsive<\/code>, для тягучести <code>&lt;img&gt;<\/code>.",
+			"eng": "Images are no longer responsive by default. Use <code>.img-responsive<\/code> for fluid <code>&lt;img&gt;<\/code> size."
+		},{
+			"rus": "Теперь иконки <code>.glyphicon<\/code> базируются на шрифтах. Иконкам также необходимые базовые и специальные классы (например, <code>.glyphicon .glyphicon-asterisk<\/code>).",
+			"eng": "The icons, now <code>.glyphicon<\/code>, are now font based. Icons also require a base and icon class (e.g. <code>.glyphicon .glyphicon-asterisk<\/code>)."
+		},{
+			"rus": "Typeahead было удалено, на пользу <a href=\"http:\/\/twitter.github.io\/typeahead.js\/\" target=\"_blank\">Twitter Typeahead<\/a>.",
+			"eng": "Typeahead has been dropped, in favor of using <a href=\"http:\/\/twitter.github.io\/typeahead.js\/\">Twitter Typeahead<\/a>."
+		},{
+			"rus": "Модальные разметки существенно изменились. Это <code>.modal-header<\/code>, <code>.modal-body<\/code>, и <code>.modal-footer<\/code> разделы теперь завернутые в <code>.modal-content<\/code> и <code>.modal-dialog<\/code> для лучшего мобильного стиля и поведения. Кроме того, вы не должны больше применяться <code>.hide<\/code> to <code>.modal<\/code> в разметке.",
+			"eng": "Modal markup has changed significantly. The <code>.modal-header<\/code>, <code>.modal-body<\/code>, and <code>.modal-footer<\/code> sections are now wrapped in <code>.modal-content<\/code> and <code>.modal-dialog<\/code> for better mobile styling and behavior. Also, you should no longer apply <code>.hide<\/code> to <code>.modal<\/code> in your markup."
+		},{
+			"rus": "По состоянию на v3.1.0, HTML загружается <code>remote<\/code> Опция модальная теперь вводится в<code>.modal-content<\/code> (от v3.0.0 до v3.0.3, в <code>.modal<\/code>) а не в <code>.modal-body<\/code>. Это позволяет также легко изменять верхний и нижний колонтитулы модального, а не только модальное тело.",
+			"eng": "As of v3.1.0, the HTML loaded by the <code>remote<\/code> modal option is now injected into the <code>.modal-content<\/code> (from v3.0.0 to v3.0.3, into the <code>.modal<\/code>) instead of into the <code>.modal-body<\/code>. This allows you to also easily vary the header and footer of the modal, not just the modal body."
+		},{
+			"rus": "Флажок и радио особенности button.js плагин теперь оба использование <code>data-toggle=\"buttons\"<\/code> вместо того, чтобы <code>data-toggle=\"buttons-checkbox\"<\/code> или <code>data-toggle=\"buttons-radio\"<\/code> в их разметке.",
+			"eng": "The checkbox and radio features of the button.js plugin now both use <code>data-toggle=\"buttons\"<\/code> instead of <code>data-toggle=\"buttons-checkbox\"<\/code> or <code>data-toggle=\"buttons-radio\"<\/code> in their markup."
+		},{
+			"rus": "JavaScript события имеют пространства имен (namespaced). Например, чтобы обработать событие \"show\" в модал\u0456, используйте <code>'show.bs.modal'<\/code>. Для закладок \"shown\" используйте <code>'shown.bs.tab'<\/code>, и т.д.",
+			"eng": "JavaScript events are namespaced. For example, to handle the modal \"show\" event, use <code>'show.bs.modal'<\/code>. For tabs \"shown\" use <code>'shown.bs.tab'<\/code>, etc."
+		}
+	],
+	"th": [
+		{
+			"rus": "Bootstrap 2.x",
+			"eng": "Bootstrap 2.x"
+		},{
+			"rus": "Bootstrap 3.0",
+			"eng": "Bootstrap 3.0"
+		},{
+			"rus": "Элемент",
+			"eng": "Element"
+		},{
+			"rus": "Описание",
+			"eng": "Description"
+		},{
+			"rus": "Удалено из 2.x",
+			"eng": "Removed from 2.x"
+		},{
+			"rus": "3.0 Эквивалент",
+			"eng": "3.0 Equivalent"
+		}
+	],
+	"td": [
+		{
+			"rus": "<code>.row-fluid<\/code>",
+			"eng": "<code>.row-fluid<\/code>"
+		},{
+			"rus": "<code>.row<\/code>",
+			"eng": "<code>.row<\/code>"
+		},{
+			"rus": "<code>.span*<\/code>",
+			"eng": "<code>.span*<\/code>"
+		},{
+			"rus": "<code>.col-md-*<\/code>",
+			"eng": "<code>.col-md-*<\/code>"
+		},{
+			"rus": "<code>.offset*<\/code>",
+			"eng": "<code>.offset*<\/code>"
+		},{
+			"rus": "<code>.col-md-offset-*<\/code>",
+			"eng": "<code>.col-md-offset-*<\/code>"
+		},{
+			"rus": "<code>.brand<\/code>",
+			"eng": "<code>.brand<\/code>"
+		},{
+			"rus": "<code>.navbar-brand<\/code>",
+			"eng": "<code>.navbar-brand<\/code>"
+		},{
+			"rus": "<code>.navbar .nav<\/code>",
+			"eng": "<code>.navbar .nav<\/code>"
+		},{
+			"rus": "<code>.navbar-nav<\/code>",
+			"eng": "<code>.navbar-nav<\/code>"
+		},{
+			"rus": "<code>.nav-collapse<\/code>",
+			"eng": "<code>.nav-collapse<\/code>"
+		},{
+			"rus": "<code>.navbar-collapse<\/code>",
+			"eng": "<code>.navbar-collapse<\/code>"
+		},{
+			"rus": "<code>.nav-toggle<\/code>",
+			"eng": "<code>.nav-toggle<\/code>"
+		},{
+			"rus": "<code>.navbar-toggle<\/code>",
+			"eng": "<code>.navbar-toggle<\/code>"
+		},{
+			"rus": "<code>.btn-navbar<\/code>",
+			"eng": "<code>.btn-navbar<\/code>"
+		},{
+			"rus": "<code>.navbar-btn<\/code>",
+			"eng": "<code>.navbar-btn<\/code>"
+		},{
+			"rus": "<code>.hero-unit<\/code>",
+			"eng": "<code>.hero-unit<\/code>"
+		},{
+			"rus": "<code>.jumbotron<\/code>",
+			"eng": "<code>.jumbotron<\/code>"
+		},{
+			"rus": "<code>.icon-*<\/code>",
+			"eng": "<code>.icon-*<\/code>"
+		},{
+			"rus": "<code>.glyphicon .glyphicon-*<\/code>",
+			"eng": "<code>.glyphicon .glyphicon-*<\/code>"
+		},{
+			"rus": "<code>.btn<\/code>",
+			"eng": "<code>.btn<\/code>"
+		},{
+			"rus": "<code>.btn .btn-default<\/code>",
+			"eng": "<code>.btn .btn-default<\/code>"
+		},{
+			"rus": "<code>.btn-mini<\/code>",
+			"eng": "<code>.btn-mini<\/code>"
+		},{
+			"rus": "<code>.btn-xs<\/code>",
+			"eng": "<code>.btn-xs<\/code>"
+		},{
+			"rus": "<code>.btn-small<\/code>",
+			"eng": "<code>.btn-small<\/code>"
+		},{
+			"rus": "<code>.btn-sm<\/code>",
+			"eng": "<code>.btn-sm<\/code>"
+		},{
+			"rus": "<code>.btn-large<\/code>",
+			"eng": "<code>.btn-large<\/code>"
+		},{
+			"rus": "<code>.btn-lg<\/code>",
+			"eng": "<code>.btn-lg<\/code>"
+		},{
+			"rus": "<code>.alert-error<\/code>",
+			"eng": "<code>.alert-error<\/code>"
+		},{
+			"rus": "<code>.alert-danger<\/code>",
+			"eng": "<code>.alert-danger<\/code>"
+		},{
+			"rus": "<code>.visible-phone<\/code>",
+			"eng": "<code>.visible-phone<\/code>"
+		},{
+			"rus": "<code>.visible-xs<\/code>",
+			"eng": "<code>.visible-xs<\/code>"
+		},{
+			"rus": "<code>.visible-tablet<\/code>",
+			"eng": "<code>.visible-tablet<\/code>"
+		},{
+			"rus": "<code>.visible-sm<\/code>",
+			"eng": "<code>.visible-sm<\/code>"
+		},{
+			"rus": "<code>.visible-desktop<\/code>",
+			"eng": "<code>.visible-desktop<\/code>"
+		},{
+			"rus": "Разделен на <code>.visible-md .visible-lg<\/code>",
+			"eng": "Split into <code>.visible-md .visible-lg<\/code>"
+		},{
+			"rus": "<code>.hidden-phone<\/code>",
+			"eng": "<code>.hidden-phone<\/code>"
+		},{
+			"rus": "<code>.hidden-xs<\/code>",
+			"eng": "<code>.hidden-xs<\/code>"
+		},{
+			"rus": "<code>.hidden-tablet<\/code>",
+			"eng": "<code>.hidden-tablet<\/code>"
+		},{
+			"rus": "<code>.hidden-sm<\/code>",
+			"eng": "<code>.hidden-sm<\/code>"
+		},{
+			"rus": "<code>.hidden-desktop<\/code>",
+			"eng": "<code>.hidden-desktop<\/code>"
+		},{
+			"rus": "Разделен на <code>.hidden-md .hidden-lg<\/code>",
+			"eng": "Split into <code>.hidden-md .hidden-lg<\/code>"
+		},{
+			"rus": "<code>.input-block-level<\/code>",
+			"eng": "<code>.input-block-level<\/code>"
+		},{
+			"rus": "<code>.form-control<\/code>",
+			"eng": "<code>.form-control<\/code>"
+		},{
+			"rus": "<code>.control-group<\/code>",
+			"eng": "<code>.control-group<\/code>"
+		},{
+			"rus": "<code>.form-group<\/code>",
+			"eng": "<code>.form-group<\/code>"
+		},{
+			"rus": "<code>.control-group.warning .control-group.error .control-group.success<\/code>",
+			"eng": "<code>.control-group.warning .control-group.error .control-group.success<\/code>"
+		},{
+			"rus": "<code>.form-group.has-*<\/code>",
+			"eng": "<code>.form-group.has-*<\/code>"
+		},{
+			"rus": "<code>.checkbox.inline<\/code> <code>.radio.inline<\/code>",
+			"eng": "<code>.checkbox.inline<\/code> <code>.radio.inline<\/code>"
+		},{
+			"rus": "<code>.checkbox-inline<\/code> - <code>.radio-inline<\/code>",
+			"eng": "<code>.checkbox-inline<\/code> <code>.radio-inline<\/code>"
+		},{
+			"rus": "<code>.input-prepend<\/code> - <code>.input-append<\/code>",
+			"eng": "<code>.input-prepend<\/code> <code>.input-append<\/code>"
+		},{
+			"rus": "<code>.input-group<\/code>",
+			"eng": "<code>.input-group<\/code>"
+		},{
+			"rus": "<code>.add-on<\/code>",
+			"eng": "<code>.add-on<\/code>"
+		},{
+			"rus": "<code>.input-group-addon<\/code>",
+			"eng": "<code>.input-group-addon<\/code>"
+		},{
+			"rus": "<code>.img-polaroid<\/code>",
+			"eng": "<code>.img-polaroid<\/code>"
+		},{
+			"rus": "<code>.img-thumbnail<\/code>",
+			"eng": "<code>.img-thumbnail<\/code>"
+		},{
+			"rus": "<code>ul.unstyled<\/code>",
+			"eng": "<code>ul.unstyled<\/code>"
+		},{
+			"rus": "<code>.list-unstyled<\/code>",
+			"eng": "<code>.list-unstyled<\/code>"
+		},{
+			"rus": "<code>ul.inline<\/code>",
+			"eng": "<code>ul.inline<\/code>"
+		},{
+			"rus": "<code>.list-inline<\/code>",
+			"eng": "<code>.list-inline<\/code>"
+		},{
+			"rus": "<code>.muted<\/code>",
+			"eng": "<code>.muted<\/code>"
+		},{
+			"rus": "<code>.text-muted<\/code>",
+			"eng": "<code>.text-muted<\/code>"
+		},{
+			"rus": "<code>.label<\/code>",
+			"eng": "<code>.label<\/code>"
+		},{
+			"rus": "<code>.label .label-default<\/code>",
+			"eng": "<code>.label .label-default<\/code>"
+		},{
+			"rus": "<code>.label-important<\/code>",
+			"eng": "<code>.label-important<\/code>"
+		},{
+			"rus": "<code>.label-danger<\/code>",
+			"eng": "<code>.label-danger<\/code>"
+		},{
+			"rus": "<code>.text-error<\/code>",
+			"eng": "<code>.text-error<\/code>"
+		},{
+			"rus": "<code>.text-danger<\/code>",
+			"eng": "<code>.text-danger<\/code>"
+		},{
+			"rus": "<code>.table .error<\/code>",
+			"eng": "<code>.table .error<\/code>"
+		},{
+			"rus": "<code>.table .danger<\/code>",
+			"eng": "<code>.table .danger<\/code>"
+		},{
+			"rus": "<code>.bar<\/code>",
+			"eng": "<code>.bar<\/code>"
+		},{
+			"rus": "<code>.progress-bar<\/code>",
+			"eng": "<code>.progress-bar<\/code>"
+		},{
+			"rus": "<code>.bar-*<\/code>",
+			"eng": "<code>.bar-*<\/code>"
+		},{
+			"rus": "<code>.progress-bar-*<\/code>",
+			"eng": "<code>.progress-bar-*<\/code>"
+		},{
+			"rus": "<code>.accordion<\/code>",
+			"eng": "<code>.accordion<\/code>"
+		},{
+			"rus": "<code>.panel-group<\/code>",
+			"eng": "<code>.panel-group<\/code>"
+		},{
+			"rus": "<code>.accordion-group<\/code>",
+			"eng": "<code>.accordion-group<\/code>"
+		},{
+			"rus": "<code>.panel .panel-default<\/code>",
+			"eng": "<code>.panel .panel-default<\/code>"
+		},{
+			"rus": "<code>.accordion-heading<\/code>",
+			"eng": "<code>.accordion-heading<\/code>"
+		},{
+			"rus": "<code>.panel-heading<\/code>",
+			"eng": "<code>.panel-heading<\/code>"
+		},{
+			"rus": "<code>.accordion-body<\/code>",
+			"eng": "<code>.accordion-body<\/code>"
+		},{
+			"rus": "<code>.panel-collapse<\/code>",
+			"eng": "<code>.panel-collapse<\/code>"
+		},{
+			"rus": "<code>.accordion-inner<\/code>",
+			"eng": "<code>.accordion-inner<\/code>"
+		},{
+			"rus": "<code>.panel-body<\/code>",
+			"eng": "<code>.panel-body<\/code>"
+		},{
+			"rus": "Панели",
+			"eng": "Panels"
+		},{
+			"rus": "<code>.panel .panel-default<\/code> - <code>.panel-body<\/code> - <code>.panel-title<\/code> - <code>.panel-heading<\/code> - <code>.panel-footer<\/code> - <code>.panel-collapse<\/code>",
+			"eng": "<code>.panel .panel-default<\/code> <code>.panel-body<\/code> <code>.panel-title<\/code> <code>.panel-heading<\/code> <code>.panel-footer<\/code> <code>.panel-collapse<\/code>"
+		},{
+			"rus": "Список групп",
+			"eng": "List groups"
+		},{
+			"rus": "<code>.list-group<\/code> - <code>.list-group-item<\/code> - <code>.list-group-item-text<\/code> - <code>.list-group-item-heading<\/code>",
+			"eng": "<code>.list-group<\/code> <code>.list-group-item<\/code> <code>.list-group-item-text<\/code> <code>.list-group-item-heading<\/code>"
+		},{
+			"rus": "Значки символов",
+			"eng": "Glyphicons"
+		},{
+			"rus": "<code>.glyphicon<\/code>",
+			"eng": "<code>.glyphicon<\/code>"
+		},{
+			"rus": "Jumbotron",
+			"eng": "Jumbotron"
+		},{
+			"rus": "Очень маленькая сетка (&lt;768px)",
+			"eng": "Extra small grid (&lt;768px)"
+		},{
+			"rus": "<code>.col-xs-*<\/code>",
+			"eng": "<code>.col-xs-*<\/code>"
+		},{
+			"rus": "Small grid (&ge;768px)",
+			"eng": "Small grid (&ge;768px)"
+		},{
+			"rus": "<code>.col-sm-*<\/code>",
+			"eng": "<code>.col-sm-*<\/code>"
+		},{
+			"rus": "Medium grid (&ge;992px)",
+			"eng": "Medium grid (&ge;992px)"
+		},{
+			"rus": "Large grid (&ge;1200px)",
+			"eng": "Large grid (&ge;1200px)"
+		},{
+			"rus": "<code>.col-lg-*<\/code>",
+			"eng": "<code>.col-lg-*<\/code>"
+		},{
+			"rus": "Responsive utility classes (&ge;1200px)",
+			"eng": "Responsive utility classes (&ge;1200px)"
+		},{
+			"rus": "<code>.visible-lg<\/code> - <code>.hidden-lg<\/code>",
+			"eng": "<code>.visible-lg<\/code> <code>.hidden-lg<\/code>"
+		},{
+			"rus": "Смещение",
+			"eng": "Offsets"
+		},{
+			"rus": "<code>.col-sm-offset-*<\/code> - <code>.col-md-offset-*<\/code> - <code>.col-lg-offset-*<\/code>",
+			"eng": "<code>.col-sm-offset-*<\/code> <code>.col-md-offset-*<\/code> <code>.col-lg-offset-*<\/code>"
+		},{
+			"rus": "Push",
+			"eng": "Push"
+		},{
+			"rus": "<code>.col-sm-push-*<\/code> - <code>.col-md-push-*<\/code> - <code>.col-lg-push-*<\/code>",
+			"eng": "<code>.col-sm-push-*<\/code> <code>.col-md-push-*<\/code> <code>.col-lg-push-*<\/code>"
+		},{
+			"rus": "Pull",
+			"eng": "Pull"
+		},{
+			"rus": "<code>.col-sm-pull-*<\/code> <code>.col-md-pull-*<\/code> - <code>.col-lg-pull-*<\/code>",
+			"eng": "<code>.col-sm-pull-*<\/code> <code>.col-md-pull-*<\/code> <code>.col-lg-pull-*<\/code>"
+		},{
+			"rus": "Input height sizes",
+			"eng": "Input height sizes"
+		},{
+			"rus": "<code>.input-sm<\/code> <code>.input-lg<\/code>",
+			"eng": "<code>.input-sm<\/code> <code>.input-lg<\/code>"
+		},{
+			"rus": "Группа ввода",
+			"eng": "Input groups"
+		},{
+			"rus": "<code>.input-group<\/code> - <code>.input-group-addon<\/code> - <code>.input-group-btn<\/code>",
+			"eng": "<code>.input-group<\/code> <code>.input-group-addon<\/code> <code>.input-group-btn<\/code>"
+		},{
+			"rus": "Управление формой",
+			"eng": "Form controls"
+		},{
+			"rus": "<code>.form-control<\/code> - <code>.form-group<\/code>",
+			"eng": "<code>.form-control<\/code> <code>.form-group<\/code>"
+		},{
+			"rus": "Группа размеров кнопки",
+			"eng": "Button group sizes"
+		},{
+			"rus": "<code>.btn-group-xs<\/code> - <code>.btn-group-sm<\/code> - <code>.btn-group-lg<\/code>",
+			"eng": "<code>.btn-group-xs<\/code> <code>.btn-group-sm<\/code> <code>.btn-group-lg<\/code>"
+		},{
+			"rus": "Текст нав. меню",
+			"eng": "Navbar text"
+		},{
+			"rus": "<code>.navbar-text<\/code>",
+			"eng": "<code>.navbar-text<\/code>"
+		},{
+			"rus": "Заголовок нав. меню",
+			"eng": "Navbar header"
+		},{
+			"rus": "<code>.navbar-header<\/code>",
+			"eng": "<code>.navbar-header<\/code>"
+		},{
+			"rus": "Выравнивание вкладки \/ кнопки (pills)",
+			"eng": "Justified tabs \/ pills"
+		},{
+			"rus": "<code>.nav-justified<\/code>",
+			"eng": "<code>.nav-justified<\/code>"
+		},{
+			"rus": "Адаптивные картинки",
+			"eng": "Responsive images"
+		},{
+			"rus": "<code>.img-responsive<\/code>",
+			"eng": "<code>.img-responsive<\/code>"
+		},{
+			"rus": "Контекстные строки таблицы",
+			"eng": "Contextual table rows"
+		},{
+			"rus": "<code>.success<\/code> <code>.danger<\/code> <code>.warning<\/code> <code>.active<\/code> <code>.info<\/code>",
+			"eng": "<code>.success<\/code> <code>.danger<\/code> <code>.warning<\/code> <code>.active<\/code> <code>.info<\/code>"
+		},{
+			"rus": "Контекстные панели",
+			"eng": "Contextual panels"
+		},{
+			"rus": "<code>.panel-success<\/code> - <code>.panel-danger<\/code> - <code>.panel-warning<\/code> - <code>.panel-info<\/code>",
+			"eng": "<code>.panel-success<\/code> <code>.panel-danger<\/code> <code>.panel-warning<\/code> <code>.panel-info<\/code>"
+		},{
+			"rus": "Модальные элементы",
+			"eng": "Modal"
+		},{
+			"rus": "<code>.modal-dialog<\/code> - <code>.modal-content<\/code>",
+			"eng": "<code>.modal-dialog<\/code> <code>.modal-content<\/code>"
+		},{
+			"rus": "Эскизы картинок",
+			"eng": "Thumbnail image"
+		},{
+			"rus": "Калибровка выпуклости",
+			"eng": "Well sizes"
+		},{
+			"rus": "<code>.well-sm<\/code> - <code>.well-lg<\/code>",
+			"eng": "<code>.well-sm<\/code> <code>.well-lg<\/code>"
+		},{
+			"rus": "Ссылки замечания",
+			"eng": "Alert links"
+		},{
+			"rus": "<code>.alert-link<\/code>",
+			"eng": "<code>.alert-link<\/code>"
+		},{
+			"rus": "Действие формы",
+			"eng": "Form actions"
+		},{
+			"rus": "<code>.form-actions<\/code>",
+			"eng": "<code>.form-actions<\/code>"
+		},{
+			"rus": "Форма поиска",
+			"eng": "Search form"
+		},{
+			"rus": "<code>.form-search<\/code>",
+			"eng": "<code>.form-search<\/code>"
+		},{
+			"rus": "Группа информационных форм",
+			"eng": "Form group with info"
+		},{
+			"rus": "<code>.control-group.info<\/code>",
+			"eng": "<code>.control-group.info<\/code>"
+		},{
+			"rus": "Fixed-width input sizes",
+			"eng": "Fixed-width input sizes"
+		},{
+			"rus": "<code>.input-mini<\/code> <code>.input-small<\/code> <code>.input-medium<\/code> <code>.input-large<\/code> <code>.input-xlarge<\/code> <code>.input-xxlarge<\/code>",
+			"eng": "<code>.input-mini<\/code> <code>.input-small<\/code> <code>.input-medium<\/code> <code>.input-large<\/code> <code>.input-xlarge<\/code> <code>.input-xxlarge<\/code>"
+		},{
+			"rus": "Use <a href=\"..\/css\/#forms-controls\"><code>.form-control<\/code><\/a> and <a href=\"..\/css\/#grid\">the grid system<\/a> instead.",
+			"eng": "Use <a href=\"..\/css\/#forms-controls\"><code>.form-control<\/code><\/a> and <a href=\"..\/css\/#grid\">the grid system<\/a> instead."
+		},{
+			"rus": "Блок форма ввода уровня",
+			"eng": "Block level form input"
+		},{
+			"rus": "Нет прямого эквивалента, но <a href=\"..\/css\/#forms-controls\">формы управления<\/a> схожи.",
+			"eng": "No direct equivalent, but <a href=\"..\/css\/#forms-controls\">forms controls<\/a> are similar."
+		},{
+			"rus": "Обратные кнопки",
+			"eng": "Inverse buttons"
+		},{
+			"rus": "<code>.btn-inverse<\/code>",
+			"eng": "<code>.btn-inverse<\/code>"
+		},{
+			"rus": "Тягучая строка",
+			"eng": "Fluid row"
+		},{
+			"rus": "<code>.row<\/code> (больше нет фиксированной сетки)",
+			"eng": "<code>.row<\/code> (no more fixed grid)"
+		},{
+			"rus": "Обертка управления",
+			"eng": "Controls wrapper"
+		},{
+			"rus": "<code>.controls<\/code>",
+			"eng": "<code>.controls<\/code>"
+		},{
+			"rus": "Панель управления",
+			"eng": "Controls row"
+		},{
+			"rus": "<code>.controls-row<\/code>",
+			"eng": "<code>.controls-row<\/code>"
+		},{
+			"rus": "<code>.row<\/code> или <code>.form-group<\/code>",
+			"eng": "<code>.row<\/code> or <code>.form-group<\/code>"
+		},{
+			"rus": "Родное нав.меню",
+			"eng": "Navbar inner"
+		},{
+			"rus": "<code>.navbar-inner<\/code>",
+			"eng": "<code>.navbar-inner<\/code>"
+		},{
+			"rus": "Драйвер вертикального нав.меню",
+			"eng": "Navbar vertical dividers"
+		},{
+			"rus": "<code>.navbar .divider-vertical<\/code>",
+			"eng": "<code>.navbar .divider-vertical<\/code>"
+		},{
+			"rus": "Ниспадающее меню",
+			"eng": "Dropdown submenu"
+		},{
+			"rus": "<code>.dropdown-submenu<\/code>",
+			"eng": "<code>.dropdown-submenu<\/code>"
+		},{
+			"rus": "Выравнивание вкладки",
+			"eng": "Tab alignments"
+		},{
+			"rus": "<code>.tabs-left<\/code> - <code>.tabs-right<\/code> - <code>.tabs-below<\/code>",
+			"eng": "<code>.tabs-left<\/code> <code>.tabs-right<\/code> <code>.tabs-below<\/code>"
+		},{
+			"rus": "Pill-based tabbable area",
+			"eng": "Pill-based tabbable area"
+		},{
+			"rus": "<code>.pill-content<\/code>",
+			"eng": "<code>.pill-content<\/code>"
+		},{
+			"rus": "<code>.tab-content<\/code>",
+			"eng": "<code>.tab-content<\/code>"
+		},{
+			"rus": "Pill-based tabbable area pane",
+			"eng": "Pill-based tabbable area pane"
+		},{
+			"rus": "<code>.pill-pane<\/code>",
+			"eng": "<code>.pill-pane<\/code>"
+		},{
+			"rus": "<code>.tab-pane<\/code>",
+			"eng": "<code>.tab-pane<\/code>"
+		},{
+			"rus": "Список нав.меню",
+			"eng": "Nav lists"
+		},{
+			"rus": "<code>.nav-list<\/code> - <code>.nav-header<\/code>",
+			"eng": "<code>.nav-list<\/code> <code>.nav-header<\/code>"
+		},{
+			"rus": "Нет точного эквивалента, но <a href=\"..\/components\/#list-group\">список групп<\/a> и <a href=\"..\/javascript-doc\/#collapse\"><code>.panel-group<\/code><\/a> являются схожими.",
+			"eng": "No direct equivalent, but <a href=\"..\/components\/#list-group\">list groups<\/a> and <a href=\"..\/javascript\/#collapse\"><code>.panel-group<\/code>s<\/a> are similar."
+		},{
+			"rus": "Инлайн помощь для управления формой",
+			"eng": "Inline help for form controls"
+		},{
+			"rus": "<code>.help-inline<\/code>",
+			"eng": "<code>.help-inline<\/code>"
+		},{
+			"rus": "Нет точного эквивалента, но <code>.help-block<\/code> не похож",
+			"eng": "No exact equivalent, but <code>.help-block<\/code> is similar."
+		},{
+			"rus": "Номера для бар-уровня прогресс-цвета ",
+			"eng": "Non-bar-level progress colors"
+		},{
+			"rus": "<code>.progress-info<\/code> <code>.progress-success<\/code> <code>.progress-warning<\/code> <code>.progress-danger<\/code>",
+			"eng": "<code>.progress-info<\/code> <code>.progress-success<\/code> <code>.progress-warning<\/code> <code>.progress-danger<\/code>"
+		},{
+			"rus": "Используйте <code>.progress-bar-*<\/code> вместо <code>.progress-bar<\/code>.",
+			"eng": "Use <code>.progress-bar-*<\/code> on the <code>.progress-bar<\/code> instead."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Миграция\n================================================== -->",
+			"eng": "<!-- Migration\n================================================== -->"
+		},{
+			"rus": "<!-- \/.table-responsive -->",
+			"eng": "<!-- \/.table-responsive -->"
+		}
+	]
+}

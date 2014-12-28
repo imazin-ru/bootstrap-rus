@@ -1,0 +1,83 @@
+{
+	"h": [
+		{
+			"rus": "Загрузка",
+			"eng": "Download"
+		},{
+			"rus": "Bootstrap",
+			"eng": "Bootstrap"
+		},{
+			"rus": "Исходный код",
+			"eng": "Source code"
+		},{
+			"rus": "Sass",
+			"eng": "Sass"
+		},{
+			"rus": "Bootstrap CDN",
+			"eng": "Bootstrap CDN"
+		},{
+			"rus": "Установка с помощью Bower",
+			"eng": "Install with Bower"
+		}
+	],
+	"p": [
+		{
+			"rus": "Bootstrap (текущая v{{ site.current_version }}) имеет несколько способов чтобы начать работу, каждый из которых интересен в зависимости от уровня опыта и конкретной потребности использования. Посмотрите что лучше всего подходит именно вам.",
+			"eng": "Bootstrap (currently v{{ site.current_version }}) has a few easy ways to quickly get started, each one appealing to a different skill level and use case. Read through to see what suits your particular needs."
+		},{
+			"rus": "Компилирований и минимизированный CSS, JavaScript, и шрифты. Нет документов или оригинальные исходные файлы не включены.",
+			"eng": "Compiled and minified CSS, JavaScript, and fonts. No docs or original source files are included."
+		},{
+			"rus": "\n        <a href=\"{{ site.download.dist }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download compiled');\">Скачать Bootstrap<\/a>\n      ",
+			"eng": "\n        <a href=\"{{ site.download.dist }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download compiled');\">Download Bootstrap<\/a>\n      "
+		},{
+			"rus": "Исходный Less, JavaScript, и файлы шрифтов, вместе с нашими документами. <strong> Требуется компилятор Less и <a href=\"#grunt\">другие настройки.<\/a><\/strong>",
+			"eng": "Source Less, JavaScript, and font files, along with our docs. <strong>Requires a Less compiler and <a href=\"#grunt\">some setup.<\/a><\/strong>"
+		},{
+			"rus": "\n        <a href=\"{{ site.download.source }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download source');\">Скачать исходники<\/a>\n      ",
+			"eng": "\n        <a href=\"{{ site.download.source }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download source');\">Download source<\/a>\n      "
+		},{
+			"rus": "<a href=\"{{ site.sass_repo }}\">Bootstrap перенесен из Less в Sass<\/a> для легкого включения в Rails, Compass, или проекты Sass-only.<\/br>",
+			"eng": "<a href=\"{{ site.sass_repo }}\">Bootstrap ported from Less to Sass<\/a> for easy inclusion in Rails, Compass, or Sass-only projects."
+		},{
+			"rus": "\n        <a href=\"{{ site.download.sass }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download Sass');\">Скачать Sass<\/a>\n      ",
+			"eng": "\n        <a href=\"{{ site.download.sass }}\" class=\"btn btn-lg btn-outline\" role=\"button\" onclick=\"ga('send', 'event', 'Getting started', 'Download', 'Download Sass');\">Download Sass<\/a>\n      "
+		},{
+			"rus": "Сотрудники <a href=\"http:\/\/www.maxcdn.com\/\">MaxCDN<\/a> любезно предоставили поддержку CDN для Bootstrap CSS и JavaScript. Просто используйте эти ссылки <a href=\"http:\/\/www.bootstrapcdn.com\/\">Bootstrap CDN<\/a>.",
+			"eng": "The folks over at <a href=\"http:\/\/www.maxcdn.com\/\">MaxCDN<\/a> graciously provide CDN support for Bootstrap's CSS and JavaScript. Just use these <a href=\"http:\/\/www.bootstrapcdn.com\/\">Bootstrap CDN<\/a> links."
+		},{
+			"rus": "You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts using <a href=\"http:\/\/bower.io\">Bower<\/a>:",
+			"eng": "You can also install and manage Bootstrap's Less, CSS, JavaScript, and fonts using <a href=\"http:\/\/bower.io\">Bower<\/a>:"
+		}
+	],
+	"a": [
+		{
+			"rus": "Скачать Bootstrap",
+			"eng": "Download Bootstrap"
+		},{
+			"rus": "другие настройки.",
+			"eng": "some setup."
+		},{
+			"rus": "Скачать код",
+			"eng": "Download source"
+		},{
+			"rus": "Bootstrap переход из Less в Sass",
+			"eng": "Bootstrap ported from Less to Sass"
+		},{
+			"rus": "Скачать Sass",
+			"eng": "Download Sass"
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Последняя компиляция и сжатый CSS -->",
+			"eng": "<!-- Latest compiled and minified CSS -->"
+		},{
+			"rus": "<!-- Дополнение к теме -->",
+			"eng": "<!-- Optional theme -->"
+		},{
+			"rus": "<!-- Последняя компиляция и сжатый JavaScript -->",
+			"eng": "<!-- Latest compiled and minified JavaScript -->"
+		}
+	]
+}

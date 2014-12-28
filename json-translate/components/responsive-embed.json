@@ -1,0 +1,29 @@
+{
+	"h": [
+		{
+			"rus": "Ответный код вставки",
+			"eng": "Responsive embed"
+		}
+	],
+	"p": [
+		{
+			"rus": "Позволить браузерам определить  размеры видео или слайд-шоу в зависимости от ширины их содержащего блока, создавая внутреннюю соотношение, что будет правильно масштабироваться на любое устройство.",
+			"eng": "Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device."
+		},{
+			"rus": "Правила применяются непосредственно к <code>&lt;iframe&gt;<\/code>, <code>&lt;embed&gt;<\/code>, и <code>&lt;object&gt;<\/code>лементы; необязательно использовать явное класс потомок <code>.embed-responsive-item<\/code> когда вы хотите, чтобы соответствовать стиль для других атрибутов.",
+			"eng": "Rules are directly applied to <code>&lt;iframe&gt;<\/code>, <code>&lt;embed&gt;<\/code>, <code>&lt;video&gt;<\/code>, and <code>&lt;object&gt;<\/code> elements; optionally use an explicit descendant class <code>.embed-responsive-item<\/code> when you want to match the styling for other attributes."
+		},{
+			"rus": "<strong>Pro-Tip!<\/strong> Вам не нужно включать <code>frameborder=\"0\"<\/code> в вашем <code>&lt;iframe&gt;<\/code>а к мы переопределили, что для вас.",
+			"eng": "<strong>Pro-Tip!<\/strong> You don't need to include <code>frameborder=\"0\"<\/code> in your <code>&lt;iframe&gt;<\/code>s as we override that for you."
+		}
+	],
+	"comment": [
+		{
+			"rus": "<!-- Соотношение 16:9 -->",
+			"eng": "<!-- 16:9 aspect ratio -->"
+		},{
+			"rus": "<!-- Соотношение 4:3 -->",
+			"eng": "<!-- 4:3 aspect ratio -->"
+		}
+	]
+}
