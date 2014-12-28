@@ -1,0 +1,27 @@
+<div class="bs-docs-section">
+  <h1 id="breadcrumbs" class="page-header">Навигационный маршрут</h1>
+
+  <p class="lead">Установите текущую страницу расположение в пределах навигационной иерархии.</p>
+  <p>Разделители автоматически добавляются в CSS через <code>:before</code> и <code>content</code>.</p>
+  <div class="bs-example" data-example-id="simple-breadcrumbs">
+    <ol class="breadcrumb">
+      <li class="active">Главная</li>
+    </ol>
+    <ol class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li class="active">Библиотека</li>
+    </ol>
+    <ol class="breadcrumb" style="margin-bottom: 5px;">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Библиотека</a></li>
+      <li class="active">Данные</li>
+    </ol>
+  </div>
+{% highlight html %}
+<ol class="breadcrumb">
+  <li><a href="#">Главная</a></li>
+  <li><a href="#">Библиотека</a></li>
+  <li class="active">Данные</li>
+</ol>
+{% endhighlight %}
+</div>

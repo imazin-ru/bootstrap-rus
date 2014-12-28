@@ -1,0 +1,151 @@
+<div class="bs-docs-section">
+  <h1 id="scrollspy" class="page-header">Отслеживание прокрукти <small>scrollspy.js</small></h1>
+
+  <h2 id="scrollspy-examples">Пример с навигационной панелью</h2>
+  <p>Плагин ScrollSpy (переводится как Отслеживание Прокрутки) предназначен для автоматического обновления навигационного нахождения, которое базируется на позиции прокрутки страницы. В нижнем примере прокрутите область под навигационной панелью и проспостерігайте за переходом активного класса между ее пунктами. Подпункты в ниспадающем меню также будут подсвечены при прокрутке.</p>
+  <div class="bs-example" data-example-id="embedded-scrollspy">
+    <nav id="navbar-example2" class="navbar navbar-default navbar-static">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+            <span class="sr-only">Переключить навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+        <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+          <ul class="nav navbar-nav">
+            <li><a href="#fat">@fat</a></li>
+            <li><a href="#mdo">@mdo</a></li>
+            <li class="dropdown">
+              <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+                <li><a href="#one" tabindex="-1">one</a></li>
+                <li><a href="#two" tabindex="-1">two</a></li>
+                <li class="divider"></li>
+                <li><a href="#three" tabindex="-1">three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+      <h4 id="fat">@fat</h4>
+      <p>Здесь произвольный текст. Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <h4 id="mdo">@mdo</h4>
+      <p>Здесь произвольный текст. Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+      <h4 id="one">один</h4>
+      <p>Здесь произвольный текст. Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in sustainable delectus consectetur fanny pack iphone.</p>
+      <h4 id="two">два</h4>
+      <p>Здесь произвольный текст. In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+      <h4 id="three">три</h4>
+      <p>Здесь произвольный текст. Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+      <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+ </p>
+    </div>
+  </div><!-- /пример -->
+
+
+  <h2 id="scrollspy-usage">Использование</h2>
+
+  <div class="bs-callout bs-callout-warning" id="callout-scrollspy-needs-nav">
+    <h4>Requires Bootstrap nav</h4>
+    <p>Scrollspy currently requires the use of a <a href="../components/#nav">Bootstrap nav component</a> for proper highlighting of active links.</p>
+  </div>
+  <div class="bs-callout bs-callout-danger" id="callout-scrollspy-target-ids">
+    <h4>Необходимо соответствие между ID и его линку</h4>
+    <p>Навигационная панель должна иметь соответствие между ID и его ссылке. Например, <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> должен иметь соответствие в DOM с <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-scrollspy-invisible-targets">
+    <h4>Non-<code>:visible</code> target elements ignored</h4>
+    <p>Целевые элементы, которые не являются <a href="http://api.jquery.com/visible-selector/"><code>:visible</code> according to jQuery</a> будут проигнорированы и соответствующие им навигационные элементы никогда не будет выделен.</p>
+  </div>
+
+  <h3>Requires relative positioning</h3>
+  <p>Независимо от того, метод реализации, scrollspy не требует использования <code>position: relative;</code> на элементе вы шпионите. В большинстве случаев это является <code>&lt;body&gt;</code>.</p>
+
+  <h3>Через атрибуты данных</h3>
+  <p>Чтобы легко добавить поведение Отслеживающей Прокрутки (ScrollSpy) к вашей верхней навигационной панели, добавьте <code>data-spy="scroll"</code> элемента, по которому вы хотите следить (наиболее типично - это будет <code>&lt;body&gt;</code>). Затем добавьте атрибут <code>data-target</code> с ID или классом родительского элемента, любого компонента Bootstrap с классом <code>.nav</code>.</p>
+{% highlight css %}
+body {
+  position: relative;
+}
+{% endhighlight %}
+{% highlight html %}
+<body data-spy="scroll" data-target=".navbar-example">
+  ...
+  <div class="navbar-example">
+    <ul class="nav nav-tabs" role="tablist">
+      ...
+    </ul>
+  </div>
+  ...
+</body>
+{% endhighlight %}
+
+  <h3>Через JavaScript</h3>
+  <p>После добавления <code>position: relative;</code> в вашу CSS, вызвать scrollspy через JavaScript:</p>
+{% highlight js %}
+$('body').scrollspy({ target: '.navbar-example' })
+{% endhighlight %}
+
+
+  <h3 id="scrollspy-methods">Методы</h3>
+  <h4>.scrollspy('refresh')</h4>
+  <p>При использовании Отслеживание прокрутки в сочетании с добавлением или удалением элементов из DOM, вам нужно вызвать обновляющий метод, как в примере:</p>
+{% highlight js %}
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+{% endhighlight %}
+
+
+  <h3 id="scrollspy-options">Параметры</h3>
+  <p>Параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку с названием параметра <code>data</code>, как в примере: <code>data offset=""</code>.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th style="width: 100px;">Название</th>
+         <th style="width: 100px;">Тип</th>
+         <th style="width: 50px;">По умолчанию</th>
+         <th>Описание</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>offset</td>
+         <td>числовой</td>
+         <td>10</td>
+         <td>Пиксели для смещения от верха, при исчислении позиции прокрутки.</td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- ./bs-table-responsive -->
+
+  <h3 id="scrollspy-events">События</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped bs-events-table">
+      <thead>
+       <tr>
+         <th style="width: 150px;">Тип События</th>
+         <th>Описание</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>activate.bs.scrollspy</td>
+         <td>Это событие срабатывает каждый раз, когда новый элемент активируется при прокрутке.</td>
+      </tr>
+      </tbody>
+    </table>
+  </div><!-- ./bs-table-responsive -->
+{% highlight js %}
+$('#myScrollspy').on('activate.bs.scrollspy', function () {
+  // do something…
+})
+{% endhighlight %}
+</div>

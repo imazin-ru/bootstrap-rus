@@ -1,0 +1,40 @@
+<div class="bs-docs-section">
+  <h1 id="labels" class="page-header">Метки</h1>
+
+  <h3>Пример</h3>
+  <div class="bs-example" data-example-id="labels-in-headings">
+    <h1>Пример заголовка <span class="label label-default">Новый</span></h1>
+    <h2>Пример заголовка <span class="label label-default">Новый</span></h2>
+    <h3>Пример заголовка <span class="label label-default">Новый</span></h3>
+    <h4>Пример заголовка <span class="label label-default">Новый</span></h4>
+    <h5>Пример заголовка <span class="label label-default">Новый</span></h5>
+    <h6>Пример заголовка <span class="label label-default">Новый</span></h6>
+  </div>
+{% highlight html %}
+<h3>Пример заголовка <span class="label label-default">Новый</span></h3>
+{% endhighlight %}
+
+  <h3>Доступные варианты</h3>
+  <p>Добавте любой из перечисленных ниже модификаторов классов, чтобы изменить внешний вид меткии.</p>
+  <div class="bs-example" data-example-id="label-variants">
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+  </div>
+{% highlight html %}
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
+    <h4>Есть тонна меток?</h4>
+    <p>Оказание проблемы могут возникнуть, когда у вас есть десятки встроенных ярлыков в узком контейнере, каждый из которых содержит свой ​​собственный <code>inline-block</code> элементе (похожая иконка). Способом решить эту проблему является создание <code>display: inline-block;</code>. Для примера, <a href="https://github.com/twbs/bootstrap/issues/13219">смотрите #13219</a>.</p>
+  </div>
+</div>

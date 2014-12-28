@@ -1,0 +1,80 @@
+<div class="bs-docs-section">
+  <h1 id="js-overview" class="page-header">Обзор</h1>
+
+  <h3 id="js-individual-compiled">Индивидуально или сборником</h3>
+  <p>Плагины могут подключаться отдельно (используя отдельные файлы Bootstrap <code>*.js</code>), или все за один раз (используя <code>bootstrap.js</code> или минимизированы <code>bootstrap.min.js</code>).</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-overview-not-both">
+    <h4>Используя скомпилированный JavaScript</h4>
+    <p><code>bootstrap.js</code> и <code>bootstrap.min.js</code> оба содержат все плагины в одном файле. Подключать только один.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-danger" id="callout-overview-dependencies">
+    <h4>Зависимость плагина</h4>
+    <p>Некоторые плагины и CSS и их компоненты имеют зависимость от других плагинов. Если вы включаете плагины отдельно, просмотрите их документацию, чтобы убедиться, что вы учли их зависимость. Также заметьте, что все плагины зависят от jQuery (это означает, что jQuery должен подключаться <strong>перед</strong> файлами плагинов). <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Просмотрите наш файл <code>bower.json</code></a>, чтобы узнать какая версия jQuery поддерживается.</p>
+  </div>
+
+  <h3 id="js-data-attrs">Атрибуты данных</h3>
+  <p>Вы можете использовать все Bootstrap плагины исключительно на основе разметки API, без необходимости писать код на JavaScript. Это является первоочередной API класс для Bootstrap и должен рассматриваться в первую очередь при использовании плагинов.</p>
+
+  <p>Тем не менее, в некоторых ситуациях может быть желанным отключения этой функции. Таким образом, мы также предоставляем возможность отключить API-атрибуты, через отвязке всех событий в пространстве имен (namespaced) документа, при помощи <code>data api</code>. Это выглядит примерно так:</p>
+{% highlight js %}
+$(document).off('.data-api')
+{% endhighlight %}
+
+  <p>Также вы можете направить выстрела на определенный плагин, просто включив имя плагина рядом с пространством имен data api, как в примере:</p>
+{% highlight js %}
+$(document).off('.alert.data-api')
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger" id="callout-overview-single-data">
+    <h4>Only one plugin per element via data attributes</h4>
+    <p>Не используйте атрибуты данных из нескольких плагинов, в том же элементе. Например, кнопка не может одновременно иметь подсказку и переключения модали. Для этого следует использовать поверх элементы.</p>
+  </div>
+
+  <h3 id="js-programmatic-api">Программный API</h3>
+  <p>Мы также считаем, что вы должны иметь возможность использовать все плагины Bootstrap чисто на JavaScript API. <span title="All public APIs are single, chainable methods, and return the collection acted upon.">Все публичные API являются одиночными, но их методы могут последовательно связываться и возвращать готовый набор для применения.</span></p>
+{% highlight js %}
+$('.btn.danger').button('toggle').addClass('fat')
+{% endhighlight %}
+
+  <p>Все методы должны принимать в качестве необязательного параметра или объект, или строка, который нацелен на конкретный метод, или ничего (и таким образом просто инициализировать плагин с поведением по умолчанию):</p>
+{% highlight js %}
+$('#myModal').modal()                      // initialized with defaults
+$('#myModal').modal({ keyboard: false })   // initialized with no keyboard
+$('#myModal').modal('show')                // initializes and invokes show immediately
+{% endhighlight %}
+
+  <p>Каждый плагин также публикует свой собственный конструктор в свойства <code>Constructor</code>: <code>$.fn.popover.Constructor</code>. Если вы хотите получить конкретный экземпляр плагина, загружайте его непосредственно из элемента: <code>$('[rel="popover"]').data('popover')</code>.</p>
+
+  <h4>Default settings</h4>
+  <p>You can change the default settings for a plugin by modifying the plugin's <code>Constructor.DEFAULTS</code> object:<p>
+{% highlight js %}
+$.fn.modal.Constructor.DEFAULTS.keyboard = false // changes default for the modal plugin's `keyboard` option to false
+{% endhighlight %}
+
+  <h3 id="js-noconflict">Без конфликта</h3>
+  <p>Иногда необходимо использовать плагины Bootstrap с другими UI фрейморками. В таком случае иногда могут пересекаться их пространства имен. Если такое случается, вы можете вызвать <code>.noConflict</code> в том плагине, который должен вернуть прежнее значение.</p>
+{% highlight js %}
+var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+{% endhighlight %}
+
+  <h3 id="js-events">События</h3>
+  <p>Bootstrap предоставляет пользовательские события для большинства уникальных действий плагина. Как правило, они идут в форме инфинитива или причастия - причем инфинитив (например, <code>show</code>) срабатывает в начале события, а форма причастия (например, <code>shown</code>) срабатывает по завершению действия.</p>
+  <p>По состоянию на 3.0.0, все события Bootstrap с именованными пространствами.</p>
+  <p>Все события в інфінітиві предоставляют <code>preventDefault</code> функциональность. Это дает возможность останавливать выполнение действий перед стартом.</p>
+{% highlight js %}
+$('#myModal').on('show.bs.modal', function (e) {
+  if (!data) return e.preventDefault() // stops modal from being shown
+})
+{% endhighlight %}
+
+  <h3 id="js-disabled">No special fallbacks when JavaScript is disabled</h3>
+  <p>Bootstrap's plugins don't fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-third-party-libs">
+    <h4>Библиотеки третьих сторон</h4>
+    <p><strong>Bootstrap неофициально поддерживает библиотеки JavaScript третьих сторон</strong>, такие как Prototype или jQuery UI. Несмотря на то, что мы предоставляем <code>.noConflict</code> и события с именованными пространствами, все равно могут быть проблемы совместимости, которые вам придется исправлять собственноручно.</p>
+  </div>
+</div>

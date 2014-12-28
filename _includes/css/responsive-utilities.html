@@ -1,0 +1,256 @@
+<div class="bs-docs-section">
+  <h1 id="responsive-utilities" class="page-header">Адаптивные вспомогатели</h1>
+
+  <p class="lead">Для быстрого мобильного развития, используйте эти вспомогательные классы для отображения и скрытия сообщения от устройства через запрос медиа. Кроме того, включены вспомогательные классы для переключения содержания при печати.</p>
+  <p>Попробуйте использовать их на ограниченной основе и не создавать совершенно разные версии одного и того же сайта. Вместо этого используйте их, чтобы дополнить презентацию каждого устройства.</p>
+
+
+  <h2 id="responsive-utilities-classes">Доступные классы</h2>
+  <p>Используйте единичный или комбинацию доступных классов для переключения контента через контрольные точки просмотра.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped responsive-utilities">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            Очень маленькие устройство <small>Телефоны  (&lt;768px)</small>         </th>
+          <th>
+            Малые устройства
+         <small>Планшеты (&ge;768px)</small>
+          </th>
+          <th>
+            Средние устройства
+        <small>Настольные (&ge;992px)</small>
+          </th>
+          <th>
+            Большие устройства
+       <small>Настольные (&ge;1200px)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-xs-*</code></th>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-sm-*</code></th>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-md-*</code></th>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-lg-*</code></th>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.hidden-xs</code></th>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-sm</code></th>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-md</code></th>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-lg</code></th>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Как в v3.2.0,  <code>.visible-*-*</code> классы для каждой точки в трех вариациях, по одному для каждой CSS <code>display</code> Значение свойства перечислены ниже.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Группа классов</th>
+          <th>CSS <code>display</code></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>.visible-*-block</code></th>
+          <td><code>display: block;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline</code></th>
+          <td><code>display: inline;</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.visible-*-inline-block</code></th>
+          <td><code>display: inline-block;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Так, для дополнительной маленькой(<code>xs</code>) экранов, например, доступны <code>.visible-*-*</code> классы: <code>.visible-xs-block</code>, <code>.visible-xs-inline</code>, и <code>.visible-*-block</code>.</p>
+  <p>Классы <code>.visible-xs</code>, <code>.visible-sm</code>, <code>.visible-md</code>, и <code>.visible-lg</code> также существуют, но <strong>deprecated нежелателен к v3.2.0</strong>.Они примерно эквивалентно <code>.visible-*-block</code>, за исключением дополнительных особых случаях для переключения  <code>&lt;table&gt;</code>- связанных элементов.</p>
+
+  <h2 id="responsive-utilities-print">Классы печати</h2>
+  <p>Как и обычные адаптивные классы, используйте их для переключения содержания для печати.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped responsive-utilities">
+      <thead>
+        <tr>
+          <th>Классы</th>
+          <th>Браузер</th>
+          <th>Печать</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <code>.visible-print-block</code><br>
+            <code>.visible-print-inline</code><br>
+            <code>.visible-print-inline-block</code>
+          </th>
+          <td class="is-hidden">Скрытый</td>
+          <td class="is-visible">Видимый</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>.hidden-print</code></th>
+          <td class="is-visible">Видимый</td>
+          <td class="is-hidden">Скрытый</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Класс <code>.visible-print</code> также существует, но <strong>устаревшим</strong> по состоянию на v3.2.0.  Это примерно эквивалентно <code>.visible-print-block</code>, за исключением дополнительных особых случаях для <code>&lt;table&gt;</code>-связанных элементов.</p>
+
+
+  <h2 id="responsive-utilities-tests">Тестовые сценарии</h2>
+  <p>Измените размер вашего браузера или загрузки на различные устройствах для проверки реагирования служебных классов.</p>
+
+  <h3>Видимый на...</h3>
+  <p>Зеленые галочки указывают, что элемент <strong> видимый </strong> в вашем текущем экране.</p>
+  <div class="row responsive-utilities-test visible-on">
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-xs">Очень маленькие</span>
+      <span class="visible-xs-block">&#10004; Видимый на x-small</span>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-sm">Маленькие</span>
+      <span class="visible-sm-block">&#10004; Видимый на small</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-md">Средние</span>
+      <span class="visible-md-block">&#10004; Видимый на medium</span>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-lg">Большие</span>
+      <span class="visible-lg-block">&#10004; Видимый на large</span>
+    </div>
+  </div>
+  <div class="row responsive-utilities-test visible-on">
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-sm">Очень малые и малые</span>
+      <span class="visible-xs-block visible-sm-block">&#10004; Видимый на x-small и small</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-md hidden-lg">Средние и большие</span>
+      <span class="visible-md-block visible-lg-block">&#10004; Видимый на medium и large</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-md">Очень малые и средние</span>
+      <span class="visible-xs-block visible-md-block">&#10004; Видимый на x-small и medium</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-sm hidden-lg">Малые и большие</span>
+      <span class="visible-sm-block visible-lg-block">&#10004; Видимый на small и large</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-lg">Очень малые и большие</span>
+      <span class="visible-xs-block visible-lg-block">&#10004; Видимый на x-small и large</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-sm hidden-md">Малые и средние</span>
+      <span class="visible-sm-block visible-md-block">&#10004; Видимый на small и medium</span>
+    </div>
+  </div>
+
+  <h3>Скрытый на...</h3>
+  <p>Здесь, зеленые галочки указывают, что элемент<strong> скрыт </strong> в вашем текущем экране.</p>
+  <div class="row responsive-utilities-test hidden-on">
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-xs">Очень маленькие</span>
+      <span class="visible-xs-block">&#10004; Скрытый на x-small</span>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-sm">Маленькие</span>
+      <span class="visible-sm-block">&#10004; Скрытый на small</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-md">Средние</span>
+      <span class="visible-md-block">&#10004; Скрытый на medium</span>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <span class="hidden-lg">Большие</span>
+      <span class="visible-lg-block">&#10004; Скрытый на large</span>
+    </div>
+  </div>
+  <div class="row responsive-utilities-test hidden-on">
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-sm">Очень малые и малые</span>
+      <span class="visible-xs-block visible-sm-block">&#10004; Скрытый на x-small и small</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-md hidden-lg">Средние и большие</span>
+      <span class="visible-md-block visible-lg-block">&#10004; Скрытый на medium и large</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-md">Очень малые и средние</span>
+      <span class="visible-xs-block visible-md-block">&#10004; Скрытый на x-small и medium</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-sm hidden-lg">Малые и большие</span>
+      <span class="visible-sm-block visible-lg-block">&#10004; Скрытый на small и large</span>
+    </div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6">
+      <span class="hidden-xs hidden-lg">Очень малые и большие</span>
+      <span class="visible-xs-block visible-lg-block">&#10004; Скрытый на x-small и large</span>
+    </div>
+    <div class="col-xs-6">
+      <span class="hidden-sm hidden-md">Малые и средние</span>
+      <span class="visible-sm-block visible-md-block">&#10004; Скрытый на small и medium</span>
+    </div>
+  </div>
+</div>

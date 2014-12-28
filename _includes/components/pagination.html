@@ -1,0 +1,231 @@
+<div class="bs-docs-section">
+  <h1 id="pagination" class="page-header">Нумерация страниц</h1>
+
+  <p class="lead">Добавьте ссылки постраничного разделения для вашего сайта с многостраничным компонентом, или простой <a href="#pagination-pager">альтернатива листания</a>.</p>
+
+  <h2 id="pagination-default">Постраничное разделение по умолчанию</h2>
+  <p>Простая нумерация inspired by Rdio, отлично подходит для приложений и результатов поиска. Большой блок трудно не заметить, легко масштабируется, предоставляет большие кнопки.</p>
+  <div class="bs-example" data-example-id="simple-pagination">
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+{% highlight html %}
+<nav>
+  <ul class="pagination">
+    <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+  </ul>
+</nav>
+{% endhighlight %}
+
+  <h3>Заблокированы и активные состояния</h3>
+  <p>Ссылки могут настраиваться для различных нужд. Используйте <code>.disabled</code> для блокировки ссылок и <code>.active</code> для обозначения текущей страницы.</p>
+  <div class="bs-example" data-example-id="disabled-active-pagination">
+    <nav>
+      <ul class="pagination">
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+     </ul>
+   </nav>
+  </div>
+{% highlight html %}
+<nav>
+  <ul class="pagination">
+    <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    ...
+  </ul>
+</nav>
+{% endhighlight %}
+  <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.</p>
+{% highlight html %}
+<nav>
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+    ...
+  </ul>
+</nav>
+{% endhighlight %}
+
+
+  <h3>Изменение размера</h3>
+  <p>Есть потребность увеличить или уменьшить блок постраничного вывода? Добавьте <code>.pagination-lg</code> или <code>.pagination-sm</code> для изменения размеров.</p>
+  <div class="bs-example" data-example-id="pagination-sizing">
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="pagination pagination-sm">
+        <li>
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+{% highlight html %}
+<nav><ul class="pagination pagination-lg">...</ul></nav>
+<nav><ul class="pagination">...</ul></nav>
+<nav><ul class="pagination pagination-sm">...</ul></nav>
+{% endhighlight %}
+
+
+  <h2 id="pagination-pager">Pager</h2>
+  <p>Быстрое создание ссылок для просмотра предыдущей и следующей страницы, для простого постраничного разделения с легкой разметкой и стилями. Это хорошо подходит для простых сайтов, таких как блоги и журналы.</p>
+
+  <h3>Основной пример</h3>
+  <p>По умолчанию, листание имеет ссылки, выровненные по-центру.</p>
+  <div class="bs-example" data-example-id="simple-pager">
+    <nav>
+      <ul class="pager">
+        <li><a href="#">Предыдущая</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+    </nav>
+  </div>
+{% highlight html %}
+<nav>
+  <ul class="pager">
+    <li><a href="#">Предыдущая</a></li>
+    <li><a href="#">Следующая</a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+
+  <h3>Выравнивание ссылок</h3>
+  <p>В качестве альтернативы, вы можете выравнивать каждую ссылку:</p>
+  <div class="bs-example" data-example-id="aligned-pager-links">
+    <nav>
+      <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </nav>
+  </div>
+{% highlight html %}
+<nav>
+  <ul class="pager">
+    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+
+
+  <h3>Заблокирован состояние</h3>
+  <p>Листание ссылок также использует базовый вспомогательный класс <code>.disabled</code>.</p>
+  <div class="bs-example" data-example-id="disabled-pager">
+    <nav>
+      <ul class="pager">
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </nav>
+  </div>
+{% highlight html %}
+<nav>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+{% endhighlight %}
+</div>

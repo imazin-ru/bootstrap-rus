@@ -1,0 +1,23 @@
+<div class="bs-docs-section">
+  <h1 id="responsive-embed" class="page-header">Ответный код вставки</h1>
+
+  <p>Позволить браузерам определить  размеры видео или слайд-шоу в зависимости от ширины их содержащего блока, создавая внутреннюю соотношение, что будет правильно масштабироваться на любое устройство.</p>
+  <p>Правила применяются непосредственно к <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, и <code>&lt;object&gt;</code>лементы; необязательно использовать явное класс потомок <code>.embed-responsive-item</code> когда вы хотите, чтобы соответствовать стиль для других атрибутов.</p>
+  <p><strong>Pro-Tip!</strong> Вам не нужно включать <code>frameborder="0"</code> в вашем <code>&lt;iframe&gt;</code>а к мы переопределили, что для вас.</p>
+  <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+    </div>
+  </div>
+{% highlight html %}
+<!-- Соотношение 16:9 -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- Соотношение 4:3 -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+{% endhighlight %}
+</div>

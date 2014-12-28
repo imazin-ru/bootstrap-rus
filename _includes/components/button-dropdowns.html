@@ -1,0 +1,319 @@
+<div class="bs-docs-section">
+  <h1 id="btn-dropdowns" class="page-header">Кнопка выпадающего меню</h1>
+
+  <p class="lead">Используйте любую кнопку для выпадающего меню разместив ее в <code>.btn-group</code>, и обеспечив ее правильно-размеченным меню.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-btndropdown-dependency">
+    <h4>Зависимость плагина</h4>
+    <p>Кнопка выпадающего меню требует включения в вашу версию Bootstrap <a href="../javascript-doc/#dropdowns">плагина для выпадающего меню</a>.</p>
+  </div>
+
+  <h3 id="btn-dropdowns-single">Одиночная кнопка выпадающего меню</h3>
+  <p>Предоставьте другого вида кнопке, с выпадающим меню, с помощью определенных базовых изменений.</p>
+  <div class="bs-example" data-example-id="single-button-dropdown">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">По умолчанию <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Первичная <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Успех <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Информация <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Предупреждение <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Опасность <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+{% highlight html %}
+<!-- Одна кнопка -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Действие <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Действие</a></li>
+    <li><a href="#">Другое действие</a></li>
+    <li><a href="#">Что-то иное</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Отдельная ссылка</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+
+  <h3 id="btn-dropdowns-split">Расщепленная кнопка выпадающего меню</h3>
+  <p>Аналогично создайте розщеплену кнопку выпадающего меню с такими же изменениями в розміткі, только с разделенной кнопкой.</p>
+  <div class="bs-example" data-example-id="split-button-dropdown">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">По умолчанию</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Первичная</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-success">Успех</button>
+      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-info">Информация</button>
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-warning">Предупреждение</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Опасность</button>
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Действие</a></li>
+        <li><a href="#">Другое действие</a></li>
+        <li><a href="#">Что-то иное</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div><!-- /btn-group -->
+  </div>
+{% highlight html %}
+<!-- Раздельная кнопка -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Действие</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Действие</a></li>
+    <li><a href="#">Другое действие</a></li>
+    <li><a href="#">Что-то иное</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Отдельная ссылка</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+
+  <h3 id="btn-dropdowns-sizing">Изменение размера</h3>
+  <p>Кнопки в выпадающем меню могут иметь любой размер.</p>
+  <div class="bs-example" data-example-id="button-dropdown-sizing">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Большая кнопка <span class="caret"></span>
+ </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Малая кнопка <span class="caret"></span>
+ </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group">
+        <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Очень малая кнопка <span class="caret"></span>
+ </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /btn-toolbar -->
+  </div><!-- /пример -->
+{% highlight html %}
+<!-- Большая группа кнопок -->
+<div class="btn-group">
+  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Большая кнопка <span class="caret"></span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    ...
+  </ul>
+</div>
+
+<!-- Малая группа кнопок -->
+<div class="btn-group">
+  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Малая кнопка <span class="caret"></span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    ...
+  </ul>
+</div>
+
+<!-- Очень малая группа кнопок -->
+<div class="btn-group">
+  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+ Очень малая кнопка <span class="caret"></span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    ...
+  </ul>
+</div>
+{% endhighlight %}
+
+  <h3 id="btn-dropdowns-dropup">Вариант списка сверху</h3>
+  <p>Создайте меню, элементы которого поднимаются вверх, прибавив <code>.dropup</code> к родительскому контейнеру.</p>
+  <div class="bs-example" data-example-id="button-dropdown-dropup">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-default">Поднимающееся меню</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-primary">Правое поднимающееся меню</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div>
+  </div><!-- /пример -->
+{% highlight html %}
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-default">Поднимающееся меню</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    <!-- Ссылки выпадающего меню -->
+  </ul>
+</div>
+{% endhighlight %}
+</div>

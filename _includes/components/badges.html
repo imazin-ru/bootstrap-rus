@@ -1,0 +1,45 @@
+<div class="bs-docs-section">
+  <h1 id="badges" class="page-header">Значки</h1>
+
+  <p class="lead">Легко подсветить новые или непрочитанные записи добавив к ссылкам <code>&lt;span class="badge"&gt;</code>, Bootstrap навигацию, и другое.</p>
+
+  <div class="bs-example" data-example-id="simple-badges">
+    <a href="#">Inbox <span class="badge">42</span></a>
+    <br><br>
+    <button class="btn btn-primary" type="button">
+ Сообщения <span class="badge">4</span>
+ </button>
+  </div>
+{% highlight html %}
+<a href="#">Inbox <span class="badge">42</span></a>
+
+<button class="btn btn-primary" type="button">
+ Сообщения <span class="badge">4</span>
+ </button>
+{% endhighlight %}
+
+  <h4>Самосвертывание</h4>
+  <p>Когда нет новых или непрочитанных записей, значки будут просто свернуты (через CSS селектор <code>:empty</code>), при условии отсутствия внутри содержимого.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-badges-ie8-empty">
+    <h4>Кросс-браузерная совместимость</h4>
+    <p>Значки не будут самозгортатись в Internet Explorer 8, потому что ему не хватает поддержки селектора <code>:empty</code>.</p>
+  </div>
+
+  <h4>Адаптация под активные состояния</h4>
+  <p>Встроенные стили позволяют содержать значки в активном состоянии, которые размещены в навигационных кнопках и навигационных списках.</p>
+  <div class="bs-example" data-example-id="badges-in-pills">
+    <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="active"><a href="#">Главная <span class="badge">42</span></a></li>
+      <li role="presentation"><a href="#">Профиль</a></li>
+      <li role="presentation"><a href="#">Сообщения <span class="badge">3</span></a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active"><a href="#">Главная <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Профиль</a></li>
+  <li role="presentation"><a href="#">Сообщения <span class="badge">3</span></a></li>
+</ul>
+{% endhighlight %}
+</div>

@@ -1,0 +1,167 @@
+<div class="bs-docs-section">
+  <h1 id="list-group" class="page-header">Список групп</h1>
+
+  <p class="lead">Список групп является гибким и мощным компонентом для отображения не только простых пунктов списка, но и для чего-то более сложного, что касается пользовательского содержимого.</p>
+
+  <h3 id="list-group-basic">Основной пример</h3>
+  <p>Самым базовым является простой список группы с ненумерованими пунктами, и собственными классами. Добавляйте к нему опции, как показано ниже, или при необходимости добавляйте собственные стили CSS.</p>
+  <div class="bs-example" data-example-id="simple-list-group">
+    <ul class="list-group">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+{% endhighlight %}
+
+  <h3 id="list-group-badges">Значки</h3>
+  <p>Добавьте компоненты значков до любого пункта списка групп, и они автоматически будут позиционированы по правому краю.</p>
+  <div class="bs-example" data-example-id="list-group-badges">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge">14</span>
+        Cras justo odio
+      </li>
+      <li class="list-group-item">
+        <span class="badge">2</span>
+        Dapibus ac facilisis in
+      </li>
+      <li class="list-group-item">
+        <span class="badge">1</span>
+        Morbi leo risus
+      </li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="list-group">
+  <li class="list-group-item">
+        <span class="badge">14</span>
+        Cras justo odio
+      </li>
+</ul>
+{% endhighlight %}
+
+  <h3 id="list-group-linked">Связанные элементы</h3>
+  <p>Ссылочные пункты списков групп создаются с помощью тегов <code>&lt;a&gt;</code> вместо пунктов списка (здесь также используется в качестве родительского элемента <code>&lt;div&gt;</code> вместо <code>&lt;ul&gt;</code>). Не нужно дополнительно обертывать каждый пункт родительским элементом.</p>
+  <div class="bs-example" data-example-id="list-group-anchors">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        Cras justo odio
+      </a>
+      <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item">Morbi leo risus</a>
+      <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+  </div>
+{% highlight html %}
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+{% endhighlight %}
+
+  <h3 id="list-group-disabled">Неактивные пункты</h3>
+  <p>Добавьте <code>.disabled</code> к <code>.list-group-item</code> для серого оттенка сделав неактивным.</p>
+  <div class="bs-example" data-example-id="list-group-disabled">
+    <div class="list-group">
+      <a href="#" class="list-group-item disabled">
+        Cras justo odio
+      </a>
+      <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item">Morbi leo risus</a>
+      <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+  </div>
+{% highlight html %}
+<div class="list-group">
+  <a href="#" class="list-group-item disabled">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+{% endhighlight %}
+
+  <h3 id="list-group-contextual-classes">Контекстные классы</h3>
+  <p>Используйте контекстные классы для стилизации элементов списка, по умолчанию или связанно. Также включают в себя состояние <code>.active</code>.</p>
+  <div class="bs-example" data-example-id="list-group-variants">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+          <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+          <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+          <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+</div>
+{% endhighlight %}
+
+  <h3 id="list-group-custom-content">Настраиваемое содержимое</h3>
+  <p>Добавляйте практически любой HTML, даже для связанного списка групп, как показано ниже.</p>
+  <div class="bs-example" data-example-id="list-group-custom-content">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">Заголовок пункта списка группы</h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Заголовок пункта списка группы</h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Заголовок пункта списка группы</h4>
+        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+    </div>
+  </div>
+{% highlight html %}
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">Заголовок пункта списка группы</h4>
+    <p class="list-group-item-text">...</p>
+  </a>
+</div>
+{% endhighlight %}
+</div>

@@ -1,0 +1,316 @@
+<div class="bs-docs-section">
+  <h1 id="input-groups" class="page-header">Группы формы ввода</h1>
+
+  <p class="lead">Разверните элементы управления формы добавив текст или кнопки до, после, с обеих сторон любого текстового поля формы <code>&lt;input&gt;</code>. Используйте <code>.input-group</code> с <code>.input-group-addon</code> в начало или конец для одного элемента <code>.form-control</code>.</p>
+
+  <div class="bs-callout bs-callout-danger" id="callout-inputgroup-text-input-only">
+    <h4>Textual <code>&lt;input&gt;</code>s only</h4>
+    <p>В данном случае избегайте использования элементов <code>&lt;select&gt;</code>, поскольку они в полной мере не могут стилізуватись в WebKit браузерах.</p>
+    <p>Avoid using <code>&lt;textarea&gt;</code> elements here as their <code>rows</code> attribute will not be respected in some cases.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-inputgroup-container-body">
+    <h4>Подсказки и информеры в группе введение требуют специальных настроек</h4>
+    <p>Когда используете подсказки или информеры (popovers) на элементах в пределах <code>.input-group</code>, вам необходимо определить параметр <code>container: 'body'</code>, для избежания нежелательных побочных эффектов (например, когда элемент становится шире и/или когда теряется закругленння углов при вызове подсказок или информеров).</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-inputgroup-dont-mix">
+    <h4>Не смешивайте с другими компонентами</h4>
+    <p>Не смешивайте группы форм или классы столбцов разметки непосредственно с группами ввода. Вместо этого, внедрите группу ввода внутри группы формы или связанной разметки с элементом.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-inputgroup-form-labels">
+    <h4>Always add labels</h4>
+    <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.</p>
+    <p>The exact technique to be used (<code>&lt;label&gt;</code> elements hidden using the <code>.sr-only</code> class, or use of the <code>aria-label</code>, <code>aria-labelledby</code>, <code>aria-describedby</code>, <code>title</code> or <code>placeholder</code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a few suggested, case-specific approaches.</p>
+  </div>
+
+  <h2 id="input-groups-basic">Основной пример</h2>
+  <p>Поместите дополнительный компонент или кнопку по обе стороны от ввода. Вы также можете разместить один с обеих сторон.</p>
+  <p><strong class="text-danger">Мы не поддерживаем несколько дополнительных компонентов на одной стВместоороне.</strong></p>
+  <p><strong class="text-danger">Мы не поддерживаем несколько form-control в одной группе ввода.</strong></p>
+  <form class="bs-example bs-example-form" data-example-id="simple-input-groups">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+    <br>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">$</span>
+      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      <span class="input-group-addon">.00</span>
+    </div>
+  </form>
+{% highlight html %}
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+{% endhighlight %}
+
+  <h2 id="input-groups-sizing">Изменение размера</h2>
+  <p>Разместите один приложение или одну кнопку с любой стороны от формы ввода. Вы также можете разместить их по обе стороны от формы ввода. <strong class="text-danger">Мы не поддерживаем несколько приложений с одной стороны.</strong></p>
+  <form class="bs-example bs-example-form" data-example-id="input-group-sizing">
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon" id="sizing-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+    </div>
+    <br>
+    <div class="input-group input-group-sm">
+      <span class="input-group-addon" id="sizing-addon3">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+  </form>
+{% highlight html %}
+<div class="input-group input-group-lg">
+  <span class="input-group-addon" id="sizing-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="sizing-addon2">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+</div>
+
+<div class="input-group input-group-sm">
+  <span class="input-group-addon" id="sizing-addon3">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+</div>
+{% endhighlight %}
+
+
+  <h2 id="input-groups-checkboxes-radios">Дополнение для флажков и переключателей</h2>
+  <p>Поместите любые опции галочек (checkbox) или переключателей в рамках дополнения формы ввода вместо текста.</p>
+  <form class="bs-example bs-example-form" data-example-id="input-group-with-checkbox-radio">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="checkbox" aria-label="Checkbox for following text input">
+          </span>
+          <input type="text" class="form-control" aria-label="Text input with checkbox">
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <input type="radio" aria-label="Radio button for following text input">
+          </span>
+          <input type="text" class="form-control" aria-label="Text input with radio button">
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </form>
+{% highlight html %}
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+{% endhighlight %}
+
+
+  <h2 id="input-groups-buttons">Дополнение для кнопок</h2>
+  <p>Кнопки в группах ввода немного отличаются и требуют один дополнительный уровень вложенности. Вместо <code>.input-group-addon</code>, вы должны будете использовать <code>.input-group-btn</code>. Это необходимо из-за стилей браузера по умолчанию, которые не могут быть переопределены.</p>
+  <form class="bs-example bs-example-form" data-example-id="input-group-with-button">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+          <input type="text" class="form-control" placeholder="Search for...">
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </form>
+{% highlight html %}
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+{% endhighlight %}
+
+  <h2 id="input-groups-buttons-dropdowns">Кнопки с выпадающим меню</h2>
+  <p></p>
+  <form class="bs-example bs-example-form" data-example-id="input-group-dropdowns">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Действие <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то иное</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Отдельная ссылка</a></li>
+            </ul>
+          </div><!-- /btn-группа -->
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Действие <span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то иное</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Отдельная ссылка</a></li>
+            </ul>
+          </div><!-- /btn-группа -->
+        </div><!-- /input-группа -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </form>
+{% highlight html %}
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Действие <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-группа -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Действие <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Действие</a></li>
+          <li><a href="#">Другое действие</a></li>
+          <li><a href="#">Что-то иное</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Отдельная ссылка</a></li>
+        </ul>
+      </div><!-- /btn-группа -->
+    </div><!-- /input-группа -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+{% endhighlight %}
+
+  <h2 id="input-groups-buttons-segmented">Сегментированные кнопки</h2>
+  <form class="bs-example bs-example-form" data-example-id="input-group-segmented-buttons">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">Действие</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то иное</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Отдельная ссылка</a></li>
+            </ul>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+        </div><!-- /.input-group -->
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">Действие</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li><a href="#">Действие</a></li>
+              <li><a href="#">Другое действие</a></li>
+              <li><a href="#">Что-то иное</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Отдельная ссылка</a></li>
+            </ul>
+          </div>
+        </div><!-- /.input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </form>
+{% highlight html %}
+<div class="input-group">
+  <div class="input-group-btn">
+    <!-- Кнопка и выпадающее меню -->
+  </div>
+  <input type="text" class="form-control" aria-label="...">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="...">
+  <div class="input-group-btn">
+    <!-- Кнопка и выпадающее меню -->
+  </div>
+</div>
+{% endhighlight %}
+</div>

@@ -1,0 +1,126 @@
+<div class="bs-docs-section">
+  <h1 id="dropdowns" class="page-header">Выпадающее меню</h1>
+
+  <p class="lead">Переключаемое, контекстное меню для отображения списка ссылок. Их интерактивность обеспечивается <a href="../javascript-doc/#dropdowns">JavaScript плагином для dropdown меню</a>.</p>
+
+  <h3 id="dropdowns-example">Пример</h3>
+  <p>Оберните кнопку выпадающего меню и список с помощью класса <code>.dropdown</code>или другого элемента, который объявляет <code>position: relative;</code>.</p>
+  <div class="bs-example" data-example-id="static-dropdown">
+    <div class="dropdown clearfix">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        Выпадающее
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другое действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Что-то еще</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div>
+  </div><!-- /пример -->
+{% highlight html %}
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        Выпадающее
+        <span class="caret"></span>
+      </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Действие</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другое действие</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Что-то еще</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Отдельная ссылка</a></li>
+  </ul>
+</div>
+{% endhighlight %}
+
+  <h3 id="dropdowns-alignment">Выравнивание</h3>
+  <p>По умолчанию, выпадающее меню автоматически устанавливается 100% от верхнего и вдоль левого края его родителя. Добавьте <code>.dropdown-menu-right</code> к <code>.dropdown-menu</code> для выравнивание выпадающего меню справа.</p>
+  <div class="bs-callout bs-callout-warning" id="callout-dropdown-positioning">
+    <h4>Может потребоваться дополнительное позиционирование</h4>
+    <p>Dropdowns автоматически позиционируется с помощью CSS в пределах нормального потока документа. Это означает, что выпадающее меню может быть обрезано родителями с определенными свойствами <code>overflow</code> или появляются за пределми области просмотра. Адресуйте эти вопросы по своему усмотрению, когда они возникают.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-dropdown-pull-right">
+    <h4><code>.pull-right</code> устаревшее выравнивание</h4>
+    <p>В версии 3.1, мы определили устаревшим выравнивание <code>.pull-right</code> для выпадающего меню. Для выравнивания меню справа, используйте <code>.dropdown-menu-right</code>. Компоненты, выровненные справа в навигационной панели используют реализован версию класса right-aligned, для автоматического выравнивания меню. Для переопределения их, используйте <code>.dropdown-menu-left</code>.</p>
+  </div>
+{% highlight html %}
+<ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+  ...
+</ul>
+{% endhighlight %}
+
+  <h3 id="dropdowns-headers">Заголовки</h3>
+  <p>Добавьте заголовок чтобы маркировать участки в любом выпадающего меню.</p>
+  <div class="bs-example">
+    <div class="dropdown clearfix">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+        Выпадающее
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+        <li role="presentation" class="dropdown-header">Название меню</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другое действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Что-то еще</a></li>
+        <li role="presentation" class="dropdown-header">Название меню</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div>
+  </div><!-- /пример -->
+{% highlight html %}
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+  ...
+  <li role="presentation" class="dropdown-header">Название меню</li>
+  ...
+</ul>
+{% endhighlight %}
+
+  <h3 id="dropdowns-divider">Делитель</h3>
+  <p>Добавить разделитель для разделения ряда ссылок в выпадающем меню.</p>
+  <div class="bs-example">
+    <div class="dropdown clearfix">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-expanded="true">
+        Выпадающее
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другое действие</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Что-то еще</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Отдельная ссылка</a></li>
+      </ul>
+    </div>
+  </div><!-- /пример -->
+{% highlight html %}
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+  ...
+  <li role="presentation" class="divider"></li>
+  ...
+</ul>
+{% endhighlight %}
+
+  <h3 id="dropdowns-disabled">Заблокированы части меню</h3>
+  <p>Добавьте <code>.disabled</code> к <code>&lt;li&gt;</code> в выпадающем списке, чтобы отключить ссылку.</p>
+  <div class="bs-example">
+    <div class="dropdown clearfix">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
+        Выпадающее
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Обычная ссылка</a></li>
+        <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Заблокированая ссылка</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другая ссылка</a></li>
+      </ul>
+    </div>
+  </div><!-- /пример -->
+{% highlight html %}
+<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Обычная ссылка</a></li>
+  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Заблокированая ссылка</a></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Другая ссылка</a></li>
+</ul>
+{% endhighlight %}
+</div>

@@ -1,0 +1,35 @@
+<div class="bs-docs-section">
+  <h1 id="grunt" class="page-header">Компиляция CSS и JavaScript</h1>
+
+  <p class="lead">Bootstrap использует <a href="http://gruntjs.com">Grunt</a> для сборки его системы, с удобными методами работы в рамках. Тем самым, мы собираем наш код, запускаем тесты, и многое другое.</p>
+
+  <h2 id="grunt-installing">Установка Grunt</h2>
+  <p>Чтобы установить Grunt, необходимо <strong>сначала <a href="http://nodejs.org/download/">загрузить и установить node.js</a></strong> (которая включает в себя npm). npm расшифровывается для <a href="http://npmjs.org/">узлов упакованных модулей</a> и это способ управления зависимостями развития посредством node.js.</p>
+
+  Then, from the command line:
+  <ol>
+    <li>Установите <code>grunt-cli</code> в глобальном масштабе <code>npm установки -g grunt-cli</code>.</li>
+    <li>Передите в главный  <code>/bootstrap/</code> каталог, а затем запустите <code>npm install</code>. npm посмотрите на <a href="https://github.com/twbs/bootstrap/blob/master/package.json"><code>package.json</code></a> файл и автоматически установите необходимые местные зависимости, перечисленные в нем.</li>
+  </ol>
+
+  <p>После завершения, у вас будет возможность запускать различные Grunt команды, предлагаемые из командной строки.</p>
+
+  <h2 id="grunt-commands">Доступные команды Grunt</h2>
+  <h3><code>grunt dist</code> (Просто собрать CSS и JavaScript)</h3>
+  <p>Восстанавливает <code>/dist/</code> каталог с составленные и уменьшенные CSS и JavaScript файлы. Обычно для пользователя Bootstrap , это команда необходима.</p>
+
+  <h3><code>grunt watch</code> (Счетчик)</h3>
+  <p>Часы уменьшают исходные файлы  и автоматически перекомпилирует их в CSS при скаждом сохранении изменений.</p>
+
+  <h3><code>grunt test</code> (Выполнить тесты)</h3>
+  <p>Запуск <a href="http://jshint.com">JSHint</a> и the <a href="http://qunitjs.com">QUnit</a> тестов (автоматически) в <a href="http://phantomjs.org">PhantomJS</a>.</p>
+
+  <h3><code>grunt docs</code> (Build &amp; test the docs assets)</h3>
+  <p>Builds and tests CSS, JavaScript, and other assets which are used when running the documentation locally via <code>jekyll serve</code>.</p>
+
+  <h3><code>grunt</code> (Построить абсолютно все и запустить тесты)</h3>
+  <p>Компиляции and минифайлы CSS and JavaScript, строит сайт документаций, запускает HTML5 валидатор против документов, восстанавливает активы настройщика,  и многое другое. Требует <a href="http://jekyllrb.com/docs/installation/">Jekyll</a>. Обычно это необходимо, только если вы взломали сам загрузчик Bootstrap.</p>
+
+  <h2 id="grunt-troubleshooting">Поиск и устранение неисправностей</h2>
+  <p>Если у вас возникли проблемы с установкой зависимостей или запуска команд Grunt, сначала удалить <code>/node_modules/</code> каталог сгенерированный npm. Затем, повтор <code>npm install</code>.</p>
+</div>

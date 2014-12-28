@@ -1,0 +1,208 @@
+<div class="bs-docs-section">
+  <h1 id="helper-classes" class="page-header">Вспомогательные классы</h1>
+
+  <h3 id="helper-classes-colors">Значки закрытия</h3>
+  <p>Передайте значение через цвет с использованием нескольких вспомогательных классов. Они также могут быть применены к ссылкам и потемнеют при наведении так же, как наши стили ссылок по умолчанию.</p>
+  <div class="bs-example" data-example-id="contextual-colors-helpers">
+    <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+    <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+    <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+    <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+    <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+{% highlight html %}
+<p class="text-muted">...</p>
+<p class="text-primary">...</p>
+<p class="text-success">...</p>
+<p class="text-info">...</p>
+<p class="text-warning">...</p>
+<p class="text-danger">...</p>
+{% endhighlight %}
+  <div class="bs-callout bs-callout-info" id="callout-helper-context-color-specificity">
+    <h4>Работа со спецификой</h4>
+    <p>Иногда акцент класса не может быть применен в силу специфики другого селектора. В большинстве случаев, необходимо заключить текст в <code>&lt;span&gt;</code> с классом.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-helper-context-color-accessibility">
+    <h4>Conveying meaning to assistive technologies</h4>
+    <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (the contextual colors are only used to reinforce meaning that is already present in the text/markup), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.</p>
+  </div>
+
+  <h3 id="helper-classes-backgrounds">Значек меню</h3>
+  <p>Как и цвет текста контекстных классов, легко устанавливать фон элемента к любому контекстному классу. Якорные компоненты будут темнеть при наведении, как и текстовые классы.</p>
+  <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
+    <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+    <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+    <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+    <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+    <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+{% highlight html %}
+<p class="bg-primary">...</p>
+<p class="bg-success">...</p>
+<p class="bg-info">...</p>
+<p class="bg-warning">...</p>
+<p class="bg-danger">...</p>
+{% endhighlight %}
+  <div class="bs-callout bs-callout-info" id="callout-helper-bg-specificity">
+    <h4>Работа со спецификой</h4>
+    <p>Иногда контекстные фоновые классы не могут быть применены в силу специфики другого селектора. В большинстве случаев, необходимо заключить текст в <code>&lt;span&gt;</code> с классом.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-helper-bg-accessibility">
+    <h4>Conveying meaning to assistive technologies</h4>
+    <p>As with <a href="#helper-classes-colors">contextual colors</a>, ensure that any meaning conveyed through color is also conveyed in a format that is not purely presentational.</p>
+  </div>
+
+  <h3 id="helper-classes-close">Значки закрытия</h3>
+  <p>Используйте общий значок закрытия для модальных окон или замечаний.</p>
+  <div class="bs-example" data-example-id="close-icon">
+    <p><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></p>
+  </div>
+{% highlight html %}
+<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-carets">Значек меню</h3>
+  <p>Используйте каретку, чтобы указать выпадающую функциональность и направление. Обратите внимание, что курсор по умолчанию автоматически изменится в <a href="../components/#btn-dropdowns-dropup"> dropup меню </a>.</p>
+  <div class="bs-example" data-example-id="caret">
+    <span class="caret"></span>
+  </div>
+{% highlight html %}
+<span class="caret"></span>
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-floats">Быстрое выравнивание</h3>
+  <p>Выравнивайте элементы слева или справа, с помощью соответствующих классов. Включено <code>!important</code>, чтобы избежать некоторых проблем. Классы также могут использоваться в качестве mixins.</p>
+{% highlight html %}
+<div class="pull-left">...</div>
+<div class="pull-right">...</div>
+{% endhighlight %}
+{% highlight scss %}
+// Classes
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+// Usage as mixins
+.element {
+  .pull-left();
+}
+.another-element {
+  .pull-right();
+}
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-warning" id="callout-helper-pull-navbar">
+    <h4>Не использовать в Navbars</h4>
+    <p>Чтобы выровнять компоненты с вспомогательными классами в навигационных панелях, используйте <code>.navbar-left</code> или <code>.navbar-right</code>. <a href="../components/#navbar-component-alignment">Просмотрите документацию навигационных панелей</a> для уточнений.</p>
+  </div>
+
+
+  <h3 id="helper-classes-center">Центровка содержимого блоков</h3>
+  <p>Установите для элемента блочное отображения через <code>display: block</code>, и отражение по центру через <code>margin</code>. Такая установка является доступной в качестве класса и реализован.</p>
+{% highlight html %}
+<div class="center-block">...</div>
+{% endhighlight %}
+{% highlight scss %}
+// Classes
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as mixins
+.element {
+  .center-block();
+}
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-clearfix">Clearfix</h3>
+  <p>Просто <code>float</code> с добавлением <code>.clearfix</code> <strong>родительский элемент</strong>. Здесь используется <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">the micro clearfix</a>, предоставленный Nicolas Gallagher. Это также может применяться в качестве реализован.</p>
+{% highlight html %}
+<!-- Использование как класс -->
+<div class="clearfix">...</div>
+{% endhighlight %}
+{% highlight scss %}
+// Mixin itself
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage as a Mixin
+.element {
+  .clearfix();
+}
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-show-hide">Отображения и скрытия содержимого</h3>
+  <p>Чтобы скрыть или отобразить элемент, <strong>в том числе, для программ чтения с экрана</strong>, используйте классы <code>.show</code> и <code>.hidden</code>. Эти классы используют <code>!important</code>, чтобы избежать специфических конфликтов, подобно <a href="#helper-classes-floats">быстрому выравниванию</a>. Они являются доступными для блочного уровня переключения. Они также могут использоваться в качестве mixins.</p>
+  <p>Класс <code>.hide</code> является доступным, но он не всегда обрабатывается программами чтения экранов и является <strong>устаревшим</strong> начиная с v3.0.1. Используйте вместо него класс <code>.hidden</code> или <code>.sr-only</code>.</p>
+  <p>Кроме этого, <code>.invisible</code> может использоваться для переключения лишь видимости элемента, то есть его <code>display</code> не изменен, и этот элемент все еще может влиять на работу документа.</p>
+{% highlight html %}
+<div class="show">...</div>
+<div class="hidden">...</div>
+{% endhighlight %}
+{% highlight scss %}
+// Classes
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Usage as mixins
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-screen-readers">Для чтения с экрана и клавиатуры содержание навигации</h3>
+  <p>Скрыть элемент на всех устройствах <strong>except screen readers</strong> c <code>.sr-only</code>. Объединить <code>.sr-only</code> с <code>.sr-only-focusable</code> чтобы показать элемент снова, когда он сосредоточены (например, с помощью клавиатуры-только пользователь).  Необходимые для следующих.<a href="../getting-started/#accessibility">accessibility best practices</a>. Может также использоваться как Mixins.</p>
+{% highlight html %}
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+{% endhighlight %}
+{% highlight scss %}
+// Usage as a Mixin
+.skip-navigation {
+  .sr-only();
+  .sr-only-focusable();
+}
+{% endhighlight %}
+
+
+  <h3 id="helper-classes-image-replacement">Замещение изображений</h3>
+  <p>Применяйте класс <code>.text-hide</code> или реализован для замены текстового элемента контента фоновым изображением.</p>
+{% highlight html %}
+<h1 class="text-hide">Пользовательский заголовок</h1>
+{% endhighlight %}
+  {% highlight scss %}
+// Usage as a Mixin
+.heading {
+  .text-hide();
+}
+{% endhighlight %}
+</div>

@@ -1,0 +1,52 @@
+<div class="bs-docs-section">
+  <h1 id="code" class="page-header">Код</h1>
+
+  <h2 id="code-inline">Встроенный</h2>
+  <p>Поместите встроенные участки кода с <code>&lt;code&gt;</code>.</p>
+<div class="bs-example" data-example-id="inline-code">
+  For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</div>
+{% highlight html %}
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+{% endhighlight %}
+
+  <h2 id="code-user-input">Пользовательский ввод</h2>
+  <p>Используйте <code>&lt;kbd&gt;</code> чтобы указать ввод, который как правило вводится с клавиатуры.</p>
+<div class="bs-example" data-example-id="simple-kbd">
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+  To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+</div>
+{% highlight html %}
+To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+{% endhighlight %}
+
+  <h2 id="code-block">Основной блок</h2>
+  <p>Используйте <code>&lt;pre&gt;</code> для нескольких строк кода. Будьте уверены, чтобы избежать любые угловые скобки в коде для правильного отображения.</p>
+<div class="bs-example" data-example-id="simple-pre">
+  <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+</div>
+{% highlight html %}
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+{% endhighlight %}
+
+  <p>Вы можете по желанию добавить <code>.pre-scrollable</code> класса, в котором будут определена максимальная высота 350пкс и обеспечена ось У для полосы прокрутки.</p>
+  <h2 id="code-variables">Переменные</h2>
+  <p>Для обозначения переменных используйте <code>&lt;var&gt;</code> тег.</p>
+  <div class="bs-example" data-example-id="simple-var">
+    <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+
+  </div>
+{% highlight html %}
+<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+{% endhighlight %}
+
+  <h2 id="code-sample-output">Пример вывода</h2>
+  <p>Для обозначения блоков пример вывода из программы использовать <code>&lt;samp&gt;</code> тег.</p>
+  <div class="bs-example" data-example-id="simple-samp">
+    <p><samp>Этот текст предназначен для рассматрения как пример вывода компьютерной программы.</samp></p>
+  </div>
+{% highlight html %}
+<samp>This text is meant to be treated as sample output from a computer program.</samp>
+{% endhighlight %}
+</div>

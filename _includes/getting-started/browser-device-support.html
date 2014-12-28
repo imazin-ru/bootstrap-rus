@@ -1,0 +1,205 @@
+<div class="bs-docs-section">
+  <h1 id="support" class="page-header">Браузер и поддержка устройств</h1>
+  <p class="lead">Bootstrap спроектирован для лучшей работы в новых браузерах, то есть старые браузеры не всегда могут правильно отображать стили, хотя полностью функциональны в визуализации определенных компонентов</p>
+
+  <h3 id="support-browsers">Поддержка браузерами</h3>
+  <p>В частности, мы поддерживаем <strong>последние версии</strong> из следующих браузеров и платформ. На Windows, <strong>мы поддерживаем Internet Explorer 8-11</strong>. Более конкретная информация поддержки предоставлена ниже.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td></td>
+          <th>Chrome</th>
+          <th>Firefox</th>
+          <th>Internet Explorer</th>
+          <th>Opera</th>
+          <th>Safari</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Android</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Не поддерживается</td>
+          <td class="text-muted">N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">iOS</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-muted">N/A</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Не поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+        </tr>
+        <tr>
+          <th scope="row">Mac OS X</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+        </tr>
+        <tr>
+          <th scope="row">Windows</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Не поддерживается</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Bootstrap должен достаточно хорошо выглядеть и вести себя в Chromium и Chrome для Linux, Firefox для Linux, и Internet Explorer 7, хотя они официально не поддерживаются.</p>
+  <p>Список некоторых ошибок в брузере, с чем Bootstrap может столкнуться, смотрите наш <a href="../browser-bugs/">Баги в браузере</a>.</p>
+
+  <h3 id="support-ie8-ie9">Internet Explorer 8 и 9</h3>
+  <p>Internet Explorer 8 и 9 также поддерживается, однако помните, что некоторые свойства CSS3 и элементы HTML5 не в полной мере поддерживаются данным браузерами. Кроме того, <strong>Internet Explorer 8 требует использования <a href="https://github.com/scottjehl/Main" target="_blank">Respond.js</a>, чтобы разрешить поддержку медиа запросов.</strong></p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th class="col-xs-4">Свойство</th>
+          <th class="col-xs-4">Internet Explorer 8</th>
+          <th class="col-xs-4">Internet Explorer 9</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>border-radius</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove"aria-hidden="true"></span> Не поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>box-shadow</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove"aria-hidden="true"></span> Не поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Поддерживается</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>transform</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove"aria-hidden="true"></span> Не поддерживается</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ок" aria-hidden="true"></span> Поддерживается с префиксом <code>-ms</code></td>
+        </tr>
+        <tr>
+          <th scope="row"><code>transition</code></th>
+          <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove"aria-hidden="true"></span> Не поддерживается</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>placeholder</code></th>
+          <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove"aria-hidden="true"></span> Не поддерживается</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Посетите <a href="http://caniuse.com/" target="_blank">Can I use...</a> для более детального ознакомления, какие свойства CSS3 и HTML5 поддерживаются различными браузерами.</p>
+
+  <h3 id="support-ie8-respondjs">Internet Explorer 8 и Respond.js</h3>
+  <p>Примите во внимание следующие оговорки, при использовании Respond.js в вашей среде разработки, в рабочей среде Internet Explorer 8.</p>
+  <h4 id="respond-js-x-domain">Respond.js и кросс-доменный CSS</h4>
+  <p>Если вы храните Respond.js и CSS на разных (суб)доменах (например, на CDN) - это требует некоторых дополнительных установок. <a href="https://github.com/scottjehl/Respond#cdnx-domain-setup" target="_blank">Ознакомьтесь с документацией Respond.js</a> для уточнений.</p>
+  <h4 id="respond-file-proto">Respond.js и <code>file://</code></h4>
+  <p>Через правила безопасности браузера, Respond.js не работает при просмотре через протокол <code>file://</code> (например, когда вы открываете HTML файл локально). Чтобы протестировать настройки чувствительности в IE8, просматривайте ваши страницы через HTTP(S). <a href="https://github.com/scottjehl/Respond#support--caveats" target="_blank">Ознакомьтесь с документацией Respond.js</a> для уточнений.</p>
+  <h4 id="respond-import">Respond.js и <code>@import</code></h4>
+  <p>Respond.js не работает с CSS, на которые ссылаются как <code>@import</code>. В частности, некоторые конфигурации Drupal, как известно, используют <code>@import</code>. <a href="https://github.com/scottjehl/Respond#support--caveats" target="_blank">Ознакомьтесь с документацией Respond.js</a> для уточнений.</p>
+
+  <h3 id="support-ie8-box-sizing">Internet Explorer 8 и box-sizing</h3>
+  <p>IE8 не в полной мере поддерживает <code>box-sizing: border-box;</code> при комбинировании с <code>min-width</code>, <code>max-width</code>, <code>min-height</code>или <code>max-height</code>. По этой причине, начиная с v3.0.1, мы больше не поддерживаем <code>max-width</code>, <code>.container</code>.</p>
+
+  <h3 id="support-ie8-font-face">Internet Explorer 8 и @font-face</h3>
+  <p>IE8 имеет некоторые проблемы с <code>@font-face</code> в сочетании с <code>:before</code>. Bootstrap использует эту комбинацию с его символичной иконкой. Если страница кэшируется, и загружается без мыши по окну (т.е. нажать кнопку обновления или загрузки в встроенном кадре), то страница вынесена до загрузки шрифтов. При наведении курсора на страницу (тело) покажет некоторые значки и зависший над остальными иконами покажет также. <a href="https://github.com/twbs/bootstrap/issues/13863">Смотреть выпуск #13863</a> для деталей.</p>
+
+  <h3 id="support-ie-compatibility-modes">Режим совместимости с IE</h3>
+  <p>Bootstrap не поддерживает режим совместимости в старых версиях Internet Explorer. Чтобы быть уверенным, что вы используете последнюю версию такого режима для IE, просмотрите включен соответствующий тег <code>&lt;meta&gt;</code> на вашей странице:</p>
+{% highlight html %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endhighlight %}
+  <p>Подтвердите режим документа, открыв средства отладки: нажмите <kbd>F12</kbd> и проверьте "Document Mode".</p>
+  <p>Этот тег входит в состав всех Bootstrap документациий и примеров для обеспечения лучшей визуализации возможных в каждой поддерживаемой версии Internet Explorer.</p>
+  <p>Просмотрите <a href="http://stackoverflow.com/questions/6771258/whats the difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge" target="_blank">эти вопросы на StackOverflow</a> для уточнений.</p>
+
+  <h3 id="support-ie10-width">Internet Explorer 10 на Windows 8 и Windows Phone 8</h3>
+  <p>Internet Explorer 10 не отличает <strong>ширину устройства</strong> <strong>ширины окна просмотра</strong>, и таким образом не правильно применяет медіазапити в Bootstrap CSS. Как правило, это можно быстро починить добавив следующий код CSS:</p>
+{% highlight scss %}
+@-ms-viewport       { width: device-width; }
+{% endhighlight %}
+  <p>Однако, это не работает для устройств, работающих под управлением Windows Phone 8 версий старше, чем <a href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx">Update 3 (a.k.a. GDR3)</a>, поскольку это вызывает такие устройства, чтобы главным образом показать основной рабочий стол вместо узкого "phone" view. Для решения этой проблемы вам необходимо <strong> включать следующие CSS и JavaScript, чтобы обойти ошибку</strong>.</p>
+{% highlight scss %}
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+{% endhighlight %}
+
+{% highlight js %}
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.querySelector('head').appendChild(msViewportStyle)
+}
+{% endhighlight %}
+  <p>Для получения дополнительной информации и руководства по использованию, просмотрите <a href="http://timkadlec.com/2013/01/windows phone-8-and-device-width/" target="_blank">Windows Phone 8 и Device-Width</a>.</p>
+  <p>Один за одним, мы включаем это в документацию и примеры Bootstrap в качестве демонстрации.</p>
+
+  <h3 id="support-safari-percentages">Процентное округления в Safari</h3>
+  <p>The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our <code>.col-*-1</code> grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari/iOS, you have some options for workarounds:</p>
+  <ul>
+    <li>Добавить <code>.pull-right</code> в вашей последней колонки в разметке, чтобы получить жесткое выравнивание по правому краю.</li>
+    <li>Изменить проценты вручную, чтобы получить идеальное округления для Safari (более сложно, чем в первом варианте)</li>
+  </ul>
+
+  <h3 id="support-fixed-position-keyboards">Модули, navbars, и виртуальные клавиатуры</h3>
+  <h4>Переполнение и прокрутка</h4>
+  <p>Поддержка <code>overflow: hidden</code> для элемента <code>&lt;body&gt;</code> достаточно ограничена в iOS и Android. В браузере этих устройств, при прокруткі за пределы верхней или нижней модальной части, начинает прокручиваться содержание в <code>&lt;body&gt;</code>.</p>
+  <h4>Виртуальная клавиатура</h4>
+  <p>Обратите внимание - если вы используете форму ввода в модальном окне или навигации, iOS имеет ошибку отображения, через которую не обновляется позиция фиксированных элементов при вызова виртуальной клавиатуры. Существуют некоторые обходные пути для этого, в том числе - трансформирующие элементы <code>position: absolute</code>, или при выявлении фокуса на элементе вызывают таймер и пробуют исправить это вручную. Bootstrap не обрабатывает такие ошибки, так что вам нужно самим это решить.</p>
+  <h4>Navbar Dropdowns</h4>
+  <p>Элемент <code>.dropdown-backdrop</code> не используется на iOS в навигации из-за сложности с z-index. Таким образом, чтобы закрыть выпадающие меню, необходимо просто нажать элемент выпадающего (или <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile">любой другой элемент, который будет генерировать событие нажатия в iOS</a>).</p>
+
+  <h3 id="support-browser-zooming">Браузерное масштабирование</h3>
+  <p>При изменении размера страницы, неизбежно оказывается некорректное отображение некоторых элементов: это касается и Bootstrap, и остальных веб-документа. В зависимости от конкретного случая, мы можем исправить это (при необходимости вы можете открыть соответствующий запрос, но сначала необходимо поискать или нет аналогичных запросов). Тем не менее, но как правило мы игнорируем их, поскольку они часто не имеют прямого решения, кроме создания обходных путей в виде хаков (hacky).</p>
+
+  <h3 id="support-printing">Печать</h3>
+  <p>Even in some modern browsers, printing can be quirky.</p>
+  <p>In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. <a href="https://github.com/twbs/bootstrap/issues/12078">See #12078 for some details.</a> Suggested workarounds:</p>
+  <ul>
+    <li>Примените extra-small разметку и убедитесь, что ваша страница выглядит приемлемо.</li>
+    <li>Настройка значения <code>@screen-*</code> Less переменных, чтобы ваш бумага для принтера рассматривалась больше, чем extra-small.</li>
+    <li>Добавте пользовательские запросы, чтобы изменить размер разметки точек останова только для печатных СМИ.</li>
+  </ul>
+  <p>Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:</p>
+  {% highlight css %}
+@media print {
+  .container {
+    width: auto;
+  }
+}
+  {% endhighlight %}
+
+  <h3 id="support-android-stock-browser">Android stock браузер</h3>
+  <p>Из коробки, Android 4.1 (и даже некоторые новые релизы по-видимому) ставит с браузера приложение, как в веб-браузере по умолчанию(в отличие от Chrome). К сожалению, браузер приложение имеет множество ошибок и несоответствий с CSS в целом.</p>
+  <h4>Select меню</h4>
+  <p>На <code>&lt;select&gt;</code> элементе, в Android браузере не будет отображаться элементы управления если есть <code>border-radius</code> и/or <code>border</code>. (Смотри <a href="http://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with">этот вопрос по StackOverflow</a> более детально.) Используйте фрагмент кода ниже, чтобы удалить этот CSS и сделать <code>&lt;select&gt;</code> элемент без стиля на Android браузере. Агент пользователя фырканье предотвращает помехи с Chrome, Safari, and Mozilla браузерами.</p>
+{% highlight html %}
+<script>
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+{% endhighlight %}
+  <p>Хотите увидеть пример? <a href="http://jsbin.com/kuvoz/1">Проверьте это JS Bin demo.</a></p>
+
+  <h3 id="support-validators">Валидаторы</h3>
+  <p>In order to provide the best possible experience to old and buggy browsers, Bootstrap uses <a href="http://browserhacks.com">CSS browser hacks</a> in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.</p>
+  <p>These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.</p>
+  <p>Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">a certain Firefox bug</a>.</p>
+</div>

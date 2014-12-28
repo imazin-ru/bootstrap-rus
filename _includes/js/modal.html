@@ -1,0 +1,422 @@
+<div class="bs-docs-section">
+  <h1 id="modals" class="page-header">Модальные окна <small>modal.js</small></h1>
+  <p>Модаль является рационализированным, но гибким диалоговым окном, с минимальным, лишь необходимой функциональностью и умными настройками по умолчанию.</p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-stacked-modals">
+    <h4>Перекрытия модали не поддерживается</h4>
+    <p>Убедитесь, что вы не открываете модали в то время, когда другая модаль все еще видимая. Отображение более, чем одной модали одновременно, требует пользовательского кода.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-modal-markup-placement">
+    <h4>Модальные размещения разметки</h4>
+    <p>Всегда стараемся размещать модаль в HTML код в положении верхнего уровня в документе, чтобы избежать других компонентов, влияющих на внешний вид и/ или функциональность модали.</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-modal-mobile-caveats">
+    <h4>Оговорки в отношении мобильных устройств</h4>
+    <p>Есть определенные предостережения относительно использования модальных окон на мобильных устройствах. <a href="../getting-started/#support-fixed-position-keyboards">Просмотрите наши документы относительно поддержки браузеров</a> для уточнений.</p>
+  </div>
+
+  <p><strong class="text-danger">Due to how HTML5 defines its semantics, the <code>autofocus</code> HTML attribute has no effect in Bootstrap modals.</strong> Чтобы добиться такого же эффекта, используя пользовательские JavaScript:</p>
+  {% highlight js %}
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
+  {% endhighlight %}
+
+  <h2 id="modals-examples">Примеры</h2>
+
+  <h3>Пример статического окна</h3>
+  <p>Создание модального окна с заголовком, основным содержанием, и перечнем действий в нижнем колонтитуле.</p>
+  <div class="bs-example bs-example-modal" data-example-id="static-modal">
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Название модали</h4>
+          </div>
+          <div class="modal-body">
+            <p>Один файл body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Сохранить изменения</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </div><!-- /пример -->
+{% highlight html %}
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Название модали</h4>
+      </div>
+      <div class="modal-body">
+        <p>Один файл body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endhighlight %}
+
+  <h3>Живое демо</h3>
+  <p>Модальное окно, созданное с помощью JavaScript, задействуется кликом кнопки, что внизу. Оно будет спадать вниз и уходить вверху страницы.</p>
+  <!-- пример модального содержания -->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Текст модали</h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+          <h4>Информационная панель в модали</h4>
+          <p>Эта <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">кнопка</a> должна вызвать popover на клик.</p>
+
+          <h4>Подсказки в модали</h4>
+          <p><a href="#" class="tooltip-test" title="Tooltip">Эта ссылка</a> и <a href="#" class="tooltip-test" title="Tooltip">эта ссылка</a> должны иметь подсказки при наведении курсора мыши.</p>
+
+          <hr>
+
+          <h4>Переполнение текстом, чтобы показать поведение с прокруткой</h4>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Сохранить изменения</button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="bs-example" style="padding-bottom: 24px;">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Запуск демо
+      </button>
+  </div><!-- /пример -->
+{% highlight html %}
+<!-- Триггер кнопка модали-->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Запуск демо
+      </button>
+
+<!-- Модаль -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить изменения</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-warning" id="callout-modal-accessibility">
+    <h4>Сделайте модали доступными</h4>
+    <p>Убедитесь, что добавили <code>role="dialog"</code> - <code>.modal</code>, атрибут <code>aria-labelledby="myModalLabel"</code> для ссылки на название модали, и <code>aria-hidden="true"</code> для оповещения assistive technologies (вспомогательных технологий), чтобы пропускали DOM-элементы модальных окон.</p>
+    <p>Кроме этого, вы можете предоставить описание диалоговой модали при помощи <code>aria-describedby</code>, <code>.modal</code>.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-info" id="callout-modal-youtube">
+    <h4>Вложения видео YouTube</h4>
+    <p>Вложение YouTube видео в модали требует дополнительных настроек не в Bootstrap, автоматически остановки воспроизведение и другое. <a href="http://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">See this helpful Stack Overflow post</a> для подробной информации.</p>
+  </div>
+
+  <h2 id="modals-sizes">Дополнительные размеры</h2>
+  <p>Модали имеют два дополнительных размера, доступные через модификаторы классов, которые будут размещены на <code>.modal-dialog</code>.</p>
+  <div class="bs-example">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Большая модаль</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Малая модаль</button>
+  </div>
+{% highlight html %}
+<!-- Большая модаль -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Большая модаль</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+
+<!-- Малая модаль -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Малая модаль</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <!--  Состав модали для приведенного выше примера -->
+  <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myLargeModalLabel">Большая модаль</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="mySmallModalLabel">Малая модаль</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <h2 id="modals-remove-animation">Удаление анимации</h2>
+  <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>
+{% highlight html %}
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  ...
+</div>
+{% endhighlight %}
+
+  <h2 id="modals-related-target">Varying modal content based on trigger button</h2>
+  <p>Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">HTML <code>data-*</code> attributes</a> (possibly <a href="http://api.jquery.com/data/">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>,</p>
+  <div class="bs-example" style="padding-bottom: 24px;">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
+    ...more buttons...
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="control-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@twbootstrap">Open modal for @twbootstrap</button>
+...more buttons...
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+{% highlight js %}
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+{% endhighlight %}
+
+  <h2 id="modals-usage">Использование</h2>
+  <p>Модальный плагин переключает ваш скрытый контент по запросу, через атрибуты данных или JavaScript. Он также добавляет <code>.modal-open</code> к <code>&lt;body&gt;</code> для изменения поведения прокрутки по умолчанию и генерирует <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
+
+  <h3>Через атрибуты данных</h3>
+  <p>Активируйте модальные окна без написания JavaScript. Установите <code>data-toggle="modal"</code> в контроллере элемента, такого как кнопка, рядом с <code>data-target="#foo"</code> или <code>href="#foo"</code>, чтобы нацелить определенную модаль для переключения.</p>
+{% highlight html %}
+<button type="button" data-toggle="modal" data-target="#myModal">Запустить модаль</button>
+{% endhighlight %}
+
+  <h3>Через JavaScript</h3>
+  <p>Вызывайте модаль с помощью id <code>myModal</code> с лаконичной записью на JavaScript:</p>
+  {% highlight js %}$('#myModal').modal(options){% endhighlight %}
+
+  <h3 id="modals-options">Параметры</h3>
+  <p>Параметры могут передаваться через атрибуты данных или JavaScript. В случае передачи через атрибуты данных, добавьте приставку с названием параметра <code>data</code>, как в примере: <code>data-backdrop=""</code>.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th style="width: 100px;">Название</th>
+         <th style="width: 50px;">Тип</th>
+         <th style="width: 50px;">По умолчанию</th>
+         <th>Описание</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>фон</td>
+         <td>логический или строковый <code>'static'</code></td>
+         <td>правда</td>
+         <td>Включает элемент modal-backdrop. Можно также указать <code>static</code> для обстановке, который не закрывается при нажатии на модаль.</td>
+       </tr>
+       <tr>
+         <td>клавиатура</td>
+         <td>логический</td>
+         <td>правда</td>
+         <td>Закрытие модали при клике на клавишу escape.</td>
+       </tr>
+       <tr>
+         <td>Показать</td>
+         <td>логический</td>
+         <td>правда</td>
+         <td>Показывает модаль при инициализации.</td>
+       </tr>
+       <tr>
+         <td>дистанционный</td>
+         <td>путь</td>
+         <td>ложь</td>
+         <td>
+          <p><strong class="text-danger">This option is deprecated since v3.3.0 and will be removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a> yourself.</p>
+          <p>Если предоставлен удаленный URL, содержимое будет загружаться </strong> через jQuery's <code>load</code> и вставлятись в корневой элемент модали <code>.modal-content</code>. Если вы используете data api, вы можете еще использовать атрибут <code>href</code> для определения удаленного ресурса. Пример такого варианта показан ниже:</p>
+{% highlight html %}
+<a data-toggle="modal" href="remote.html" data-target="#modal">Click me</a>
+{% endhighlight %}
+         </td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+
+  <h3 id="modals-methods">Методы</h3>
+
+  <h4>.modal(параметры)</h4>
+  <p>Активизирует содержимое как модальный. Принимает необязательный параметр с типом данных <code>объект</code>.</p>
+{% highlight js %}
+$('#myModal').modal({
+  keyboard: false
+})
+{% endhighlight %}
+
+  <h4>.modal('toggle')</h4>
+  <p>Ручное переключение модали. <strong title="Returns to the caller before the modal has actually been shown or hidden">Возвращается к инициатору перед фактическим показом или сокрытием модали </strong> (то есть, перед запуском событий <code>shown.bs.modal</code> или <code>hidden.bs.modal</code>).</p>
+  {% highlight js %}$('#myModal').modal('toggle'){% endhighlight %}
+
+  <h4>.modal('show')</h4>
+  <p>Ручное отображения модали. <strong title="Returns to the caller before the modal has actually been shown">Возвращается к инициатору перед фактическим показом или сокрытием модали </strong> (то есть, перед запуском событий <code>shown.bs.modal</code>).</p>
+  {% highlight js %}$('#myModal').modal('show'){% endhighlight %}
+
+  <h4>.modal('hide')</h4>
+  <p>Ручное сокрытие модали. <strong title="Returns to the caller before the modal has actually been hidden">Возвращается к инициатору перед фактическим показом или сокрытием модали </strong> (то есть, перед запуском событий <code>hidden.bs.modal</code>).</p>
+  {% highlight js %}$('#myModal').modal('hide'){% endhighlight %}
+
+  <h3 id="modals-events">События</h3>
+  <p>Класс для модалей в Bootstrap предоставляет несколько событий, чтобы обеспечить функциональность модали.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped bs-events-table">
+      <thead>
+       <tr>
+         <th style="width: 150px;">Тип События</th>
+         <th>Описание</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>show.bs.modal</td>
+         <td>Это событие срабатывает во время вызова метода <code>show</code>. Если вызов происходит за клик, то элемент, на котором был этот клик, доступный как свойство события <code>relatedTarget</code>.</td>
+       </tr>
+       <tr>
+         <td>shown.bs.modal</td>
+         <td>Эта подействует срабатывает, когда модаль будет отражена для пользователя (при этом ожидается завершение навигации CSS). Если вызов происходит за клик, то элемент, на котором был этот клик, доступный как свойство события <code>relatedTarget</code>.</td>
+       </tr>
+       <tr>
+         <td>hide.bs.modal</td>
+         <td>Это событие срабатывает во время вызова метода <code>hide</code>.</td>
+       </tr>
+       <tr>
+         <td>hidden.bs.modal</td>
+         <td>Это событие срабатывает, когда модаль завершит скрытие от пользователя (при этом ожидается завершение навигации CSS).</td>
+       </tr>
+       <tr>
+         <td>loaded.bs.modal</td>
+         <td>Это событие генерируется, когда модаль загружена контент использует <code>remote</code> вариант.</td>
+       </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+{% highlight js %}
+$('#myModal').on('hidden.bs.modal', function (e) {
+  // do something...
+})
+{% endhighlight %}
+</div>

@@ -1,0 +1,279 @@
+<div class="bs-docs-section">
+  <h1 id="panels" class="page-header">Панели</h1>
+
+  <p class="lead">Хотя не всегда необходимо, но иногда нужно во что-то упаковать DOM. Для таких случаев, попробуйте компонент панели.</p>
+
+  <h3 id="panels-basic">Основной пример</h3>
+  <p>По умолчанию, все <code>.panel</code> применяют некоторую базовую рамка (border) и отступы (padding), чтобы вместить содержимое.</p>
+  <div class="bs-example" data-example-id="simple-panel">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Basic panel example
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+{% endhighlight %}
+
+  <h3 id="panels-heading">Панель с заголовком</h3>
+  <p>Можно легко добавлять заголовки контейнера к панели с <code>.panel-heading</code>. Вы можете также включать любой <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> вместе с классом <code>.panel-title</code>, чтобы добавить предвизначені заголовки.</p>
+  <p>Для правильной линии окраски, не забудьте разместить ссылки в заголовках в <code>.panel-title</code>.</p>
+  <div class="bs-example" data-example-id="panel-with-heading">
+    <div class="panel panel-default">
+      <div class="panel-heading">Panel heading without title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Название панели</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+{% endhighlight %}
+
+  <h3 id="panels-footer">Панель с нижним колонтитулом</h3>
+  <p>Оберните кнопки или вторичный текст в <code>.panel-footer</code>. Заметьте, что эта панель с нижним колонтитулом <strong>не наследует</strong> цвета и рамки (borders), при использовании контекстных вариантов, поскольку они не предназначены, чтобы быть на переднем плане.</p>
+  <div class="bs-example" data-example-id="panel-with-footer">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Panel content
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="panels-alternatives">Контекстные альтернативы</h3>
+  <p>Так как и другие компоненты, можно легко сделать панель более выразительной для конкретного контекста, добавив любой контекстный состояние классов.</p>
+  <div class="bs-example" data-example-id="contextual-panels">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-primary">...</div>
+<div class="panel panel-success">...</div>
+<div class="panel panel-info">...</div>
+<div class="panel panel-warning">...</div>
+<div class="panel panel-danger">...</div>
+{% endhighlight %}
+
+  <h3 id="panels-tables">С таблицами</h3>
+  <p>Вставьте любую таблицу без рамок с классом <code>.table</code> внутрь панели, для создания простого дизайна. Если применяется класс <code>.panel-body</code>, мы добавляем еще границы вверху для разграничения.</p>
+  <div class="bs-example" data-example-id="table-within-panel">
+    <div class="panel panel-default">
+      <!-- Содержание панели по умолчанию -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Здесь произвольный текст. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Таблица -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Имя пользователя</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <!-- Содержание панели по умолчанию -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- Таблица -->
+  <table class="table">
+    ...
+  </table>
+</div>
+{% endhighlight %}
+
+  <p>Если панель не имеет тела, компоненты переносятся из заголовка панели таблицы корректно.</p>
+  <div class="bs-example" data-example-id="panel-without-body-with-table">
+    <div class="panel panel-default">
+      <!-- Содержание панели по умолчанию -->
+      <div class="panel-heading">Panel heading</div>
+
+      <!-- Таблица -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Имя пользователя</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <!-- Содержание панели по умолчанию -->
+  <div class="panel-heading">Panel heading</div>
+
+  <!-- Таблица -->
+  <table class="table">
+    ...
+  </table>
+</div>
+{% endhighlight %}
+
+
+  <h3 id="panels-list-group">Со списком групп</h3>
+  <p>Легко включать <a href="#list-group">список групп</a> в пределы любой панели.</p>
+  <div class="bs-example" data-example-id="panel-with-list-group">
+    <div class="panel panel-default">
+      <!-- Содержание панели по умолчанию -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+        <p>Здесь произвольный текст. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+
+      <!-- Список группы -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div>
+  </div>
+{% highlight html %}
+<div class="panel panel-default">
+  <!-- Содержание панели по умолчанию -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- Список группы -->
+  <ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+{% endhighlight %}
+</div>

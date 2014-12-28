@@ -1,0 +1,461 @@
+<div class="bs-docs-section">
+  <h1 id="navbar" class="page-header">Навигационная панель</h1>
+
+  <h2 id="navbar-default">Навигационная панель по умолчанию</h2>
+  <p>Навигационные панели являются адаптивными цель-компонентами, которые служат в качестве навигационных заголовков для приложений или сайтов. При просмотре на мобильных устройствах они сворачиваются (и могут переключаться), а при увеличении ширины смотрового окна принимают горизонтальную форму.</p>
+  <p><strong class="text-danger">Justified navbar nav links are currently not supported.</strong></p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-overflow">
+    <h4>Переполнение контента</h4>
+    <p>Поскольку Bootstrap не знаете, сколько места содержимого в ваших потребностей NavBar, вы можете столкнуться с проблемами, заключения содержимого во втором ряду. Чтобы решить эту проблему, вы можете:</p>
+    <ol type="a">
+      <li>Уменьшите количество или ширину NavBar пунктов.</li>
+      <li>Скройте определенные элементы NavBar в определенных размерах экрана с помощью <a href="../css/#responsive-utilities">классов адаптивных утилит</a>.</li>
+      <li>Измените точку, в которой ваши NavBar переключается между свернутым и горизонтальной режимом. Настройте переменную <code>@grid-float-breakpoint</code> или добавmnt свой собственный медиа-запрос.</li>
+    </ol>
+  </div>
+  <div class="bs-callout bs-callout-danger" id="callout-navbar-js">
+    <h4>Requires JavaScript plugin</h4>
+    <p>Если JavaScript отключен и ширина окна станет достаточно узкой, для чтобы навигационная панель свернулась, то тогда не будет возможности развернуть навигационную панель и просмотреть ее содержимое с классом <code>.navbar-collapse</code>.</p>
+    <p>Адаптивная навигационная панель в вашей версии Bootstrap требует<a href="../javascript-doc/#collapse"> плагина collapse</a>.</p>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-navbar-breakpoint">
+    <h4>Изменение сворачивания мобильных navbar</h4>
+    <p>NavBar коллапсирует в вертикальной мобильного зрения если видовой экран уже, чем <code>@grid-float-breakpoint</code>,  и расширяется в горизонтальной немобильного зрения если видовой экран, по крайней мере <code>@grid-float-breakpoint</code> в ширину. Эта переменная в менее источника контролировать, когда NavBar разрушается /расширяется. Значение по умолчанию  <code>768px</code> (the smallest "small" or "tablet" screen).</p>
+  </div>
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-role">
+    <h4>Доступность навигационных панелей</h4>
+    <p>Be sure to use a <code>&lt;nav&gt;</code> element or, if using a more generic element such as a <code>&lt;div&gt;</code>, add a <code>role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</p>
+  </div>
+
+  <div class="bs-example" data-example-id="default-navbar">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Марка и переключение сгруппированы для лучшего мобильного дисплея -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Отправить</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Ссылка</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+{% highlight html %}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Марка и переключение сгруппированы для лучшего мобильного дисплея -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Ссылка</a></li>
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Отправить</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Ссылка</a></li>
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% endhighlight %}
+
+
+  <h2 id="navbar-brand-image">Brand image</h2>
+  <p>Replace the navbar brand with your own image by swapping the text for an <code>&lt;img&gt;</code>. Since the <code>.navbar-brand</code> has its own padding and height, you may need to override some CSS depending on your image.</p>
+  <div class="bs-example" data-example-id="navbar-with-image-brand">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" width="20" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAA81BMVEX///9VPnxWPXxWPXxWPXxWPXxWPXxWPXz///9hSYT6+vuFc6BXPn37+vz8+/z9/f2LeqWMe6aOfqiTg6uXiK5bQ4BZQX9iS4VdRYFdRYJfSINuWI5vWY9xXJF0YJR3Y5Z4ZZd5ZZd6Z5h9apq0qcW1qsW1q8a6sMqpnLyrn76tocCvpMGwpMJoUoprVYxeRoJjS4abjLGilLemmbrDutDFvdLPx9nX0eDa1OLb1uPd1+Td2OXe2eXh3Ofj3+nk4Orl4evp5u7u7PLv7fPx7/T08vb08/f19Pf29Pj39vn6+fuEcZ9YP35aQn/8/P1ZQH5fR4PINAOdAAAAB3RSTlMAIWWOw/P002ipnAAAAPhJREFUeF6NldWOhEAUBRvtRsfdfd3d3e3/v2ZPmGSWZNPDqScqqaSBSy4CGJbtSi2ubRkiwXRkBo6ZdJIApeEwoWMIS1JYwuZCW7hc6ApJkgrr+T/eW1V9uKXS5I5GXAjW2VAV9KFfSfgJpk+w4yXhwoqwl5AIGwp4RPgdK3XNHD2ETYiwe6nUa18f5jYSxle4vulw7/EtoCdzvqkPv3bn7M0eYbc7xFPXzqCrRCgH0Hsm/IjgTSb04W0i7EGjz+xw+wR6oZ1MnJ9TWrtToEx+4QfcZJ5X6tnhw+nhvqebdVhZUJX/oFcKvaTotUcvUnY188ue/n38AunzPPE8yg7bAAAAAElFTkSuQmCC">
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+{% endhighlight %}
+
+
+  <h2 id="navbar-forms">Формы</h2>
+  <p>Разместите содержимое формы в пределах <code>.navbar-form</code> для правильного вертикального выравнивания, и для обеспечения функцией свертывания на узких смотровых окнах. Используйте параметры выравнивания, чтобы решить, где будет находиться содержимое в пределах навигационной панели.</p>
+  <p>Как ведущий, класс <code>.navbar-form</code> имеет большинство своего кода совместно с <code>.form-inline</code> через mixin. <strong class="text-danger">Некоторые элементы управления форм, таких как группы ввода, могут потребовать фиксированной для правильного отображения в navbar.</strong></p>
+  <div class="bs-example" data-example-id="navbar-form">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Отправить</button>
+</form>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-mobile-caveats">
+    <h4>Предостережения для мобильных устройств</h4>
+    <p>Есть некоторые предостережения относительно использования элементов управления формы в неподвижных элементах на мобильных устройствах. <a href="../getting-started/#support-fixed-position-keyboards">Смотрите наши документы поддержки браузера</a>.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-form-labels">
+    <h4>Всегда добавляйте ярлыки</h4>
+    <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class. There are further alternative methods of providing a label for assistive technologies, such as the <code>aria-label</code>, <code>aria-labelledby</code> or <code>title</code> attribute. If none of these is present, screen readers may resort to using the <code>placeholder</code> attribute, if present, but note that use of <code>placeholder</code> as a replacement for other labelling methods is not advised.</p>
+  </div>
+
+
+  <h2 id="navbar-buttons">Кнопки</h2>
+  <p>Добавьте класс <code>.navbar-btn</code> к элементам <code>&lt;и&gt;</code>, которые не находятся в <code>&lt;html&gt;</code> для вертикального их центрирование в навигационных панелях.</p>
+  <div class="bs-example" data-example-id="navbar-button">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+          <button type="button" class="btn btn-default navbar-btn">Войти</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<button type="button" class="btn btn-default navbar-btn">Войти</button>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-btn-context">
+    <h4>Специфическая особенность использования</h4>
+    <p>Как и стандартные <a href="../css/#buttons">классы кнопок</a>, <code>.navbar-btn</code> может использоваться в элементах <code>&lt;a&gt;</code> и <code>&lt;input&gt;</code>. Тем не менее, ни один <code>.navbar-btn</code> или же стандартные классы кнопки не должны использоваться в элементах <code>&lt;a&gt;</code> внутри <code>.navbar-nav</code>.</p>
+  </div>
+
+  <h2 id="navbar-text">Текст</h2>
+  <p>Заключите строку текста в элемент с классом <code>.navbar-text</code>, обычно с тегом <code>&lt;p&gt;</code>, для правильного выравнивания и цвета.</p>
+  <div class="bs-example" data-example-id="navbar-text">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+          <p class="navbar-text">Вы вошли как Марк Отто</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<p class="navbar-text">Вы вошли как Марк Отто</p>
+{% endhighlight %}
+
+
+  <h2 id="navbar-links">Не контекстные ссылки</h2>
+  <p>Люди, которые используют стандартные ссылки в пределах необычных компонентов навигационных панелей, могут применять класс <code>.navbar-link</code> для вставки правильных цветов в навигационных панелях по умолчанию и инвертированных навигационных панелях.</p>
+  <div class="bs-example" data-example-id="navbar-link">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+          <p class="navbar-text navbar-right">Вы вошли как <a href="#" class="navbar-link">Марк Отто</a></p>
+        </div>
+      </div>
+    </nav>
+  </div>
+{% highlight html %}
+<p class="navbar-text navbar-right">Вы вошли как <a href="#" class="navbar-link">Марк Отто</a></p>
+{% endhighlight %}
+
+
+  <h2 id="navbar-component-alignment">Компонент выравнивания</h2>
+  <p>Выравнивайте навигационные ссылки, формы, кнопки, текст, используя вспомогательные классы <code>.navbar-left</code> или <code>.navbar-right</code>. Оба классы добавляют CSS float в указанном направлении. Например, чтобы выровнять навигационные ссылки, вложите их в отдельный <code>&lt;ul&gt;</code> с соответствующим вспомогательным классом.</p>
+  <p>Эти классы являются смешанной версией классов <code>.pull-left</code> и <code>.pull-right</code>, но они предназначены для медиа запросов, чтобы упростить обработку компонентов навигационных панелей для различных размеров устройств.</p>
+  <div class="bs-callout bs-callout-warning" id="callout-navbar-right-align">
+    <h4>Правое выравнивание нескольких компонентов</h4>
+    <p>NavBars в настоящее время есть ограничение с множеством <code>.navbar-right</code> классов.  Чтобы правильно космической содержания, мы используем отрицательные поля на последней <code>.navbar правом</code> элемент.  Когда имеется несколько элементов, использующие этот класс, эти поля не работает надлежащим образом.</p>
+    <p>Мы вернемся к этому, когда перепишем этот компонент в v4.</p>
+  </div>
+
+
+  <h2 id="navbar-fixed-top">Фиксация вверху</h2>
+  <p>Добавьте <code>.navbar-fixed-top</code> и подключите <code>.container</code> или <code>.container-fluid</code> для центровки и внутренних отступлений содержимого навигационной панели.</p>
+  <div class="bs-example bs-navbar-top-example" data-example-id="navbar-fixed-to-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <!-- Мы используем опцию флюида здесь, чтобы избежать переопределения фиксированную ширину нормального контейнера в узких колонки контента. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /пример -->
+{% highlight html %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger" id="callout-navbar-fixed-top-padding">
+    <h4>Необходимость установления padding для body</h4>
+    <p>Фиксированная навигационная панель будет налагаться на остальные вашего содержимого, пока вы не добавите <code>padding</code> в верхней части <code>&lt;body&gt;</code>. Попробуйте установить свои собственные значения, или используйте фрагмент кода ниже. Справка: По умолчанию, навигационная панель имеет высоту 50px.</p>
+{% highlight scss %}
+body { padding-top: 70px; }
+{% endhighlight %}
+    <p>Убедитесь, что это включено <strong></strong> основного Bootstrap CSS.</p>
+  </div>
+
+
+  <h2 id="navbar-fixed-bottom">Фиксация внизу</h2>
+  <p>Добавьте <code>.navbar-fixed-bottom</code> и подключите <code>.container</code> или <code>.container-fluid</code> для центровки и внутренних отступлений содержимого навигационной панели.</p>
+  <div class="bs-example bs-navbar-bottom-example" data-example-id="navbar-fixed-to-bottom">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <!-- Мы используем опцию флюида здесь, чтобы избежать переопределения фиксированную ширину нормального контейнера в узких колонки контента. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /пример -->
+{% highlight html %}
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-danger" id="callout-navbar-fixed-bottom-padding">
+    <h4>Необходимость установления padding для body</h4>
+    <p>Фиксированная навигационная панель будет налагаться на остальные вашего содержимого, пока вы не добавите <code>padding</code> в нижней части <code>&lt;body&gt;</code>. Попробуйте установить свои собственные значения, или используйте фрагмент кода ниже. Справка: По умолчанию, навигационная панель имеет высоту 50px.</p>
+{% highlight scss %}
+body { padding-bottom: 70px; }
+{% endhighlight %}
+    <p>Убедитесь, что это включено <strong></strong> основного Bootstrap CSS.</p>
+  </div>
+
+
+  <h2 id="navbar-static-top">Статический верх</h2>
+  <p>Создайте навигационную панель на полную ширину, которая будет прокручиваться вместе со страницей, добавив <code>.navbar-static-top</code> и включите <code>.container</code> или <code>.container-fluid</code>, для центровки и внутренних отступлений содержимого навигационной панели.</p>
+  <p>В отличие от классов <code>.navbar-fixed-*</code>, вам не нужно изменять любой <code>padding</code> и <code>body</code>.</p>
+  <div class="bs-example bs-navbar-top-example" data-example-id="navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top">
+      <!-- Мы используем опцию флюида здесь, чтобы избежать переопределения фиксированную ширину нормального контейнера в узких колонки контента. -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </div><!-- /пример -->
+{% highlight html %}
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    ...
+  </div>
+</nav>
+{% endhighlight %}
+
+
+  <h2 id="navbar-inverted">Инвертированная навигационная панель</h2>
+  <p>Изменить внешний вид панели навигации, добавив <code>.navbar-inverse</code>.</p>
+  <div class="bs-example" data-example-id="inverted-navbar">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Марка и переключение сгруппированы для лучшего мобильного дисплея -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Соберите навигационные ссылки, формы, и другой контент для переключения -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div><!-- /пример -->
+{% highlight html %}
+<nav class="navbar navbar-inverse">
+  ...
+</nav>
+{% endhighlight %}
+</div>

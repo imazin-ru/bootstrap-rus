@@ -1,0 +1,127 @@
+---
+layout: default
+title: О нас
+slug: about
+lead: "Прочтите об истории проекта, отвечают, поддерживающих команду, и узнать, как использовать Bootstrap бренд."
+---
+
+
+<!-- History
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="history" class="page-header">История</h1>
+
+  <p class="lead">Изначально созданный дизайнером и разработчиком в Twitter, Bootstrap стал одним из самых популярных фронт энд фреймворков и проектов с открытым кодом в мире.</p>
+  <p>Bootstrap был создан в Twitter в середине 2010 года по <a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/fat">@fat</a>. До будучи открытым кодом рамки, Bootstrap был известен как <em>Twitter Blueprint</em>. Спустя несколько месяцев после развития, Twitter провел свою <a href="https://blog.twitter.com/2010/hack-week">первый Hack Week</a> и проект взорвалась как разработчики всех уровней квалификации прыгнул в без внешнего руководства. Он служил в качестве руководства по стилю для развития внутренних инструментов в компании в течение года до его обнародования, и продолжает делать это сегодня.</p>
+  <p>Первоначально <a href="https://dev.twitter.com/blog/bootstrap-twitter">released</a> в <a href="https://twitter.com/mdo/statuses/104620039650557952"><time datetime="2011-08-19 11:25">пятницу, 19-го августа, 2011</time></a>, было мы с  более <a href="https://github.com/twbs/bootstrap/releases">twenty releases</a>, в том числе две крупных перезаписи с v2 и v3. С Bootstrap 2, мы добавили отзывчивую функциональность всей рамки как дополнительную стилей. Основываясь на том, что с Bootstrap 3, мы переписали библиотеку еще раз, чтобы сделать его реагирующим по умолчанию с помощью мобильного первого подхода.</p>
+</div>
+
+
+<!-- Team
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="team" class="page-header">Команда</h1>
+
+  <p class="lead">Bootstrap поддерживается командой основателя и небольшой группой бесценных основных вкладчиков, с массивной поддержке и участии нашего сообщества.</p>
+
+  <h2 id="team-core">Core team</h2>
+  <div class="list-group bs-team">
+    {% for member in site.data.core-team %}
+      <div class="list-group-item">
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ member.user }}&amp;type=follow"></iframe>
+        <a class="team-member" href="https://github.com/{{ member.user }}">
+          <img src="http://www.gravatar.com/avatar/{{ member.gravatar }}" alt="@{{ member.user }}" width="32" height="32">
+          <strong>{{ member.name }}</strong> <small>@{{ member.user }}</small>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <p>Примите участие в развитии Bootstrap по <a href="https://github.com/twbs/bootstrap/issues/new">opening an issue</a> или отправить запрос на усиление. Читайте наши<a href="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md">способствующие руководящие принципы</a> для информации о том, как мы разрабатываем.</p>
+
+  <h2 id="team-sass">Sass team</h2>
+  <div class="list-group bs-team">
+    {% for member in site.data.sass-team %}
+      <div class="list-group-item">
+        <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user={{ member.user }}&amp;type=follow"></iframe>
+        <a class="team-member" href="https://github.com/{{ member.user }}">
+          <img src="http://www.gravatar.com/avatar/{{ member.gravatar }}" alt="@{{ member.user }}">
+          <strong>{{ member.name }}</strong> <small>@{{ member.user }}</small>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+  <p>Это <a href="{{ site.sass_repo }}">Официальный Sass порт Bootstrap</a> была создана и поддерживается этой команде. Она стала частью организации начальной загрузки с v3.1.0. Читайте Sass<a href="https://github.com/twbs/bootstrap-sass/blob/master/CONTRIBUTING.md">contributing guidelines</a> о том, как развивается порт Sass.</p>
+</div>
+
+
+<!-- Brand
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="brand" class="page-header">Brand guidelines</h1>
+
+  <p class="lead">Есть потребность в фирменных ресурсов Bootstrap? Отлично! У нас есть только несколько руководящих принципов, которым мы следуем, и в свою очередь просим вас следовать также. Эти руководящие принципы были вдохновлены MailChimp сайт<a href="http://mailchimp.com/about/brand-assets/" target="_blank">Brand Assets</a>.</p>
+
+  <h2>Mark и logo</h2>
+  <p>Используйте либо отметку Bootstrap(a capital <strong>B</strong>) или стандартный логотип (just <strong>Bootstrap</strong>).Следует всегда появлятся в Helvetica Neue Bold. <strong> Не используйте Twitter</strong> одновременно с Bootstrap.</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <div class="bs-docs-booticon bs-docs-booticon-lg">B</div>
+    </div>
+    <div class="bs-brand-item inverse">
+      <div class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-inverse">B</div>
+    </div>
+  </div>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <h1>Bootstrap</h1>
+    </div>
+    <div class="bs-brand-item inverse">
+      <h1>Bootstrap</h1>
+    </div>
+  </div>
+
+  <h2>Загрузка mark</h2>
+  <p>Скачать отметку Bootstrap в одном из трех стилей, каждый из которых доступен в виде файла SVG. Щелкните правой кнопкой мыши, Сохранить как.</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <img class="svg" src="../assets/brand/bootstrap-solid.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+    <div class="bs-brand-item inverse">
+      <img class="svg" src="../assets/brand/bootstrap-outline.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+    <div class="bs-brand-item inverse">
+      <img class="svg" src="../assets/brand/bootstrap-punchout.svg" alt="Bootstrap" width="144" height="144">
+    </div>
+  </div>
+
+  <h2>Имя</h2>
+  <p>Проект и рамки всегда должны быть отнесены к <strong>Bootstrap</strong>. Нет Twitter перед ним, не капитал <em>s</em>, и без сокращения для одного, капитала, кроме<strong>B</strong>.</p>
+  <div class="bs-brand-logos">
+    <div class="bs-brand-item">
+      <h3>Bootstrap</h3>
+      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+      <span class="sr-only">(correct)</span>
+    </div>
+    <div class="bs-brand-item">
+      <h3 class="text-muted">BootStrap</h3>
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <span class="sr-only">(incorrect)</span>
+    </div>
+    <div class="bs-brand-item">
+      <h3 class="text-muted">Twitter Bootstrap</h3>
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <span class="sr-only">(incorrect)</span>
+    </div>
+  </div>
+
+  <h2>Цвета</h2>
+  <p>Наши документы и брендинг использовать горсть основных цветов дифференцировать что <em>is</em> Bootstrap от того, что <em>находится </em> Bootstrap.Другими словами, если это фиолетовый, это представитель Bootstrap.</p>
+  <div class="bs-brand">
+    <div class="color-swatches">
+      <div class="color-swatch bs-purple"></div>
+      <div class="color-swatch bs-purple-light"></div>
+      <div class="color-swatch bs-purple-lighter"></div>
+      <div class="color-swatch bs-gray"></div>
+    </div>
+  </div>
+</div>

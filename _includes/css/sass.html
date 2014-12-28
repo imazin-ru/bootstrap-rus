@@ -1,0 +1,52 @@
+<div class="bs-docs-section">
+  <h1 id="sass" class="page-header">Использование Sass</h1>
+  <p class="lead">В то время как Bootstrap построен на Less, он также имеет <a href="{{ site.sass_repo }}">официальный Sass порт</a>. Мы поддерживаем его в отдельном репозиторий GitHub и обновляем через скрипт преобразования.</p>
+
+  <h2 id="sass-contents">Что включено</h2>
+  <p>Поскольку порт Sass имеет отдельный репо и служит несколько иной аудитории, содержимое проекта сильно отличаться от основного проекта Bootstrap. Это гарантирует, что порт Sass является совместимым с мнгоими Sass-системами.</p>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Путь</th>
+          <th>Описание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>lib/</code></th>
+          <td>Ruby gem код (Sass конфигурация, Rails и Compass интеграция)</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>tasks/</code></th>
+          <td>Скрипты конвертеры (turning upstream Less to Sass)</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>test/</code></th>
+          <td>Тесты компиляции</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>templates/</code></th>
+          <td>Compass пакет манифеста</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>vendor/assets/</code></th>
+          <td>Sass, JavaScript, и файлы шрифтов</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>Rakefile</code></th>
+          <td>Внутренние задачи, такие как rake и convert</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Посетите <a href="{{ site.sass_repo }}">Sass порты GitHub репозитория</a> чтобы увидеть эти файлы в действии.</p>
+
+
+  <h2 id="sass-installation">Установка</h2>
+  <p>Для получения информации о том, как установить и использовать Bootstrap для Sass, обратитесь <a href="{{ site.sass_repo }}">GitHub репозиторий readme</a>. Это наиболее современный источник, он включает в себя информацию для использования с Rails, Compass, и типовым проектам Sass.</p>
+  <p>
+    <a class="btn btn-lg btn-outline" href="{{ site.sass_repo }}">Bootstrap для Sass</a>
+  </p>
+</div>

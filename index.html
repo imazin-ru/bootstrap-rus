@@ -1,0 +1,73 @@
+---
+layout: home
+title: Bootstrap &middot; Самый популярный в мире front-end фреймверк для мобильных.
+---
+
+
+<main class="bs-docs-masthead" id="content" role="main">
+  <div class="container">
+    <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">B</span>
+    <p class="lead">Bootstrap cамый популярный HTML, CSS, и JS фреймворк для разработки адаптивных и мобильных web-проектов.</p>
+    <p class="lead">
+      <a href="getting-started#download" class="btn btn-outline-inverse btn-lg" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Скачать Bootstrap</a>
+    </p>
+    <p class="version">Текущая v{{ site.current_version }}</p>
+	    {% include ads.html %}
+  </div>
+</main>
+
+<div class="bs-docs-featurette">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Предназначен для всех, во всем мире.</h2>
+    <p class="lead">Bootstrap делает фронтэнд веб-разработку быстрее и проще. Это сделано для людей с любым уровнем подготовки, устройств всех форм и проектов любого масштаба.</p>
+
+    <hr class="half-rule">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
+        <h3>Препроцессоры</h3>
+        <p>Быстрый Bootstrap с приятным CSS, так как исходныйе утилиты используют два популярных CSS препроцессора, <a href="../css/#less">Less</a> и <a href="../css/#sass">Sass</a>. Быстро начать работу с предкомпилированного CSS или построить на источнике.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
+        <h3>Один фреймворк, на каждое устройство.</h3>
+        <p>Bootstrap легко и эффективно маштабируется для ваших веб-сайтов и приложений с единой базой кода, от телефонов и планшетов до настольных компьютеров с помощью CSS media queries.</p>
+      </div>
+      <div class="col-sm-4">
+        <img src="assets/img/components.png" alt="Components" class="img-responsive">
+        <h3>Полный возможностей</h3>
+        <p>С Bootstrap, вы получаете обширную и красивую документацию для общих HTML элементов, десятки пользовательского HTML и компонентов CSS, и удивительных плагинов JQuery.</p>
+      </div>
+    </div>
+
+    <hr class="half-rule">
+
+    <p class="lead">Bootstrap с открытым исходным кодом. Он размещается, развиваться и поддерживаться на GitHub.</p>
+    <a href="{{ site.repo }}" class="btn btn-outline btn-lg">Посмотреть на GitHub</a>
+  </div>
+</div>
+
+<div class="bs-docs-featurette">
+  <div class="container">
+    <h2 class="bs-docs-featurette-title">Сделано на Bootstrap.</h2>
+    <p class="lead">Миллионы удивительных сайтов по всему Интернету строятся на Bootstrap. Начните по своему усмотрению с нашей растущей <a href="../getting-started/#examples">коллекцией примеров</a> или ознакомтесь с некоторыми из наших фаворитов.</p>
+
+    <hr class="half-rule">
+
+    <div class="row bs-docs-featured-sites">
+    {% for showcase in site.data.showcase %}
+      <div class="col-xs-6 col-sm-3">
+        <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
+          <img src="http://expo.getbootstrap.com/thumbs/{{ showcase.img }}-thumb.jpg" alt="{{ showcase.name }}" class="img-responsive">
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+
+    <hr class="half-rule">
+
+    <p class="lead">Мы демонстрируем десятки творческих проектов, созданных с Bootstrap на Bootstrap Expo.</p>
+    <a href="{{ site.expo }}" class="btn btn-outline btn-lg">Перейти на Expo</a>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="bs-docs-section">
+  <h1 id="translations" class="page-header">Переводы</h1>
+
+  <p class="lead">Члены сообщества перевели документацию Bootstrap на различные языки. Никто официально не поддерживается и они не всегда могут быть в курсе событий.</p>
+  <ul>
+    {% for language in site.data.translations %}
+      <li><a href="{{ language.url }}" hreflang="{{ language.code }}">{{ language.description }} ({{ language.name }})</a></li>
+    {% endfor %}
+  </ul>
+  <p><strong class="text-danger">Мы не помогаем организовывать перевод, мы просто даем на них ссылки.</strong></p>
+  <p>Перевели новый или есть перевод лучше? Откройте запрос, чтобы добавить его в наш список.</p>
+</div>

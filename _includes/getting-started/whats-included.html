@@ -1,0 +1,52 @@
+<div class="bs-docs-section">
+  <h1 id="whats-included" class="page-header">Что включено</h1>
+
+  <p class="lead">Bootstrap доступен в двух формах, в которых вы найдете логично сгруппированы каталоги и файлы, представленные в собранном и минимизированном варианте.</p>
+
+  <div class="bs-callout bs-callout-warning" id="jquery-required">
+    <h4>Требуется jQuery</h4>
+    <p>Обратите внимание, что <strong>все JavaScript плагины требуют jQuery</strong> должны быть подключены, как показано на <a href="#template">стартовом шаблоне</a>. <a href="{{ site.repo }}/blob/v{{ site.current_version }}/bower.json">Обратитесь в наш <code>bower.json</code></a> чтобы посмотреть какие версии jQuery поддерживаются.</p>
+  </div>
+
+  <h2 id="whats-included-precompiled">Сборник кода Bootstrap 3</h2>
+  <p>После загрузки, разархивируйте сжатые каталоги. Вы должны увидеть нечто похожее на это:</p>
+<!-- NOTE: This info is intentionally duplicated in the README.
+Copy any changes made here over to the README too. -->
+{% highlight bash %}
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff
+{% endhighlight %}
+<!-- NOTE: This info is intentionally duplicated in the README.
+Copy any changes made here over to the README too. -->
+  <p>Это является наиболее базовая форма Bootstrap: собранные файлы, для их быстрой вставки в любой веб-проект. Мы предоставляем сборник CSS и JS (<code>bootstrap.*</code>), а также ее минимизированный вариант (<code>bootstrap.min.*</code>). CSS <a href="https://developers.google.com/chrome-developer-tools/docs/css-preprocessors">source maps</a> (<code>bootstrap.*.map</code>) are available for use with certain browsers' developer tools. Как дополнительные опции тем Bootstrap - также предоставляются шрифты с Glyphicons.</p>
+
+  <h2 id="whats-included-source">Исходный код Bootstrap</h2>
+  <p>Исходный код Bootstrap включает прекомпелированный CSS, JavaScript, и средства шрифтов, вместе с исходным Less, JavaScript, и документацией. Более конкретно, оно включает в себя следующее и более:</p>
+{% highlight bash %}
+bootstrap/
+├── less/
+├── js/
+├── fonts/
+├── dist/
+│   ├── css/
+│   ├── js/
+│   └── fonts/
+└── docs/
+    └── examples/
+{% endhighlight %}
+  <p><code>less/</code>, <code>js/</code>, и <code>шрифты/</code> вашего исходного CSS, JS, и иконки (соответственно). Папка<code>dist/</code> включает в себя все перечисленные предкомпилированные загрузки, что в разделе выше. Папка <code>docs/</code> включает в себя исходный код для нашей документации, и <code>примеры/</code> использования Bootstrap. Кроме того, любой другой включенный файл обеспечивает поддержку для пакетов, информацию о лицензиях и развитии.</p>
+</div>

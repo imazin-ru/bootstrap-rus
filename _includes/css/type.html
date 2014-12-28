@@ -1,0 +1,461 @@
+<div class="bs-docs-section">
+  <h1 id="type" class="page-header">Типография</h1>
+
+  <!-- Заголовки -->
+  <h2 id="type-headings">Заголовки</h2>
+  <p>Все HTML заголовки, от <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>, являются доступными. Также доступны классы от <code>.h1</code> - <code>.h6</code>, на случай если вы захотите изменить стиль заголовков, но вместе с тем хотите, чтобы соседней текст отображался в том же строке.</p>
+  <div class="bs-example bs-example-type" data-example-id="simple-headings">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Bootstrap заголовок</h1></td>
+          <td class="type-info">Semibold 36px</td>
+        </tr>
+        <tr>
+          <td><h2>h2. Bootstrap заголовок</h2></td>
+          <td class="type-info">Semibold 30px</td>
+        </tr>
+        <tr>
+          <td><h3>h3. Bootstrap заголовок</h3></td>
+          <td class="type-info">Semibold 24px</td>
+        </tr>
+        <tr>
+          <td><h4>h4. Bootstrap заголовок</h4></td>
+          <td class="type-info">Semibold 18px</td>
+        </tr>
+        <tr>
+          <td><h5>h5. Bootstrap заголовок</h5></td>
+          <td class="type-info">Semibold 14px</td>
+        </tr>
+        <tr>
+          <td><h6>h6. Bootstrap заголовок</h6></td>
+          <td class="type-info">Semibold 12px</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% highlight html %}
+<h1>h1. Bootstrap заголовок</h1>
+<h2>h2. Bootstrap заголовок</h2>
+<h3>h3. Bootstrap заголовок</h3>
+<h4>h4. Bootstrap заголовок</h4>
+<h5>h5. Bootstrap заголовок</h5>
+<h6>h6. Bootstrap заголовок</h6>
+{% endhighlight %}
+
+  <p>Простое создание, вторичного текста в любом заголовке за помощью тега <code>&lt;small&gt;</code> или класса <code>.small</code>.</p>
+  <div class="bs-example bs-example-type" data-example-id="small-headings">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Bootstrap заголовок <small>Вторичный текст</small></h1></td>
+        </tr>
+        <tr>
+          <td><h2>h2. Bootstrap заголовок <small>Вторичный текст</small></h2></td>
+        </tr>
+        <tr>
+          <td><h3>h3. Bootstrap заголовок <small>Вторичный текст</small></h3></td>
+        </tr>
+        <tr>
+          <td><h4>h4. Bootstrap заголовок <small>Вторичный текст</small></h4></td>
+        </tr>
+        <tr>
+          <td><h5>h5. Bootstrap заголовок <small>Вторичный текст</small></h5></td>
+        </tr>
+        <tr>
+          <td><h6>h6. Bootstrap заголовок <small>Вторичный текст</small></h6></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% highlight html %}
+<h1>h1. Bootstrap заголовок <small>Вторичный текст</small></h1>
+<h2>h2. Bootstrap заголовок <small>Вторичный текст</small></h2>
+<h3>h3. Bootstrap заголовок <small>Вторичный текст</small></h3>
+<h4>h4. Bootstrap заголовок <small>Вторичный текст</small></h4>
+<h5>h5. Bootstrap заголовок <small>Вторичный текст</small></h5>
+<h6>h6. Bootstrap заголовок <small>Вторичный текст</small></h6>
+{% endhighlight %}
+
+
+  <!-- Основной текст -->
+  <h2 id="type-body-copy">Основной текст</h2>
+  <p>Bootstrap общий и изначальный <code>font-size</code> это <strong>14px</strong>, с <code>line-height</code> <strong>1.428</strong>. Это применимо к <code>&lt;body&gt;</code> и всем параграфам. В дополнение, <code>&lt;p&gt;</code> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px).</p>
+  <div class="bs-example" data-example-id="body-copy">
+    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+  </div>
+{% highlight html %}
+<p>...</p>
+{% endhighlight %}
+
+  <!-- Основной текст .lead -->
+  <h3>Ведущий основной текст</h3>
+  <p>Создайте выделенный параграф путем добавления <code>.lead</code>.</p>
+  <div class="bs-example" data-example-id="lead-copy">
+    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+  </div>
+{% highlight html %}
+<p class="lead">...</p>
+{% endhighlight %}
+
+  <!-- Использование Less -->
+  <h3>Построение с использованием Less</h3>
+  <p>Типографская шкала основана на двух Less переменных в <strong>variables.Less</strong>: <code>@font-size-base</code> и <code>@line-height-base</code>. Первый это базовый размер шрифта используемый везде, а второй является базовой высоты строки. Мы используем эти переменные и простую арифметику для создания margins, paddings, и line-heights всех наших типов и прочего. Настройте их, чтобы адаптировать Bootstrap.</p>
+
+  <!-- Inline элементы текста -->
+  <h2 id="type-inline-text">Встроенные текстовые элементы</h2>
+  <h3>Маркированый текст</h3>
+  <p>Для выделения пробега текста благодаря своей актуальности в другом контексте, использовать <code>&lt;mark&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-mark">
+    <p>Вы можете использовать знак тег в <mark>highlight</mark> text.</p>
+  </div>
+{% highlight html %}
+You can use the mark tag to <mark>highlight</mark> text.
+{% endhighlight %}
+
+
+  <h3>Удаленный текст</h3>
+  <p>Для обозначения блоков текста, которые были удалены использовать <code>&lt;del&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-del">
+    <p><del>Эта строка текста должна продемонстрировать удаленный текст.</del></p>
+  </div>
+{% highlight html %}
+<del>This line of text is meant to be treated as deleted text.</del>
+{% endhighlight %}
+
+  <h3>Зачеркнутый текст</h3>
+  <p>Не для индикации блоков текста, которые утратили свою актуальность использования <code>&lt;s&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-s">
+    <p><s>Эта строка текста должна продемонстрировать не точность.</s></p>
+  </div>
+{% highlight html %}
+<s>This line of text is meant to be treated as no longer accurate.</s>
+{% endhighlight %}
+
+  <h3>Вставленный текст</h3>
+  <p>Для обозначения дополнения к документу использовать <code>&lt;ins&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-ins">
+    <p><ins>Эта строка текста должна рассматриваться как дополнение к документу.</ins></p>
+  </div>
+{% highlight html %}
+<ins>This line of text is meant to be treated as an addition to the document.</ins>
+{% endhighlight %}
+
+  <h3>Подчеркнутый текст</h3>
+  <p>Чтобы подчеркнуть используйте <code>&lt;u&gt;</code> tag.</p>
+  <div class="bs-example" data-example-id="simple-u">
+    <p><u>Эта строка текста окажется подчеркнутой</u></p>
+  </div>
+{% highlight html %}
+<u>This line of text will render as underlined</u>
+{% endhighlight %}
+
+  <p>Чтобы выделить текст можно использовать HTML-теги по умолчанию, добавив им легкие стили.</p>
+
+  <h3>Мелкий текст</h3>
+  <p>Для уменьшения выделения встроенного текста или блока текста, используйте тег <code>&lt;small&gt;</code>, чтобы задать ему размер, который будет составлять 85% от размера его родительского элемента. Заголовки должны установлены собственные (отдельные) <code>font-size</code> для вложенных элементов <code>&lt;small&gt;</code>.</p>
+  <p>В качестве альтернативы, можно использовать встроенный элемент с классом <code>.small</code>-где в середине <code>&lt;small&gt;</code></p>
+  <div class="bs-example" data-example-id="simple-small">
+    <p><small>Эта строка текста должна продемонстрировать мелкий шрифт.</small></p>
+  </div>
+{% highlight html %}
+<small>This line of text is meant to be treated as fine print.</small>
+{% endhighlight %}
+
+
+  <h3>Жирный шрифт</h3>
+  <p>Для выделения фрагмента текста с тяжелым насыщенным шрифтом.</p>
+  <div class="bs-example" data-example-id="simple-strong">
+    <p>Следующий фрагмент текста <strong>отображается как жирный текст</strong>.</p>
+  </div>
+{% highlight html %}
+<strong>rendered as bold text</strong>
+{% endhighlight %}
+
+  <h3>Курсив</h3>
+  <p>Для выделения фрагмента текста курсивом.</p>
+  <div class="bs-example" data-example-id="simple-em">
+    <p>Следующий фрагмент текста <em>отображается курсивным текстом</em>.</p>
+  </div>
+{% highlight html %}
+<em>rendered as italicized text</em>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-info" id="callout-type-b-i-elems">
+    <h4>Альтернативные элементы</h4>
+    <p>Свободно используйте <code>&lt;b&gt;</code> и <code>&lt;i&gt;</code> в HTML5. Тег <code>&lt;b&gt;</code> предназначен для выделения слова или фразы без передачи дополнительного значения, в то время как <code>&lt;i&gt;</code> в основном для цитирования, технических терминов и т.д.</p>
+  </div>
+
+  <h2 id="type-alignment">Выравнивание классов</h2>
+  <p>Легко выровнять текст компонентов с помощью классов выравнивания текста.</p>
+  <div class="bs-example" data-example-id="text-alignment">
+    <p class="text-left">Выравнивание по левому краю.</p>
+    <p class="text-center">Выравнивание по центру.</p>
+    <p class="text-right">Выравнивание по правому краю.</p>
+    <p class="text-justify">Выравнивание текста по ширине</p>
+    <p class="text-nowrap"> Nowrap текст.</p>
+  </div>
+{% highlight html %}
+<p class="text-left">Выравнивание по левому краю.</p>
+<p class="text-center">Выравнивание по центру.</p>
+<p class="text-right">Выравнивание по правому краю.</p>
+<p class="text-justify">Выравнивание текста по ширине</p>
+<p class="text-nowrap"> Nowrap текст.</p>
+{% endhighlight %}
+
+  <h2 id="type-transformation">Классы трансформации</h2>
+  <p>Transform текста в компонентах с классами текст капитализации.</p>
+  <div class="bs-example" data-example-id="text-capitalization">
+    <p class="text-lowercase">В нижнем регистре.</p>
+    <p class="text-uppercase">Верхний регистр.</p>
+    <p class="text-capitalize">С заглавной буквы.</p>
+  </div>
+{% highlight html %}
+<p class="text-lowercase">В нижнем регистре.</p>
+<p class="text-uppercase">Верхний регистр.</p>
+<p class="text-capitalize">С заглавной буквы.</p>
+{% endhighlight %}
+
+  <!-- Аббревиатуры -->
+  <h2 id="type-abbreviations">Аббревиатуры</h2>
+  <p>Внедрена стилизацию HTML-элементов <code>&lt;abbr&gt;</code> для аббревиатур и акронимов, чтобы показать расширенную их версию при наведении. Аббревиатуры с атрибутом <code>title</code> имеют внизу легкое точечное подчеркивания, а курсор принимает вид знака вопроса при наведении, предоставляя дополнительный контекст для зависания (hover).</p>
+
+  <h3>Основные аббревиатуры</h3>
+  <div class="bs-example" data-example-id="simple-abbr">
+    <p>Аббревиатурой слова attribute является <abbr title="attribute">attr</abbr>.</p>
+  </div>
+{% highlight html %}
+<abbr title="attribute">attr</abbr>
+{% endhighlight %}
+
+  <h3>Инициализм</h3>
+  <p>Добавьте <code>.initialism</code> аббревиатуры для легкого уменьшения размера шрифта.</p>
+  <div class="bs-example" data-example-id="simple-initialism">
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+  </div>
+{% highlight html %}
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+{% endhighlight %}
+
+
+  <!-- Адреса -->
+  <h2 id="type-addresses">Адреса</h2>
+  <p>Представьте контактную информацию. Обезопасьте форматирования закончив все строки <code>&lt;br&gt;</code>.</p>
+  <div class="bs-example" data-example-id="simple-address">
+    <address>
+      <strong>Twitter, Inc.</strong><br>
+      795 Folsom Ave, Suite 600<br>
+      San Francisco, CA 94107<br>
+      <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+    <address>
+      <strong>Full Name</strong><br>
+      <a href="mailto:#">first.last@example.com</a>
+    </address>
+  </div>
+{% highlight html %}
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+{% endhighlight %}
+
+
+  <!-- Цитаты -->
+  <h2 id="type-blockquotes">Цитаты</h2>
+  <p>Цитаты нужны для цитирования блока содержимого с другого ресурса в теле вашего документа.</p>
+
+  <h3>Цитаты по умолчанию</h3>
+  <p>Оберните при помощи <code>&lt;blockquote&gt;</code>-<abbr title="HyperText Markup Language">HTML</abbr>-код, который должен быть цитатой. Рекомендуем начинать цитату из <code>&lt;p&gt;</code>.</p>
+  <div class="bs-example" data-example-id="simple-blockquote">
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+{% endhighlight %}
+
+  <h3>Варианты цитаты</h3>
+  <p>Изменение стиля и содержимого для простых вариаций стандартного <code>&lt;blockquote&gt;</code>.</p>
+
+  <h4>Именование источника</h4>
+  <p>Добавьте <code>&lt;footer&gt;</code> для указания источника. Заключите имя источника работы в <code>&lt;cite&gt;</code>.</p>
+  <div class="bs-example" data-example-id="blockquote-cite">
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+{% endhighlight %}
+
+  <h4>Альтернативные дисплеи</h4>
+  <p>Добавьте <code>.blockquote-reverse</code> для выравнивания цитаты справа.</p>
+  <div class="bs-example" style="overflow: hidden;" data-example-id="blockquote-reverse">
+    <blockquote class="blockquote-reverse">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote class="blockquote-reverse">
+  ...
+</blockquote>
+{% endhighlight %}
+
+
+  <!-- Списки -->
+  <h2 id="type-lists">Списки</h2>
+
+  <h3>Беспорядочный</h3>
+  <p>Список пунктов, когда порядок сортировки <em>нет</em> явного значение.</p>
+  <div class="bs-example" data-example-id="simple-ul">
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+           <li>Vestibulum laoreet porttitor sem</li>
+         <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul>
+  <li>...</li>
+</ul>
+{% endhighlight %}
+
+  <h3>Упорядоченный</h3>
+  <p>Список пунктов, когда порядок сортировки <em>должен</em> явное значение.</p>
+  <div class="bs-example" data-example-id="simple-ol">
+    <ol>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit</li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ol>
+  </div>
+{% highlight html %}
+<ol>
+  <li>...</li>
+</ol>
+{% endhighlight %}
+
+  <h3>Без стиля</h3>
+  <p>Удаление <code>list-style</code> и отступ слева для списка пунктов. <strong>Такое удаление применяется только к непосредственных дочерних элементов</strong>, то есть необходимо добавлять соответствующий класс в любых вложенных списков.</p>
+  <div class="bs-example" data-example-id="unstyled-list">
+    <ul class="list-unstyled">
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+           <li>Vestibulum laoreet porttitor sem</li>
+         <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="list-unstyled">
+  <li>...</li>
+</ul>
+{% endhighlight %}
+
+  <h3>Встроенный</h3>
+  <p>Размещение всех пунктов списка в одну линию при помощи <code>display: inline-block;</code> и небольших отступлений.</p>
+  <div class="bs-example" data-example-id="list-inline">
+    <ul class="list-inline">
+      <li>Lorem ipsum</li>
+      <li>Phasellus iaculis</li>
+      <li>Nulla volutpat</li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="list-inline">
+  <li>...</li>
+</ul>
+{% endhighlight %}
+
+  <h3>Описание</h3>
+  <p>Список терминов и их описаний.</p>
+  <div class="bs-example" data-example-id="simple-dl">
+    <dl>
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+    </dl>
+  </div>
+{% highlight html %}
+<dl>
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+{% endhighlight %}
+
+  <h4>Горизонтальное описание</h4>
+  <p>Расположение терминов и их описаний бок о бок в линию при помощи <code>&lt;dl&gt;</code>.</p>
+  <div class="bs-example" data-example-id="horizontal-dl">
+    <dl class="dl-horizontal">
+      <dt>Description lists</dt>
+      <dd>A description list is perfect for defining terms.</dd>
+      <dt>Euismod</dt>
+      <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+      <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+      <dt>Malesuada porta</dt>
+      <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+      <dt>Felis euismod semper eget lacinia</dt>
+      <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+    </dl>
+  </div>
+{% highlight html %}
+<dl class="dl-horizontal">
+  <dt>...</dt>
+  <dd>...</dd>
+</dl>
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
+    <h4>Автоматическое сужение</h4>
+    <p>Горизонтальный список описания будет автоматически сужается, если в нем есть слишком долгие сроки, которые не помещаются в левую колонку с <code>text-overflow</code>. В узком окне данный список примет стандартный вид для <code>&lt;dl&gt;</code>.</p>
+  </div>
+</div>

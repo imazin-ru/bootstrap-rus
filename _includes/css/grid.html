@@ -1,0 +1,559 @@
+<div class="bs-docs-section">
+  <h1 id="grid" class="page-header">Система разметки</h1>
+
+  <p class="lead">Bootstrap включает в себя адаптивную, первую мобильную резиновую систему разметки, которая масштабируется до 12 столбцов как на устройствах или при изменении окна просмотра. Она включает в себя <a href="#grid-example-basic">как для простых вариантов планировки, так и мощных <a href="#grid-less"> для создания более смысловых макетов</a>.</p>
+
+  <h3 id="grid-intro">Введение</h3>
+  <p>Система разметки используются для создания макетов страниц с помощью ряда строк и столбцов, в которых размещается ваш контент. Вот так работает система разметки Bootstrap:</p>
+  <ul>
+    <li><code>.row</code> должны быть помещены в <code>.container</code> (fixed-width) или <code>.container-fluid</code> (full-width) для правильного выравнивания и заполнения.</li>
+    <li>Использовать строки для создания горизонтальных группы столбцов.</li>
+    <li>Контент должен быть помещен в столбцах, и только колонки могут быть непосредственными потомками строк.</li>
+    <li>Стандартные классы разметки как <code>.row</code> и <code>.col-xs-4</code> доступны для быстрого принятия разметки макетов. Less смешивания также может быть использован для более семантических схем.</li>
+    <li>Столбцы создают желоба (промежутки между содержанием столбцов) с помощью <code>padding</code>. Тогда padding компенсируется в строках для первого и последнего столбца с помощью отрицательного margin на <code>.row</code>.</li>
+    <li>Отрицательный маржа - это потому, что ниже примеры неактуальны. Содержание в столбцах сетки выстроилось с содержанием не-сетки.</li>
+    <li>Столбцы разметки создаются с указанием количества двенадцати доступных столбцов, которые вы хотите охватить. Например, три равные колонки использовали бы три <code>.col-xs-4</code>.</li>
+    <li>Если более 12 колонок размещены в одной строке, каждая группа дополнительных столбцов будет, как единое целое, переносится на новую строку.</li>
+    <li>Сетка классов относится к приборам с экрана шириной более или равными основы размеров и классов коррекции сетки, направленных на небольшие устройства. Поэтому, применяя любой <code>.col-md-</code> класс к элементу будет не только влиять на его стиль на средних устройств, но и на больших устройств, если <code>.col-lg-</code> класса нет.</li>
+  </ul>
+  <p>Посмотрите на примеры применения этих принципов в код.</p>
+
+  <h3 id="grid-media-queries">Медиа запросы</h3>
+  <p>Мы используем следующие медиа запросы в наших Less файлах, чтобы создать определяющую контрольную точку в нашей системе разметки.</p>
+{% highlight scss %}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+{% endhighlight %}
+  <p>Мы иногда расширяем медиа запросы для включения <code>max-width</code>, чтобы ограничить CSS до более узкого набора устройств.</p>
+{% highlight scss %}
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+{% endhighlight %}
+
+  <h3 id="grid-options">Функционал разметки</h3>
+  <p>Посмотрите, как аспекты системы рзметки Bootstrap работают между несколькими устройствами с управляемой таблицей.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            Очень маленькие устройство <small>Телефоны  (&lt;768px)</small>         </th>
+          <th>
+            Малые устройства
+         <small>Планшеты (&ge;768px)</small>
+          </th>
+          <th>
+            Средние устройства
+        <small>Настольные (&ge;992px)</small>
+          </th>
+          <th>
+            Большие устройства
+       <small>Настольные (&ge;1200px)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">Поведение разметки</th>
+          <td>Горизонтальный все время</td>
+          <td colspan="3">Терпеть неудачу при начатии, горизонтальный выше контрольной точки</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Ширина контейнера</th>
+          <td>Нет (автом.)</td>
+          <td>750px</td>
+          <td>970px</td>
+          <td>1170px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Класс префикса</th>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"># колонок</th>
+          <td colspan="4">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Ширина колонки</th>
+          <td class="text-muted">Авто</td>
+          <td>~62px</td>
+          <td>~81px</td>
+          <td>~97px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Промежуточная ширина</th>
+          <td colspan="4">30px(15px) на каждой стороне колонки</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Вкладка</th>
+          <td colspan="4">Да</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Отступ</th>
+          <td colspan="4">Да</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Выравнивание колонки</th>
+          <td colspan="4">Да</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="grid-example-basic">Пример: Сложенные по горизонтали</h3>
+  <p>Используя единичный набор <code>.col-md-*</code> классовой разметки, вы можете создать базовую систему разметки, которая запускается одновременно на мобильные устройства и планшетные устройства (от экстра маленьких до малых диапазонов) до того как выстроится горизонталь на рабочем столе (средних) устройств. Разместите столбцы разметки в любом <code>.row</code>.</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+      <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-8">.col-md-8</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6">.col-md-6</div>
+      <div class="col-md-6">.col-md-6</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-example-fluid">Пример: Резиновые блоки</h3>
+  <p>Превратите любую фиксированную ширину сетки макет в полную ширину макета, изменив последний <code>.container</code> на <code>.container-fluid</code>.</p>
+{% highlight html %}
+<div class="container-fluid">
+  <div class="row">
+    ...
+  </div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-example-mixed">Пример: Мобильные и настольные</h3>
+  <p>Не хотите чтобы ваши колонки просто складывались на небольших устройствах? Используйте очень маленькие xs или средние md классы разметки устройства добавляя <code>.col-xs-*</code> <code>.col-md-*</code> к вашим столбцам. Смотрите пример ниже для лучшего понимания как это работает.</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6">.col-xs-6</div>
+      <div class="col-xs-6">.col-xs-6</div>
+    </div>
+  </div>
+{% highlight html %}
+<!-- Стек столбцы по мобильному, сделав один полную ширину, а другая половина ширины -->
+<div class="row">
+  <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+
+<!-- Колонны начать на 50% в ширину на мобильном и поднять до 33,3% в ширину на рабочий стол -->
+<div class="row">
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+
+<!--Колонны всегда 50% в ширину, на мобильный и рабочий стол -->
+<div class="row">
+  <div class="col-xs-6">.col-xs-6</div>
+  <div class="col-xs-6">.col-xs-6</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-example-mixed-complete">Пример: Мобильные, планшеты, настольные</h3>
+  <p>Постройте предыдущий пример, создав еще более динамичные и мощные макеты для планшета <code>.col-sm-*</code> класса.</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+      <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      <!-- Дополнительно: очистить XS cols если их содержание не соответствует по высоте -->
+      <div class="clearfix visible-xs-block"></div>
+      <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <!-- Дополнительно: очистить XS cols если их содержание не соответствует по высоте -->
+  <div class="clearfix visible-xs-block"></div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-example-wrapping">Пример: Колонка wrapping</h3>
+  <p>Если более 12 колонок размещены в одной строке, каждая группа дополнительных столбцов будет, как единое целое, переносятся на новую строку.</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-9">.col-xs-9</div>
+      <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+      <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-9">.col-xs-9</div>
+  <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+  <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-responsive-resets">Адаптивные колонки сброса</h3>
+  <p>Из четырех доступных разметок вы обязательно столкнетесь с проблемой, в определенных точках, ваши колонки выглядят не правильно так как одна может быть выше чем другие. Для того чтобы это исправить, используйте комбинацию <code>.clearfix</code> и наши <a href="#responsive-utilities">адаптивные служебные классы</a>.</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-xs-6 col-sm-3">
+        .col-xs-6 .col-sm-3
+        <br>
+        Resize your viewport or check it out on your phone for an example.
+      </div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+      <!-- Добавить дополнительный clearfix только требуемой видовом -->
+      <div class="clearfix visible-xs-block"></div>
+
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+  <!-- Добавить дополнительный clearfix только требуемой видовом -->
+  <div class="clearfix visible-xs-block"></div>
+
+  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+  <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+</div>
+{% endhighlight %}
+  <p>В дополнение к очистке столбца на адаптивных точках, вам может понадобиться <strong>сброс offsets, pushes, или pulls</strong>. Смотрите это в действии на <a href="../examples/grid/">примере разметкок</a>.</p>
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+  <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+  <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+</div>
+{% endhighlight %}
+
+
+  <h3 id="grid-offsetting">Смещенные колонки</h3>
+  <p>Переместить колонки направо с помощью <code>.col-md-offset-*</code> класса. Эти классы увеличивают отступ слева столбца <code>*</code> колонки. Например, <code>.col-md-offset-4</code> сдвигает <code>.col-md-4</code> пропуская один такой же столбец</p>
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-4">.col-md-4</div>
+      <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
+{% endhighlight %}
+
+
+  <h3 id="grid-nesting">Вложенные столбцы</h3>
+  <p>Чтобы вложить ваше содержание в разметку, необходимо добавить новый <code>.row</code> и набор <code>.col-md-*</code> столбцов в существующую <code>.col-md-*</code> колонку. Вложенные строки должны включать в себя набор столбцов, которые добавляются до 12 или менее (Не требуется использовать все 12 доступных столбцов).</p>
+  <div class="row show-grid">
+    <div class="col-sm-9">
+      Level 1: .col-sm-9
+      <div class="row show-grid">
+        <div class="col-xs-8 col-sm-6">
+          Level 2: .col-xs-8 .col-sm-6
+        </div>
+        <div class="col-xs-4 col-sm-6">
+          Level 2: .col-xs-4 .col-sm-6
+        </div>
+      </div>
+    </div>
+  </div>
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-9">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        Level 2: .col-xs-8 .col-sm-6
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        Level 2: .col-xs-4 .col-sm-6
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-column-ordering">Выравнивание колонок</h3>
+  <p>Легко изменить порядок наших встроенных столбцов разметки с <code>.col-md-push-*</code> и <code>.col-md-pull-*</code> модифицированными классами.</p>
+  <div class="row show-grid">
+    <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+    <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+  </div>
+
+{% highlight html %}
+<div class="row">
+  <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+  <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+</div>
+{% endhighlight %}
+
+  <h3 id="grid-less">Less смешивания и переменные</h3>
+  <p>В дополнение к <a href="#grid-example-basic">готовым классы разметок</a> для быстрых макетов, Bootstrap включает в себя Less переменные и смешений для быстрого формирования собственных простых, семантических макетов.</p>
+
+  <h4>Переменные</h4>
+  <p>Переменные определяют число столбцов, ширину промежутка, и точку медиа запроса, с которого начинается перемещение столбцов. Мы используем это для генерации предопределенных классов разметки задокументированных выше, также как для пользовательского смешения перечисленного ниже.</p>
+{% highlight scss %}
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+{% endhighlight %}
+
+  <h4>Смешивания</h4>
+  <p>Смешивания используются в сочетании с переменных разметкок, чтобы образовать семантические CSS для отдельных столбцов разметки.</p>
+{% highlight scss %}
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  // Then clear the floated columns
+  .clearfix();
+
+  @media (min-width: @screen-sm-min) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+
+  // Negative margin nested rows out to align the content of columns
+  .row {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+  }
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the small column offsets
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-sm-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-sm-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-sm-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium column offsets
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-md-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-md-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-md-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large column offsets
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-lg-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-lg-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-lg-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+{% endhighlight %}
+
+  <h4>Примеры использования</h4>
+  <p>Вы можете изменять переменные в собственных пользовательские значения, или просто использовать смешивания с их значениями по умолчанию. Вот пример использования настроек по умолчанию для создания макета с двумя колонками и зазором между ними.</p>
+{% highlight scss %}
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-lg-column(8);
+}
+.content-secondary {
+  .make-lg-column(3);
+  .make-lg-column-offset(1);
+}
+{% endhighlight %}
+{% highlight html %}
+<div class="wrapper">
+  <div class="content-main">...</div>
+  <div class="content-secondary">...</div>
+</div>
+{% endhighlight %}
+</div>

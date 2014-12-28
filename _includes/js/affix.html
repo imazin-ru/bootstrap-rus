@@ -1,0 +1,115 @@
+<div class="bs-docs-section">
+  <h1 id="affix" class="page-header">Позиционирование Affix <small>affix.js</small></h1>
+
+  <h2 id="affix-examples">Пример</h2>
+  <p>Субнавигация справа является живым примером работы плагина affix.</p>
+
+  <hr class="bs-docs-separator">
+
+  <h2 id="affix-usage">Использование</h2>
+  <p>Используйте плагин affix с помощью атрибутов данных, или напишите свой собственный JavaScript. <strong class="text-danger">В обоих случаях вы должны предоставить CSS для позиционирования содержимого.</strong></p>
+
+  <h3>Позиционирование через CSS</h3>
+  <p>Плагин affix переключается между тремя классами, каждый из которых соответствует определенному состоянию: <code>.affix</code>, <code>.affix-top</code>и <code>.affix-bottom</code>. Вы должны самостоятельно создать стили для этих классов (независимо от этого плагина), для обработки текущей позиции.</p>
+  <p>Вот как работает плагин affix:</p>
+  <ol>
+    <li>Сначала, плагин добавляет <code>.affix-top</code> для обозначения элемента, находящегося выше. На данный момент позиционирования через CSS не требуется.</li>
+    <li>Прокрутки мимо элемент, который вы хотите закрепить, должно актуализировать закрепления. Это тот момент, когда <code>.affix</code> заменяет <code>.affix-top</code> и устанавливает <code>position: fixed;</code> (обеспеченное кодом Bootstrap CSS).</li>
+    <li>Если нижнее смещение определено, прокрутки вниз должен заменить <code>.affix</code>, <code>.affix-bottom</code>. Поскольку смещение является необязательным, вам необходимо установить соответствующие CSS. В данном случае, добавьте <code>position: absolute;</code>, когда это необходимо. Плагин использует атрибуты данных или параметры JavaScript для определения позиции элемента.</li>
+  </ol>
+  <p>Следуйте вышеуказанным шагам, чтобы в дальнейшем установить CSS для любого использования опций.</p>
+
+  <h3>Через атрибуты данных</h3>
+  <p>Можно легко предоставить поведение affix любому элементу, просто добавив <code>data-spy="affix"</code> к элементу, по которому вы хотите следить. Используйте смещение для определения, когда следует отключать плагин для заданного элемента.</p>
+
+{% highlight html %}
+<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+  ...
+</div>
+{% endhighlight %}
+
+  <h3>Через JavaScript</h3>
+  <p>Вызов плагина affix через JavaScript:</p>
+{% highlight js %}
+$('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
+{% endhighlight %}
+
+
+  <h3 id="affix-options">Параметры</h3>
+  <p>Параметры могут передаваться через атрибуты данных или JavaScript. Для атрибутов данных, добавьте приставку с названием параметра <code>data</code>, как в примере: <code>data offset-top="200"</code>.</p>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+       <tr>
+         <th style="width: 100px;">Название</th>
+         <th style="width: 100px;">Тип</th>
+         <th style="width: 50px;">По умолчанию</th>
+         <th>Описание</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+         <td>offset</td>
+         <td>числовой | функция | объект</td>
+         <td>10</td>
+         <td>Пиксели для сдвига экрана, при исчислении позиции прокрутки. Если предоставлено единичное число, сдвиг будет применяться и вверху, и внизу. Чтобы придать уникальности сдвига снизу и сверху, просто предоставьте такой объект <code>offset: { top: 10 }</code> или такой <code>offset: { top: 10, bottom: 5 }</code>. Используйте функцию, когда вам нужно динамически вычислять сдвиг.</td>
+       </tr>
+       <tr>
+         <td>target</td>
+         <td>selector | node | jQuery element</td>
+         <td>the <code>window</code> object</td>
+         <td>Задает элемент аффиксом.</td>
+       </tr>
+
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+
+
+  <h3 id="affix-events">События</h3>
+  <p>Bootstrap плагин affix предоставляет несколько событий для подключения в функциональности.</p>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped bs-events-table">
+      <thead>
+        <tr>
+          <th style="width: 150px;">Тип События</th>
+          <th>Описание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>affix.bs.affix</td>
+          <td>Это событие вызывается непосредственно перед приклепленным элементом.</td>
+        </tr>
+        <tr>
+          <td>affixed.bs.affix</td>
+          <td>Это событие возникает после того, как элемент был приклеплен.</td>
+        </tr>
+        <tr>
+          <td>affix-top.bs.affix</td>
+          <td>Это событие вызывается непосредственно перед элементом, прикрепленному сверху.</td>
+        </tr>
+        <tr>
+          <td>affixed-top.bs.affix</td>
+          <td>Это событие возникает после того, как элемент был приклеплен свверху.</td>
+        </tr>
+       <tr>
+        <td>affix-bottom.bs.affix</td>
+          <td>Это событие вызывается непосредственно перед элементом, прикрепленному внизу.</td>
+        </tr>
+        <tr>
+          <td>affixed-bottom.bs.affix</td>
+          <td>Это событие возникает после того, как элемент был приклеплен снизу.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /.table-responsive -->
+</div>

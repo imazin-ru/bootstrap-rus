@@ -1,0 +1,93 @@
+<div class="bs-docs-section">
+  <h1 id="thumbnails" class="page-header">Эскизы</h1>
+
+  <p class="lead">Расширьте <a href="../css/#grid">систему сетки</a> Bootstrap с помощью компонента эскиза для легкого создания сетки с изображениями, видео, текстом, и так далее.</p>
+
+  <h3 id="thumbnails-default">Основной пример</h3>
+  <p>По умолчанию, эскизы Bootstrap спроектированы для отображения связанных изображений с минимальной, лишь необходимой разметкой.</p>
+  <div class="bs-example" data-example-id="simple-thumbnails">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+    </div>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/100%x180" alt="...">
+    </a>
+  </div>
+  ...
+</div>
+{% endhighlight %}
+
+  <h3 id="thumbnails-custom-content">Настраиваемое содержимое</h3>
+  <p>Добавив немного разметки, можно включать любое содержимое HTML, такой как заголовки, параграфы, или кнопки в середине эскизов.</p>
+  <div class="bs-example" data-example-id="thumbnails-with-custom-content">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="Generic placeholder thumbnail">
+          <div class="caption">
+            <h3>Ярлык эскиза</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="Generic placeholder thumbnail">
+          <div class="caption">
+            <h3>Ярлык эскиза</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img data-src="holder.js/100%x200" alt="Generic placeholder thumbnail">
+          <div class="caption">
+            <h3>Ярлык эскиза</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x300" alt="...">
+      <div class="caption">
+        <h3>Ярлык эскиза</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endhighlight %}
+</div>
